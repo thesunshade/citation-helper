@@ -84,7 +84,7 @@ function App() {
               name="address"
               onChange={event => setInputUrl(event.target.value)}
               onKeyPress={handleKeyPress}
-              placeholder="for example: mn141"
+              placeholder="for example: mn140"
             />
           </div>
           <div id="message-area">
