@@ -11,6 +11,7 @@ import validateCitation from "./functions/validateCitation.js";
 import createAncientBuddhistTextsLink from "./webSites/createAncientBuddhistTextsLink.js";
 import createWebsiteLink from "./webSites/createWebsiteLink.js";
 import LinkButton from "./Components/LinkButton.js";
+import OtherToolsIcons from "./Components/OtherToolsIcons.js";
 import TabbedLinkArea from "./Components/TabbedLinkArea.js";
 
 function App() {
@@ -164,6 +165,7 @@ function App() {
             </div>
           </div>
         </div>
+        <OtherToolsIcons />
       </div>
       {/* end of url-builder */}
       <TabbedLinkArea />

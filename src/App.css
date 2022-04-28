@@ -133,7 +133,7 @@ div.radiobuttonarea label[disabled] {
 
 #link-button-area {
   text-align: center;
-  min-height: 200px;
+  min-height: 180px;
 }
 
 .url-button-class {
@@ -496,4 +496,21 @@ div.content.ABT-content,
 }
 .active-content {
   display: block;
+}
+
+.icon-links-area {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.icon-links-area a {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+.icon-links-area a:hover {
+  top: -5px;
 }
