@@ -2,8 +2,8 @@ import "./App.css";
 import { useState } from "react";
 import { useEffect } from "react";
 import clsx from "clsx";
-// import favicon from "./images/favicon.png";
-// import faviconTitle from "./functions/faviconTitle.js";
+import favicon from "./images/favicon.png";
+import faviconTitle from "./functions/faviconTitle.js";
 
 import parseBookName from "./functions/parseBookName.js";
 import parseNumbers from "./functions/parseNumbers.js";
@@ -15,7 +15,7 @@ import OtherToolsIcons from "./Components/OtherToolsIcons.js";
 import TabbedLinkArea from "./Components/TabbedLinkArea.js";
 
 function App() {
-  // faviconTitle(favicon, "Citation Helper");
+  faviconTitle(favicon, "Citation Helper—ReadingFaithfully.org");
   let [inputUrl, setInputUrl] = useState("");
   let [translator, setTranslator] = useState("/en/sujato");
   let [layout, setLayout] = useState("");
