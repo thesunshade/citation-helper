@@ -24,8 +24,8 @@ export default function OtherToolsIcons() {
       >
         <img width="20px" src={githubIcon} alt="GitHub icon" />
       </a>
-      <a href="https://sutta.readingfaithfully.org" title="Citation Lookup Tool" rel="noreferrer" target="_blank">
-        <img width="20px" src={nameLookup} alt="Citation Lookup tool icon" />
+      <a href="https://name.readingfaithfully.org" title="Sutta Name Lookup Tool" rel="noreferrer" target="_blank">
+        <img width="20px" src={nameLookup} alt="Sutta Name Lookup tool icon" />
       </a>
       <a
         href="https://ped.readingfaithfully.org"
