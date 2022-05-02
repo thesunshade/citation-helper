@@ -6,7 +6,7 @@ export default function LinkButton(props) {
     return null;
   } else {
     return (
-      <a className="url-button-link" target="_blank" rel="noreferrer" href={url}>
+      <a className="url-button-link" target="_blank" rel="noreferrer" href={url} site={site}>
         <div className={"url-button-class " + site}>
           <div className="image-container">
             <img width="20px" className="logoImage" src={require(`../images/${site}.png`).default} alt="logo"></img>

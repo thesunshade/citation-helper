@@ -1,4 +1,59 @@
 export default function InfoSection() {
+  function copyCurrentCitations() {
+    const currentCitations = document.getElementsByClassName("url-button-link");
+    let output = `<h4>Read on:</h4>
+<ul>\n`;
+    for (let i = 0; i < currentCitations.length; i++) {
+      let prettySiteUrl;
+      switch (currentCitations[i].attributes.site.value) {
+        case "SC":
+          prettySiteUrl = "SuttaCentral.net";
+          break;
+        case "SF":
+          prettySiteUrl = "SuttaFriends.org";
+          break;
+        case "DT":
+          prettySiteUrl = "DhammaTalks.org";
+          break;
+        case "ABT":
+          prettySiteUrl = "Ancient-Buddhist-Texts.net";
+          break;
+        default:
+          prettySiteUrl = "Website";
+      }
+      output += `<li><a href="${currentCitations[i].href}" rel="noreferrer" target="_blank">${prettySiteUrl} </a></li>\n`;
+    }
+    output += `</ul>`;
+    navigator.clipboard.writeText(output);
+  }
+
+  function copyCurrentCitationsSentnce() {
+    const currentCitations = document.getElementsByClassName("url-button-link");
+    let output = `<p>`;
+    for (let i = 0; i < currentCitations.length; i++) {
+      let prettySiteUrl;
+      switch (currentCitations[i].attributes.site.value) {
+        case "SC":
+          prettySiteUrl = "SuttaCentral.net";
+          break;
+        case "SF":
+          prettySiteUrl = "SuttaFriends.org";
+          break;
+        case "DT":
+          prettySiteUrl = "DhammaTalks.org";
+          break;
+        case "ABT":
+          prettySiteUrl = "Ancient-Buddhist-Texts.net";
+          break;
+        default:
+          prettySiteUrl = "Website";
+      }
+      output += `<a href="${currentCitations[i].href}" rel="noreferrer" target="_blank">${prettySiteUrl}</a> ,`;
+    }
+    output += `</p>`;
+    navigator.clipboard.writeText(output);
+  }
+
   return (
     <div id="info-section">
       <h4>Other Lookup Tools</h4>
@@ -33,10 +88,15 @@ export default function InfoSection() {
           </a>
         </li>
         <li>
-          Know the name of the sutta? Try the{" "}
-          <a rel="noreferrer" href="https://www.ancient-buddhist-texts.net/Reference/Sutta.htm" target="_blank">
-            ABT lookup.
-          </a>{" "}
+          Copy to the clipboard current citations as:
+          <ul>
+            <li>
+              <button onClick={copyCurrentCitations}>HTML list</button>
+            </li>
+            <li>
+              <button onClick={copyCurrentCitationsSentnce}>HTML sentence</button>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
