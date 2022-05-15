@@ -4,6 +4,7 @@ import pedIcon from "../images/favicon-ped-black.png";
 import scLight from "../images/favicon-sc-light-black.png";
 import rfIcon from "../images/favicon-rf-black.png";
 import githubIcon from "../images/GitHub-Mark-64px-black.png";
+import drfIcon from "../images/favicon-drf-black.png";
 
 export default function OtherToolsIcons() {
   return (
@@ -15,6 +16,9 @@ export default function OtherToolsIcons() {
         target="_blank"
       >
         <img width="20px" src={rfIcon} alt="ReadingFaithfully.org icon" />
+      </a>
+      <a href="http://daily.readingfaithfully.org" title="Daily Suttas" rel="noreferrer" target="_blank">
+        <img width="20px" src={drfIcon} alt="Daily.ReadingFaithfully.org icon" />
       </a>
       <a
         href="https://github.com/thesunshade/citation-helper#readme"
