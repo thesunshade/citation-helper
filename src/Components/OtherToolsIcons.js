@@ -5,6 +5,7 @@ import scLight from "../images/favicon-sc-light-black.png";
 import rfIcon from "../images/favicon-rf-black.png";
 import githubIcon from "../images/GitHub-Mark-64px-black.png";
 import drfIcon from "../images/favicon-drf-black.png";
+import randomIcon from "../images/favicon-random-black.png";
 
 export default function OtherToolsIcons() {
   return (
@@ -20,13 +21,8 @@ export default function OtherToolsIcons() {
       <a href="http://daily.readingfaithfully.org" title="Daily Suttas" rel="noreferrer" target="_blank">
         <img width="20px" src={drfIcon} alt="Daily.ReadingFaithfully.org icon" />
       </a>
-      <a
-        href="https://github.com/thesunshade/citation-helper#readme"
-        title="The source code for this site"
-        rel="noreferrer"
-        target="_blank"
-      >
-        <img width="20px" src={githubIcon} alt="GitHub icon" />
+      <a href="http://r.readingfaithfully.org" title="Random Suttas" rel="noreferrer" target="_blank">
+        <img width="20px" src={randomIcon} alt="R.ReadingFaithfully.org icon" />
       </a>
       <a href="https://name.readingfaithfully.org" title="Sutta Name Lookup Tool" rel="noreferrer" target="_blank">
         <img width="20px" src={nameLookup} alt="Sutta Name Lookup tool icon" />
@@ -54,6 +50,14 @@ export default function OtherToolsIcons() {
         target="_blank"
       >
         <img width="20px" src={dppnIcon} alt="DPPN search icon" />
+      </a>
+      <a
+        href="https://github.com/thesunshade/citation-helper#readme"
+        title="The source code for this site"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <img width="20px" src={githubIcon} alt="GitHub icon" />
       </a>
     </div>
   );
