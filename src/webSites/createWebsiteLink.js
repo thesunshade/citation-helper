@@ -125,7 +125,6 @@ export default function createWebsiteLink(props) {
           website[book].links.chapter_links &&
           firstNumber <= Object.keys(structure[book].chapters).length
         ) {
-          //console.log(website[book].links.chapter_links);
           url = website[book].links.chapter_links[firstNumber];
         }
       }
@@ -230,7 +229,7 @@ export default function createWebsiteLink(props) {
       }
     }
 
-    //                                                      the actual function
+    //                                             the actual function
     if (error === "" && booksOnWebsite.includes(book)) {
       books.forEach(bookKey => {
         const format = structure[bookKey].format[0];

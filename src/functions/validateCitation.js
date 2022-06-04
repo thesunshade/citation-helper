@@ -76,7 +76,8 @@ export default function validateCitation(book, numbers) {
     } else if (secondNumber) {
       // this is what happens when the first number can't be read as either a chapter, sutta or verse
       const maxSuttaNumber = structure[book].chapters[firstNumber];
-      if (secondNumber > maxSuttaNumber) {
+
+      if (secondNumber > maxSuttaNumber || secondNumber > maxSuttaNumber.max) {
         error = `Sutta number too high. Not in ${structure[book].pali_name}.`;
       }
     }

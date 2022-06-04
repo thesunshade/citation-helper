@@ -112,7 +112,6 @@ export default function createWebsiteLink(props) {
           website[book].links.chapter_links &&
           firstNumber <= Object.keys(structure[book].chapters).length
         ) {
-          //console.log(website[book].links.chapter_links);
           url = website[book].links.chapter_links[firstNumber];
         }
       }

@@ -8,7 +8,6 @@ export default function parseBookName(userInput) {
     let bookKey = books[x];
     for (let i = 0; i < structure[bookKey].book_abbreviation.length; i++) {
       const regex = new RegExp("^" + structure[bookKey].book_abbreviation[i], "i");
-      console.log(regex);
       if (regex.test(userInput)) {
         sanitizedBookName = bookKey;
         x = books.length;
