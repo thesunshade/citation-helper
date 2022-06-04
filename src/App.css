@@ -1,5 +1,4 @@
 .App {
-  /* text-align: center; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,9 +7,6 @@
 
 #url-builder {
   width: 500px;
-  /* display: flex;
-  flex-direction: row; */
-  /* height: 500px; */
   margin: 2rem auto auto auto;
 }
 
@@ -50,7 +46,6 @@ button:focus {
 }
 
 #url-builder input {
-  /* padding: 1rem; */
   border-radius: 10px;
   border: none;
   font-size: 1.5rem;
@@ -80,7 +75,6 @@ button:focus {
   background-color: white;
   padding: 0 0.41rem;
   width: 7.5rem;
-  /* border: solid 1px; */
 }
 
 .radiobuttonarea {
@@ -156,9 +150,6 @@ a:focus div.url-button-class {
 .image-container {
   float: left;
 }
-/* .logoImage {
-  margin-right: 0.5rem; 
-} */
 
 div.SC {
   background: #ce8400;
@@ -177,6 +168,10 @@ div.ABT {
   background: #7f9861;
   box-shadow: inset 0px 0px 10px #738859;
 }
+div.PA {
+  background: #ea7101;
+  box-shadow: inset 0px 0px 10px #d16501;
+}
 
 #url-button.nolink {
   background: gray;
@@ -184,7 +179,7 @@ div.ABT {
 
 .url-button-class:hover,
 #url-button:hover {
-  background: black;
+  background: rgba(0, 0, 0, 0.466);
   box-shadow: inset 0px 0px 10px black;
 }
 a.url-button-link,
@@ -310,7 +305,6 @@ h4 {
   text-align: center;
   border: solid 1px gainsboro;
   color: black;
-  /* margin: 2px; */
 }
 
 #SF-index,
@@ -334,10 +328,6 @@ a.card-link:hover,
 a.all-link:hover {
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
 }
-/* a.card-link,
-a.all-link {
-  box-shadow: 4px 4px 15px rgb(245, 245, 245);
-} */
 
 #ABTSection.js li {
   padding: 0.3rem 0;
@@ -435,7 +425,6 @@ a.all-link {
   padding: 15px;
   text-align: center;
   width: 50%;
-  /* background: rgba(128, 128, 128, 0.075); */
   cursor: pointer;
   border-bottom: 1px solid rgba(0, 0, 0, 0.274);
   box-sizing: content-box;

@@ -1,7 +1,7 @@
 import { structure } from "../structure.js";
-import { ancientBuddhistTexts as website } from "./ancientBuddhistTexts.js";
+import { paliAudio as website } from "./paliAudio.js";
 
-export default function createAncientBuddhistTextsLink(props) {
+export default function createPaliAudioLink(props) {
   let { book, firstNumber, secondNumber, chapterFlag, error } = props;
   const books = Object.keys(structure);
   let url = "";
