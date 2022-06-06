@@ -9,14 +9,16 @@ export default function createWebsiteLink(props) {
   let url = "";
   let website;
 
-  if ((site === "DT") | (site === "SF") | (site === "SC")) {
+  if ((site === "DT") | (site === "SF") | (site === "SC") | (site === "SCV")) {
     // this bit is clearly not the right way to do this
     if (site === "DT") {
       website = require("./dhammaTalks.js").dhammaTalks;
     } else if (site === "SC") {
       website = require("./suttaCentral.js").suttaCentral;
-    } else {
+    } else if (site === "SF") {
       website = require("./suttaFriends.js").suttaFriends;
+    } else if (site === "SCV") {
+      website = require("./suttaCentralVoice.js").suttaCentralVoice;
     }
     const booksOnWebsite = Object.keys(website);
     const { rootUrl, suffixUrl, chapterConnector, rangeConnector } = website.constants;

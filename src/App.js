@@ -29,6 +29,7 @@ function App() {
     "DhammaTalks.org",
     "Ancient-Buddhist-Texts.net",
     "PaliAudio.com",
+    "Voice.SuttaCentral.net",
   ];
   const [checked, setChecked] = useState(localStorage.checked ? JSON.parse(localStorage.checked) : checkList);
 
@@ -143,6 +144,13 @@ function App() {
             <LinkButton
               site={"PA"}
               url={createPaliAudioLink({
+                ...validateCitation(parseBookName(inputUrl), parseNumbers(inputUrl)),
+              })}
+            />
+            <LinkButton
+              site={"SCV"}
+              url={createWebsiteLink({
+                site: "SCV",
                 ...validateCitation(parseBookName(inputUrl), parseNumbers(inputUrl)),
               })}
             />

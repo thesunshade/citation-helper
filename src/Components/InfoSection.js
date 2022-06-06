@@ -48,12 +48,7 @@ export default function InfoSection() {
         <a className="card-link index" href="https://benmneb.github.io/pts-converter/" target="_blank" rel="noreferrer">
           Pali Text Society Lookup (e.g. M ii 234)
         </a>
-        <a
-          className="card-link index"
-          href="https://sutta.readingfaithfully.org/name/"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a className="card-link index" href="https://name.readingfaithfully.org" target="_blank" rel="noreferrer">
           Pali Sutta Name Lookup
         </a>
       </div>

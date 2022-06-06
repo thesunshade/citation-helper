@@ -203,6 +203,10 @@ div.PA {
   background: #ea7101;
   box-shadow: inset 0px 0px 10px #d16501;
 }
+div.SCV {
+  background: #000000;
+  box-shadow: inset 0px 0px 10px #756a9b;
+}
 
 #url-button.nolink {
   background: gray;
