@@ -1,8 +1,15 @@
+import makePrettyName from "../functions/makePrettyName.js";
+
 export default function LinkButton(props) {
   const url = props.url;
   const site = props.site;
+  // console.log(localStorage.checked && localStorage.checked);
+  // console.log(localStorage.checked && site + ": " + !localStorage.checked.includes(makePrettyName(site)));
+
   if (!/http/.test(url)) {
     // this test is necessary because it's easier to send a blank link pluss the sutta central author and layout strings already attached. Otherwise we could just test for an empty string
+    return null;
+  } else if (localStorage.checked && !localStorage.checked.includes(makePrettyName(site))) {
     return null;
   } else {
     return (

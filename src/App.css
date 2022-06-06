@@ -60,10 +60,10 @@ button:focus {
   padding: 0 1rem 1rem 1rem;
   border-radius: 10px;
   border: solid 2px gainsboro;
-  width: 300px;
+  width: 280px;
   margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 #radiobutton-area-box-label {
@@ -77,6 +77,31 @@ button:focus {
   width: 7.5rem;
 }
 
+#checkbox-area-box {
+  padding: 0 1rem 1rem 1rem;
+  border-radius: 10px;
+  border: solid 2px gainsboro;
+  width: 280px !important;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#checkbox-area-box-label {
+  color: rgb(133, 133, 133);
+  font-size: 0.8rem;
+  position: relative;
+  top: 0.5rem;
+  left: 6rem;
+  background-color: white;
+  padding: 0 0.41rem;
+  width: 7.5rem;
+}
+
+.checkbox-list-container {
+  margin-top: 0.5rem;
+}
+
 .radiobuttonarea {
   margin-top: 1rem;
   display: flex;
@@ -88,6 +113,12 @@ button:focus {
 div.radiobuttonarea label {
   padding-right: 0.5rem;
   padding-bottom: 0.4rem;
+}
+
+.option-descriptions {
+  font-size: 0.8rem;
+  color: gray;
+  margin-left: 1.5rem;
 }
 
 div.radiobuttonarea label input {
@@ -226,7 +257,7 @@ a.url-button-link,
 
   #radiobutton-area-box {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 280px;
   }
 
@@ -485,6 +516,26 @@ div.content.ABT-content,
 }
 .active-content {
   display: block;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+.settings-button {
+  display: flex;
+  margin-top: 0.2rem;
+}
+
+.settings-button img:hover {
+  filter: opacity(50%);
+}
+
+.hidden {
+  display: none;
 }
 
 .icon-links-area {

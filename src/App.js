@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import clsx from "clsx";
 import favicon from "./images/favicon.png";
 import faviconTitle from "./functions/faviconTitle.js";
+import settingsIcon from "./images/settings.png";
 
 import parseBookName from "./functions/parseBookName.js";
 import parseNumbers from "./functions/parseNumbers.js";
@@ -22,6 +23,29 @@ function App() {
   let [layout, setLayout] = useState("");
   let [errorMessage, setErrorMessage] = useState("");
   let [warningMessage, setWarningMessage] = useState("");
+  const checkList = [
+    "SuttaCentral.net",
+    "SuttaFriends.org",
+    "DhammaTalks.org",
+    "Ancient-Buddhist-Texts.net",
+    "PaliAudio.com",
+  ];
+  const [checked, setChecked] = useState(localStorage.checked ? JSON.parse(localStorage.checked) : checkList);
+
+  const handleCheck = event => {
+    var updatedList = [...checked];
+    if (event.target.checked) {
+      updatedList = [...checked, event.target.value];
+    } else {
+      updatedList.splice(checked.indexOf(event.target.value), 1);
+    }
+    if (updatedList.length === 0) {
+      updatedList = ["SuttaCentral.net"];
+    }
+
+    localStorage.checked = JSON.stringify(updatedList);
+    setChecked(updatedList);
+  };
 
   //allows enter press to open link in new tab
   function handleKeyPress(event) {
@@ -124,7 +148,32 @@ function App() {
             />
           </div>
         </div>
-        <div id="options-area">
+
+        <div className="button-row">
+          <div className="settings-button">
+            <img width="15px" src={settingsIcon} alt="Settings Toggle"></img>
+          </div>
+          <OtherToolsIcons />
+        </div>
+
+        <div id="options-area" className="options-area">
+          <div id="checkbox-area-box-label">Sites to include:</div>
+          <div id="checkbox-area-box" className="checkbox-area-box-container">
+            <div className="checkbox-list-container">
+              {checkList.map((item, index) => (
+                <div key={index}>
+                  <input
+                    value={item}
+                    type="checkbox"
+                    checked={checked.includes(item) ? "checked" : ""}
+                    onChange={event => handleCheck(event)}
+                  />
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div id="radiobutton-area-box-label">SuttaCentral Options</div>
           <div id="radiobutton-area-box" className="radiobutton-area-box-container">
             <div
@@ -135,19 +184,26 @@ function App() {
             >
               <label>
                 <input type="radio" value="" name="translator" /> All Translators
+                <div className="option-descriptions">
+                  This will give you a link to a card with all possible translations, including other languages.
+                </div>
               </label>
-
               <label>
                 <input type="radio" value="/en/sujato" name="translator" defaultChecked /> Bhante Sujato
+                <div className="option-descriptions">Most suttas are availble from this translator.</div>
               </label>
               <label>
                 <input type="radio" value="/en/bodhi" name="translator" /> Bhante Bodhi
+                <div className="option-descriptions">
+                  If this translation is not available it will take you to the one by Bhikkhu Sujato.
+                </div>
               </label>
-
               <label>
                 <input type="radio" value="/pli/ms" name="translator" /> Pāli
+                <div className="option-descriptions">Link to only the Pali.</div>
               </label>
             </div>
+            <div>Layout:</div>
             <div
               id="layout-button-area"
               className={clsx({ disabled: translator !== "/en/sujato", radiobuttonarea: true })}
@@ -161,18 +217,20 @@ function App() {
               <label disabled={translator !== "/en/sujato"}>
                 <input disabled={translator !== "/en/sujato"} type="radio" value="?layout=linebyline" name="layout" />{" "}
                 Line by Line
+                <div className="option-descriptions">Only availble from some translators.</div>
               </label>
               <label disabled={translator !== "/en/sujato"}>
                 <input disabled={translator !== "/en/sujato"} type="radio" value="?layout=sidebyside" name="layout" />{" "}
                 Side by Side
+                <div className="option-descriptions">Only availble from some translators.</div>
               </label>
               <label disabled={translator !== "/en/sujato"}>
                 <input disabled={translator !== "/en/sujato"} type="radio" value="" name="layout" /> Unspecified
+                <div className="option-descriptions">Will use browser default.</div>
               </label>
             </div>
           </div>
         </div>
-        <OtherToolsIcons />
       </div>
       {/* end of url-builder */}
       <TabbedLinkArea />

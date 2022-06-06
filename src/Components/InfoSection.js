@@ -1,26 +1,13 @@
+import makePrettyName from "../functions/makePrettyName.js";
+
 export default function InfoSection() {
   function copyCurrentCitations() {
     const currentCitations = document.getElementsByClassName("url-button-link");
     let output = `<h4>Read on:</h4>
 <ul>\n`;
     for (let i = 0; i < currentCitations.length; i++) {
-      let prettySiteUrl;
-      switch (currentCitations[i].attributes.site.value) {
-        case "SC":
-          prettySiteUrl = "SuttaCentral.net";
-          break;
-        case "SF":
-          prettySiteUrl = "SuttaFriends.org";
-          break;
-        case "DT":
-          prettySiteUrl = "DhammaTalks.org";
-          break;
-        case "ABT":
-          prettySiteUrl = "Ancient-Buddhist-Texts.net";
-          break;
-        default:
-          prettySiteUrl = "Website";
-      }
+      let prettySiteUrl = makePrettyName(currentCitations[i].attributes.site.value);
+
       output += `<li><a href="${currentCitations[i].href}" rel="noreferrer" target="_blank">${prettySiteUrl} </a></li>\n`;
     }
     output += `</ul>`;
