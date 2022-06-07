@@ -18,7 +18,7 @@ import TabbedLinkArea from "./Components/TabbedLinkArea.js";
 
 function App() {
   faviconTitle(favicon, "Citation Helper—ReadingFaithfully.org");
-  const settingsArea = document.getElementById("options-area");
+
   let [inputUrl, setInputUrl] = useState("");
   let [translator, setTranslator] = useState("/en/sujato");
   let [layout, setLayout] = useState("");
@@ -165,9 +165,8 @@ function App() {
               src={settingsIcon}
               alt="Settings Toggle"
               onClick={() => {
-                if (settingsArea) {
-                  settingsArea.classList.toggle("hidden");
-                }
+                console.log("toggle");
+                document.getElementById("options-area").classList.toggle("hidden");
               }}
             ></img>
           </div>
