@@ -35,6 +35,7 @@ export default function DTSection() {
 
   return (
     <div id="DT-section" className="links-area">
+      <h3>DhammaTalks.org</h3>
       <h4>Homepage & Misc</h4>
       <IndexArea />
       <div className="nikaya-group">

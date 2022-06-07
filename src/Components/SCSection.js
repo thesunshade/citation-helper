@@ -312,6 +312,7 @@ export default function SCSection() {
 
   return (
     <div id="SC-section">
+      <h3>SuttaCentral.net</h3>
       <h4>Homepage & Indexes</h4>
       <IndexArea />
       <h4>Links to Main Page</h4>

@@ -299,6 +299,19 @@ a.url-button-link,
   #ABT-section .nikaya-group {
     font-size: 0.8rem;
   }
+
+  h3 {
+    display: block !important;
+  }
+}
+
+h3 {
+  display: none;
+  margin: 0.4rem 0 0rem 0;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(59, 59, 59);
+  font-size: 1.2rem;
 }
 
 h4 {
@@ -443,6 +456,10 @@ a.all-link:hover {
 }
 .bloc-tabs {
   display: flex;
+}
+
+.bloc-tabs button:focus {
+  outline: none !important;
 }
 
 .tabs {

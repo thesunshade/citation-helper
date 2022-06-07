@@ -2,6 +2,7 @@ export default function ABTSection() {
   function IndexArea() {
     return (
       <>
+        <h3>Ancient-Buddhist-Texts.net</h3>
         <h4>Major Translations</h4>
         <div id="ABT-index" className="index-button-sections">
           <a
