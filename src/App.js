@@ -165,7 +165,6 @@ function App() {
               src={settingsIcon}
               alt="Settings Toggle"
               onClick={() => {
-                console.log("toggle");
                 document.getElementById("options-area").classList.toggle("hidden");
               }}
             ></img>
