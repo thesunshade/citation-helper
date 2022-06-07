@@ -20,10 +20,11 @@ function App() {
   faviconTitle(favicon, "Citation Helper—ReadingFaithfully.org");
 
   let [inputUrl, setInputUrl] = useState("");
-  let [translator, setTranslator] = useState("/en/sujato");
-  let [layout, setLayout] = useState("");
+
   let [errorMessage, setErrorMessage] = useState("");
   let [warningMessage, setWarningMessage] = useState("");
+
+  // Settings
   const checkList = [
     "SuttaCentral.net",
     "SuttaFriends.org",
@@ -33,6 +34,8 @@ function App() {
     "Voice.SuttaCentral.net",
   ];
   const [checked, setChecked] = useState(localStorage.checked ? JSON.parse(localStorage.checked) : checkList);
+  const [translator, setTranslator] = useState(localStorage.translator ? localStorage.translator : "/en/sujato");
+  const [layout, setLayout] = useState(localStorage.layout ? localStorage.layout : " ");
 
   const handleCheck = event => {
     var updatedList = [...checked];
@@ -196,26 +199,48 @@ function App() {
               id="translator-button-area"
               className="radiobuttonarea"
               value={translator}
-              onChange={e => setTranslator(e.target.value)}
+              onChange={e => {
+                setTranslator(e.target.value);
+                localStorage.translator = e.target.value;
+              }}
             >
               <label>
-                <input type="radio" value="" name="translator" /> All Translators
+                <input type="radio" value="/" name="translator" defaultChecked={translator === "/" ? "checked" : ""} />
+                All Translators
                 <div className="option-descriptions">
                   This will give you a link to a card with all possible translations, including other languages.
                 </div>
               </label>
               <label>
-                <input type="radio" value="/en/sujato" name="translator" defaultChecked /> Bhante Sujato
+                <input
+                  type="radio"
+                  value="/en/sujato"
+                  name="translator"
+                  defaultChecked={translator === "/en/sujato" ? "checked" : ""}
+                />
+                Bhante Sujato
                 <div className="option-descriptions">Most suttas are availble from this translator.</div>
               </label>
               <label>
-                <input type="radio" value="/en/bodhi" name="translator" /> Bhante Bodhi
+                <input
+                  type="radio"
+                  value="/en/bodhi"
+                  name="translator"
+                  defaultChecked={translator === "/en/bodhi" ? "checked" : ""}
+                />
+                Bhante Bodhi
                 <div className="option-descriptions">
                   If this translation is not available it will take you to the one by Bhikkhu Sujato.
                 </div>
               </label>
               <label>
-                <input type="radio" value="/pli/ms" name="translator" /> Pāli
+                <input
+                  type="radio"
+                  value="/pli/ms"
+                  name="translator"
+                  defaultChecked={translator === "/pli/ms" ? "checked" : ""}
+                />
+                Pāli
                 <div className="option-descriptions">Link to only the Pali.</div>
               </label>
             </div>
@@ -224,24 +249,52 @@ function App() {
               id="layout-button-area"
               className={clsx({ disabled: translator !== "/en/sujato", radiobuttonarea: true })}
               value={layout}
-              onChange={e => setLayout(e.target.value)}
+              onChange={e => {
+                setLayout(e.target.value);
+                localStorage.layout = e.target.value;
+              }}
             >
               <label disabled={translator !== "/en/sujato"}>
-                <input disabled={translator !== "/en/sujato"} type="radio" value="?layout=plain" name="layout" />{" "}
+                <input
+                  disabled={translator !== "/en/sujato"}
+                  type="radio"
+                  value="?layout=plain"
+                  name="layout"
+                  defaultChecked={layout === "?layout=plain" ? "checked" : ""}
+                />
                 English Only
               </label>
               <label disabled={translator !== "/en/sujato"}>
-                <input disabled={translator !== "/en/sujato"} type="radio" value="?layout=linebyline" name="layout" />{" "}
+                <input
+                  disabled={translator !== "/en/sujato"}
+                  type="radio"
+                  value="?layout=linebyline"
+                  name="layout"
+                  defaultChecked={layout === "?layout=linebyline" ? "checked" : ""}
+                />
                 Line by Line
                 <div className="option-descriptions">Only availble from some translators.</div>
               </label>
               <label disabled={translator !== "/en/sujato"}>
-                <input disabled={translator !== "/en/sujato"} type="radio" value="?layout=sidebyside" name="layout" />{" "}
+                <input
+                  disabled={translator !== "/en/sujato"}
+                  type="radio"
+                  value="?layout=sidebyside"
+                  name="layout"
+                  defaultChecked={layout === "?layout=sidebyside" ? "checked" : ""}
+                />
                 Side by Side
                 <div className="option-descriptions">Only availble from some translators.</div>
               </label>
               <label disabled={translator !== "/en/sujato"}>
-                <input disabled={translator !== "/en/sujato"} type="radio" value="" name="layout" /> Unspecified
+                <input
+                  disabled={translator !== "/en/sujato"}
+                  type="radio"
+                  value=" "
+                  name="layout"
+                  defaultChecked={layout === " " ? "checked" : ""}
+                />{" "}
+                Unspecified
                 <div className="option-descriptions">Will use browser default.</div>
               </label>
             </div>

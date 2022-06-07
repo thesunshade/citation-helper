@@ -4,13 +4,13 @@
       this requirs allowing secondNumber===0 without causing other things to break
       And not every chapter book should have this optinon. e.g Thag
       WAS WORKING, NOW BROKEN for SN
+- [ ] sn4 and an4 should automatically give chapter pages
 - [ ] allow setting translator/layout in text input
 - [x] add v for thag/thig
 - [x] add ch chapter flags
 - [x] add link to verses directly in dhp
 - [ ] save options in local storage
 - [ ] itvch9 should give an error message
-- [ ] sn4 and an4 should automatically give chapter pages
 - [ ] give alert for thag/thig that v can be used to get to a verse
 - [ ] remove chapter alert message when a chapter flag is used
 - [ ] remove verse alert message when a verse flag is used
