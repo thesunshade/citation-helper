@@ -18,6 +18,7 @@ import TabbedLinkArea from "./Components/TabbedLinkArea.js";
 
 function App() {
   faviconTitle(favicon, "Citation Helper—ReadingFaithfully.org");
+  const settingsArea = document.getElementById("options-area");
   let [inputUrl, setInputUrl] = useState("");
   let [translator, setTranslator] = useState("/en/sujato");
   let [layout, setLayout] = useState("");
@@ -159,12 +160,21 @@ function App() {
 
         <div className="button-row">
           <div className="settings-button">
-            <img width="15px" src={settingsIcon} alt="Settings Toggle"></img>
+            <img
+              width="15px"
+              src={settingsIcon}
+              alt="Settings Toggle"
+              onClick={() => {
+                if (settingsArea) {
+                  settingsArea.classList.toggle("hidden");
+                }
+              }}
+            ></img>
           </div>
           <OtherToolsIcons />
         </div>
 
-        <div id="options-area" className="options-area">
+        <div id="options-area" className="options-area hidden">
           <div id="checkbox-area-box-label">Sites to include:</div>
           <div id="checkbox-area-box" className="checkbox-area-box-container">
             <div className="checkbox-list-container">
