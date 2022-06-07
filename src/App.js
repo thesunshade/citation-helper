@@ -176,127 +176,137 @@ function App() {
         </div>
 
         <div id="options-area" className="options-area hidden">
-          <div id="checkbox-area-box-label">Sites to include:</div>
-          <div id="checkbox-area-box" className="checkbox-area-box-container">
-            <div className="checkbox-list-container">
-              {checkList.map((item, index) => (
-                <div key={index}>
-                  <input
-                    value={item}
-                    type="checkbox"
-                    checked={checked.includes(item) ? "checked" : ""}
-                    onChange={event => handleCheck(event)}
-                  />
-                  <span>{item}</span>
-                </div>
-              ))}
+          <div>
+            <div id="checkbox-area-box-label">Sites to include:</div>
+            <div id="checkbox-area-box" className="checkbox-area-box-container">
+              <div className="checkbox-list-container">
+                {checkList.map((item, index) => (
+                  <div key={index}>
+                    <input
+                      value={item}
+                      type="checkbox"
+                      checked={checked.includes(item) ? "checked" : ""}
+                      onChange={event => handleCheck(event)}
+                    />
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-
-          <div id="radiobutton-area-box-label">SuttaCentral Options</div>
-          <div id="radiobutton-area-box" className="radiobutton-area-box-container">
-            <div
-              id="translator-button-area"
-              className="radiobuttonarea"
-              value={translator}
-              onChange={e => {
-                setTranslator(e.target.value);
-                localStorage.translator = e.target.value;
-              }}
-            >
-              <label>
-                <input type="radio" value="/" name="translator" defaultChecked={translator === "/" ? "checked" : ""} />
-                All Translators
-                <div className="option-descriptions">
-                  This will give you a link to a card with all possible translations, including other languages.
+          <div>
+            <div id="radiobutton-area-box-label">SuttaCentral Options</div>
+            <div id="radiobutton-area-box" className="radiobutton-area-box-container">
+              <div
+                id="translator-button-area"
+                className="radiobuttonarea"
+                value={translator}
+                onChange={e => {
+                  setTranslator(e.target.value);
+                  localStorage.translator = e.target.value;
+                }}
+              >
+                <label>
+                  <input
+                    type="radio"
+                    value="/"
+                    name="translator"
+                    defaultChecked={translator === "/" ? "checked" : ""}
+                  />{" "}
+                  All Translators
+                  <div className="option-descriptions">
+                    This will give you a link to a card with all possible translations, including other languages.
+                  </div>
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    value="/en/sujato"
+                    name="translator"
+                    defaultChecked={translator === "/en/sujato" ? "checked" : ""}
+                  />{" "}
+                  Bhante Sujato
+                  <div className="option-descriptions">Most suttas are availble from this translator.</div>
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    value="/en/bodhi"
+                    name="translator"
+                    defaultChecked={translator === "/en/bodhi" ? "checked" : ""}
+                  />{" "}
+                  Bhante Bodhi
+                  <div className="option-descriptions">
+                    If this translation is not available it will take you to the one by Bhikkhu Sujato.
+                  </div>
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    value="/pli/ms"
+                    name="translator"
+                    defaultChecked={translator === "/pli/ms" ? "checked" : ""}
+                  />{" "}
+                  Pāli
+                  <div className="option-descriptions">Link to only the Pāli.</div>
+                </label>
+              </div>
+              <div>
+                <div>Layout:</div>
+                <div
+                  id="layout-button-area"
+                  className={clsx({ disabled: translator !== "/en/sujato", radiobuttonarea: true })}
+                  value={layout}
+                  onChange={e => {
+                    setLayout(e.target.value);
+                    localStorage.layout = e.target.value;
+                  }}
+                >
+                  <label disabled={translator !== "/en/sujato"}>
+                    <input
+                      disabled={translator !== "/en/sujato"}
+                      type="radio"
+                      value="?layout=plain"
+                      name="layout"
+                      defaultChecked={layout === "?layout=plain" ? "checked" : ""}
+                    />{" "}
+                    English Only
+                  </label>
+                  <label disabled={translator !== "/en/sujato"}>
+                    <input
+                      disabled={translator !== "/en/sujato"}
+                      type="radio"
+                      value="?layout=linebyline"
+                      name="layout"
+                      defaultChecked={layout === "?layout=linebyline" ? "checked" : ""}
+                    />{" "}
+                    Line by Line
+                    <div className="option-descriptions">Only availble from some translators.</div>
+                  </label>
+                  <label disabled={translator !== "/en/sujato"}>
+                    <input
+                      disabled={translator !== "/en/sujato"}
+                      type="radio"
+                      value="?layout=sidebyside"
+                      name="layout"
+                      defaultChecked={layout === "?layout=sidebyside" ? "checked" : ""}
+                    />{" "}
+                    Side by Side
+                    <div className="option-descriptions">Only availble from some translators.</div>
+                  </label>
+                  <label disabled={translator !== "/en/sujato"}>
+                    <input
+                      disabled={translator !== "/en/sujato"}
+                      type="radio"
+                      value=" "
+                      name="layout"
+                      defaultChecked={layout === " " ? "checked" : ""}
+                    />{" "}
+                    Unspecified
+                    <div className="option-descriptions">Will use browser default.</div>
+                  </label>
                 </div>
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  value="/en/sujato"
-                  name="translator"
-                  defaultChecked={translator === "/en/sujato" ? "checked" : ""}
-                />
-                Bhante Sujato
-                <div className="option-descriptions">Most suttas are availble from this translator.</div>
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  value="/en/bodhi"
-                  name="translator"
-                  defaultChecked={translator === "/en/bodhi" ? "checked" : ""}
-                />
-                Bhante Bodhi
-                <div className="option-descriptions">
-                  If this translation is not available it will take you to the one by Bhikkhu Sujato.
-                </div>
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  value="/pli/ms"
-                  name="translator"
-                  defaultChecked={translator === "/pli/ms" ? "checked" : ""}
-                />
-                Pāli
-                <div className="option-descriptions">Link to only the Pali.</div>
-              </label>
-            </div>
-            <div>Layout:</div>
-            <div
-              id="layout-button-area"
-              className={clsx({ disabled: translator !== "/en/sujato", radiobuttonarea: true })}
-              value={layout}
-              onChange={e => {
-                setLayout(e.target.value);
-                localStorage.layout = e.target.value;
-              }}
-            >
-              <label disabled={translator !== "/en/sujato"}>
-                <input
-                  disabled={translator !== "/en/sujato"}
-                  type="radio"
-                  value="?layout=plain"
-                  name="layout"
-                  defaultChecked={layout === "?layout=plain" ? "checked" : ""}
-                />
-                English Only
-              </label>
-              <label disabled={translator !== "/en/sujato"}>
-                <input
-                  disabled={translator !== "/en/sujato"}
-                  type="radio"
-                  value="?layout=linebyline"
-                  name="layout"
-                  defaultChecked={layout === "?layout=linebyline" ? "checked" : ""}
-                />
-                Line by Line
-                <div className="option-descriptions">Only availble from some translators.</div>
-              </label>
-              <label disabled={translator !== "/en/sujato"}>
-                <input
-                  disabled={translator !== "/en/sujato"}
-                  type="radio"
-                  value="?layout=sidebyside"
-                  name="layout"
-                  defaultChecked={layout === "?layout=sidebyside" ? "checked" : ""}
-                />
-                Side by Side
-                <div className="option-descriptions">Only availble from some translators.</div>
-              </label>
-              <label disabled={translator !== "/en/sujato"}>
-                <input
-                  disabled={translator !== "/en/sujato"}
-                  type="radio"
-                  value=" "
-                  name="layout"
-                  defaultChecked={layout === " " ? "checked" : ""}
-                />{" "}
-                Unspecified
-                <div className="option-descriptions">Will use browser default.</div>
-              </label>
+              </div>
             </div>
           </div>
         </div>

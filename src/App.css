@@ -56,14 +56,22 @@ button:focus {
   font-style: italic;
 }
 
+.options-area {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  gap: 1rem;
+  justify-content: center;
+}
+
 #radiobutton-area-box {
   padding: 1rem;
   border-radius: 10px;
   border: solid 2px gainsboro;
-  width: 280px;
+  width: 490px;
   margin: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 #radiobutton-area-box-label {
@@ -71,7 +79,7 @@ button:focus {
   font-size: 0.8rem;
   position: relative;
   top: 0.5rem;
-  left: 6rem;
+  left: 3rem;
   background-color: white;
   padding: 0 0.41rem;
   width: 7.5rem;
@@ -81,7 +89,7 @@ button:focus {
   padding: 0 1rem 1rem 1rem;
   border-radius: 10px;
   border: solid 2px gainsboro;
-  width: 280px !important;
+  width: 210px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -92,7 +100,7 @@ button:focus {
   font-size: 0.8rem;
   position: relative;
   top: 0.5rem;
-  left: 6rem;
+  left: 3rem;
   background-color: white;
   padding: 0 0.41rem;
   width: 7.5rem;
@@ -100,6 +108,10 @@ button:focus {
 
 .checkbox-list-container {
   margin-top: 0.5rem;
+}
+
+#translator-button-area {
+  width: 410px;
 }
 
 .radiobuttonarea {
@@ -149,11 +161,9 @@ div.radiobuttonarea label[disabled] {
 
 #warning-message {
   color: green;
-  /* padding: 0 0.5rem; */
 }
 #error-message {
   color: red;
-  /* padding: 0 0.5rem; */
 }
 
 #link-button-area {
@@ -246,6 +256,23 @@ a.url-button-link,
   .url-button-class {
     /* font-stretch: condensed !important; */
     font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+  }
+
+  .options-area {
+    flex-direction: column;
+  }
+
+  #checkbox-area-box {
+    width: 280px;
+  }
+
+  #radiobutton-area-box {
+    flex-direction: column !important;
+    width: 280px;
+  }
+
+  #translator-button-area {
+    width: 290px;
   }
 
   .radiobuttonarea {
