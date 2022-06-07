@@ -1,10 +1,9 @@
 import makePrettyName from "../functions/makePrettyName.js";
 
 export default function LinkButton(props) {
-  const url = props.url;
+  const url = props.url.replace("www.", "");
+
   const site = props.site;
-  // console.log(localStorage.checked && localStorage.checked);
-  // console.log(localStorage.checked && site + ": " + !localStorage.checked.includes(makePrettyName(site)));
 
   if (!/http/.test(url)) {
     // this test is necessary because it's easier to send a blank link pluss the sutta central author and layout strings already attached. Otherwise we could just test for an empty string
@@ -12,6 +11,10 @@ export default function LinkButton(props) {
   } else if (localStorage.checked && !localStorage.checked.includes(makePrettyName(site))) {
     return null;
   } else {
+    let displayUrl = url.slice(8);
+    if (displayUrl.length > 52) {
+      displayUrl = displayUrl.replace(/\/.+\//, "/…/");
+    }
     return (
       <a className="url-button-link" target="_blank" rel="noreferrer" href={url} site={site}>
         <div className={"url-button-class " + site}>
@@ -19,7 +22,7 @@ export default function LinkButton(props) {
             <img width="20px" className="logoImage" src={require(`../images/${site}.png`).default} alt="logo"></img>
           </div>
 
-          {url.slice(8)}
+          {displayUrl}
         </div>
       </a>
     );
