@@ -263,7 +263,7 @@ export let suttaCentralVoice = {
   an: {
     format: ["chapter"],
     links: {
-      card: "/numbered/an",
+      card: "",
       all: "an",
       main_page: "",
       chapter_links: {

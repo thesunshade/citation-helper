@@ -1,8 +1,9 @@
 # TODO
 
-- [x] allow creation of urls to books/chapters
+- [ ] allow creation of urls to books/chapters
       this requirs allowing secondNumber===0 without causing other things to break
       And not every chapter book should have this optinon. e.g Thag
+      WAS WORKING, NOW BROKEN for SN
 - [ ] allow setting translator/layout in text input
 - [x] add v for thag/thig
 - [x] add ch chapter flags
