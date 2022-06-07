@@ -64,6 +64,12 @@ button:focus {
   justify-content: center;
 }
 
+#link-button-area {
+  background-image: url("./images/citation-helper-background.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
 #radiobutton-area-box {
   padding: 1rem;
   border-radius: 10px;
