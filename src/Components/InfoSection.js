@@ -1,4 +1,5 @@
 import makePrettyName from "../functions/makePrettyName.js";
+import nameLookup from "../images/favicon-name-black.png";
 
 export default function InfoSection() {
   function copyCurrentCitations() {
@@ -49,7 +50,7 @@ export default function InfoSection() {
           Pali Text Society Lookup (e.g. M ii 234)
         </a>
         <a className="card-link index" href="https://name.readingfaithfully.org" target="_blank" rel="noreferrer">
-          Pali Sutta Name Lookup
+          <img width="13px" src={nameLookup}></img> Pali Sutta Name Lookup
         </a>
       </div>
       <h4>Instructions and tips</h4>

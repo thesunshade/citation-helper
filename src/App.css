@@ -74,10 +74,11 @@ button:focus {
   padding: 1rem;
   border-radius: 10px;
   border: solid 2px gainsboro;
-  width: 490px;
+  width: 510px;
   margin: auto;
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
 }
 
 #radiobutton-area-box-label {
@@ -117,7 +118,7 @@ button:focus {
 }
 
 #translator-button-area {
-  width: 410px;
+  width: 360px;
 }
 
 .radiobuttonarea {
@@ -125,11 +126,11 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 1rem;
+  margin-right: 0rem;
 }
 
 div.radiobuttonarea label {
-  padding-right: 0.5rem;
+  /* padding-right: 0.5rem; */
   padding-bottom: 0.4rem;
 }
 

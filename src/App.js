@@ -206,6 +206,7 @@ function App() {
                   localStorage.translator = e.target.value;
                 }}
               >
+                <div>Translators:</div>
                 <label>
                   <input
                     type="radio"
@@ -214,9 +215,7 @@ function App() {
                     defaultChecked={translator === "/" ? "checked" : ""}
                   />{" "}
                   All Translators
-                  <div className="option-descriptions">
-                    This will give you a link to a card with all possible translations, including other languages.
-                  </div>
+                  <div className="option-descriptions">A card with all translations, including other languages.</div>
                 </label>
                 <label>
                   <input
@@ -226,7 +225,7 @@ function App() {
                     defaultChecked={translator === "/en/sujato" ? "checked" : ""}
                   />{" "}
                   Bhante Sujato
-                  <div className="option-descriptions">Most suttas are availble from this translator.</div>
+                  <div className="option-descriptions"></div>
                 </label>
                 <label>
                   <input
@@ -236,9 +235,7 @@ function App() {
                     defaultChecked={translator === "/en/bodhi" ? "checked" : ""}
                   />{" "}
                   Bhante Bodhi
-                  <div className="option-descriptions">
-                    If this translation is not available it will take you to the one by Bhikkhu Sujato.
-                  </div>
+                  <div className="option-descriptions">If it's not available you will get Bhikkhu Sujato's.</div>
                 </label>
                 <label>
                   <input
@@ -281,7 +278,7 @@ function App() {
                       defaultChecked={layout === "?layout=linebyline" ? "checked" : ""}
                     />{" "}
                     Line by Line
-                    <div className="option-descriptions">Only availble from some translators.</div>
+                    <div className="option-descriptions">Only some translators.</div>
                   </label>
                   <label disabled={translator !== "/en/sujato"}>
                     <input
@@ -292,7 +289,7 @@ function App() {
                       defaultChecked={layout === "?layout=sidebyside" ? "checked" : ""}
                     />{" "}
                     Side by Side
-                    <div className="option-descriptions">Only availble from some translators.</div>
+                    <div className="option-descriptions">Only some translators.</div>
                   </label>
                   <label disabled={translator !== "/en/sujato"}>
                     <input
@@ -303,7 +300,7 @@ function App() {
                       defaultChecked={layout === " " ? "checked" : ""}
                     />{" "}
                     Unspecified
-                    <div className="option-descriptions">Will use browser default.</div>
+                    <div className="option-descriptions">Browser default.</div>
                   </label>
                 </div>
               </div>
