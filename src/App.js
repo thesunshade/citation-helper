@@ -15,6 +15,7 @@ import createWebsiteLink from "./webSites/createWebsiteLink.js";
 import LinkButton from "./Components/LinkButton.js";
 import OtherToolsIcons from "./Components/OtherToolsIcons.js";
 import TabbedLinkArea from "./Components/TabbedLinkArea.js";
+import SuttaName from "./Components/SuttaName.js";
 
 function App() {
   faviconTitle(favicon, "Citation Helper—ReadingFaithfully.org");
@@ -121,6 +122,9 @@ function App() {
           <div id="message-area">
             <span id="warning-message">{warningMessage}</span>
             <span id="error-message">{errorMessage}</span>
+          </div>
+          <div className="sutta-name-container">
+            <SuttaName bookName={parseBookName(inputUrl)} suttaNumber={parseNumbers(inputUrl)} />
           </div>
           {/*       LINK BUTTON AREA        */}
           <div id="link-button-area">

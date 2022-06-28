@@ -45,6 +45,19 @@ button:focus {
   outline: dotted gray 2px !important;
 }
 
+.sutta-name-container {
+  height: 1rem;
+  /* border: solid red; */
+  margin-top: -1rem;
+  margin-bottom: 0.5rem;
+}
+.sutta-name {
+  margin: 0rem;
+  text-align: center;
+  color: gray;
+  font-style: italic;
+}
+
 #url-builder input {
   border-radius: 10px;
   border: none;
