@@ -15,7 +15,7 @@ export default function SuttaName(props) {
   for (let i = 0; i < suttas.length; i++) {
     // console.log(completeCitation, suttas[i][0]);
     if (completeCitation === suttas[i][0].toLowerCase()) {
-      suttaName = suttas[i][1];
+      suttaName = "~ " + suttas[i][1] + " ~";
       i = suttas.length + 1;
     }
   }

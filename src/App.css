@@ -49,12 +49,12 @@ button:focus {
   height: 1rem;
   /* border: solid red; */
   margin-top: -1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .sutta-name {
   margin: 0rem;
   text-align: center;
-  color: gray;
+  color: rgb(64, 64, 64);
   font-style: italic;
 }
 
