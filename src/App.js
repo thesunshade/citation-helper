@@ -15,6 +15,7 @@ import createWebsiteLink from "./webSites/createWebsiteLink.js";
 import LinkButton from "./Components/LinkButton.js";
 import OtherToolsIcons from "./Components/OtherToolsIcons.js";
 import TabbedLinkArea from "./Components/TabbedLinkArea.js";
+import SuttaName from "./Components/SuttaName.js";
 
 function App() {
   faviconTitle(favicon, "Citation Helper—ReadingFaithfully.org");
@@ -104,6 +105,9 @@ function App() {
   return (
     <div className="App">
       <div id="url-builder">
+        <div className="sutta-name-container">
+          <SuttaName bookName={parseBookName(inputUrl)} suttaNumber={parseNumbers(inputUrl)} />
+        </div>
         <div id="imput-area-link-area">
           <div id="input-field-container">
             <label htmlFor="user-citation">Enter your citation</label>
@@ -116,12 +120,14 @@ function App() {
               onChange={event => setInputUrl(event.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="for example: mn140"
+              autoComplete="off"
             />
           </div>
           <div id="message-area">
             <span id="warning-message">{warningMessage}</span>
             <span id="error-message">{errorMessage}</span>
           </div>
+
           {/*       LINK BUTTON AREA        */}
           <div id="link-button-area">
             <LinkButton site={"SC"} url={addParamsToSuttaCentralUrl()} />
