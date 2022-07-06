@@ -20,7 +20,9 @@ import SuttaName from "./Components/SuttaName.js";
 function App() {
   faviconTitle(favicon, "Citation Helper—ReadingFaithfully.org");
 
-  let [inputUrl, setInputUrl] = useState("");
+  let [inputUrl, setInputUrl] = useState(
+    document.location.search.replace("?=", "").replace(/\s/g, "").replace(/%20/g, "")
+  );
 
   let [errorMessage, setErrorMessage] = useState("");
   let [warningMessage, setWarningMessage] = useState("");
@@ -101,6 +103,11 @@ function App() {
     }
   }
 
+  function changeInputUrl(urlInput) {
+    setInputUrl(urlInput);
+    urlInput = "?=" + urlInput.replace(/\s/g, "-");
+    window.history.replaceState({ page: urlInput }, "", `${urlInput}`);
+  }
   // ========================================== RETURN
   return (
     <div className="App">
@@ -117,7 +124,7 @@ function App() {
               type="text"
               value={inputUrl}
               name="address"
-              onChange={event => setInputUrl(event.target.value)}
+              onChange={event => changeInputUrl(event.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="for example: mn140"
               autoComplete="off"
