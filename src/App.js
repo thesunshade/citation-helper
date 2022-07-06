@@ -117,7 +117,7 @@ function App() {
         </div>
         <div id="imput-area-link-area">
           <div id="input-field-container">
-            <label htmlFor="user-citation">Enter</label>
+            <label htmlFor="user-citation">Enter your citation</label>
             <input
               id="user-citation"
               autoFocus
