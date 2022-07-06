@@ -18,7 +18,7 @@ import TabbedLinkArea from "./Components/TabbedLinkArea.js";
 import SuttaName from "./Components/SuttaName.js";
 
 function App() {
-  faviconTitle(favicon, "Citation Helper—ReadingFaithfully.org");
+  faviconTitle(favicon);
 
   let [inputUrl, setInputUrl] = useState(
     document.location.search.replace("?=", "").replace(/\s/g, "").replace(/%20/g, "")
