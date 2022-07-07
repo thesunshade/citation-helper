@@ -55,10 +55,17 @@ function App() {
 
   //allows enter press to open link in new tab
   function handleKeyPress(event) {
-    if (event.key === "Enter" && addParamsToSuttaCentralUrl() !== "") {
-      window.open(addParamsToSuttaCentralUrl(), "_blank");
+    const firstCreatedLink = document.querySelector(".url-button-link");
+    if (event.key === "Enter" && firstCreatedLink) {
+      // console.log(firstCreatedLink.href);
+      window.open(firstCreatedLink, "_blank");
     }
   }
+  // function handleKeyPress(event) {
+  //   if (event.key === "Enter" && addParamsToSuttaCentralUrl() !== "") {
+  //     window.open(addParamsToSuttaCentralUrl(), "_blank");
+  //   }
+  // }
 
   // displays the error message when one exists
   useEffect(() => {
