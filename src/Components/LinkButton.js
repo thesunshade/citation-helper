@@ -7,7 +7,6 @@ export default function LinkButton(props) {
 
   function addToHistory() {
     const currentUrl = new URL(window.location);
-    // document.title = `Citation Helper—${document.location.search.replace("?=", "")}`;
     window.history.pushState({ page: "1" }, "", currentUrl);
   }
 

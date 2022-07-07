@@ -20,9 +20,7 @@ import SuttaName from "./Components/SuttaName.js";
 function App() {
   faviconTitle(favicon);
 
-  let [inputUrl, setInputUrl] = useState(
-    document.location.search.replace("?=", "").replace(/\s/g, "").replace(/%20/g, "")
-  );
+  let [inputUrl, setInputUrl] = useState(document.location.search.replace("?=", "").replace(/-/g, " "));
 
   let [errorMessage, setErrorMessage] = useState("");
   let [warningMessage, setWarningMessage] = useState("");
