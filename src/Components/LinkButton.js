@@ -1,14 +1,10 @@
 import makePrettyName from "../functions/makePrettyName.js";
+import addToHistory from "../functions/addToHistory.js";
 
 export default function LinkButton(props) {
   const url = props.url.replace("www.", "");
 
   const site = props.site;
-
-  function addToHistory() {
-    const currentUrl = new URL(window.location);
-    window.history.pushState({ page: "1" }, "", currentUrl);
-  }
 
   if (!/http/.test(url)) {
     // this test is necessary because it's easier to send a blank link pluss the sutta central author and layout strings already attached. Otherwise we could just test for an empty string

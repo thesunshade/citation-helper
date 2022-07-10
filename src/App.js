@@ -5,7 +5,6 @@ import clsx from "clsx";
 import favicon from "./images/favicon.png";
 import faviconTitle from "./functions/faviconTitle.js";
 import settingsIcon from "./images/settings.png";
-
 import parseBookName from "./functions/parseBookName.js";
 import parseNumbers from "./functions/parseNumbers.js";
 import validateCitation from "./functions/validateCitation.js";
@@ -16,10 +15,12 @@ import LinkButton from "./Components/LinkButton.js";
 import OtherToolsIcons from "./Components/OtherToolsIcons.js";
 import TabbedLinkArea from "./Components/TabbedLinkArea.js";
 import SuttaName from "./Components/SuttaName.js";
+import addToHistory from "./functions/addToHistory.js";
 
 function App() {
   faviconTitle(favicon);
 
+  // take over the back and forward buttons in the browser
   window.onpopstate = function (e) {
     console.log(e.state);
     console.log("onpopstate");
@@ -67,7 +68,7 @@ function App() {
   function handleKeyPress(event) {
     const firstCreatedLink = document.querySelector(".url-button-link");
     if (event.key === "Enter" && firstCreatedLink) {
-      // console.log(firstCreatedLink.href);
+      addToHistory();
       window.open(firstCreatedLink, "_blank");
     }
   }
@@ -127,7 +128,7 @@ function App() {
         </div>
         <div id="imput-area-link-area">
           <div id="input-field-container">
-            <label htmlFor="user-citation">Enter citation</label>
+            <label htmlFor="user-citation">Enter your citation</label>
             <input
               id="user-citation"
               autoFocus
