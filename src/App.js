@@ -20,6 +20,14 @@ import SuttaName from "./Components/SuttaName.js";
 function App() {
   faviconTitle(favicon);
 
+  window.onpopstate = function (e) {
+    console.log(e.state);
+    console.log("onpopstate");
+    if (e.state.page != 1) {
+      setInputUrl(e.state.page.replace(/^\?=/, ""));
+    }
+  };
+
   let [inputUrl, setInputUrl] = useState(
     decodeURI(document.location.search).replace("?=", "").replace(/-/g, " ").replace(/\s/g, " ")
   );
