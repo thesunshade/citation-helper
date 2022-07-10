@@ -21,7 +21,7 @@ function App() {
   faviconTitle(favicon);
 
   let [inputUrl, setInputUrl] = useState(
-    document.location.search.replace("%20", "").replace("?=", "").replace(/-/g, " ").replace(/\s/g, " ")
+    document.location.search.replace(/%20/g, " ").replace("?=", "").replace(/-/g, " ").replace(/\s/g, " ")
   );
 
   let [errorMessage, setErrorMessage] = useState("");
