@@ -1,3 +1,5 @@
+// Just the row of buttons for other tools
+
 import dppnIcon from "../images/favicon-dppn-black.png";
 import nameLookup from "../images/favicon-name-black.png";
 import pedIcon from "../images/favicon-ped-black.png";

@@ -1,3 +1,5 @@
+// information section in the tabbed area
+
 import makePrettyName from "../functions/makePrettyName.js";
 import nameLookup from "../images/favicon-name-black.png";
 

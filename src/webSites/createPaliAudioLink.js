@@ -1,3 +1,8 @@
+// This function is an alternative to createWebsiteLink.js
+// The PA links are name based so they can't be calculated the same way
+//
+// This should probably refactored so the same function can be used for ABT and PA
+
 import { structure } from "../structure.js";
 import { paliAudio as website } from "./paliAudio.js";
 

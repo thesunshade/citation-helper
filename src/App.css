@@ -47,7 +47,6 @@ button:focus {
 
 .sutta-name-container {
   height: 1rem;
-  /* border: solid red; */
   margin-top: -1rem;
   margin-bottom: 1rem;
 }
@@ -274,7 +273,6 @@ a.url-button-link,
   }
 
   .url-button-class {
-    /* font-stretch: condensed !important; */
     font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
   }
 
@@ -490,6 +488,7 @@ a.all-link:hover {
 #SC-section .nikaya-group .all-link {
   filter: brightness(85%);
 }
+
 /* -------------- Tabbed Link area ----------------------- */
 
 #tabbed-links-area {

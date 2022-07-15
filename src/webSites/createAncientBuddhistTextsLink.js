@@ -1,3 +1,6 @@
+// This function is an alternative to createWebsiteLink.js
+// The ABT links are name based so they can't be calculated the same way
+
 import { structure } from "../structure.js";
 import { ancientBuddhistTexts as website } from "./ancientBuddhistTexts.js";
 

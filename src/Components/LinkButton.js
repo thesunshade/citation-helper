@@ -1,9 +1,11 @@
+// This creates the link buttons for SC, SF, DT
+// Possible because their links are all very regular
+
 import makePrettyName from "../functions/makePrettyName.js";
 import addToHistory from "../functions/addToHistory.js";
 
 export default function LinkButton(props) {
   const url = props.url.replace("www.", "");
-
   const site = props.site;
 
   if (!/http/.test(url)) {
