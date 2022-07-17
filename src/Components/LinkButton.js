@@ -2,7 +2,7 @@
 // Possible because their links are all very regular
 
 import makePrettyName from "../functions/makePrettyName.js";
-import addToHistory from "../functions/addToHistory.js";
+//history// import addToHistory from "../functions/addToHistory.js";
 
 export default function LinkButton(props) {
   const url = props.url.replace("www.", "");
@@ -25,9 +25,10 @@ export default function LinkButton(props) {
         rel="noreferrer"
         href={url}
         site={site}
-        onClick={() => {
-          addToHistory();
-        }}
+        //history//
+        // onClick={() => {
+        //   addToHistory();
+        // }}
       >
         <div className={"url-button-class " + site}>
           <div className="image-container">

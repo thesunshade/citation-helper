@@ -13,22 +13,23 @@ import LinkButton from "./Components/LinkButton.js";
 import OtherToolsIcons from "./Components/OtherToolsIcons.js";
 import TabbedLinkArea from "./Components/TabbedLinkArea.js";
 import SuttaName from "./Components/SuttaName.js";
-import addToHistory from "./functions/addToHistory.js";
+//history// import addToHistory from "./functions/addToHistory.js";
 
 function App() {
   // take over the back and forward buttons in the browser
-  window.onpopstate = function (e) {
-    console.log(e.state.page);
-    console.log(document.location.search);
-    console.log("onpopstate");
-    if (e.state.page != 1) {
-      setInputUrl(e.state.page.replace(/^\?q=/, ""));
-    } else {
-      if (e.state.page === document.location.search) {
-        window.history.go(-1);
-      }
-    }
-  };
+  //history//
+  // window.onpopstate = function (e) {
+  //   console.log(e.state.page);
+  //   console.log(document.location.search);
+  //   console.log("onpopstate");
+  //   if (e.state.page != 1) {
+  //     setInputUrl(e.state.page.replace(/^\?q=/, ""));
+  //   } else {
+  //     if (e.state.page === document.location.search) {
+  //       window.history.go(-1);
+  //     }
+  //   }
+  // };
 
   let [inputUrl, setInputUrl] = useState(
     decodeURI(document.location.search).replace("?q=", "").replace(/-/g, " ").replace(/\s/g, " ")
@@ -67,7 +68,7 @@ function App() {
   function handleKeyPress(event) {
     const firstCreatedLink = document.querySelector(".url-button-link");
     if (event.key === "Enter" && firstCreatedLink) {
-      addToHistory();
+      //history// addToHistory();
       window.open(firstCreatedLink, "_blank");
     }
   }
