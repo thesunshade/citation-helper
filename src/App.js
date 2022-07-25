@@ -2,10 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import { useEffect } from "react";
 import clsx from "clsx";
-import favicon from "./images/favicon.png";
-import faviconTitle from "./functions/faviconTitle.js";
 import settingsIcon from "./images/settings.png";
-
 import parseBookName from "./functions/parseBookName.js";
 import parseNumbers from "./functions/parseNumbers.js";
 import validateCitation from "./functions/validateCitation.js";
@@ -16,12 +13,27 @@ import LinkButton from "./Components/LinkButton.js";
 import OtherToolsIcons from "./Components/OtherToolsIcons.js";
 import TabbedLinkArea from "./Components/TabbedLinkArea.js";
 import SuttaName from "./Components/SuttaName.js";
+//history// import addToHistory from "./functions/addToHistory.js";
 
 function App() {
-  faviconTitle(favicon, "Citation Helper—ReadingFaithfully.org");
+  // take over the back and forward buttons in the browser
+  //history//
+  // window.onpopstate = function (e) {
+  //   console.log(e.state.page);
+  //   console.log(document.location.search);
+  //   console.log("onpopstate");
+  //   if (e.state.page != 1) {
+  //     setInputUrl(e.state.page.replace(/^\?q=/, ""));
+  //   } else {
+  //     if (e.state.page === document.location.search) {
+  //       window.history.go(-1);
+  //     }
+  //   }
+  // };
 
-  let [inputUrl, setInputUrl] = useState("");
-
+  let [inputUrl, setInputUrl] = useState(
+    decodeURI(document.location.search).replace("?q=", "").replace(/-/g, " ").replace(/\s/g, " ")
+  );
   let [errorMessage, setErrorMessage] = useState("");
   let [warningMessage, setWarningMessage] = useState("");
 
@@ -48,7 +60,6 @@ function App() {
     if (updatedList.length === 0) {
       updatedList = ["SuttaCentral.net"];
     }
-
     localStorage.checked = JSON.stringify(updatedList);
     setChecked(updatedList);
   };
@@ -57,7 +68,6 @@ function App() {
   function handleKeyPress(event) {
     const firstCreatedLink = document.querySelector(".url-button-link");
     if (event.key === "Enter" && firstCreatedLink) {
-      // console.log(firstCreatedLink.href);
       window.open(firstCreatedLink, "_blank");
     }
   }
@@ -71,7 +81,6 @@ function App() {
   useEffect(() => {
     let { error, warning } = validateCitation(parseBookName(inputUrl), parseNumbers(inputUrl));
     setErrorMessage(error);
-
     if (error) {
       setErrorMessage(error);
       setWarningMessage("");
@@ -108,6 +117,12 @@ function App() {
     }
   }
 
+  function changeInputUrl(urlInput) {
+    setInputUrl(urlInput);
+    urlInput = "?q=" + urlInput.replace(/\s/g, "-");
+    window.history.replaceState({ page: urlInput }, "", `${urlInput}`);
+  }
+
   // ========================================== RETURN
   return (
     <div className="App">
@@ -124,7 +139,7 @@ function App() {
               type="text"
               value={inputUrl}
               name="address"
-              onChange={event => setInputUrl(event.target.value)}
+              onChange={event => changeInputUrl(event.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="for example: mn140"
               autoComplete="off"
@@ -323,15 +338,6 @@ function App() {
       </div>
       {/* end of url-builder */}
       <TabbedLinkArea />
-      {/* <LinksArea site={"SC"} /> */}
-      {/* <h3>SuttaCentral</h3>
-      <LinksArea site={"SC"} />
-      <hr />
-      <h3>SuttaFriends</h3>
-      <LinksArea site={"SF"} />
-      <hr />
-      <h3>DhammaTalks</h3>
-      <LinksArea site={"DT"} /> */}
     </div>
   );
 }

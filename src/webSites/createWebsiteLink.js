@@ -1,4 +1,5 @@
 // This function returns a single piece of information: the final website URL
+// It is only used for SC, SCV, SF, and DT because they are very regular
 
 import { structure } from "../structure.js";
 

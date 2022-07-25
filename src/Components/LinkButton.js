@@ -1,8 +1,11 @@
+// This creates the link buttons for SC, SF, DT
+// Possible because their links are all very regular
+
 import makePrettyName from "../functions/makePrettyName.js";
+//history// import addToHistory from "../functions/addToHistory.js";
 
 export default function LinkButton(props) {
   const url = props.url.replace("www.", "");
-
   const site = props.site;
 
   if (!/http/.test(url)) {
@@ -16,7 +19,17 @@ export default function LinkButton(props) {
       displayUrl = displayUrl.replace(/\/.+\//, "/…/");
     }
     return (
-      <a className="url-button-link" target="_blank" rel="noreferrer" href={url} site={site}>
+      <a
+        className="url-button-link"
+        target="_blank"
+        rel="noreferrer"
+        href={url}
+        site={site}
+        //history//
+        // onClick={() => {
+        //   addToHistory();
+        // }}
+      >
         <div className={"url-button-class " + site}>
           <div className="image-container">
             <img width="20px" className="logoImage" src={require(`../images/${site}.png`).default} alt="logo"></img>

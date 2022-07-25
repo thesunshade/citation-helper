@@ -1,4 +1,4 @@
-// https://github.com/Ziratsu/YT-REACT-TABS/blob/master/src/Tabs.js
+// The area at the bottom of the app
 
 import { useState } from "react";
 import InfoSection from "./InfoSection.js";

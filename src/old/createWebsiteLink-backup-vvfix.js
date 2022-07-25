@@ -13,11 +13,11 @@ export default function createWebsiteLink(props) {
   if ((site === "DT") | (site === "SF") | (site === "SC")) {
     // this bit is clearly not the right way to do this
     if (site === "DT") {
-      website = require("./dhammaTalks.js").dhammaTalks;
+      website = require("../webSites/dhammaTalks.js").dhammaTalks;
     } else if (site === "SC") {
-      website = require("./suttaCentral.js").suttaCentral;
+      website = require("../webSites/suttaCentral.js").suttaCentral;
     } else {
-      website = require("./suttaFriends.js").suttaFriends;
+      website = require("../webSites/suttaFriends.js").suttaFriends;
     }
     const booksOnWebsite = Object.keys(website);
     const { rootUrl, suffixUrl, chapterConnector, rangeConnector } = website.constants;
