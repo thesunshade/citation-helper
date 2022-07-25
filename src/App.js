@@ -68,10 +68,14 @@ function App() {
   function handleKeyPress(event) {
     const firstCreatedLink = document.querySelector(".url-button-link");
     if (event.key === "Enter" && firstCreatedLink) {
-      //history// addToHistory();
       window.open(firstCreatedLink, "_blank");
     }
   }
+  // function handleKeyPress(event) {
+  //   if (event.key === "Enter" && addParamsToSuttaCentralUrl() !== "") {
+  //     window.open(addParamsToSuttaCentralUrl(), "_blank");
+  //   }
+  // }
 
   // displays the error message when one exists
   useEffect(() => {
