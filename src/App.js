@@ -16,24 +16,16 @@ import SuttaName from "./Components/SuttaName.js";
 //history// import addToHistory from "./functions/addToHistory.js";
 
 function App() {
-  // take over the back and forward buttons in the browser
-  //history//
-  // window.onpopstate = function (e) {
-  //   console.log(e.state.page);
-  //   console.log(document.location.search);
-  //   console.log("onpopstate");
-  //   if (e.state.page != 1) {
-  //     setInputUrl(e.state.page.replace(/^\?q=/, ""));
-  //   } else {
-  //     if (e.state.page === document.location.search) {
-  //       window.history.go(-1);
-  //     }
-  //   }
-  // };
-
+  window.onpopstate = function (e) {
+    setInputUrl(urlToQuery(e.state.page));
+  };
+  function urlToQuery(url) {
+    return url.replace("?q=", "").replace(/-/g, " ").replace(/\s/g, " ");
+  }
   let [inputUrl, setInputUrl] = useState(
-    decodeURI(document.location.search).replace("?q=", "").replace(/-/g, " ").replace(/\s/g, " ")
+    urlToQuery(decodeURI(document.location.search))
   );
+  window.history.replaceState({ page: decodeURI(document.location.search) }, "", document.location);
   let [errorMessage, setErrorMessage] = useState("");
   let [warningMessage, setWarningMessage] = useState("");
 
@@ -120,7 +112,7 @@ function App() {
   function changeInputUrl(urlInput) {
     setInputUrl(urlInput);
     urlInput = "?q=" + urlInput.replace(/\s/g, "-");
-    window.history.replaceState({ page: urlInput }, "", `${urlInput}`);
+    window.history.pushState({ page: urlInput }, "", `${urlInput}`);
   }
 
   // ========================================== RETURN
