@@ -17,14 +17,14 @@ import SuttaName from "./Components/SuttaName.js";
 
 function App() {
   window.onpopstate = function (e) {
-    setInputUrl(urlToQuery(e.state.page));
+    setUserInput(urlToQuery(e.state.page));
   };
   function urlToQuery(url) {
     // this function takes what is in the url search param and puts it into the user input field
     document.title = `${decodeURI(document.location.search).replace("?q=", "")}`;
     return url.replace("?q=", "").replace(/-/g, " ").replace(/\s/g, " ");
   }
-  let [inputUrl, setInputUrl] = useState(urlToQuery(decodeURI(document.location.search)));
+  let [userInput, setUserInput] = useState(urlToQuery(decodeURI(document.location.search)));
   window.history.replaceState({ page: decodeURI(document.location.search) }, "", document.location);
   let [errorMessage, setErrorMessage] = useState("");
   let [warningMessage, setWarningMessage] = useState("");
@@ -71,7 +71,7 @@ function App() {
 
   // displays the error message when one exists
   useEffect(() => {
-    let { error, warning } = validateCitation(parseBookName(inputUrl), parseNumbers(inputUrl));
+    let { error, warning } = validateCitation(parseBookName(userInput), parseNumbers(userInput));
     setErrorMessage(error);
     if (error) {
       setErrorMessage(error);
@@ -79,15 +79,15 @@ function App() {
     } else {
       setWarningMessage(warning);
     }
-  }, [inputUrl]);
+  }, [userInput]);
 
   // TODO this needs to be untangled.
   // add translator and layout to SuttaCentral url
   function addParamsToSuttaCentralUrl() {
-    let parseNumbersResult = parseNumbers(inputUrl);
+    let parseNumbersResult = parseNumbers(userInput);
     let url = createWebsiteLink({
       site: "SC",
-      ...validateCitation(parseBookName(inputUrl), parseNumbersResult),
+      ...validateCitation(parseBookName(userInput), parseNumbersResult),
     });
 
     if (parseNumbersResult.chapterFlag === true) {
@@ -109,12 +109,12 @@ function App() {
     }
   }
 
-  function changeInputUrl(urlInput) {
-    setInputUrl(urlInput);
+  function changeUserInput(userInput) {
+    setUserInput(userInput);
     clearTimeout(window.prevTimer);
     window.prevTimer = setTimeout(() => {
-      urlInput = "?q=" + urlInput.replace(/\s/g, "-");
-      window.history.pushState({ page: urlInput }, "", `${urlInput}`);
+      userInput = "?q=" + userInput.replace(/\s/g, "-");
+      window.history.pushState({ page: userInput }, "", `${userInput}`);
       document.title = `${decodeURI(document.location.search).replace("?q=", "")}`;
     }, "500");
     console.log(window.prevTimer);
@@ -125,7 +125,7 @@ function App() {
     <div className="App">
       <div id="url-builder">
         <div className="sutta-name-container">
-          <SuttaName bookName={parseBookName(inputUrl)} suttaNumber={parseNumbers(inputUrl)} />
+          <SuttaName bookName={parseBookName(userInput)} suttaNumber={parseNumbers(userInput)} />
         </div>
         <div id="imput-area-link-area">
           <div id="input-field-container">
@@ -134,9 +134,9 @@ function App() {
               id="user-citation"
               autoFocus
               type="text"
-              value={inputUrl}
+              value={userInput}
               name="address"
-              onChange={event => changeInputUrl(event.target.value)}
+              onChange={event => changeUserInput(event.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="for example: mn140"
               autoComplete="off"
@@ -154,33 +154,33 @@ function App() {
               site={"SF"}
               url={createWebsiteLink({
                 site: "SF",
-                ...validateCitation(parseBookName(inputUrl), parseNumbers(inputUrl)),
+                ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
               })}
             />
             <LinkButton
               site={"DT"}
               url={createWebsiteLink({
                 site: "DT",
-                ...validateCitation(parseBookName(inputUrl), parseNumbers(inputUrl)),
+                ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
               })}
             />
             <LinkButton
               site={"ABT"}
               url={createAncientBuddhistTextsLink({
-                ...validateCitation(parseBookName(inputUrl), parseNumbers(inputUrl)),
+                ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
               })}
             />
             <LinkButton
               site={"PA"}
               url={createPaliAudioLink({
-                ...validateCitation(parseBookName(inputUrl), parseNumbers(inputUrl)),
+                ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
               })}
             />
             <LinkButton
               site={"SCV"}
               url={createWebsiteLink({
                 site: "SCV",
-                ...validateCitation(parseBookName(inputUrl), parseNumbers(inputUrl)),
+                ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
               })}
             />
           </div>
