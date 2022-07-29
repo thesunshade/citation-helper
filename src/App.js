@@ -20,6 +20,8 @@ function App() {
     setInputUrl(urlToQuery(e.state.page));
   };
   function urlToQuery(url) {
+    // this function takes what is in the url search param and puts it into the user input field
+    document.title = `${decodeURI(document.location.search).replace("?q=", "")}`;
     return url.replace("?q=", "").replace(/-/g, " ").replace(/\s/g, " ");
   }
   let [inputUrl, setInputUrl] = useState(urlToQuery(decodeURI(document.location.search)));
@@ -113,6 +115,7 @@ function App() {
     window.prevTimer = setTimeout(() => {
       urlInput = "?q=" + urlInput.replace(/\s/g, "-");
       window.history.pushState({ page: urlInput }, "", `${urlInput}`);
+      document.title = `${decodeURI(document.location.search).replace("?q=", "")}`;
     }, "500");
     console.log(window.prevTimer);
   }
