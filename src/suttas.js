@@ -5232,6 +5232,7 @@ export const suttas = [
   ["Pv 49", "Bhogasaṁharaṇapetavatthu"],
   ["Pv 50", "Seṭṭhiputtapetavatthu"],
   ["Pv 51", "Saṭṭhikūṭapetavatthu"],
+  ["Thag 1:1", "Subhūtittheragāthā"],
   ["Thag 1:2", "Mahākoṭṭhitatheragāthā"],
   ["Thag 1:3", "Kaṅkhārevatatheragāthā"],
   ["Thag 1:4", "Puṇṇatheragāthā"],
