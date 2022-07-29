@@ -126,7 +126,7 @@ function App() {
         document.title = "Citation Helper | ReadingFaithfully.org";
       }
       window.history.pushState({ page: forHistory }, "", `${forHistory}`);
-    }, "500");
+    }, 500);
   }
 
   // ========================================== RETURN
