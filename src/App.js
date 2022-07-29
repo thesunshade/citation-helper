@@ -12,19 +12,23 @@ import createWebsiteLink from "./webSites/createWebsiteLink.js";
 import LinkButton from "./Components/LinkButton.js";
 import OtherToolsIcons from "./Components/OtherToolsIcons.js";
 import TabbedLinkArea from "./Components/TabbedLinkArea.js";
-import SuttaName from "./Components/SuttaName.js";
-//history// import addToHistory from "./functions/addToHistory.js";
+import findSuttaName from "./functions/findSuttaName.js";
 
 function App() {
   window.onpopstate = function (e) {
-    setInputUrl(urlToQuery(e.state.page));
+    setUserInput(urlToUserInput(e.state.page).userInput);
   };
-  function urlToQuery(url) {
-    // this function takes what is in the url search param and puts it into the user input field
-    document.title = `${decodeURI(document.location.search).replace("?q=", "")}`;
-    return url.replace("?q=", "").replace(/-/g, " ").replace(/\s/g, " ");
+  function urlToUserInput(url) {
+    // this function takes what is in the url search param and puts it into the user input format
+    // as well as updating suttaName and the page title
+    const userInput = url.replace("?q=", "").replace(/-/g, " ").replace(/\s/g, " ");
+    const nowSuttaName = findSuttaName(parseBookName(userInput), parseNumbers(userInput));
+    document.title = `${userInput} ${nowSuttaName ? nowSuttaName : ""}`;
+    // return userInput;
+    return { userInput: userInput, suttaName: nowSuttaName };
   }
-  let [inputUrl, setInputUrl] = useState(urlToQuery(decodeURI(document.location.search)));
+  let [suttaName, setSuttaName] = useState(urlToUserInput(decodeURI(document.location.search)).suttaName);
+  let [userInput, setUserInput] = useState(urlToUserInput(decodeURI(document.location.search)).userInput);
   window.history.replaceState({ page: decodeURI(document.location.search) }, "", document.location);
   let [errorMessage, setErrorMessage] = useState("");
   let [warningMessage, setWarningMessage] = useState("");
@@ -71,7 +75,7 @@ function App() {
 
   // displays the error message when one exists
   useEffect(() => {
-    let { error, warning } = validateCitation(parseBookName(inputUrl), parseNumbers(inputUrl));
+    let { error, warning } = validateCitation(parseBookName(userInput), parseNumbers(userInput));
     setErrorMessage(error);
     if (error) {
       setErrorMessage(error);
@@ -79,15 +83,15 @@ function App() {
     } else {
       setWarningMessage(warning);
     }
-  }, [inputUrl]);
+  }, [userInput]);
 
   // TODO this needs to be untangled.
   // add translator and layout to SuttaCentral url
   function addParamsToSuttaCentralUrl() {
-    let parseNumbersResult = parseNumbers(inputUrl);
+    let parseNumbersResult = parseNumbers(userInput);
     let url = createWebsiteLink({
       site: "SC",
-      ...validateCitation(parseBookName(inputUrl), parseNumbersResult),
+      ...validateCitation(parseBookName(userInput), parseNumbersResult),
     });
 
     if (parseNumbersResult.chapterFlag === true) {
@@ -109,15 +113,20 @@ function App() {
     }
   }
 
-  function changeInputUrl(urlInput) {
-    setInputUrl(urlInput);
+  function changeUserInput(userInput) {
+    setUserInput(userInput);
+    const nowSuttaName = findSuttaName(parseBookName(userInput), parseNumbers(userInput));
+    setSuttaName(nowSuttaName);
     clearTimeout(window.prevTimer);
+    const forHistory = "?q=" + userInput.replace(/\s/g, "-");
     window.prevTimer = setTimeout(() => {
-      urlInput = "?q=" + urlInput.replace(/\s/g, "-");
-      window.history.pushState({ page: urlInput }, "", `${urlInput}`);
-      document.title = `${decodeURI(document.location.search).replace("?q=", "")}`;
+      if (document.location.search.replace("?q=", "")) {
+        document.title = `${userInput} ${nowSuttaName ? nowSuttaName : ""}`;
+      } else {
+        document.title = "Citation Helper | ReadingFaithfully.org";
+      }
+      window.history.pushState({ page: forHistory }, "", `${forHistory}`);
     }, "500");
-    console.log(window.prevTimer);
   }
 
   // ========================================== RETURN
@@ -125,7 +134,9 @@ function App() {
     <div className="App">
       <div id="url-builder">
         <div className="sutta-name-container">
-          <SuttaName bookName={parseBookName(inputUrl)} suttaNumber={parseNumbers(inputUrl)} />
+          <div>
+            <p className="sutta-name">{suttaName}</p>
+          </div>
         </div>
         <div id="imput-area-link-area">
           <div id="input-field-container">
@@ -134,9 +145,9 @@ function App() {
               id="user-citation"
               autoFocus
               type="text"
-              value={inputUrl}
+              value={userInput}
               name="address"
-              onChange={event => changeInputUrl(event.target.value)}
+              onChange={event => changeUserInput(event.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="for example: mn140"
               autoComplete="off"
@@ -154,33 +165,33 @@ function App() {
               site={"SF"}
               url={createWebsiteLink({
                 site: "SF",
-                ...validateCitation(parseBookName(inputUrl), parseNumbers(inputUrl)),
+                ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
               })}
             />
             <LinkButton
               site={"DT"}
               url={createWebsiteLink({
                 site: "DT",
-                ...validateCitation(parseBookName(inputUrl), parseNumbers(inputUrl)),
+                ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
               })}
             />
             <LinkButton
               site={"ABT"}
               url={createAncientBuddhistTextsLink({
-                ...validateCitation(parseBookName(inputUrl), parseNumbers(inputUrl)),
+                ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
               })}
             />
             <LinkButton
               site={"PA"}
               url={createPaliAudioLink({
-                ...validateCitation(parseBookName(inputUrl), parseNumbers(inputUrl)),
+                ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
               })}
             />
             <LinkButton
               site={"SCV"}
               url={createWebsiteLink({
                 site: "SCV",
-                ...validateCitation(parseBookName(inputUrl), parseNumbers(inputUrl)),
+                ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
               })}
             />
           </div>
