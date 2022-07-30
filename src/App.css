@@ -222,7 +222,7 @@ a:focus .url-button-class {
   justify-content: center;
   flex-direction: row;
   column-gap: 5px;
-  max-width: 360px;
+  width: 370px;
 }
 
 .image-container {
@@ -237,7 +237,8 @@ a:focus .url-button-class {
   background: #ce8400;
   box-shadow: inset 0px 0px 10px #b67300;
   flex-grow: 1;
-  min-width: 305px;
+  /* min-width: 305px;
+  max-width: 360px; */
 }
 
 /* .link-SCL {
@@ -294,8 +295,12 @@ a:focus .url-button-class {
 }
 
 .url-button-class:hover {
-  background: rgba(0, 0, 0, 0.466);
-  box-shadow: inset 0px 0px 10px black;
+  /* background: rgba(0, 0, 0, 0.466); */
+  box-shadow: inset 0px 0px 10px rgb(70, 70, 70);
+}
+.url-button-class.SCV:hover {
+  /* background: rgba(0, 0, 0, 0.466); */
+  box-shadow: inset 0px 0px 10px white;
 }
 
 @media only screen and (max-width: 975px) {
@@ -312,11 +317,12 @@ a:focus .url-button-class {
 
   /*testing*/
   .sc-button-area {
-    max-width: 270px;
+    max-width: 315px;
   }
 
   .SC {
-    min-width: 260px;
+    /* min-width: 257px !important;
+    max-width: 340px; */
   }
 
   .url-button-class {
