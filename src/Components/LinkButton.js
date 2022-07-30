@@ -27,14 +27,12 @@ export default function LinkButton(props) {
     }
     displayUrl = displayUrl.replace(/suttas\/KN/, "…");
     return (
-      <a className={`url-button-link link-${site}`} target="_blank" rel="noreferrer" href={url} site={site}>
-        <div className={"url-button-class " + site}>
-          <div className="image-container">
-            <img width="20px" className="logoImage" src={require(`../images/${site}.png`).default} alt="logo"></img>
-          </div>
+      <a className={`url-button-class url-button-link ${site}`} target="_blank" rel="noreferrer" href={url} site={site}>
+        <span className="image-container">
+          <img width="20px" className="logoImage" src={require(`../images/${site}.png`).default} alt="logo"></img>
+        </span>
 
-          <span className="display-url">{displayUrl}</span>
-        </div>
+        <span className="display-url">{displayUrl}</span>
       </a>
     );
   }

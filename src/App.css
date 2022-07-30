@@ -154,7 +154,7 @@ button:focus {
   margin-right: 0rem;
 }
 
-div.radiobuttonarea label {
+.radiobuttonarea label {
   /* padding-right: 0.5rem; */
   padding-bottom: 0.4rem;
 }
@@ -165,11 +165,11 @@ div.radiobuttonarea label {
   margin-left: 1.5rem;
 }
 
-div.radiobuttonarea label input {
+.radiobuttonarea label input {
   margin-right: 0px;
 }
 
-div.radiobuttonarea label[disabled] {
+.radiobuttonarea label[disabled] {
   color: #c7c7ce;
 }
 
@@ -206,7 +206,7 @@ div.radiobuttonarea label[disabled] {
   overflow: hidden;
 }
 
-a:focus div.url-button-class {
+a:focus .url-button-class {
   outline: none;
   box-shadow: inset 0px 0px 0px 2px rgb(0, 0, 0);
 }
@@ -231,7 +231,7 @@ a:focus div.url-button-class {
   width: 100%;
   display: flex;
 }
-div.SC {
+.SC {
   background: #ce8400;
   box-shadow: inset 0px 0px 10px #b67300;
   flex-grow: 1;
@@ -242,7 +242,7 @@ div.SC {
   min-width: 20px;
   padding: 0px;
 }
-div.SCL {
+.SCL {
   background: rgb(237, 237, 237);
   border: 0px solid black;
   min-width: 20px;
@@ -261,27 +261,27 @@ div.SCL {
   display: none;
 }
 
-div.SF {
+.SF {
   background: #b45250;
   box-shadow: inset 0px 0px 10px #9e4746;
   width: 350px;
 }
-div.DT {
+.DT {
   background: #b87049;
   box-shadow: inset 0px 0px 10px #a36341;
   width: 350px;
 }
-div.ABT {
+.ABT {
   background: #7f9861;
   box-shadow: inset 0px 0px 10px #738859;
   width: 350px;
 }
-div.PA {
+.PA {
   background: #ea7101;
   box-shadow: inset 0px 0px 10px #d16501;
   width: 350px;
 }
-div.SCV {
+.SCV {
   background: #000000;
   box-shadow: inset 0px 0px 10px #756a9b;
   width: 350px;
@@ -319,7 +319,7 @@ div.SCV {
     max-width: 270px;
   }
 
-  div.url-button-class {
+  .url-button-class {
     padding: 0.5rem;
     border-radius: 10px;
     width: 300px;
@@ -598,19 +598,19 @@ button {
   display: none;
 }
 
-div.content.SC-content,
+.content.SC-content,
 .SC-tabs {
   background-color: #ce8400;
 }
-div.content.SF-content,
+.content.SF-content,
 .SF-tabs {
   background-color: #b45250;
 }
-div.content.DT-content,
+.content.DT-content,
 .DT-tabs {
   background-color: #b87049;
 }
-div.content.ABT-content,
+.content.ABT-content,
 .ABT-tabs {
   background-color: #7f9861;
 }
