@@ -154,7 +154,7 @@ button:focus {
   margin-right: 0rem;
 }
 
-div.radiobuttonarea label {
+.radiobuttonarea label {
   /* padding-right: 0.5rem; */
   padding-bottom: 0.4rem;
 }
@@ -165,11 +165,11 @@ div.radiobuttonarea label {
   margin-left: 1.5rem;
 }
 
-div.radiobuttonarea label input {
+.radiobuttonarea label input {
   margin-right: 0px;
 }
 
-div.radiobuttonarea label[disabled] {
+.radiobuttonarea label[disabled] {
   color: #c7c7ce;
 }
 
@@ -204,9 +204,11 @@ div.radiobuttonarea label[disabled] {
   border-radius: 10px;
   min-height: 1.1rem;
   overflow: hidden;
+  text-decoration: none;
+  margin: 0px;
 }
 
-a:focus div.url-button-class {
+a:focus .url-button-class {
   outline: none;
   box-shadow: inset 0px 0px 0px 2px rgb(0, 0, 0);
 }
@@ -220,31 +222,32 @@ a:focus div.url-button-class {
   justify-content: center;
   flex-direction: row;
   column-gap: 5px;
-  max-width: 360px;
+  width: 370px;
 }
 
 .image-container {
   float: left;
 }
 
-.link-SC {
+/* .link-SC {
   width: 100%;
   display: flex;
-}
-div.SC {
+} */
+.SC {
   background: #ce8400;
   box-shadow: inset 0px 0px 10px #b67300;
   flex-grow: 1;
-  min-width: 320px;
+  /* min-width: 305px;
+  max-width: 360px; */
 }
 
-.link-SCL {
+/* .link-SCL {
   min-width: 20px;
   padding: 0px;
-}
-div.SCL {
-  background: rgb(237, 237, 237);
-  border: 0px solid black;
+} */
+.SCL {
+  background: rgb(227, 220, 202);
+  border: 0px solid;
   min-width: 20px;
   max-width: 20px;
 }
@@ -254,34 +257,37 @@ div.SCL {
 }
 
 .SCL .image-container {
-  float: none;
+  /* float: none; */
+  position: relative;
+  top: 3px;
+  left: 1px;
 }
 
 .SCL .display-url {
   display: none;
 }
 
-div.SF {
+.SF {
   background: #b45250;
   box-shadow: inset 0px 0px 10px #9e4746;
   width: 350px;
 }
-div.DT {
+.DT {
   background: #b87049;
   box-shadow: inset 0px 0px 10px #a36341;
   width: 350px;
 }
-div.ABT {
+.ABT {
   background: #7f9861;
   box-shadow: inset 0px 0px 10px #738859;
   width: 350px;
 }
-div.PA {
+.PA {
   background: #ea7101;
   box-shadow: inset 0px 0px 10px #d16501;
   width: 350px;
 }
-div.SCV {
+.SCV {
   background: #000000;
   box-shadow: inset 0px 0px 10px #756a9b;
   width: 350px;
@@ -292,14 +298,12 @@ div.SCV {
 }
 
 .url-button-class:hover {
-  background: rgba(0, 0, 0, 0.466);
-  box-shadow: inset 0px 0px 10px black;
+  /* background: rgba(0, 0, 0, 0.466); */
+  box-shadow: inset 0px 0px 10px rgb(70, 70, 70);
 }
-.url-button-link {
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  margin: 0px;
+.url-button-class.SCV:hover {
+  /* background: rgba(0, 0, 0, 0.466); */
+  box-shadow: inset 0px 0px 10px white;
 }
 
 @media only screen and (max-width: 975px) {
@@ -316,18 +320,20 @@ div.SCV {
 
   /*testing*/
   .sc-button-area {
-    max-width: 270px;
+    max-width: 315px;
   }
 
-  div.url-button-class {
+  .SC {
+    /* min-width: 257px !important;
+    max-width: 340px; */
+  }
+
+  .url-button-class {
     padding: 0.5rem;
     border-radius: 10px;
     width: 300px;
     font-size: 0.8rem;
     display: inline-block;
-  }
-
-  .url-button-class {
     font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
   }
 
@@ -598,19 +604,19 @@ button {
   display: none;
 }
 
-div.content.SC-content,
+.content.SC-content,
 .SC-tabs {
   background-color: #ce8400;
 }
-div.content.SF-content,
+.content.SF-content,
 .SF-tabs {
   background-color: #b45250;
 }
-div.content.DT-content,
+.content.DT-content,
 .DT-tabs {
   background-color: #b87049;
 }
-div.content.ABT-content,
+.content.ABT-content,
 .ABT-tabs {
   background-color: #7f9861;
 }
