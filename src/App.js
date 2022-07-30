@@ -10,6 +10,7 @@ import createAncientBuddhistTextsLink from "./webSites/createAncientBuddhistText
 import createPaliAudioLink from "./webSites/createPaliAudioLink.js";
 import createWebsiteLink from "./webSites/createWebsiteLink.js";
 import LinkButton from "./Components/LinkButton.js";
+import addParamsToSuttaCentralUrl from "./functions/addParamsToSuttaCentralUrl.js";
 import OtherToolsIcons from "./Components/OtherToolsIcons.js";
 import TabbedLinkArea from "./Components/TabbedLinkArea.js";
 import findSuttaName from "./functions/findSuttaName.js";
@@ -85,34 +86,6 @@ function App() {
     }
   }, [userInput]);
 
-  // TODO this needs to be untangled.
-  // add translator and layout to SuttaCentral url
-  function addParamsToSuttaCentralUrl() {
-    let parseNumbersResult = parseNumbers(userInput);
-    let url = createWebsiteLink({
-      site: "SC",
-      ...validateCitation(parseBookName(userInput), parseNumbersResult),
-    });
-
-    if (parseNumbersResult.chapterFlag === true) {
-      return url;
-    } else if (/#.*$/.test(url)) {
-      let verseId = url.match(/#.*$/);
-      let firstPartOfUrl = url.slice(0, url.match(/#.*$/).index);
-      if (translator === "/en/sujato") {
-        return firstPartOfUrl + translator + verseId;
-      } else {
-        return firstPartOfUrl + translator + layout;
-      }
-    } else if (/pitaka/.test(url)) {
-      return url;
-    } else if (translator === "/en/sujato") {
-      return url + translator + layout;
-    } else {
-      return url + translator;
-    }
-  }
-
   function changeUserInput(userInput) {
     setUserInput(userInput);
     const nowSuttaName = findSuttaName(parseBookName(userInput), parseNumbers(userInput));
@@ -138,7 +111,7 @@ function App() {
             <p className="sutta-name">{suttaName}</p>
           </div>
         </div>
-        <div id="imput-area-link-area">
+        <div id="input-area-link-area">
           <div id="input-field-container">
             <label htmlFor="user-citation">Enter your citation</label>
             <input
@@ -160,7 +133,16 @@ function App() {
 
           {/*       LINK BUTTON AREA        */}
           <div id="link-button-area">
-            <LinkButton site={"SC"} url={addParamsToSuttaCentralUrl()} />
+            <div className="sc-button-area">
+              <LinkButton site={"SC"} url={addParamsToSuttaCentralUrl(userInput, translator, layout)} />
+              <LinkButton
+                site={"SCL"}
+                url={createWebsiteLink({
+                  site: "SCL",
+                  ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
+                })}
+              />
+            </div>
             <LinkButton
               site={"SF"}
               url={createWebsiteLink({

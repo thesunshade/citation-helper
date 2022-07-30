@@ -16,26 +16,24 @@ export default function LinkButton(props) {
   } else {
     let displayUrl = url.slice(8);
     if (displayUrl.length > 52) {
-      displayUrl = displayUrl.replace(/\/.+\//, "/…/");
+      displayUrl = displayUrl.replace(/\/.+\//, "/…/").replace(/sutta\?search=/, "…");
     }
+    if (displayUrl.length > 37 && /^suttacentral/.test(displayUrl)) {
+      displayUrl = displayUrl.slice(0, 36) + "…";
+    } else {
+      if (displayUrl.length > 45) {
+        displayUrl = displayUrl.slice(0, 44) + "…";
+      }
+    }
+    displayUrl = displayUrl.replace(/suttas\/KN/, "…");
     return (
-      <a
-        className="url-button-link"
-        target="_blank"
-        rel="noreferrer"
-        href={url}
-        site={site}
-        //history//
-        // onClick={() => {
-        //   addToHistory();
-        // }}
-      >
+      <a className={`url-button-link link-${site}`} target="_blank" rel="noreferrer" href={url} site={site}>
         <div className={"url-button-class " + site}>
           <div className="image-container">
             <img width="20px" className="logoImage" src={require(`../images/${site}.png`).default} alt="logo"></img>
           </div>
 
-          {displayUrl}
+          <span className="display-url">{displayUrl}</span>
         </div>
       </a>
     );

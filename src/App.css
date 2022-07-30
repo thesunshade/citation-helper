@@ -75,11 +75,24 @@ button:focus {
   gap: 1rem;
   justify-content: center;
 }
+#input-area-link-area {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  margin: auto;
+}
 
 #link-button-area {
-  background-image: url("./images/citation-helper-background.png");
   background-repeat: no-repeat;
   background-position: center top;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /**/
+  max-width: 360px;
+  text-align: center;
+  min-height: 220px;
+  row-gap: 0.3rem;
+  background-image: url("./images/citation-helper-background.png");
 }
 
 #radiobutton-area-box {
@@ -185,17 +198,12 @@ div.radiobuttonarea label[disabled] {
   color: red;
 }
 
-#link-button-area {
-  text-align: center;
-  min-height: 220px;
-}
-
 .url-button-class {
   color: white;
-  padding: 0.5rem;
+  padding: 10px;
   border-radius: 10px;
-  width: 360px;
-  margin: auto auto 5px auto;
+  min-height: 1.1rem;
+  overflow: hidden;
 }
 
 a:focus div.url-button-class {
@@ -207,50 +215,91 @@ a:focus div.url-button-class {
   justify-content: center;
 }
 
+.sc-button-area {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 5px;
+  max-width: 360px;
+}
+
 .image-container {
   float: left;
 }
 
+.link-SC {
+  width: 100%;
+  display: flex;
+}
 div.SC {
   background: #ce8400;
   box-shadow: inset 0px 0px 10px #b67300;
+  flex-grow: 1;
+  min-width: 320px;
+}
+
+.link-SCL {
+  min-width: 20px;
+  padding: 0px;
+}
+div.SCL {
+  background: rgb(237, 237, 237);
+  border: 0px solid black;
+  min-width: 20px;
+  max-width: 20px;
+}
+.url-button-class.SCL:hover {
+  background: rgba(0, 0, 0, 0.116);
+  box-shadow: inset 0px 0px 5px black;
+}
+
+.SCL .image-container {
+  float: none;
+}
+
+.SCL .display-url {
+  display: none;
 }
 
 div.SF {
   background: #b45250;
   box-shadow: inset 0px 0px 10px #9e4746;
+  width: 350px;
 }
 div.DT {
   background: #b87049;
   box-shadow: inset 0px 0px 10px #a36341;
+  width: 350px;
 }
 div.ABT {
   background: #7f9861;
   box-shadow: inset 0px 0px 10px #738859;
+  width: 350px;
 }
 div.PA {
   background: #ea7101;
   box-shadow: inset 0px 0px 10px #d16501;
+  width: 350px;
 }
 div.SCV {
   background: #000000;
   box-shadow: inset 0px 0px 10px #756a9b;
+  width: 350px;
 }
 
 #url-button.nolink {
   background: gray;
 }
 
-.url-button-class:hover,
-#url-button:hover {
+.url-button-class:hover {
   background: rgba(0, 0, 0, 0.466);
   box-shadow: inset 0px 0px 10px black;
 }
-a.url-button-link,
-#url-button a {
+.url-button-link {
   color: white;
   text-decoration: none;
   border-radius: 10px;
+  margin: 0px;
 }
 
 @media only screen and (max-width: 975px) {
@@ -265,11 +314,17 @@ a.url-button-link,
     width: 280px;
   }
 
+  /*testing*/
+  .sc-button-area {
+    max-width: 270px;
+  }
+
   div.url-button-class {
     padding: 0.5rem;
     border-radius: 10px;
     width: 300px;
     font-size: 0.8rem;
+    display: inline-block;
   }
 
   .url-button-class {

@@ -10,7 +10,7 @@ export default function createWebsiteLink(props) {
   let url = "";
   let website;
 
-  if ((site === "DT") | (site === "SF") | (site === "SC") | (site === "SCV")) {
+  if ((site === "DT") | (site === "SF") | (site === "SC") | (site === "SCV") | (site === "SCL")) {
     // this bit is clearly not the right way to do this
     if (site === "DT") {
       website = require("./dhammaTalks.js").dhammaTalks;
@@ -20,6 +20,8 @@ export default function createWebsiteLink(props) {
       website = require("./suttaFriends.js").suttaFriends;
     } else if (site === "SCV") {
       website = require("./suttaCentralVoice.js").suttaCentralVoice;
+    } else if (site === "SCL") {
+      website = require("./suttaCentralLight.js").suttaCentralVoice;
     }
     const booksOnWebsite = Object.keys(website);
     const { rootUrl, suffixUrl, chapterConnector, rangeConnector } = website.constants;
