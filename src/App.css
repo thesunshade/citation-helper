@@ -204,6 +204,8 @@ button:focus {
   border-radius: 10px;
   min-height: 1.1rem;
   overflow: hidden;
+  text-decoration: none;
+  margin: 0px;
 }
 
 a:focus .url-button-class {
@@ -227,24 +229,24 @@ a:focus .url-button-class {
   float: left;
 }
 
-.link-SC {
+/* .link-SC {
   width: 100%;
   display: flex;
-}
+} */
 .SC {
   background: #ce8400;
   box-shadow: inset 0px 0px 10px #b67300;
   flex-grow: 1;
-  min-width: 320px;
+  min-width: 305px;
 }
 
-.link-SCL {
+/* .link-SCL {
   min-width: 20px;
   padding: 0px;
-}
+} */
 .SCL {
   background: rgb(237, 237, 237);
-  border: 0px solid black;
+  border: 0px solid;
   min-width: 20px;
   max-width: 20px;
 }
@@ -295,12 +297,6 @@ a:focus .url-button-class {
   background: rgba(0, 0, 0, 0.466);
   box-shadow: inset 0px 0px 10px black;
 }
-.url-button-link {
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  margin: 0px;
-}
 
 @media only screen and (max-width: 975px) {
   #url-builder {
@@ -319,15 +315,16 @@ a:focus .url-button-class {
     max-width: 270px;
   }
 
+  .SC {
+    min-width: 260px;
+  }
+
   .url-button-class {
     padding: 0.5rem;
     border-radius: 10px;
     width: 300px;
     font-size: 0.8rem;
     display: inline-block;
-  }
-
-  .url-button-class {
     font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
   }
 
