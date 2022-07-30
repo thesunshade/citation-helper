@@ -25,7 +25,6 @@ export default function findSuttaName(bookName, suttaNumber) {
   if (suttaName && !suttaName.match(/Sutta$/) && !suttaName.match(/vatthu$/) && !suttaName.match(/gāthā$/)) {
     suttaName += " Sutta";
   }
-  console.log(suttaName);
 
   return suttaName;
 }

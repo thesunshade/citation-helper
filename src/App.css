@@ -246,7 +246,7 @@ a:focus .url-button-class {
   padding: 0px;
 } */
 .SCL {
-  background: rgb(237, 237, 237);
+  background: rgb(227, 220, 202);
   border: 0px solid;
   min-width: 20px;
   max-width: 20px;
@@ -257,7 +257,10 @@ a:focus .url-button-class {
 }
 
 .SCL .image-container {
-  float: none;
+  /* float: none; */
+  position: relative;
+  top: 3px;
+  left: 1px;
 }
 
 .SCL .display-url {

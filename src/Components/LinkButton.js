@@ -27,7 +27,14 @@ export default function LinkButton(props) {
     }
     displayUrl = displayUrl.replace(/suttas\/KN/, "…");
     return (
-      <a className={`url-button-class url-button-link ${site}`} target="_blank" rel="noreferrer" href={url} site={site}>
+      <a
+        className={`url-button-class url-button-link ${site}`}
+        target="_blank"
+        rel="noreferrer"
+        href={url}
+        site={site}
+        title={site === "SCL" ? "Light version of Sutta Central" : `Open on ${makePrettyName(site)}`}
+      >
         <span className="image-container">
           <img width="20px" className="logoImage" src={require(`../images/${site}.png`).default} alt="logo"></img>
         </span>
