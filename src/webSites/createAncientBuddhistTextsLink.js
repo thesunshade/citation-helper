@@ -6,7 +6,6 @@ import { ancientBuddhistTexts as website } from "./ancientBuddhistTexts.js";
 
 export default function createAncientBuddhistTextsLink(props) {
   let { book, firstNumber, secondNumber, chapterFlag, error } = props;
-
   const books = Object.keys(structure);
   let url = "";
   const { rootUrl, suffixUrl } = website.constants;
@@ -51,8 +50,11 @@ export default function createAncientBuddhistTextsLink(props) {
       //test for the chapter flag
       chapterFlag === true &&
       website[book].links.chapter_links &&
-      firstNumber <= Object.keys(structure[book].chapters).length
+      firstNumber <= Object.keys(structure[book].chapters).length &&
+      website[book].links.chapter_links[firstNumber]
     ) {
+      // console.log(website[book].links);
+      // console.log({ firstNumber });
       url = rootUrl + website[book].links.chapter_links[firstNumber];
     } else if (website[book].links.main_page && firstNumber === 0) {
       url = website[book].links.main_page;

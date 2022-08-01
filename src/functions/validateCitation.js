@@ -3,6 +3,7 @@ import { structure } from "../structure.js";
 export default function validateCitation(book, numbers) {
   const books = Object.keys(structure);
   let { firstNumber, secondNumber, verseFlag, chapterFlag } = numbers;
+
   let error = "";
   let warning = "";
 
@@ -69,8 +70,14 @@ export default function validateCitation(book, numbers) {
           error = `Chapter number too high. Not in ${structure[book].pali_name}.`;
         }
       }
-    } else if (firstNumber > 0 && firstNumber < structure[book].chapters[1] && secondNumber === 0) {
+    } else if (
+      firstNumber > 0 &&
+      firstNumber < structure[book].chapters[1] &&
+      secondNumber === 0 &&
+      chapterFlag === false
+    ) {
       //this handles the situation where first number is less than max chapter number and can be made into a sutta number
+      console.log({ firstNumber });
       secondNumber = firstNumber;
       firstNumber = 1;
     } else if (secondNumber) {
