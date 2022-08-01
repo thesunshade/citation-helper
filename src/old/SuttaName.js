@@ -14,7 +14,6 @@ export default function SuttaName(props) {
   const completeCitation = `${bookName} ${firstNumber}${secondNumber ? ":" + secondNumber : ""}`;
 
   for (let i = 0; i < suttas.length; i++) {
-    // console.log(completeCitation, suttas[i][0]);
     if (completeCitation === suttas[i][0].toLowerCase()) {
       suttaName = "~ " + suttas[i][1] + " ~";
       // document.title = `${decodeURI(document.location.search).replace("?q=", "")} ${suttas[i][1]}`;

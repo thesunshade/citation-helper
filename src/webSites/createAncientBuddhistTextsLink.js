@@ -6,6 +6,7 @@ import { ancientBuddhistTexts as website } from "./ancientBuddhistTexts.js";
 
 export default function createAncientBuddhistTextsLink(props) {
   let { book, firstNumber, secondNumber, chapterFlag, error } = props;
+
   const books = Object.keys(structure);
   let url = "";
   const { rootUrl, suffixUrl } = website.constants;
@@ -16,11 +17,11 @@ export default function createAncientBuddhistTextsLink(props) {
       chapterFlag === true
     ) {
       if (website[book].links.chapter_links && firstNumber <= Object.keys(structure[book].chapters).length) {
-        url = website[book].links.chapter_links[firstNumber];
+        url = rootUrl + website[book].links.chapter_links[firstNumber];
       }
     } else if (website[book]) {
       if (website[book].links.main_page && firstNumber === 0) {
-        url = website[book].links.main_page;
+        url = rootUrl + website[book].links.main_page;
       }
       const available = website[book].available;
       if (website[book].range_suttas) {
@@ -52,7 +53,7 @@ export default function createAncientBuddhistTextsLink(props) {
       website[book].links.chapter_links &&
       firstNumber <= Object.keys(structure[book].chapters).length
     ) {
-      url = website[book].links.chapter_links[firstNumber];
+      url = rootUrl + website[book].links.chapter_links[firstNumber];
     } else if (website[book].links.main_page && firstNumber === 0) {
       url = website[book].links.main_page;
     } else if (website[book].complete && secondNumber > 0) {
@@ -96,5 +97,6 @@ export default function createAncientBuddhistTextsLink(props) {
       });
     }
   }
+
   return url;
 }

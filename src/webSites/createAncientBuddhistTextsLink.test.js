@@ -16,6 +16,9 @@ test("test dhpch4", () => {
       chapterFlag: true,
     })
   ).toBe("https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/04-Flowers.htm");
+});
+
+test("test ABT Snpch5", () => {
   expect(
     createAncientBuddhistTextsLink({
       site: "ABT",

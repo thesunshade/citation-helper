@@ -2,7 +2,6 @@
 // Possible because their links are all very regular
 
 import makePrettyName from "../functions/makePrettyName.js";
-//history// import addToHistory from "../functions/addToHistory.js";
 
 export default function LinkButton(props) {
   const url = props.url.replace("www.", "");
