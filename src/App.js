@@ -7,6 +7,7 @@ import parseBookName from "./functions/parseBookName.js";
 import parseNumbers from "./functions/parseNumbers.js";
 import validateCitation from "./functions/validateCitation.js";
 import createAncientBuddhistTextsLink from "./webSites/createAncientBuddhistTextsLink.js";
+import createAccessToInsightLink from "./webSites/createAccessToInsightLink.js";
 import createPaliAudioLink from "./webSites/createPaliAudioLink.js";
 import createWebsiteLink from "./webSites/createWebsiteLink.js";
 import LinkButton from "./Components/LinkButton.js";
@@ -160,6 +161,12 @@ function App() {
             <LinkButton
               site={"ABT"}
               url={createAncientBuddhistTextsLink({
+                ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
+              })}
+            />
+            <LinkButton
+              site={"ATI"}
+              url={createAccessToInsightLink({
                 ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
               })}
             />

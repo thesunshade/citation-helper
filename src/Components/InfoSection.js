@@ -67,6 +67,9 @@ export default function InfoSection() {
         <li>Saṁyutta Nikaya = SN; Sutta&nbsp;Nipāta&nbsp;=&nbsp;Snp.</li>
         <li>Some translations in SN and AN on DhammaTalks.org have different numbers than on other sites.</li>
         <li>
+          Coverage of <a href="https://accesstoinsight.org/">AccessToInsight.org</a> is partial.
+        </li>
+        <li>
           Does your citation have roman numerals, e.g D ii 123, M v 234? Then try this{" "}
           <a href="https://benmneb.github.io/pts-converter/" rel="noreferrer" target="_blank">
             PTS Converter

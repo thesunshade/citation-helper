@@ -1,5 +1,8 @@
 // This creates the link buttons for SC, SF, DT
 // Possible because their links are all very regular
+// takes two parameters:
+// site, in the form of site abbreviation
+// url, the final url for the suta
 
 import makePrettyName from "../functions/makePrettyName.js";
 
@@ -20,11 +23,11 @@ export default function LinkButton(props) {
     if (displayUrl.length > 37 && /^suttacentral/.test(displayUrl)) {
       displayUrl = displayUrl.slice(0, 36) + "…";
     } else {
-      if (displayUrl.length > 45) {
-        displayUrl = displayUrl.slice(0, 44) + "…";
+      if (displayUrl.length > 40) {
+        displayUrl = displayUrl.slice(0, 39) + "…";
       }
     }
-    displayUrl = displayUrl.replace(/suttas\/KN/, "…");
+    displayUrl = displayUrl.replace(/suttas\/KN/, "…").replace("tipitaka/kn", "…");
     return (
       <a
         className={`url-button-class url-button-link ${site}`}

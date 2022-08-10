@@ -282,6 +282,11 @@ a:focus .url-button-class {
   box-shadow: inset 0px 0px 10px #738859;
   width: 350px;
 }
+.ATI {
+  background: #6d0303;
+  box-shadow: inset 0px 0px 10px #738859;
+  width: 350px;
+}
 .PA {
   background: #ea7101;
   box-shadow: inset 0px 0px 10px #d16501;
