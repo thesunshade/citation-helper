@@ -229,10 +229,6 @@ a:focus .url-button-class {
   float: left;
 }
 
-/* .link-SC {
-  width: 100%;
-  display: flex;
-} */
 .SC {
   background: #ce8400;
   box-shadow: inset 0px 0px 10px #b67300;
@@ -321,6 +317,11 @@ a:focus .url-button-class {
     border-radius: 10px;
     font-size: 1.2rem;
     width: 280px;
+  }
+
+  .display-url {
+    position: relative;
+    top: 5px;
   }
 
   /*testing*/
