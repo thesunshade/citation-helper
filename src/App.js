@@ -11,6 +11,7 @@ import createAccessToInsightLink from "./webSites/createAccessToInsightLink.js";
 import createPaliAudioLink from "./webSites/createPaliAudioLink.js";
 import createWebsiteLink from "./webSites/createWebsiteLink.js";
 import LinkButton from "./Components/LinkButton.js";
+import AltScTransButton from "./Components/AltScTransButton.js";
 import addParamsToSuttaCentralUrl from "./functions/addParamsToSuttaCentralUrl.js";
 import OtherToolsIcons from "./Components/OtherToolsIcons.js";
 import TabbedLinkArea from "./Components/TabbedLinkArea.js";
@@ -145,6 +146,7 @@ function App() {
                 })}
               />
             </div>
+            <AltScTransButton citation={validateCitation(parseBookName(userInput), parseNumbers(userInput))} />
             <LinkButton
               site={"SF"}
               url={createWebsiteLink({
