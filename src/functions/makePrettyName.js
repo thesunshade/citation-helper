@@ -13,6 +13,9 @@ export default function makePrettyName(id) {
     case "ABT":
       prettySiteUrl = "Ancient-Buddhist-Texts.net";
       break;
+    case "ATI":
+      prettySiteUrl = "AccessToInsight.org";
+      break;
     case "PA":
       prettySiteUrl = "PaliAudio.com";
       break;

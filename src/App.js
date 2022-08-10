@@ -41,6 +41,7 @@ function App() {
     "SuttaFriends.org",
     "DhammaTalks.org",
     "Ancient-Buddhist-Texts.net",
+    "AccessToInsight.org",
     "PaliAudio.com",
     "Voice.SuttaCentral.net",
   ];

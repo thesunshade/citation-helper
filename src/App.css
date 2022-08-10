@@ -90,7 +90,7 @@ button:focus {
   align-items: center; /**/
   max-width: 360px;
   text-align: center;
-  min-height: 220px;
+  min-height: 242px;
   row-gap: 0.3rem;
   background-image: url("./images/citation-helper-background.png");
 }
@@ -435,6 +435,19 @@ h4 {
 
 #info-section h4 {
   color: grey;
+}
+
+.copy-buttons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+.copy-buttons li {
+  list-style: none;
+}
+
+ul {
+  padding-left: 1rem;
 }
 
 .nikaya-group {

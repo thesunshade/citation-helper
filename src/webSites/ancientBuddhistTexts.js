@@ -337,7 +337,6 @@ export let ancientBuddhistTexts = {
       all: "/snp",
       chapter_links: { 5: "/Texts-and-Translations/Parayanavagga/index.htm" },
     },
-
     available: {
       5: [
         [

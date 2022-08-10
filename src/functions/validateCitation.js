@@ -77,8 +77,7 @@ export default function validateCitation(book, numbers) {
       chapterFlag === false
     ) {
       //this handles the situation where first number is less than max chapter number and can be made into a sutta number
-      console.log({ book });
-      console.log({ firstNumber });
+
       secondNumber = firstNumber;
       firstNumber = 1;
     } else if (secondNumber) {
@@ -125,6 +124,6 @@ export default function validateCitation(book, numbers) {
       }
     }
   });
-  console.log(book, firstNumber, secondNumber, verseFlag, chapterFlag, error, warning);
+
   return { book, firstNumber, secondNumber, verseFlag, chapterFlag, error, warning };
 }
