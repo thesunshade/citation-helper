@@ -73,7 +73,9 @@ export default function InfoSection() {
           Copy to the clipboard current citations as:
           <ul className="copy-buttons">
             <li>
-              <button onClick={copyCurrentCitationsList}>HTML list</button>
+              <button onClick={copyCurrentCitationsList} title="Create unordered list of links currently shown in app.">
+                HTML list
+              </button>
             </li>
             <li>
               <button onClick={copyCurrentCitationsSentence}>HTML sentence</button>
