@@ -237,6 +237,16 @@ a:focus .url-button-class {
   max-width: 360px; */
 }
 
+.alt-sc-trans {
+  background: #ce8400;
+  box-shadow: inset 0px 0px 10px #b67300;
+  min-width: 20px;
+  max-width: 20px;
+  display: flex !important;
+  align-content: center;
+  justify-content: center;
+}
+
 /* .link-SCL {
   min-width: 20px;
   padding: 0px;

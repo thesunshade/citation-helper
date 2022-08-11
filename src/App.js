@@ -138,6 +138,7 @@ function App() {
           <div id="link-button-area">
             <div className="sc-button-area">
               <LinkButton site={"SC"} url={addParamsToSuttaCentralUrl(userInput, translator, layout)} />
+              <AltScTransButton citation={validateCitation(parseBookName(userInput), parseNumbers(userInput))} />
               <LinkButton
                 site={"SCL"}
                 url={createWebsiteLink({
@@ -146,7 +147,7 @@ function App() {
                 })}
               />
             </div>
-            <AltScTransButton citation={validateCitation(parseBookName(userInput), parseNumbers(userInput))} />
+
             <LinkButton
               site={"SF"}
               url={createWebsiteLink({
