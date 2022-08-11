@@ -378,6 +378,10 @@ a:focus .url-button-class {
     display: none;
   }
 
+  ul {
+    padding-left: 1rem;
+  }
+
   #SC-toc-suttas-links-area,
   #SC-all-suttas-links-area,
   .links-area {
@@ -445,10 +449,6 @@ h4 {
 }
 .copy-buttons li {
   list-style: none;
-}
-
-ul {
-  padding-left: 1rem;
 }
 
 .nikaya-group {
