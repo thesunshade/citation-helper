@@ -229,10 +229,6 @@ a:focus .url-button-class {
   float: left;
 }
 
-/* .link-SC {
-  width: 100%;
-  display: flex;
-} */
 .SC {
   background: #ce8400;
   box-shadow: inset 0px 0px 10px #b67300;
@@ -323,6 +319,11 @@ a:focus .url-button-class {
     width: 280px;
   }
 
+  .display-url {
+    position: relative;
+    top: 5px;
+  }
+
   /*testing*/
   .sc-button-area {
     max-width: 315px;
@@ -375,6 +376,10 @@ a:focus .url-button-class {
 
   .tab-titles {
     display: none;
+  }
+
+  ul {
+    padding-left: 1rem;
   }
 
   #SC-toc-suttas-links-area,
@@ -444,10 +449,6 @@ h4 {
 }
 .copy-buttons li {
   list-style: none;
-}
-
-ul {
-  padding-left: 1rem;
 }
 
 .nikaya-group {

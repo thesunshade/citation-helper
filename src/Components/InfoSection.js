@@ -6,8 +6,7 @@ import nameLookup from "../images/favicon-name-black.png";
 export default function InfoSection() {
   function copyCurrentCitationsList() {
     const currentCitations = document.getElementsByClassName("url-button-link");
-    let output = `<h4>Read on:</h4>
-<ul>\n`;
+    let output = `<ul>\n`;
     for (let i = 0; i < currentCitations.length; i++) {
       let prettySiteUrl = makePrettyName(currentCitations[i].attributes.site.value);
       if (prettySiteUrl !== "") {
@@ -20,22 +19,22 @@ export default function InfoSection() {
 
   function copyCurrentCitationsSentence() {
     const currentCitations = document.getElementsByClassName("url-button-link");
-    let output = `<p>`;
+    let output = "";
     for (let i = 0; i < currentCitations.length; i++) {
+      console.log(i);
       let prettySiteUrl = makePrettyName(currentCitations[i].attributes.site.value);
+      console.log(prettySiteUrl);
       if (prettySiteUrl !== "") {
         output += `<a href="${currentCitations[i].href}" rel="noreferrer" target="_blank">${prettySiteUrl}</a>`;
         if (i === currentCitations.length - 1) {
           output += ".";
         } else if (i === currentCitations.length - 2 && i !== 0) {
           output += ", and ";
-        } else if (i !== 0) {
+        } else {
           output += ", ";
-          console.log("hello");
         }
       }
     }
-    output += `</p>`;
     navigator.clipboard.writeText(output);
   }
 
@@ -47,7 +46,7 @@ export default function InfoSection() {
           Pali Text Society Lookup (e.g. M ii 234)
         </a>
         <a className="card-link index" href="https://name.readingfaithfully.org" target="_blank" rel="noreferrer">
-          <img width="13px" src={nameLookup}></img> Pali Sutta Name Lookup
+          <img width="13px" src={nameLookup} alt=""></img> Pali Sutta Name Lookup
         </a>
       </div>
       <h4>Instructions and tips</h4>
@@ -74,7 +73,9 @@ export default function InfoSection() {
           Copy to the clipboard current citations as:
           <ul className="copy-buttons">
             <li>
-              <button onClick={copyCurrentCitationsList}>HTML list</button>
+              <button onClick={copyCurrentCitationsList} title="Create unordered list of links currently shown in app.">
+                HTML list
+              </button>
             </li>
             <li>
               <button onClick={copyCurrentCitationsSentence}>HTML sentence</button>
