@@ -245,7 +245,7 @@ export default function SCSection() {
           <a
             className="all-link Itv"
             title="Itivuttaka"
-            href="https://suttacentral.net/itv"
+            href="https://suttacentral.net/iti"
             target="_blank"
             rel="noreferrer"
           >
