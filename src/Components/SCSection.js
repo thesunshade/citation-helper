@@ -82,7 +82,7 @@ export default function SCSection() {
               target="_blank"
               rel="noreferrer"
             >
-              Khp
+              Kp
             </a>
 
             <a
@@ -111,7 +111,7 @@ export default function SCSection() {
               target="_blank"
               rel="noreferrer"
             >
-              Itv
+              Iti
             </a>
             <a
               className="card-link Snp"
@@ -225,7 +225,7 @@ export default function SCSection() {
             target="_blank"
             rel="noreferrer"
           >
-            Khp
+            Kp
           </a>
 
           <a
@@ -249,7 +249,7 @@ export default function SCSection() {
             target="_blank"
             rel="noreferrer"
           >
-            Itv
+            Iti
           </a>
 
           <a

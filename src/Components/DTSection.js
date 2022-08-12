@@ -113,7 +113,7 @@ export default function DTSection() {
           href="https://www.dhammatalks.org/suttas/KN/Iti/index_Iti.html"
           target="_blank"
         >
-          Itv
+          Iti
         </a>
 
         <a
