@@ -414,7 +414,7 @@ a:focus .url-button-class {
 
   #tabbed-links-area {
     width: 330px !important;
-    min-height: 700px !important;
+    min-height: 800px !important;
   }
 
   .tab-titles {
@@ -662,7 +662,7 @@ button {
 .content {
   background: white;
   padding: 5px;
-  height: 700px;
+  height: 800px;
   display: none;
 }
 
