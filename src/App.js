@@ -11,10 +11,12 @@ import createAccessToInsightLink from "./webSites/createAccessToInsightLink.js";
 import createPaliAudioLink from "./webSites/createPaliAudioLink.js";
 import createWebsiteLink from "./webSites/createWebsiteLink.js";
 import LinkButton from "./Components/LinkButton.js";
+import AltScTransButton from "./Components/AltScTransButton.js";
 import addParamsToSuttaCentralUrl from "./functions/addParamsToSuttaCentralUrl.js";
 import OtherToolsIcons from "./Components/OtherToolsIcons.js";
 import TabbedLinkArea from "./Components/TabbedLinkArea.js";
 import findSuttaName from "./functions/findSuttaName.js";
+import LanguagesDropdown from "./Components/LanguagesDropdown.js";
 
 function App() {
   window.onpopstate = function (e) {
@@ -70,11 +72,6 @@ function App() {
       window.open(firstCreatedLink, "_blank");
     }
   }
-  // function handleKeyPress(event) {
-  //   if (event.key === "Enter" && addParamsToSuttaCentralUrl() !== "") {
-  //     window.open(addParamsToSuttaCentralUrl(), "_blank");
-  //   }
-  // }
 
   // displays the error message when one exists
   useEffect(() => {
@@ -137,6 +134,7 @@ function App() {
           <div id="link-button-area">
             <div className="sc-button-area">
               <LinkButton site={"SC"} url={addParamsToSuttaCentralUrl(userInput, translator, layout)} />
+              <AltScTransButton citation={validateCitation(parseBookName(userInput), parseNumbers(userInput))} />
               <LinkButton
                 site={"SCL"}
                 url={createWebsiteLink({
@@ -145,6 +143,7 @@ function App() {
                 })}
               />
             </div>
+
             <LinkButton
               site={"SF"}
               url={createWebsiteLink({
@@ -219,6 +218,9 @@ function App() {
                 ))}
               </div>
             </div>
+            <div id="language-area-box">
+              <LanguagesDropdown />
+            </div>
           </div>
           <div>
             <div id="radiobutton-area-box-label">SuttaCentral Options</div>
@@ -233,6 +235,9 @@ function App() {
                 }}
               >
                 <div>Translators:</div>
+                <div className="option-descriptions dropdown-description">
+                  This is for the main SuttaCentral link button.
+                </div>
                 <label>
                   <input
                     type="radio"
