@@ -16,6 +16,7 @@ import addParamsToSuttaCentralUrl from "./functions/addParamsToSuttaCentralUrl.j
 import OtherToolsIcons from "./Components/OtherToolsIcons.js";
 import TabbedLinkArea from "./Components/TabbedLinkArea.js";
 import findSuttaName from "./functions/findSuttaName.js";
+import LanguagesDropdown from "./Components/LanguagesDropdown.js";
 
 function App() {
   window.onpopstate = function (e) {
@@ -71,11 +72,6 @@ function App() {
       window.open(firstCreatedLink, "_blank");
     }
   }
-  // function handleKeyPress(event) {
-  //   if (event.key === "Enter" && addParamsToSuttaCentralUrl() !== "") {
-  //     window.open(addParamsToSuttaCentralUrl(), "_blank");
-  //   }
-  // }
 
   // displays the error message when one exists
   useEffect(() => {
@@ -221,6 +217,9 @@ function App() {
                   </div>
                 ))}
               </div>
+            </div>
+            <div id="language-area-box">
+              <LanguagesDropdown />
             </div>
           </div>
           <div>

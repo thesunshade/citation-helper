@@ -117,6 +117,28 @@ button:focus {
   width: 7.5rem;
 }
 
+#language-area-box {
+  padding: 1rem;
+  border-radius: 10px;
+  border: solid 2px gainsboro;
+  width: 210px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#language-area-box-label {
+  color: rgb(133, 133, 133);
+  font-size: 0.8rem;
+  position: relative;
+  top: -1.5rem;
+  /* left: 3rem; */
+  background-color: white;
+  padding: 0 0.41rem;
+  width: 7.5rem;
+}
+
 #checkbox-area-box {
   padding: 0 1rem 1rem 1rem;
   border-radius: 10px;
@@ -357,7 +379,8 @@ a:focus .url-button-class {
     flex-direction: column;
   }
 
-  #checkbox-area-box {
+  #checkbox-area-box,
+  #language-area-box {
     width: 280px;
   }
 
