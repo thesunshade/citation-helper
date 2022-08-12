@@ -19,9 +19,12 @@ export default function LanguagesDropdown() {
   return (
     <>
       <label htmlFor="languages" id="language-area-box-label">
-        Language:
+        Language
       </label>
-      Choose the language for alternative translations
+      Alternatives on SuttaCentral:
+      <div className="option-descriptions dropdown-description">
+        Choose a language to show alternatives to Bhikkhu Sujato's translation.
+      </div>
       <select name="languages" id="languages" value={value} onChange={handleChange}>
         {languageList.map(language => {
           return (

@@ -34,7 +34,7 @@ export default function AltScTransButton(props) {
           console.log(error);
         });
     }
-  }, [citation, book, firstNumber, secondNumber, error]);
+  }, [citation, props]);
 
   function buildGoodCitationFromParts(book, firstNumber, secondNumber) {
     if (error) {

@@ -235,6 +235,9 @@ function App() {
                 }}
               >
                 <div>Translators:</div>
+                <div className="option-descriptions dropdown-description">
+                  This is for the main SuttaCentral link button.
+                </div>
                 <label>
                   <input
                     type="radio"
