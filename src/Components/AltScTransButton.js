@@ -27,7 +27,6 @@ export default function AltScTransButton(props) {
             setAuthorListTooltip("Translations: " + authorList.join(", "));
           } else {
             setAltTransLink("");
-            // authorList = "";
           }
         })
         .catch(error => {
