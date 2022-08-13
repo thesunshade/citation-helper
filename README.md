@@ -6,7 +6,7 @@ https://sutta.readingfaithfully.org/
 
 This tool is designed to allow you to enter citations for suttas in the first four nikayas and the first 10 books of the Kuddhaka Nikaya. All standard abreviations can be used.
 
-# DEvelopers
+# Developers
 
 ## Add a new site
 
@@ -16,5 +16,3 @@ This tool is designed to allow you to enter citations for suttas in the first fo
 - [ ] Add css style for class of site code
 - [ ] Add site to `makePrettyName.js`
 - [ ] Add site to array `checkList` so it appears in options list
-- [ ]
-- [ ]

@@ -20,8 +20,8 @@ export default function LinkButton(props) {
     if (displayUrl.length > 52) {
       displayUrl = displayUrl.replace(/\/.+\//, "/…/").replace(/sutta\?search=/, "…");
     }
-    if (displayUrl.length > 37 && /^suttacentral/.test(displayUrl)) {
-      displayUrl = displayUrl.slice(0, 36) + "…";
+    if (displayUrl.length > 35 && /^suttacentral/.test(displayUrl)) {
+      displayUrl = displayUrl.slice(0, 34) + "…";
     } else {
       if (displayUrl.length > 40) {
         displayUrl = displayUrl.slice(0, 39) + "…";
