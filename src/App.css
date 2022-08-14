@@ -513,6 +513,7 @@ h4 {
   padding: 1rem;
   text-align: center;
   border: solid 1px gainsboro;
+  border-radius: 7px;
   color: black;
 }
 
