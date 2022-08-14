@@ -201,7 +201,8 @@ button:focus {
   margin-right: 0px;
 }
 
-.radiobuttonarea label[disabled] {
+.radiobuttonarea label[disabled],
+.checkbox-list-container label[disabled] {
   color: #c7c7ce;
 }
 

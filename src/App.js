@@ -58,9 +58,9 @@ function App() {
     } else {
       updatedList.splice(checked.indexOf(event.target.value), 1);
     }
-    if (updatedList.length === 0) {
-      updatedList = ["SuttaCentral.net"];
-    }
+    // if (updatedList.length === 0) {
+    //   updatedList = ["SuttaCentral.net"];
+    // }
     localStorage.checked = JSON.stringify(updatedList);
     setChecked(updatedList);
   };
@@ -207,13 +207,16 @@ function App() {
               <div className="checkbox-list-container">
                 {checkList.map((item, index) => (
                   <div key={index}>
-                    <input
-                      value={item}
-                      type="checkbox"
-                      checked={checked.includes(item) ? "checked" : ""}
-                      onChange={event => handleCheck(event)}
-                    />
-                    <span>{item}</span>
+                    <label disabled={item === "SuttaCentral.net" ? true : false}>
+                      <input
+                        value={item}
+                        type="checkbox"
+                        checked={item === "SuttaCentral.net" || checked.includes(item) ? "checked" : ""}
+                        disabled={item === "SuttaCentral.net" ? true : false}
+                        onChange={event => handleCheck(event)}
+                      />
+                      {item}
+                    </label>
                   </div>
                 ))}
               </div>
