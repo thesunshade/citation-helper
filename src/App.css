@@ -1,3 +1,16 @@
+:root {
+  --suttacentral: #ce8400;
+  --dhammatalks: #b87049;
+  --suttafriends: #b45250;
+  --ancientbuddhist: #7f9861;
+  --accesstoinsight: #6d0303;
+  --paliaudio: #ea7101;
+  --light-gray: gainsboro;
+  --gray: rgba(0, 0, 0, 0.274);
+  --med-gray: #858585;
+  --dark-gray: #404040;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -13,7 +26,7 @@
 #input-field-container {
   padding: 1rem;
   border-radius: 10px;
-  border: solid 2px gainsboro;
+  border: solid 2px var(--light-gray);
   font-size: 1.5rem;
   position: relative;
   width: 300px;
@@ -21,7 +34,7 @@
 }
 
 #input-field-container label {
-  color: rgb(133, 133, 133);
+  color: var(--med-gray);
   font-size: 0.8rem;
   position: absolute;
   top: -0.6rem;
@@ -42,7 +55,7 @@
 
 a:focus,
 button:focus {
-  outline: dotted gray 2px !important;
+  outline: dotted var(--gray) 2px !important;
 }
 
 .sutta-name-container {
@@ -53,7 +66,7 @@ button:focus {
 .sutta-name {
   margin: 0rem;
   text-align: center;
-  color: rgb(64, 64, 64);
+  color: var(--dark-gray);
   font-style: italic;
 }
 
@@ -64,7 +77,7 @@ button:focus {
 }
 
 #url-builder input::placeholder {
-  color: gray;
+  color: var(--med-gray);
   font-style: italic;
 }
 
@@ -98,7 +111,7 @@ button:focus {
 #radiobutton-area-box {
   padding: 1rem;
   border-radius: 10px;
-  border: solid 2px gainsboro;
+  border: solid 2px var(--light-gray);
   width: 510px;
   margin: auto;
   display: flex;
@@ -107,7 +120,7 @@ button:focus {
 }
 
 #radiobutton-area-box-label {
-  color: rgb(133, 133, 133);
+  color: var(--med-gray);
   font-size: 0.8rem;
   position: relative;
   top: 0.5rem;
@@ -118,7 +131,7 @@ button:focus {
 }
 
 #language-area-box-label {
-  color: rgb(133, 133, 133);
+  color: var(--med-gray);
   font-size: 0.8rem;
   position: absolute;
   top: -0.6rem;
@@ -131,7 +144,7 @@ button:focus {
 #language-area-box {
   padding: 1rem;
   border-radius: 10px;
-  border: solid 2px gainsboro;
+  border: solid 2px var(--light-gray);
   width: 210px;
   margin: 1rem auto;
   display: flex;
@@ -147,7 +160,7 @@ button:focus {
 #checkbox-area-box {
   padding: 0 1rem 1rem 1rem;
   border-radius: 10px;
-  border: solid 2px gainsboro;
+  border: solid 2px var(--light-gray);
   width: 210px;
   margin: auto;
   display: flex;
@@ -155,7 +168,7 @@ button:focus {
 }
 
 #checkbox-area-box-label {
-  color: rgb(133, 133, 133);
+  color: var(--med-gray);
   font-size: 0.8rem;
   position: relative;
   top: 0.5rem;
@@ -188,7 +201,7 @@ button:focus {
 
 .option-descriptions {
   font-size: 0.8rem;
-  color: gray;
+  color: var(--med-gray);
   margin-left: 1.5rem;
 }
 
@@ -203,7 +216,7 @@ button:focus {
 
 .radiobuttonarea label[disabled],
 .checkbox-list-container label[disabled] {
-  color: #c7c7ce;
+  color: var(--gray);
 }
 
 #message-area {
@@ -212,7 +225,6 @@ button:focus {
   font-size: 0.7rem;
   position: relative;
   top: -0.65rem;
-
   margin: auto;
 }
 
@@ -243,7 +255,7 @@ button:focus {
 
 a:focus .url-button-class {
   outline: none;
-  box-shadow: inset 0px 0px 0px 2px rgb(0, 0, 0);
+  box-shadow: inset 0px 0px 0px 2px black;
 }
 
 #url-button {
@@ -263,15 +275,13 @@ a:focus .url-button-class {
 }
 
 .SC {
-  background: #ce8400;
+  background: var(--suttacentral);
   box-shadow: inset 0px 0px 10px #b67300;
   flex-grow: 1;
-  /* min-width: 305px;
-  max-width: 360px; */
 }
 
 .alt-sc-trans {
-  background: #ce8400;
+  background: var(--suttacentral);
   box-shadow: inset 0px 0px 10px #b67300;
   min-width: 20px;
   max-width: 20px;
@@ -280,10 +290,6 @@ a:focus .url-button-class {
   justify-content: center;
 }
 
-/* .link-SCL {
-  min-width: 20px;
-  padding: 0px;
-} */
 .SCL {
   background: rgb(227, 220, 202);
   border: 0px solid;
@@ -307,43 +313,48 @@ a:focus .url-button-class {
 }
 
 .SF {
-  background: #b45250;
+  background: var(--suttafriends);
   box-shadow: inset 0px 0px 10px #9e4746;
   width: 350px;
 }
 .DT {
-  background: #b87049;
+  background: var(--dhammatalks);
   box-shadow: inset 0px 0px 10px #a36341;
   width: 350px;
 }
 .ABT {
-  background: #7f9861;
+  background: var(--ancientbuddhist);
   box-shadow: inset 0px 0px 10px #738859;
   width: 350px;
 }
 .ATI {
-  background: #6d0303;
-  box-shadow: inset 0px 0px 10px #738859;
+  background: var(--accesstoinsight);
+  box-shadow: inset 0px 0px 10px #490202;
   width: 350px;
 }
+
+.ATI:hover {
+  box-shadow: inset 0px 0px 10px rgb(29, 29, 29) !important;
+}
 .PA {
-  background: #ea7101;
+  background: var(--paliaudio);
   box-shadow: inset 0px 0px 10px #d16501;
   width: 350px;
 }
 .SCV {
-  background: #000000;
+  background: black;
   box-shadow: inset 0px 0px 10px #756a9b;
   width: 350px;
 }
 
 #url-button.nolink {
-  background: gray;
+  background: var(--med-gray);
 }
 
 .url-button-class:hover {
   /* background: rgba(0, 0, 0, 0.466); */
-  box-shadow: inset 0px 0px 10px rgb(70, 70, 70);
+  box-shadow: inset 0px 0px 10px var(--dark-gray);
+  /* rgb(70, 70, 70); */
 }
 .url-button-class.SCV:hover {
   /* background: rgba(0, 0, 0, 0.466); */
@@ -367,14 +378,8 @@ a:focus .url-button-class {
     top: 5px;
   }
 
-  /*testing*/
   .sc-button-area {
     max-width: 315px;
-  }
-
-  .SC {
-    /* min-width: 257px !important;
-    max-width: 340px; */
   }
 
   .url-button-class {
@@ -483,7 +488,7 @@ h4 {
 }
 
 #info-section h4 {
-  color: grey;
+  color: var(--med-gray);
 }
 
 .copy-buttons {
@@ -512,7 +517,7 @@ h4 {
   flex-grow: 1;
   padding: 1rem;
   text-align: center;
-  border: solid 1px gainsboro;
+  border: solid 1px var(--light-gray);
   border-radius: 7px;
   color: black;
 }
@@ -524,7 +529,7 @@ h4 {
 }
 
 .index {
-  background-color: #dadada;
+  background-color: var(--light-gray);
 }
 
 .index-button-sections {
@@ -621,7 +626,7 @@ a.all-link:hover {
   min-height: 600px;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border: 2px solid gainsboro;
+  border: 2px solid var(--light-gray);
   overflow: hidden;
   border-radius: 10px;
 }
@@ -641,17 +646,16 @@ a.all-link:hover {
   text-align: center;
   width: 50%;
   cursor: pointer;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  border-bottom: 1px solid var(--gray);
   box-sizing: content-box;
   position: relative;
   outline: none;
 }
 .tabs:not(:last-child) {
-  border-right: 1px solid rgba(0, 0, 0, 0.274);
+  border-right: 1px solid var(--gray);
 }
 
 .active-tabs {
-  /* background: white; */
   border-bottom: 1px solid transparent;
 }
 
@@ -670,30 +674,30 @@ button {
 
 .content.SC-content,
 .SC-tabs {
-  background-color: #ce8400;
+  background-color: var(--suttacentral);
 }
 .content.SF-content,
 .SF-tabs {
-  background-color: #b45250;
+  background-color: var(--suttafriends);
 }
 .content.DT-content,
 .DT-tabs {
-  background-color: #b87049;
+  background-color: var(--dhammatalks);
 }
 .content.ABT-content,
 .ABT-tabs {
-  background-color: #7f9861;
+  background-color: var(--ancientbuddhist);
 }
 
 .content h2 {
   padding: 0px 0 5px 0px;
 }
-.content hr {
+/* .content hr {
   width: 100px;
   height: 2px;
   background: #222;
   margin-bottom: 5px;
-}
+} */
 .content p {
   width: 100%;
   height: 100%;
