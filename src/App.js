@@ -6,10 +6,7 @@ import settingsIcon from "./images/settings.png";
 import parseBookName from "./functions/parseBookName.js";
 import parseNumbers from "./functions/parseNumbers.js";
 import validateCitation from "./functions/validateCitation.js";
-import createAncientBuddhistTextsLink from "./webSites/createAncientBuddhistTextsLink.js";
-import createAccessToInsightLink from "./webSites/createAccessToInsightLink.js";
-import createDigitalPaliReaderLink from "./webSites/createDigitalPaliReaderLink.js";
-import createPaliAudioLink from "./webSites/createPaliAudioLink.js";
+import createCustomUrlSitesLink from "./webSites/createCustomUrlSitesLink.js";
 import createWebsiteLink from "./webSites/createWebsiteLink.js";
 import LinkButton from "./Components/LinkButton.js";
 import AltScTransButton from "./Components/AltScTransButton.js";
@@ -162,25 +159,29 @@ function App() {
             />
             <LinkButton
               site={"ABT"}
-              url={createAncientBuddhistTextsLink({
+              url={createCustomUrlSitesLink({
+                site: "ABT",
                 ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
               })}
             />
             <LinkButton
               site={"ATI"}
-              url={createAccessToInsightLink({
+              url={createCustomUrlSitesLink({
+                site: "ATI",
                 ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
               })}
             />
             <LinkButton
               site={"DPR"}
-              url={createDigitalPaliReaderLink({
+              url={createCustomUrlSitesLink({
+                site: "DPR",
                 ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
               })}
             />
             <LinkButton
               site={"PA"}
-              url={createPaliAudioLink({
+              url={createCustomUrlSitesLink({
+                site: "PA",
                 ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
               })}
             />

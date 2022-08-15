@@ -1,4 +1,4 @@
-import createAncientBuddhistTextsLink from "./createAncientBuddhistTextsLink.js";
+import createAncientBuddhistTextsLink from "./createCustomUrlSitesLink.js";
 
 test("test all mn141 citation", () => {
   expect(
