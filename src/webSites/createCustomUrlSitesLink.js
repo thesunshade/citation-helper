@@ -1,15 +1,28 @@
-// This function is an alternative to createWebsiteLink.js
-// The PA links are name based so they can't be calculated the same way
-//
-// This should probably refactored so the same function can be used for ABT and PA
-
 import { structure } from "../structure.js";
-import { paliAudio as website } from "./paliAudio.js";
 
-export default function createPaliAudioLink(props) {
-  let { book, firstNumber, secondNumber, chapterFlag, error } = props;
+export default function createCustomUrlSitesLink(props) {
+  let { site, book, firstNumber, secondNumber, chapterFlag, error } = props;
   const books = Object.keys(structure);
   let url = "";
+  let website;
+
+  switch (site) {
+    case "ABT":
+      website = require("./ancientBuddhistTexts.js").ancientBuddhistTexts;
+      break;
+    case "DPR":
+      website = require("./digitalPaliReader.js").digitalPaliReader;
+      break;
+    case "ATI":
+      website = require("./accessToInsight.js").accessToInsight;
+      break;
+    case "PA":
+      website = require("./paliAudio.js").paliAudio;
+      break;
+    default:
+      console.log("error getting site file");
+  }
+
   const { rootUrl, suffixUrl } = website.constants;
 
   function createSuttaLink() {
@@ -18,11 +31,11 @@ export default function createPaliAudioLink(props) {
       chapterFlag === true
     ) {
       if (website[book].links.chapter_links && firstNumber <= Object.keys(structure[book].chapters).length) {
-        url = website[book].links.chapter_links[firstNumber];
+        url = rootUrl + website[book].links.chapter_links[firstNumber];
       }
     } else if (website[book]) {
       if (website[book].links.main_page && firstNumber === 0) {
-        url = website[book].links.main_page;
+        url = rootUrl + website[book].links.main_page;
       }
       const available = website[book].available;
       if (website[book].range_suttas) {
@@ -52,9 +65,10 @@ export default function createPaliAudioLink(props) {
       //test for the chapter flag
       chapterFlag === true &&
       website[book].links.chapter_links &&
-      firstNumber <= Object.keys(structure[book].chapters).length
+      firstNumber <= Object.keys(structure[book].chapters).length &&
+      website[book].links.chapter_links[firstNumber]
     ) {
-      url = website[book].links.chapter_links[firstNumber];
+      url = rootUrl + website[book].links.chapter_links[firstNumber];
     } else if (website[book].links.main_page && firstNumber === 0) {
       url = website[book].links.main_page;
     } else if (website[book].complete && secondNumber > 0) {
@@ -98,5 +112,6 @@ export default function createPaliAudioLink(props) {
       });
     }
   }
+
   return url;
 }
