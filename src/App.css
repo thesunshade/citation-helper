@@ -327,6 +327,11 @@ a:focus .url-button-class {
   box-shadow: inset 0px 0px 10px #738859;
   width: 350px;
 }
+.DPR {
+  background: #e7bf30;
+  box-shadow: inset 0px 0px 10px #c09f29;
+  width: 350px;
+}
 .ATI {
   background: var(--accesstoinsight);
   box-shadow: inset 0px 0px 10px #490202;

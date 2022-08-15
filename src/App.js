@@ -8,6 +8,7 @@ import parseNumbers from "./functions/parseNumbers.js";
 import validateCitation from "./functions/validateCitation.js";
 import createAncientBuddhistTextsLink from "./webSites/createAncientBuddhistTextsLink.js";
 import createAccessToInsightLink from "./webSites/createAccessToInsightLink.js";
+import createDigitalPaliReaderLink from "./webSites/createDigitalPaliReaderLink.js";
 import createPaliAudioLink from "./webSites/createPaliAudioLink.js";
 import createWebsiteLink from "./webSites/createWebsiteLink.js";
 import LinkButton from "./Components/LinkButton.js";
@@ -44,6 +45,7 @@ function App() {
     "DhammaTalks.org",
     "Ancient-Buddhist-Texts.net",
     "AccessToInsight.org",
+    "DigitalPaliReader.online",
     "PaliAudio.com",
     "Voice.SuttaCentral.net",
   ];
@@ -167,6 +169,12 @@ function App() {
             <LinkButton
               site={"ATI"}
               url={createAccessToInsightLink({
+                ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
+              })}
+            />
+            <LinkButton
+              site={"DPR"}
+              url={createDigitalPaliReaderLink({
                 ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
               })}
             />

@@ -22,6 +22,9 @@ export default function makePrettyName(id) {
     case "SCV":
       prettySiteUrl = "Voice.SuttaCentral.net";
       break;
+    case "DPR":
+      prettySiteUrl = "DigitalPaliReader.online";
+      break;
     default:
       prettySiteUrl = "";
   }
