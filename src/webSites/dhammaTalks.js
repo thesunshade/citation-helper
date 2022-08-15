@@ -319,6 +319,7 @@ export let dhammaTalks = {
     complete: true,
     range_suttas: [[10, 13]],
   },
+
   snp: {
     links: { all: "/KN/StNp/StNp", main_page: "https://www.dhammatalks.org/suttas/KN/StNp/index_StNp.html" },
     available: [],
