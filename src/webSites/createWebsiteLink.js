@@ -234,7 +234,7 @@ export default function createWebsiteLink(props) {
       }
     }
 
-    //                                             the actual function
+    // -------------------- the actual function ---------------------------------
     if (error === "" && booksOnWebsite.includes(book)) {
       books.forEach(bookKey => {
         const format = structure[bookKey].format[0];
