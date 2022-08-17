@@ -122,6 +122,10 @@ export default function createCustomUrlSitesLink(props) {
                   url = rootUrl + sutta[2];
                 }
               }
+            } else {
+              if (secondNumber === sutta[0]) {
+                url = rootUrl + sutta[1];
+              }
             }
           });
         }
