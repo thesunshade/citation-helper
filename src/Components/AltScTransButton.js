@@ -61,7 +61,7 @@ export default function AltScTransButton(props) {
         data-citaion={citation}
         title={authorListTooltip}
       >
-        <img height="25px" src={plusicon} alt="" />
+        <img height="25px" src={plusicon} alt="Additional translations on SuttaCentral.net" />
       </a>
     );
   } else {

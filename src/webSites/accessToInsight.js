@@ -6,7 +6,6 @@ export let accessToInsight = {
   },
   dn: {
     format: ["sutta"],
-
     links: { card: "", all: "", main_page: "https://accesstoinsight.org/tipitaka/dn/index.html" },
     available: [
       [16, "/tipitaka/dn/dn.16.1-6.vaji.html"],

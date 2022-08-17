@@ -12,26 +12,33 @@
 // thag, thig chapter, verse
 // ja sutta
 
+// pali_name -> STRING Full name. Used in generating error messages
+// book_abbreviation -> ARRAY of all allowable abbreviations
+// format -> ARRAY
+// suttas -> NUMBER total number of suttas ONLY for format "sutta"
+// links Possibly unused in this file.
+// conversion_offset OBJECT with key for each chapter number and value NUMBER that can be subtracted from a "chapterless citation" to get the chapter and sutta number. For example with Udana, if Ud74 is given, 70 is the value for chapter 8. Subtract 70 from 74 to give you Ud8.4
+
 export let structure = {
   dn: {
     pali_name: "Dīgha Nikāya",
     book_abbreviation: ["DN"],
     format: ["sutta"],
     suttas: 34,
-    links: { card: "/long/dn", all: "/dn" },
+    // links: { card: "/long/dn", all: "/dn" },
   },
   mn: {
     pali_name: "Majjhima Nikāya",
     book_abbreviation: ["MN"],
     format: ["sutta"],
     suttas: 152,
-    links: { card: "/middle/mn", all: "/mn" },
+    // links: { card: "/middle/mn", all: "/mn" },
   },
   sn: {
     pali_name: "Saṁyutta Nikāya",
     book_abbreviation: ["SN"],
     format: ["chapter"],
-    links: { card: "/linked/sn", all: "/sn" },
+    // links: { card: "/linked/sn", all: "/sn" },
     chapters: {
       1: { max: 81, range_suttas: [] },
       2: { max: 30, range_suttas: [] },
@@ -306,7 +313,7 @@ export let structure = {
     pali_name: "Aṅguttara Nikāya",
     book_abbreviation: ["AN"],
     format: ["chapter"],
-    links: { card: "/numbered/an", all: "/an" },
+    // links: { card: "/numbered/an", all: "/an" },
     chapters: {
       1: {
         max: 627,
@@ -462,6 +469,7 @@ export let structure = {
     },
   },
   kn: {
+    // FIX it is possible this is never used
     pali_name: "Khuddaka Nikāya",
     book_abbreviation: ["KN"],
     format: ["sutta"],
@@ -471,7 +479,7 @@ export let structure = {
     pali_name: "Khuddakapāṭha",
     book_abbreviation: ["Khp", "Kp"],
     format: ["sutta"],
-    links: { card: "/minor/kn/kp", all: "/kp" },
+    // links: { card: "/minor/kn/kp", all: "/kp" },
     suttas: 9,
   },
   dhp: {
@@ -507,7 +515,7 @@ export let structure = {
       26: 41,
     },
     suttas: 423,
-    links: { card: "/minor/dhp", all: "/dhp" },
+    // links: { card: "/minor/dhp", all: "/dhp" },
     range_suttas: [
       [1, 20],
       [21, 32],
@@ -541,7 +549,7 @@ export let structure = {
     pali_name: "Udāna",
     book_abbreviation: ["Ud"],
     format: ["chapter", "sutta"],
-    links: { card: "/minor/kn/ud", all: "/ud" },
+    // links: { card: "/minor/kn/ud", all: "/ud" },
     chapters: {
       1: 10,
       2: 10,
@@ -559,7 +567,7 @@ export let structure = {
     pali_name: "Itivttaka",
     book_abbreviation: ["Itv", "Iti", "It"],
     format: ["sutta", "chapter"],
-    links: { card: "/minor/kn/iti", all: "/iti" },
+    // links: { card: "/minor/kn/iti", all: "/iti" },
     chapters: { 1: 27, 2: 22, 3: 50, 4: 13 },
     conversion_offset: { 1: 0, 2: 27, 3: 49, 4: 99 },
     suttas: 112,
@@ -568,7 +576,7 @@ export let structure = {
     pali_name: "Sutta Nipāta",
     book_abbreviation: ["Snp"],
     format: ["chapter"],
-    links: { card: "/minor/kn/snp", all: "/snp" },
+    // links: { card: "/minor/kn/snp", all: "/snp" },
     chapters: {
       1: 12,
       2: 14,
@@ -581,7 +589,7 @@ export let structure = {
     pali_name: "Vimānavatthu",
     book_abbreviation: ["Vv"],
     format: ["sutta", "chapter"],
-    links: { card: "/minor/kn/vv", all: "/vv" },
+    // links: { card: "/minor/kn/vv", all: "/vv" },
     chapters: { 1: 17, 2: 11, 3: 10, 4: 12, 5: 14, 6: 10, 7: 11 },
     conversion_offset: { 1: 0, 2: 17, 3: 28, 4: 38, 5: 50, 6: 64, 7: 74 },
     suttas: 85,
@@ -590,7 +598,7 @@ export let structure = {
     pali_name: "Petavatthu",
     book_abbreviation: ["Pv"],
     format: ["sutta", "chapter"],
-    links: { card: "/minor/kn/pv", all: "/pv" },
+    // links: { card: "/minor/kn/pv", all: "/pv" },
     chapters: { 1: 12, 2: 13, 3: 10, 4: 16 },
     conversion_offset: { 1: 0, 2: 12, 3: 25, 4: 35 },
     suttas: 51,
@@ -599,7 +607,7 @@ export let structure = {
     pali_name: "Theragāthā",
     book_abbreviation: ["Thag"],
     format: ["chapter", "verse"],
-    links: { card: "/minor/kn/thag", all: "/thag" },
+    // links: { card: "/minor/kn/thag", all: "/thag" },
     verses: [
       [
         [1, 1],
