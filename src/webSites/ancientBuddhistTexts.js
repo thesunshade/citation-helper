@@ -33,6 +33,7 @@ export let ancientBuddhistTexts = {
   sn: {
     format: ["chapter"],
     links: { card: "/linked/sn", all: "/sn" },
+    range_suttas_required: false,
     available: {
       5: [
         [1, "/Texts-and-Translations/Bhikkhunisamyuttam/01-Alavika.htm"],
