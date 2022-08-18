@@ -1,14 +1,18 @@
 import { structure } from "../structure.js";
+import { vinayaBooks } from "./vinayBooks.js";
 
 export default function validateCitation(book, numbers) {
   const books = Object.keys(structure);
   let { firstNumber, secondNumber, verseFlag, chapterFlag } = numbers;
-
+  // console.log("Chapter flag at start: ", chapterFlag);
   let error = "";
   let warning = "";
 
   //                               SUTTA
   function parseSutta() {
+    // console.log("parsing sutta, validate citation");
+    // console.log(structure[book].suttas);
+    // console.log({ firstNumber });
     const maxSuttaNumber = structure[book].suttas;
     if (firstNumber > maxSuttaNumber) {
       error = `Sutta number too high. Not in ${structure[book].pali_name}.`;
@@ -124,6 +128,14 @@ export default function validateCitation(book, numbers) {
       }
     }
   });
+
+  // If it's a vinaya rule, modify error message
+  if (/Sutta number too high/.test(error)) {
+    if (vinayaBooks.includes(book)) {
+      console.log(/Sutta/.test(error));
+      error = error.replace(/Sutta/, "Rule");
+    }
+  }
 
   return { book, firstNumber, secondNumber, verseFlag, chapterFlag, error, warning };
 }
