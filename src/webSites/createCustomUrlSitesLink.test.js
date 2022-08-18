@@ -1,13 +1,13 @@
-import createAncientBuddhistTextsLink from "./createCustomUrlSitesLink.js";
+import createCustomUrlSitesLink from "./createCustomUrlSitesLink.js";
 
 test("test all mn141 citation", () => {
-  expect(
-    createAncientBuddhistTextsLink({ site: "ABT", book: "mn", firstNumber: 141, secondNumber: 0, error: "" })
-  ).toBe("https://www.ancient-buddhist-texts.net/Texts-and-Translations/Short-Pieces/Saccavibhangasuttam.htm");
+  expect(createCustomUrlSitesLink({ site: "ABT", book: "mn", firstNumber: 141, secondNumber: 0, error: "" })).toBe(
+    "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Short-Pieces/Saccavibhangasuttam.htm"
+  );
 });
 test("test dhpch4", () => {
   expect(
-    createAncientBuddhistTextsLink({
+    createCustomUrlSitesLink({
       site: "ABT",
       book: "dhp",
       firstNumber: 4,
@@ -20,7 +20,7 @@ test("test dhpch4", () => {
 
 test("test ABT Snpch5", () => {
   expect(
-    createAncientBuddhistTextsLink({
+    createCustomUrlSitesLink({
       site: "ABT",
       book: "snp",
       firstNumber: 5,

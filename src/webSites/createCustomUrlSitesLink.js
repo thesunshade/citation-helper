@@ -135,8 +135,7 @@ export default function createCustomUrlSitesLink(props) {
 
   // this is the main function
   if (bookObject) {
-    if (book === "ja" && error === "") {
-      // FIX This is exclusively for ABT. If jataka is added to DPR, then this will need to be changed.
+    if (site === "ABT" && book === "ja" && error === "") {
       if (firstNumber > 0) {
         const paddedCitation = ("00" + firstNumber).slice(-3);
         url = rootUrl + "/English-Texts/Jataka/" + paddedCitation + ".htm";
