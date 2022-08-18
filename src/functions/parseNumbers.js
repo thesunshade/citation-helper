@@ -19,7 +19,7 @@ export default function parseNumbers(userInput) {
       }
       if (["verse", "v"].includes(userInputArray[1].toLowerCase())) {
         verseFlag = true;
-      } else if (["chapter", "c", "ch"].includes(userInputArray[1].toLowerCase())) {
+      } else if (["chapter", "ch"].includes(userInputArray[1].toLowerCase())) {
         chapterFlag = true;
       }
     }

@@ -2,15 +2,21 @@ import parseBookName from "./parseBookName";
 import parseNumbers from "./parseNumbers";
 import createWebsiteLink from "../webSites/createWebsiteLink";
 import validateCitation from "./validateCitation";
+import { vinayaBooks } from "./vinayBooks";
 
 // TODO this needs to be untangled.
 // add translator and layout to SuttaCentral url
 export default function addParamsToSuttaCentralUrl(userInput, translator, layout) {
   let parseNumbersResult = parseNumbers(userInput);
+  let parseBookResult = parseBookName(userInput);
   let url = createWebsiteLink({
     site: "SC",
-    ...validateCitation(parseBookName(userInput), parseNumbersResult),
+    ...validateCitation(parseBookResult, parseNumbersResult),
   });
+
+  if (vinayaBooks.includes(parseBookResult)) {
+    translator = "/en/brahmali";
+  }
 
   if (parseNumbersResult.chapterFlag === true) {
     return url;

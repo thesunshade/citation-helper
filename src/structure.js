@@ -2018,4 +2018,104 @@ export let structure = {
     links: { card: "/minor/kn/thig", all: "/thig" },
     suttas: 547,
   },
+
+  // ------------------ VINAYA
+
+  // ------------------ Monks
+
+  bupj: {
+    pali_name: "Bhikkhu Pārājika",
+    book_abbreviation: ["Pj", "Bupj", "Pr", "Bupr"],
+    format: ["sutta"],
+    suttas: 4,
+  },
+
+  buss: {
+    pali_name: "Bhikkhu Saṅghādisesa",
+    book_abbreviation: ["Ss", "Buss", "Sg", "Busg"],
+    format: ["sutta"],
+    suttas: 13,
+  },
+  buay: {
+    pali_name: "Bhikkhu Aniyata",
+    book_abbreviation: ["Ay", "Buay"],
+    format: ["sutta"],
+    suttas: 2,
+  },
+  bunp: {
+    pali_name: "Bhikkhu Nissaggiya Pācittiya",
+    book_abbreviation: ["Np", "Bunp"],
+    format: ["sutta"],
+    suttas: 30,
+  },
+  bupc: {
+    pali_name: "Bhikkhu Pācittiya",
+    book_abbreviation: ["Pc", "Bupc"],
+    format: ["sutta"],
+    suttas: 92,
+  },
+  bupd: {
+    pali_name: "Bhikkhu PāṭidesanIya",
+    book_abbreviation: ["Pd", "Bupd"],
+    format: ["sutta"],
+    suttas: 4,
+  },
+  busk: {
+    pali_name: "Bhikkhu Pāṭidesanīya",
+    book_abbreviation: ["Sk", "Busk"],
+    format: ["sutta"],
+    suttas: 75,
+  },
+  // buas: {
+  //   pali_name: "Bhikkhu Adhikaraṇasamatha",
+  //   book_abbreviation: ["As", "Buas"],
+  //   format: ["sutta"],
+  //   suttas: 7,
+  // },
+
+  //-------------------- BHIKKHUNĪ
+  bipj: {
+    pali_name: "Bhikkhunī Pārājika",
+    book_abbreviation: ["Bipj", "Bipr"],
+    format: ["sutta"],
+    suttas: 8,
+  },
+
+  biss: {
+    pali_name: "Bhikkhunī Saṅghādisesa",
+    book_abbreviation: ["Biss", "Busg"],
+    format: ["sutta"],
+    suttas: 17,
+  },
+
+  binp: {
+    pali_name: "Bhikkhunī Nissaggiya Pācittiya",
+    book_abbreviation: ["Binp"],
+    format: ["sutta"],
+    suttas: 30,
+  },
+  bipc: {
+    pali_name: "Bhikkhunī Pācittiya",
+    book_abbreviation: ["Bipc"],
+    format: ["sutta"],
+    suttas: 166,
+  },
+  bipd: {
+    pali_name: "Bhikkhunī PāṭidesanIya",
+    book_abbreviation: ["Bipd"],
+    format: ["sutta"],
+    suttas: 8,
+  },
+  // bisk: {
+  //   pali_name: "Bhikkhunī Pāṭidesanīya",
+  //   book_abbreviation: ["Bisk"],
+  //   format: ["sutta"],
+  //   suttas: 75,
+  // },
+  // bias: {
+  //   pali_name: "Bhikkhu Adhikaraṇasamatha",
+  //   book_abbreviation: ["Bias"],
+  //   format: ["sutta"],
+  //   suttas: 7,
+  // },
 };

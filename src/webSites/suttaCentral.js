@@ -585,4 +585,155 @@ export let suttaCentral = {
     links: { card: "minor/kn/ja", all: "/ja", main_page: "https://suttacentral.net/pitaka/suttaminor/kn/ja" },
     complete: true,
   },
+
+  // VINAYA
+  bupj: {
+    format: ["sutta"],
+    links: {
+      card: "pli-tv-bu-vb-pj",
+      all: "/pli-tv-bu-vb-pj",
+      main_page: "https://suttacentral.net/pli-tv-bu-vb-pj",
+    },
+    complete: true,
+  },
+
+  buss: {
+    format: ["sutta"],
+    links: {
+      card: "pli-tv-bu-vb-ss",
+      all: "/pli-tv-bu-vb-ss",
+      main_page: "https://suttacentral.net/pli-tv-bu-vb-ss",
+    },
+    complete: true,
+  },
+  buay: {
+    format: ["sutta"],
+    links: {
+      card: "pli-tv-bu-vb-ay",
+      all: "/pli-tv-bu-vb-ay",
+      main_page: "https://suttacentral.net/pli-tv-bu-vb-ay",
+    },
+    complete: true,
+  },
+  bunp: {
+    format: ["sutta"],
+    links: {
+      card: "pli-tv-bu-vb-np",
+      all: "/pli-tv-bu-vb-np",
+      main_page: "https://suttacentral.net/pli-tv-bu-vb-np",
+    },
+    complete: true,
+  },
+  bupc: {
+    format: ["sutta"],
+    links: {
+      card: "pli-tv-bu-vb-pc",
+      all: "/pli-tv-bu-vb-pc",
+      main_page: "https://suttacentral.net/pli-tv-bu-vb-pc",
+    },
+    complete: true,
+  },
+  bupd: {
+    format: ["sutta"],
+    links: {
+      card: "pli-tv-bu-vb-pd",
+      all: "/pli-tv-bu-vb-pd",
+      main_page: "https://suttacentral.net/pli-tv-bu-vb-pd",
+    },
+    complete: true,
+  },
+  busk: {
+    format: ["sutta"],
+    links: {
+      card: "pli-tv-bu-vb-sk",
+      all: "/pli-tv-bu-vb-sk",
+      main_page: "https://suttacentral.net/pli-tv-bu-vb-sk",
+    },
+    complete: true,
+  },
+  // buas: {
+  //   format: ["sutta"],
+  //   links: {
+  //     card: "pli-tv-bu-vb-as",
+  //     all: "/pli-tv-bu-vb-as",
+  //     main_page: "https://suttacentral.net/pli-tv-bu-vb-as",
+  //   },
+  //   complete: true,
+  // },
+
+  //-------------------- BHIKKHUNĪ
+  bipj: {
+    format: ["sutta"],
+    links: {
+      card: "pli-tv-bi-vb-pj",
+      all: "/pli-tv-bi-vb-pj",
+      main_page: "https://suttacentral.net/pli-tv-bi-vb-pj",
+    },
+    complete: false,
+    available: [5, 6, 7, 8],
+  },
+
+  biss: {
+    format: ["sutta"],
+    links: {
+      card: "pli-tv-bi-vb-ss",
+      all: "/pli-tv-bi-vb-ss",
+      main_page: "https://suttacentral.net/pli-tv-bi-vb-ss",
+    },
+    complete: false,
+    available: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+  },
+
+  binp: {
+    format: ["sutta"],
+    links: {
+      card: "pli-tv-bi-vb-np",
+      all: "/pli-tv-bi-vb-np",
+      main_page: "https://suttacentral.net/pli-tv-bi-vb-np",
+    },
+    complete: false,
+    available: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  },
+  bipc: {
+    format: ["sutta"],
+    links: {
+      card: "pli-tv-bi-vb-pc",
+      all: "/pli-tv-bi-vb-pc",
+      main_page: "https://suttacentral.net/pli-tv-bi-vb-pc",
+    },
+    complete: false,
+    available: [
+      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
+      32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59,
+      60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87,
+      88, 89, 90, 91, 92, 93, 94, 95, 96,
+    ],
+  },
+  bipd: {
+    format: ["sutta"],
+    links: {
+      card: "pli-tv-bi-vb-pd",
+      all: "/pli-tv-bi-vb-pd",
+      main_page: "https://suttacentral.net/pli-tv-bi-vb-pd",
+    },
+    complete: true,
+  },
+  // bisk: {
+  //   format: ["sutta"],
+  //   links: {
+  //     card: "pli-tv-bi-vb-sk",
+  //     all: "/pli-tv-bi-vb-sk",
+  //     main_page: "https://suttacentral.net/pli-tv-bi-vb-sk",
+  //   },
+  //   complete: true,
+  // },
+  // bias: {
+  //   format: ["sutta"],
+  //   links: {
+  //     card: "pli-tv-bi-vb-as",
+  //     all: "/pli-tv-bi-vb-as",
+  //     main_page: "https://suttacentral.net/pli-tv-bi-vb-as",
+  //   },
+  //   complete: true,
+  // },
 };

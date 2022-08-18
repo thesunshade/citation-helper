@@ -1,5 +1,13 @@
 # TODO
 
+## Vinaya
+
+- [ ] There needs to be a way for `sutta` type books to have a range. Nothing like that exists in the suttas, however for vinaya there is a range in
+      _ Adhikaranasamatha (bu, bi)
+      _ Patdesaniya (bi) \* Sekhiya (bi)
+
+## General
+
 - [ ] allow creation of urls to books/chapters
       this requirs allowing secondNumber===0 without causing other things to break
       And not every chapter book should have this optinon. e.g Thag
