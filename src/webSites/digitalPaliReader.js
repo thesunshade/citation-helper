@@ -3387,7 +3387,7 @@ export let digitalPaliReader = {
     format: ["sutta"],
     links: {
       all: "",
-      main_page: "",
+      main_page: "k.0.x.x.x.x.x.m",
     },
     available: [
       [1, "k.0.0.0.0.0.0.m"],
@@ -3406,7 +3406,7 @@ export let digitalPaliReader = {
     links: {
       card: "/minor/dhp",
       all: "/dhp",
-      main_page: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/index.htm",
+      main_page: "k.1.m",
       chapter_links: {
         1: "k.1.0.0.0.0.0.m",
         2: "k.1.0.0.1.0.0.m",
@@ -3500,7 +3500,7 @@ export let digitalPaliReader = {
     links: {
       card: "",
       all: "",
-      main_page: "",
+      main_page: "k.2.m",
     },
     complete: true,
     available: {
@@ -3608,7 +3608,7 @@ export let digitalPaliReader = {
     links: {
       card: "",
       all: "",
-      main_page: "",
+      main_page: "k.3.m",
     },
     complete: true,
     available: [
@@ -3732,7 +3732,7 @@ export let digitalPaliReader = {
     links: {
       card: "",
       all: "",
-      main_page: "",
+      main_page: "k.4.m",
     },
     available: {
       1: [
@@ -3823,7 +3823,7 @@ export let digitalPaliReader = {
     links: {
       card: "",
       all: "",
-      main_page: "",
+      main_page: "k.5.m",
     },
     complete: true,
     available: [
@@ -3920,7 +3920,7 @@ export let digitalPaliReader = {
     links: {
       card: "",
       all: "",
-      main_page: "",
+      main_page: "k.6.m",
     },
     complete: true,
     available: [
@@ -3983,7 +3983,7 @@ export let digitalPaliReader = {
     links: {
       card: "",
       all: "",
-      main_page: "",
+      main_page: "k.7.m",
     },
     available: {
       1: [
@@ -4286,7 +4286,7 @@ export let digitalPaliReader = {
     links: {
       card: "",
       all: "",
-      main_page: "",
+      main_page: "k.7.m",
     },
     available: {
       1: [
@@ -5235,4 +5235,37 @@ export let digitalPaliReader = {
   //   },
   //   complete: true,
   // },
+
+  kd: {
+    complete: true,
+    format: ["sutta"],
+    links: {
+      all: "",
+      main_page: "",
+    },
+    available: [
+      [1, "v.3.0.0.0.0.0.m"],
+      [2, "v.3.0.0.1.0.0.m"],
+      [3, "v.3.0.0.2.0.0.m"],
+      [4, "v.3.0.0.3.0.0.m"],
+      [5, "v.3.0.0.4.0.0.m"],
+      [6, "v.3.0.0.5.0.0.m"],
+      [7, "v.3.0.0.6.0.0.m"],
+      [8, "v.3.0.0.7.0.0.m"],
+      [9, "v.3.0.0.8.0.0.m"],
+      [10, "v.3.0.0.9.0.0.m"],
+      [11, "v.4.0.0.0.0.0.m"],
+      [12, "v.4.0.0.1.0.0.m"],
+      [13, "v.4.0.0.2.0.0.m"],
+      [14, "v.4.0.0.3.0.0.m"],
+      [15, "v.4.0.0.4.0.0.m"],
+      [16, "v.4.0.0.5.0.0.m"],
+      [17, "v.4.0.0.6.0.0.m"],
+      [18, "v.4.0.0.7.0.0.m"],
+      [19, "v.4.0.0.8.0.0.m"],
+      [20, "v.4.0.0.9.0.0.m"],
+      [21, "v.4.0.0.10.0.0.m"],
+      [22, "v.4.0.0.11.0.0.m"],
+    ],
+  },
 };

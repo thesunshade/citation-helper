@@ -8,6 +8,7 @@
 
 ## General
 
+- [ ] only put into page title when it's a valid citation
 - [ ] allow creation of urls to books/chapters
       this requirs allowing secondNumber===0 without causing other things to break
       And not every chapter book should have this optinon. e.g Thag

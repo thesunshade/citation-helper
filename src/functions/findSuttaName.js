@@ -21,7 +21,14 @@ export default function findSuttaName(bookName, suttaNumber) {
   // if the sutta name doesn't end with "Sutta$", "gāthā$", "vatthu$"
   // then add Sutta to the end
 
-  if (suttaName && !suttaName.match(/Sutta$/) && !suttaName.match(/vatthu$/) && !suttaName.match(/gāthā$/)) {
+  if (
+    suttaName &&
+    !suttaName.match(/Sutta$/) &&
+    !suttaName.match(/vatthu$/) &&
+    !suttaName.match(/gāthā$/) &&
+    !suttaName.match(/khandhaka$/) &&
+    !suttaName.match(/sikkhāpada$/)
+  ) {
     suttaName += " Sutta";
   }
 

@@ -2118,4 +2118,11 @@ export let structure = {
   //   format: ["sutta"],
   //   suttas: 7,
   // },
+
+  kd: {
+    pali_name: "Khandhaka",
+    book_abbreviation: ["Kd"],
+    format: ["sutta"],
+    suttas: 22,
+  },
 };
