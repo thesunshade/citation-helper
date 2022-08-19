@@ -1,32 +1,356 @@
 import createCustomUrlSitesLink from "./createCustomUrlSitesLink.js";
 
-test("test all mn141 citation", () => {
-  expect(createCustomUrlSitesLink({ site: "ABT", book: "mn", firstNumber: 141, secondNumber: 0, error: "" })).toBe(
-    "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Short-Pieces/Saccavibhangasuttam.htm"
-  );
-});
-test("test dhpch4", () => {
-  expect(
-    createCustomUrlSitesLink({
-      site: "ABT",
-      book: "dhp",
-      firstNumber: 4,
-      secondNumber: 0,
-      error: "",
-      chapterFlag: true,
-    })
-  ).toBe("https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/04-Flowers.htm");
+describe("ABT", () => {
+  test("test ABT mn141 citation", () => {
+    expect(createCustomUrlSitesLink({ site: "ABT", book: "mn", firstNumber: 141, secondNumber: 0, error: "" })).toBe(
+      "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Short-Pieces/Saccavibhangasuttam.htm"
+    );
+  });
+  test("test ABT dhpch4", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "ABT",
+        book: "dhp",
+        firstNumber: 4,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: true,
+      })
+    ).toBe("https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/04-Flowers.htm");
+  });
+
+  test("test ABT Snpch5", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "ABT",
+        book: "snp",
+        firstNumber: 5,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: true,
+      })
+    ).toBe("https://www.ancient-buddhist-texts.net/Texts-and-Translations/Parayanavagga/index.htm");
+  });
 });
 
-test("test ABT Snpch5", () => {
-  expect(
-    createCustomUrlSitesLink({
-      site: "ABT",
-      book: "snp",
-      firstNumber: 5,
-      secondNumber: 0,
-      error: "",
-      chapterFlag: true,
-    })
-  ).toBe("https://www.ancient-buddhist-texts.net/Texts-and-Translations/Parayanavagga/index.htm");
+describe("ATI", () => {
+  test("test ATI dn16", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "ATI",
+        book: "dn",
+        firstNumber: 16,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://accesstoinsight.org/tipitaka/dn/dn.16.1-6.vaji.html");
+  });
+
+  test("test ATI mn141 citation", () => {
+    expect(createCustomUrlSitesLink({ site: "ATI", book: "mn", firstNumber: 141, secondNumber: 0, error: "" })).toBe(
+      "https://accesstoinsight.org/tipitaka/mn/mn.141.piya.html"
+    );
+  });
+
+  test("test ATI sn7.11", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "ATI",
+        book: "sn",
+        firstNumber: 7,
+        secondNumber: 11,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://accesstoinsight.org/tipitaka/sn/sn07/sn07.011.piya.html");
+  });
+
+  test("test ATI an4.95", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "ATI",
+        book: "an",
+        firstNumber: 4,
+        secondNumber: 95,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://accesstoinsight.org/tipitaka/an/an04/an04.095.budd.html");
+  });
+  test("test ATI kp6", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "ATI",
+        book: "kp",
+        firstNumber: 6,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://accesstoinsight.org/tipitaka/kn/khp/khp.1-9x.piya.html#khp-6");
+  });
+  test("test ATI dhpch4", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "ATI",
+        book: "dhp",
+        firstNumber: 4,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: true,
+      })
+    ).toBe("https://accesstoinsight.org/tipitaka/kn/dhp/dhp.04.budd.html");
+  });
+  test("test ATI dhp123", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "ATI",
+        book: "dhp",
+        firstNumber: 123,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://accesstoinsight.org/tipitaka/kn/dhp/dhp.09.budd.html");
+  });
+
+  test("test ATI ud", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "ATI",
+        book: "ud",
+        firstNumber: 0,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://accesstoinsight.org/tipitaka/kn/ud/index.html");
+  });
+
+  test("test ATI ud1.10", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "ATI",
+        book: "ud",
+        firstNumber: 1,
+        secondNumber: 10,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://accesstoinsight.org/tipitaka/kn/ud/ud.1.10.irel.html");
+  });
+
+  test("test ATI iti1.10", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "ATI",
+        book: "iti",
+        firstNumber: 1,
+        secondNumber: 10,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("");
+  });
+
+  test("test ATI snp1.10", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "ATI",
+        book: "snp",
+        firstNumber: 1,
+        secondNumber: 10,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://accesstoinsight.org/tipitaka/kn/snp/snp.1.10.piya.html");
+  });
+
+  test("test ATI vv26", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "ATI",
+        book: "vv",
+        firstNumber: 26,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("");
+  });
+
+  test("test ATI pv26", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "ATI",
+        book: "pv",
+        firstNumber: 26,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("");
+  });
+});
+
+describe("DPR", () => {
+  test("test DPR dn16", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "DPR",
+        book: "dn",
+        firstNumber: 16,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=d.1.0.0.2.0.0.m");
+  });
+
+  test("test DPR mn141 citation", () => {
+    expect(createCustomUrlSitesLink({ site: "DPR", book: "mn", firstNumber: 141, secondNumber: 0, error: "" })).toBe(
+      "https://www.digitalpalireader.online/_dprhtml/index.html?loc=m.2.0.0.3.10.0.m"
+    );
+  });
+
+  test("test DPR sn7.11", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "DPR",
+        book: "sn",
+        firstNumber: 7,
+        secondNumber: 11,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=s.0.0.0.6.1.0.m");
+  });
+
+  test("test DPR an4.95", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "DPR",
+        book: "an",
+        firstNumber: 4,
+        secondNumber: 95,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=a.3.0.0.1.4.4.m");
+  });
+  test("test DPR kp6", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "DPR",
+        book: "kp",
+        firstNumber: 6,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.0.0.0.5.0.0.m");
+  });
+  test("test DPR dhpch4", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "DPR",
+        book: "dhp",
+        firstNumber: 4,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: true,
+      })
+    ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.3.0.0.m");
+  });
+  test("test DPR dhp123", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "DPR",
+        book: "dhp",
+        firstNumber: 123,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.8.0.0.m");
+  });
+
+  // test("test DPR ud", () => {
+  //   expect(
+  //     createCustomUrlSitesLink({
+  //       site: "DPR",
+  //       book: "ud",
+  //       firstNumber: 0,
+  //       secondNumber: 0,
+  //       error: "",
+  //       chapterFlag: false,
+  //     })
+  //   ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.2.m");
+  // });
+
+  test("test DPR ud1.10", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "DPR",
+        book: "ud",
+        firstNumber: 1,
+        secondNumber: 10,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.2.0.0.0.0.9.m");
+  });
+
+  test("test DPR iti47", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "DPR",
+        book: "iti",
+        firstNumber: 47,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.3.0.0.1.1.9.m");
+  });
+
+  test("test DPR snp1.10", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "DPR",
+        book: "snp",
+        firstNumber: 1,
+        secondNumber: 10,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.4.0.0.0.0.9.m");
+  });
+
+  test("test DPR vv26", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "DPR",
+        book: "vv",
+        firstNumber: 26,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.5.0.0.0.1.8.m");
+  });
+
+  test("test DPR pv26", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "DPR",
+        book: "pv",
+        firstNumber: 26,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.6.0.0.2.0.0.m");
+  });
 });

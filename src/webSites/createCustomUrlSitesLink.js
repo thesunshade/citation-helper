@@ -21,7 +21,7 @@ export default function createCustomUrlSitesLink(props) {
       website = require("./paliAudio.js").paliAudio;
       break;
     default:
-      console.log("error getting site file");
+      console.warn("error getting site file");
   }
 
   const { rootUrl, suffixUrl } = website.constants;

@@ -11,6 +11,7 @@
 // pv sutta, chapter
 // thag, thig chapter, verse
 // ja sutta
+// All Patimokkha rules and Khandhaka are sutta
 
 // pali_name -> STRING Full name. Used in generating error messages
 // book_abbreviation -> ARRAY of all allowable abbreviations
@@ -2055,7 +2056,7 @@ export let structure = {
     suttas: 92,
   },
   bupd: {
-    pali_name: "Bhikkhu PāṭidesanIya",
+    pali_name: "Bhikkhu Pāṭidesanīya",
     book_abbreviation: ["Pd", "Bupd"],
     format: ["sutta"],
     suttas: 4,
@@ -2083,7 +2084,7 @@ export let structure = {
 
   biss: {
     pali_name: "Bhikkhunī Saṅghādisesa",
-    book_abbreviation: ["Biss", "Busg"],
+    book_abbreviation: ["Biss", "Bisg"],
     format: ["sutta"],
     suttas: 17,
   },

@@ -21,9 +21,7 @@ export default function InfoSection() {
     const currentCitations = document.getElementsByClassName("url-button-link");
     let output = "";
     for (let i = 0; i < currentCitations.length; i++) {
-      console.log(i);
       let prettySiteUrl = makePrettyName(currentCitations[i].attributes.site.value);
-      console.log(prettySiteUrl);
       if (prettySiteUrl !== "") {
         output += `<a href="${currentCitations[i].href}" rel="noreferrer" target="_blank">${prettySiteUrl}</a>`;
         if (i === currentCitations.length - 1) {
