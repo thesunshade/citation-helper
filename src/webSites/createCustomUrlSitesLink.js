@@ -1,9 +1,12 @@
 import { structure } from "../structure.js";
-import { suttas } from "../suttas.js";
 
 export default function createCustomUrlSitesLink(props) {
   let { site, book, firstNumber, secondNumber, chapterFlag, error } = props;
-  const books = Object.keys(structure);
+  if (error) {
+    return "";
+  }
+
+  // const books = Object.keys(structure);
   let url = ""; // this is the only thing that will be returned
   let website;
 
@@ -27,38 +30,48 @@ export default function createCustomUrlSitesLink(props) {
   const { rootUrl, suffixUrl } = website.constants;
   const bookObject = website[book];
 
+  if (!bookObject) {
+    //the book in question does not exist in the website in question
+
+    return url;
+  }
+
+  const chapter_links = bookObject.links.chapter_links;
+
   // this is used for books that are sutta based
   function createSuttaLink() {
     if (chapterFlag === true) {
-      //test for the chapter flag
-      if (bookObject.links.chapter_links && firstNumber <= Object.keys(structure[book].chapters).length) {
-        url = rootUrl + bookObject.links.chapter_links[firstNumber];
+      // this is probably only going to be used for Dhp.
+      if (chapter_links && firstNumber <= Object.keys(structure[book].chapters).length) {
+        console.log("what's this crazy thing for " + site);
+        return rootUrl + chapter_links[firstNumber];
       }
-    } else if (bookObject) {
-      if (bookObject.links.main_page && firstNumber === 0) {
-        url = rootUrl + bookObject.links.main_page;
-      }
-      const available = bookObject.available;
+      return ""; // because they wanted a chapter page but there wasn't one
+    }
+    if (bookObject.links.main_page && firstNumber === 0) {
+      return rootUrl + bookObject.links.main_page;
+    }
 
-      if (bookObject.range_suttas) {
-        const rangeArray = bookObject.range_suttas;
-        for (let i = 0; i < rangeArray.length; i++) {
-          const [lower, upper] = rangeArray[i];
-          if ((firstNumber >= lower) & (firstNumber <= upper)) {
-            // the below code only works because the book is complete and the array is in exact order so that i is one less than the chapter number
-            firstNumber = i + 1;
-          }
-        }
-      }
-
-      if (available.length > 0) {
-        for (let i = 0; i < available.length; i++) {
-          if (firstNumber === available[i][0]) {
-            url = rootUrl + available[i][1] + suffixUrl;
-          }
+    const available = bookObject.available;
+    if (bookObject.range_suttas) {
+      const rangeArray = bookObject.range_suttas;
+      for (let i = 0; i < rangeArray.length; i++) {
+        const [lower, upper] = rangeArray[i];
+        if ((firstNumber >= lower) & (firstNumber <= upper)) {
+          // the below code only works because the book is complete and the array is in exact order so that i is one less than the chapter number
+          firstNumber = i + 1;
         }
       }
     }
+
+    if (available.length > 0) {
+      for (let i = 0; i < available.length; i++) {
+        if (firstNumber === available[i][0]) {
+          return rootUrl + available[i][1] + suffixUrl;
+        }
+      }
+    }
+    return "";
   }
 
   // this is used for books that are chapter based
@@ -71,52 +84,34 @@ export default function createCustomUrlSitesLink(props) {
     if (
       //test for the chapter flag
       chapterFlag === true &&
-      bookObject.links.chapter_links &&
+      chapter_links &&
       firstNumber <= Object.keys(structure[book].chapters).length &&
-      bookObject.links.chapter_links[firstNumber]
+      chapter_links[firstNumber]
     ) {
-      url = rootUrl + bookObject.links.chapter_links[firstNumber];
-    } else if (
+      url = rootUrl + chapter_links[firstNumber];
+    } else if (bookObject && bookObject.links.main_page && firstNumber === 0) {
       // test to see if first number is zero and there is a link in the book object to a main page
-      bookObject &&
-      bookObject.links.main_page &&
-      firstNumber === 0
-    ) {
       url = bookObject.links.main_page;
-    } else if (
+    } else if (bookObject.complete && secondNumber > 0) {
       // this is a complete book and there is a second number
-      bookObject.complete &&
-      secondNumber > 0
-    ) {
       url = rootUrl + available[firstNumber][secondNumber - 1][1] + suffixUrl;
-    } else if (
+    } else if (Object.keys(available).length > 0) {
       //not complete book but there is something in `available`
-      Object.keys(available).length > 0
-    ) {
       Object.keys(available).forEach(chapterKey => {
         if (parseInt(chapterKey, 10) === firstNumber) {
           // found the right chapter
           available[chapterKey].forEach(sutta => {
             // loop through suttas available
-            if (
+            if (bookObject.range_suttas_required && bookObject.range_suttas_required === true) {
               // this book requires a test for range suttas
-              bookObject.range_suttas_required &&
-              bookObject.range_suttas_required === true
-            ) {
-              if (
+              if (sutta.length === 2) {
                 // there is no range
-                sutta.length === 2
-              ) {
                 if (secondNumber === sutta[0]) {
                   url = rootUrl + sutta[1];
                 }
-              } else if (
+              } else if (sutta.length === 3) {
                 //there is a range
-                sutta.length === 3
-              ) {
                 if (secondNumber >= sutta[0] && secondNumber <= sutta[1]) {
-                  // TODO see if secondNumber is between sutta[0] and sutta[1]
-                  // if it is,
                   url = rootUrl + sutta[2];
                 }
               }
@@ -132,27 +127,20 @@ export default function createCustomUrlSitesLink(props) {
   }
 
   // this is the main function
-  if (bookObject) {
-    if (site === "ABT" && book === "ja" && error === "") {
-      if (firstNumber > 0) {
-        const paddedCitation = ("00" + firstNumber).slice(-3);
-        url = rootUrl + "/English-Texts/Jataka/" + paddedCitation + ".htm";
-      } else {
-        url = bookObject.links.main_page;
-      }
-    } else if (error === "") {
-      //&& firstNumber > 0
-      books.forEach(bookKey => {
-        const format = structure[bookKey].format[0];
-        if (book === bookKey) {
-          if (format === "sutta") {
-            createSuttaLink();
-          } else if (format === "chapter") {
-            //&& secondNumber > 0
-            createChapterLink();
-          }
-        }
-      });
+
+  if (site === "ABT" && book === "ja") {
+    if (firstNumber > 0) {
+      const paddedCitation = ("00" + firstNumber).slice(-3);
+      url = rootUrl + "/English-Texts/Jataka/" + paddedCitation + ".htm";
+    } else {
+      url = bookObject.links.main_page;
+    }
+  } else {
+    const format = structure[book].format[0];
+    if (format === "sutta") {
+      url = createSuttaLink();
+    } else if (format === "chapter") {
+      createChapterLink();
     }
   }
 

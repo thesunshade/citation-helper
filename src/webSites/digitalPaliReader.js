@@ -5155,7 +5155,7 @@ export let digitalPaliReader = {
     links: {
       card: "",
       all: "",
-      main_page: "",
+      main_page: "https://digitalpalireader.online/_dprhtml/index.html?loc=v.1.0.0.3.0.0.m",
     },
     complete: true,
     available: [
