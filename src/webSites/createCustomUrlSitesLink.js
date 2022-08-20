@@ -21,7 +21,7 @@ export default function createCustomUrlSitesLink(props) {
       website = require("./paliAudio.js").paliAudio;
       break;
     default:
-      console.log("error getting site file");
+      console.warn("error getting site file");
   }
 
   const { rootUrl, suffixUrl } = website.constants;
@@ -29,10 +29,8 @@ export default function createCustomUrlSitesLink(props) {
 
   // this is used for books that are sutta based
   function createSuttaLink() {
-    if (
+    if (chapterFlag === true) {
       //test for the chapter flag
-      chapterFlag === true
-    ) {
       if (bookObject.links.chapter_links && firstNumber <= Object.keys(structure[book].chapters).length) {
         url = rootUrl + bookObject.links.chapter_links[firstNumber];
       }

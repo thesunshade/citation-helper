@@ -1,3 +1,13 @@
+// This function accepts the user input and looks for (in order) starting from the beginning:
+
+// * verse or chapter flag
+// * Optional separator (space, period, dash)
+// * first number
+// * separator (colon, space, period, dash)
+// * second number
+
+// it does no testing. Book names are not checked
+
 export default function parseNumbers(userInput) {
   let verseFlag = false;
   let chapterFlag = false;

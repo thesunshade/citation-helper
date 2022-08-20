@@ -29,9 +29,7 @@ export default function AltScTransButton(props) {
             setAltTransLink("");
           }
         })
-        .catch(error => {
-          console.log(error);
-        });
+        .catch(error => {});
     }
   }, [citation, props]);
 
@@ -68,46 +66,3 @@ export default function AltScTransButton(props) {
     return null;
   }
 }
-
-// for (let i = 0; i < actualData.suttaplex.translations.length; i++) {
-//   if (actualData.suttaplex.translations[i].lang_name === "English") {
-//     console.log(actualData.suttaplex.translations[i].author);
-//     setAuthorList(authorList + actualData.suttaplex.translations[i].author);
-//     console.log(authorList);
-//   }
-// }
-
-// THIS WORKS
-// useEffect(() => {
-//   // console.log("inside use effect, citation: " + citation);
-//   setCitation(buildGoodCitationFromParts(book, firstNumber, secondNumber));
-//   if (citation) {
-//     fetch(`https://suttacentral.net/api/suttas/${citation}`)
-//       .then(response => response.json())
-//       .then(actualData => {
-//         // setData(actualData);
-//         if (actualData.candidate_authors.length > 1) {
-//           setAltTransLink(`https://suttacentral.net/${citation}`);
-//           for (let i = 0; i < actualData.suttaplex.translations.length; i++) {
-//             if (actualData.suttaplex.translations[i].lang_name === "English") {
-//               // console.log(actualData.suttaplex.translations[i].author);
-//               authorList += actualData.suttaplex.translations[i].author;
-//               console.log(i, actualData.suttaplex.translations.length - 1);
-//               if (i === actualData.suttaplex.translations.length - 1) {
-//                 authorList += ".";
-//               }
-//               console.log(authorList);
-//             }
-//           }
-//           setAuthorListTooltip(authorList);
-//         } else {
-//           setAltTransLink("");
-//           authorList = "";
-//         }
-//         // console.log(actualData);
-//       })
-//       .catch(error => {
-//         console.log(error);
-//       });
-//   }
-// }, [citation, props]);

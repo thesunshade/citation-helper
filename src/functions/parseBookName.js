@@ -1,5 +1,9 @@
 import { structure } from "../structure.js";
 
+// This function accepts the user input and returns the "canonical" book name id
+// userInput can be in any case
+// return will always be in the case included in the `structure.js` file
+
 export default function parseBookName(userInput) {
   const books = Object.keys(structure);
   let sanitizedBookName = "";

@@ -651,15 +651,16 @@ export let suttaCentral = {
     },
     complete: true,
   },
-  // buas: {
-  //   format: ["sutta"],
-  //   links: {
-  //     card: "pli-tv-bu-vb-as",
-  //     all: "/pli-tv-bu-vb-as",
-  //     main_page: "https://suttacentral.net/pli-tv-bu-vb-as",
-  //   },
-  //   complete: true,
-  // },
+  buas: {
+    format: ["sutta"],
+    links: {
+      card: "pli-tv-bu-vb-as",
+      all: "/pli-tv-bu-vb-as",
+      main_page: "https://suttacentral.net/pli-tv-bu-vb-as",
+    },
+    complete: true,
+    range_suttas: [[1, 7]],
+  },
 
   //-------------------- BHIKKHUNĪ
   bipj: {
@@ -708,6 +709,7 @@ export let suttaCentral = {
       60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87,
       88, 89, 90, 91, 92, 93, 94, 95, 96,
     ],
+    range_suttas: [[9, 93]],
   },
   bipd: {
     format: ["sutta"],
@@ -717,23 +719,36 @@ export let suttaCentral = {
       main_page: "https://suttacentral.net/pli-tv-bi-vb-pd",
     },
     complete: true,
+    range_suttas: [[2, 8]],
   },
-  // bisk: {
-  //   format: ["sutta"],
-  //   links: {
-  //     card: "pli-tv-bi-vb-sk",
-  //     all: "/pli-tv-bi-vb-sk",
-  //     main_page: "https://suttacentral.net/pli-tv-bi-vb-sk",
-  //   },
-  //   complete: true,
-  // },
-  // bias: {
-  //   format: ["sutta"],
-  //   links: {
-  //     card: "pli-tv-bi-vb-as",
-  //     all: "/pli-tv-bi-vb-as",
-  //     main_page: "https://suttacentral.net/pli-tv-bi-vb-as",
-  //   },
-  //   complete: true,
-  // },
+  bisk: {
+    format: ["sutta"],
+    links: {
+      card: "pli-tv-bi-vb-sk",
+      all: "/pli-tv-bi-vb-sk",
+      main_page: "https://suttacentral.net/pli-tv-bi-vb-sk",
+    },
+    complete: false,
+    available: [1, 75],
+  },
+  bias: {
+    format: ["sutta"],
+    links: {
+      card: "pli-tv-bi-vb-as",
+      all: "/pli-tv-bi-vb-as",
+      main_page: "https://suttacentral.net/pli-tv-bi-vb-as",
+    },
+    complete: true,
+    range_suttas: [[1, 7]],
+  },
+
+  kd: {
+    format: ["sutta"],
+    links: {
+      card: "pli-tv-kd",
+      all: "pli-tv-kd",
+      main_page: "https://suttacentral.net/pli-tv-kd",
+    },
+    complete: true,
+  },
 };

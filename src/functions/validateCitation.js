@@ -1,18 +1,28 @@
 import { structure } from "../structure.js";
 import { vinayaBooks } from "./vinayBooks.js";
 
+// This function accepts a correct book id and an object made up of userInput's numbers and flags
+
+// It tests to see if those numbers can be a valid citation for the given book. If it cannot it creates an error message
+// It tests to see if the user might want a chapter page. If so it creates a warning message
+// It tests to see if the verse number is too high. If so it creates an error message
+
+// if the numbers given are not in the primary number format for the book, it transforms them into the primary number format.
+//// e.g. book: iti, firstNumber: 3, secondNumber 4
+//// becomes book: iti, firstNumber: 53, secondNumber 0
+//// e.g. book: ud, firstNumber: 73, secondNumber 0
+//// becomes book: iti, firstNumber: 8, secondNumber 3
+
+// It returns the book id, first number, second number, flags, error message and warning message.
+
 export default function validateCitation(book, numbers) {
   const books = Object.keys(structure);
   let { firstNumber, secondNumber, verseFlag, chapterFlag } = numbers;
-  // console.log("Chapter flag at start: ", chapterFlag);
   let error = "";
   let warning = "";
 
   //                               SUTTA
   function parseSutta() {
-    // console.log("parsing sutta, validate citation");
-    // console.log(structure[book].suttas);
-    // console.log({ firstNumber });
     const maxSuttaNumber = structure[book].suttas;
     if (firstNumber > maxSuttaNumber) {
       error = `Sutta number too high. Not in ${structure[book].pali_name}.`;
@@ -132,10 +142,8 @@ export default function validateCitation(book, numbers) {
   // If it's a vinaya rule, modify error message
   if (/Sutta number too high/.test(error)) {
     if (vinayaBooks.includes(book)) {
-      console.log(/Sutta/.test(error));
       error = error.replace(/Sutta/, "Rule");
     }
   }
-
   return { book, firstNumber, secondNumber, verseFlag, chapterFlag, error, warning };
 }

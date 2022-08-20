@@ -11,6 +11,7 @@
 // pv sutta, chapter
 // thag, thig chapter, verse
 // ja sutta
+// All Patimokkha rules and Khandhaka are sutta
 
 // pali_name -> STRING Full name. Used in generating error messages
 // book_abbreviation -> ARRAY of all allowable abbreviations
@@ -2055,23 +2056,23 @@ export let structure = {
     suttas: 92,
   },
   bupd: {
-    pali_name: "Bhikkhu PāṭidesanIya",
+    pali_name: "Bhikkhu Pāṭidesanīya",
     book_abbreviation: ["Pd", "Bupd"],
     format: ["sutta"],
     suttas: 4,
   },
   busk: {
-    pali_name: "Bhikkhu Pāṭidesanīya",
+    pali_name: "Bhikkhu Sekhiya",
     book_abbreviation: ["Sk", "Busk"],
     format: ["sutta"],
     suttas: 75,
   },
-  // buas: {
-  //   pali_name: "Bhikkhu Adhikaraṇasamatha",
-  //   book_abbreviation: ["As", "Buas"],
-  //   format: ["sutta"],
-  //   suttas: 7,
-  // },
+  buas: {
+    pali_name: "Bhikkhu Adhikaraṇasamatha",
+    book_abbreviation: ["As", "Buas"],
+    format: ["sutta"],
+    suttas: 7,
+  },
 
   //-------------------- BHIKKHUNĪ
   bipj: {
@@ -2083,7 +2084,7 @@ export let structure = {
 
   biss: {
     pali_name: "Bhikkhunī Saṅghādisesa",
-    book_abbreviation: ["Biss", "Busg"],
+    book_abbreviation: ["Biss", "Bisg"],
     format: ["sutta"],
     suttas: 17,
   },
@@ -2106,16 +2107,23 @@ export let structure = {
     format: ["sutta"],
     suttas: 8,
   },
-  // bisk: {
-  //   pali_name: "Bhikkhunī Pāṭidesanīya",
-  //   book_abbreviation: ["Bisk"],
-  //   format: ["sutta"],
-  //   suttas: 75,
-  // },
-  // bias: {
-  //   pali_name: "Bhikkhu Adhikaraṇasamatha",
-  //   book_abbreviation: ["Bias"],
-  //   format: ["sutta"],
-  //   suttas: 7,
-  // },
+  bisk: {
+    pali_name: "Bhikkhunī Sekhiya",
+    book_abbreviation: ["Bisk"],
+    format: ["sutta"],
+    suttas: 75,
+  },
+  bias: {
+    pali_name: "Bhikkhu Adhikaraṇasamatha",
+    book_abbreviation: ["Bias"],
+    format: ["sutta"],
+    suttas: 7,
+  },
+
+  kd: {
+    pali_name: "Khandhaka",
+    book_abbreviation: ["Kd"],
+    format: ["sutta"],
+    suttas: 22,
+  },
 };

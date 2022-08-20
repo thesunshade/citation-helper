@@ -44,13 +44,13 @@ test("sees if verse flag is found in string", () => {
 });
 
 test("sees if chapter flag is found in string", () => {
-  expect(parseNumbers("c12.34")).toStrictEqual({
+  expect(parseNumbers("ch12.34")).toStrictEqual({
     firstNumber: 12,
     secondNumber: 34,
     verseFlag: false,
     chapterFlag: true,
   });
-  expect(parseNumbers("ch12.34")).toStrictEqual({
+  expect(parseNumbers("Ch12.34")).toStrictEqual({
     firstNumber: 12,
     secondNumber: 34,
     verseFlag: false,
@@ -65,12 +65,6 @@ test("sees if chapter flag is found in string", () => {
 });
 
 test("sees if two numbers are found in string", () => {
-  expect(parseNumbers("c12.34")).toStrictEqual({
-    firstNumber: 12,
-    secondNumber: 34,
-    verseFlag: false,
-    chapterFlag: true,
-  });
   expect(parseNumbers("mn12.34")).toStrictEqual({
     firstNumber: 12,
     secondNumber: 34,
@@ -85,12 +79,6 @@ test("sees if two numbers are found in string", () => {
   });
 });
 test("sees if single number is found in string", () => {
-  expect(parseNumbers("c1234")).toStrictEqual({
-    firstNumber: 1234,
-    secondNumber: 0,
-    verseFlag: false,
-    chapterFlag: true,
-  });
   expect(parseNumbers("mn1234")).toStrictEqual({
     firstNumber: 1234,
     secondNumber: 0,
