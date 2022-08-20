@@ -2062,17 +2062,17 @@ export let structure = {
     suttas: 4,
   },
   busk: {
-    pali_name: "Bhikkhu Pāṭidesanīya",
+    pali_name: "Bhikkhu Sekhiya",
     book_abbreviation: ["Sk", "Busk"],
     format: ["sutta"],
     suttas: 75,
   },
-  // buas: {
-  //   pali_name: "Bhikkhu Adhikaraṇasamatha",
-  //   book_abbreviation: ["As", "Buas"],
-  //   format: ["sutta"],
-  //   suttas: 7,
-  // },
+  buas: {
+    pali_name: "Bhikkhu Adhikaraṇasamatha",
+    book_abbreviation: ["As", "Buas"],
+    format: ["sutta"],
+    suttas: 7,
+  },
 
   //-------------------- BHIKKHUNĪ
   bipj: {
@@ -2107,18 +2107,18 @@ export let structure = {
     format: ["sutta"],
     suttas: 8,
   },
-  // bisk: {
-  //   pali_name: "Bhikkhunī Pāṭidesanīya",
-  //   book_abbreviation: ["Bisk"],
-  //   format: ["sutta"],
-  //   suttas: 75,
-  // },
-  // bias: {
-  //   pali_name: "Bhikkhu Adhikaraṇasamatha",
-  //   book_abbreviation: ["Bias"],
-  //   format: ["sutta"],
-  //   suttas: 7,
-  // },
+  bisk: {
+    pali_name: "Bhikkhunī Sekhiya",
+    book_abbreviation: ["Bisk"],
+    format: ["sutta"],
+    suttas: 75,
+  },
+  bias: {
+    pali_name: "Bhikkhu Adhikaraṇasamatha",
+    book_abbreviation: ["Bias"],
+    format: ["sutta"],
+    suttas: 7,
+  },
 
   kd: {
     pali_name: "Khandhaka",
