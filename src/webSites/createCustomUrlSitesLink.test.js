@@ -31,6 +31,30 @@ describe("ABT", () => {
       })
     ).toBe("https://www.ancient-buddhist-texts.net/Texts-and-Translations/Parayanavagga/index.htm");
   });
+  test("test ABT Ja345", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "ABT",
+        book: "ja",
+        firstNumber: 345,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: true,
+      })
+    ).toBe("https://www.ancient-buddhist-texts.net/English-Texts/Jataka/345.htm");
+  });
+  test("test ABT Ja999", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "ABT",
+        book: "ja",
+        firstNumber: 999,
+        secondNumber: 0,
+        error: "Sutta number too high. Not in Jātaka.",
+        chapterFlag: true,
+      })
+    ).toBe("");
+  });
 });
 
 describe("ATI", () => {
@@ -514,10 +538,10 @@ describe("DPR Vinaya", () => {
           error: "",
           chapterFlag: false,
         })
-      ).toBe("https://digitalpalireader.online/_dprhtml/index.html?loc=v.2.0.0.0.0.3.m");
+      ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=v.2.0.0.0.0.3.m");
     });
 
-    test("test DPR binp22", () => {
+    test("test DPR binp12", () => {
       expect(
         createCustomUrlSitesLink({
           site: "DPR",
@@ -530,7 +554,7 @@ describe("DPR Vinaya", () => {
       ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=v.2.0.0.2.0.11.m");
     });
 
-    test("test DPR bipc99", () => {
+    test("test DPR bipc90", () => {
       expect(
         createCustomUrlSitesLink({
           site: "DPR",
@@ -540,7 +564,7 @@ describe("DPR Vinaya", () => {
           error: "",
           chapterFlag: false,
         })
-      ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=v.1.0.0.0.8.7.m");
+      ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=v.2.0.0.3.8.6.m");
     });
 
     test("test DPR bipd1", () => {
@@ -553,7 +577,7 @@ describe("DPR Vinaya", () => {
           error: "",
           chapterFlag: false,
         })
-      ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=v.1.0.0.1.0.0.m");
+      ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=v.2.0.0.4.0.0.m");
     });
 
     // test("test DPR bisk34", () => {

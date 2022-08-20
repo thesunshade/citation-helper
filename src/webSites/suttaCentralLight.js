@@ -1,4 +1,4 @@
-export let suttaCentralVoice = {
+export let suttaCentralLight = {
   constants: {
     rootUrl: "https://sc.readingfaithfully.org/?q=",
     rootCardUrl: "https://suttacentral.net/pitaka/sutta",

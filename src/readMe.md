@@ -3,10 +3,21 @@
 ## Vinaya
 
 - [ ] There needs to be a way for `sutta` type books to have a range. Nothing like that exists in the suttas, however for vinaya there is a range in
-      _ Adhikaranasamatha (bu, bi)
+      _ Adhikaranasamatha (bu, bi) // now works for regular sites
       _ Patdesaniya (bi) \* Sekhiya (bi)
 
 ## General
+
+### bugs
+
+- [ ] sn59.11 returns a link to SC& SCV when it should return an error
+      however sn59 does trigger an error
+- [ ] itvch9 should give an error message
+- [ ] vv9.1 should throw chapter error
+      currently, it gives vv9
+- [ ] vv7.12 should throw sutta error
+
+### improvements
 
 - [ ] only put into page title when it's a valid citation
 - [ ] allow creation of urls to books/chapters
@@ -14,17 +25,14 @@
       And not every chapter book should have this optinon. e.g Thag
       WAS WORKING, NOW BROKEN for SN
 - [ ] sn4 and an4 should automatically give chapter pages
-- [ ] allow setting translator/layout in text input
-- [x] add v for thag/thig
-- [x] add ch chapter flags
-- [x] add link to verses directly in dhp
-- [x] save options in local storage
-- [ ] itvch9 should give an error message
 - [ ] give alert for thag/thig that v can be used to get to a verse
 - [ ] remove chapter alert message when a chapter flag is used
 - [ ] remove verse alert message when a verse flag is used
-- [ ] vv9.1 should throw chapter error
-- [ ] vv7.12 should throw sutta error
+
+### new features
+
+- [ ] allow setting translator/layout in text input
+
 - [ ] dhpch1 should show chapter 1 for ABT
 
 # fixing dhammaTalks
