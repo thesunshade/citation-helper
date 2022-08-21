@@ -486,23 +486,23 @@ describe("SF", () => {
       );
     });
 
-    test("an10.150(exact)", () => {
-      expect(createWebsiteLink({ site: "SC", book: "an", firstNumber: 10, secondNumber: 150, error: "" })).toBe(
-        "https://suttacentral.net/an10.150"
+    test("an4.67(exact)", () => {
+      expect(createWebsiteLink({ site: "SF", book: "an", firstNumber: 4, secondNumber: 67, error: "" })).toBe(
+        "https://suttafriends.org/sutta/an4-67"
       );
     });
     test("an1.2 (range)", () => {
-      expect(createWebsiteLink({ site: "SC", book: "an", firstNumber: 1, secondNumber: 2, error: "" })).toBe(
-        "https://suttacentral.net/an1.1-10"
+      expect(createWebsiteLink({ site: "SF", book: "an", firstNumber: 1, secondNumber: 2, error: "" })).toBe(
+        "https://suttafriends.org/sutta/an1-1"
       );
     });
     test("an1.992 (incorrect)", () => {
       expect(
         createWebsiteLink({
-          site: "SC",
+          site: "SF",
           book: "an",
           firstNumber: 1,
-          secondNumber: 2,
+          secondNumber: 992,
           error: "Sutta number too high. Not in Aṅguttara Nikāya.",
         })
       ).toBe("");
@@ -511,8 +511,8 @@ describe("SF", () => {
 
   describe("SF-KN", () => {
     test("kp only", () => {
-      expect(createWebsiteLink({ site: "SC", book: "kp", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
-        "https://suttacentral.net/pitaka/sutta/minor/kn/kp"
+      expect(createWebsiteLink({ site: "SF", book: "kp", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
+        "https://suttafriends.org/khp"
       );
     });
     test("kp6", () => {
@@ -589,37 +589,41 @@ describe("SF", () => {
       );
     });
     test("vv67", () => {
-      expect(createWebsiteLink({ site: "SF", book: "vv", firstNumber: 67, secondNumber: 0, error: "" })).toBe("/vv67");
+      expect(createWebsiteLink({ site: "SF", book: "vv", firstNumber: 67, secondNumber: 0, error: "" })).toBe(
+        "https://suttafriends.org/sutta/vv6-3"
+      );
     });
 
     test("pv only", () => {
       expect(createWebsiteLink({ site: "SF", book: "pv", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
-        "/pitaka/sutta/minor/kn/pv"
+        "https://suttafriends.org/pv"
       );
     });
     test("pv67", () => {
-      expect(createWebsiteLink({ site: "SF", book: "pv", firstNumber: 47, secondNumber: 0, error: "" })).toBe("/pv47");
+      expect(createWebsiteLink({ site: "SF", book: "pv", firstNumber: 47, secondNumber: 0, error: "" })).toBe(
+        "https://suttafriends.org/sutta/pv4-12"
+      );
     });
 
     test("thag only", () => {
       expect(createWebsiteLink({ site: "SF", book: "thag", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
-        "/pitaka/sutta/minor/kn/thag"
+        "https://suttafriends.org/thag"
       );
     });
     test("thag4.2", () => {
       expect(createWebsiteLink({ site: "SF", book: "thag", firstNumber: 4, secondNumber: 2, error: "" })).toBe(
-        "/thag4.2"
+        "https://suttafriends.org/sutta/thag4-2"
       );
     });
 
     test("thig only", () => {
       expect(createWebsiteLink({ site: "SF", book: "thig", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
-        "/pitaka/sutta/minor/kn/thig"
+        "https://suttafriends.org/thig"
       );
     });
     test("thig3.2", () => {
       expect(createWebsiteLink({ site: "SF", book: "thig", firstNumber: 3, secondNumber: 2, error: "" })).toBe(
-        "/thig3.2"
+        "https://suttafriends.org/sutta/thig3-2"
       );
     });
   });
@@ -627,6 +631,28 @@ describe("SF", () => {
 
 describe("DT", () => {
   describe("DT-Main Nikayas", () => {
+    test("dn12 citation", () => {
+      expect(createWebsiteLink({ site: "DT", book: "dn", firstNumber: 12, secondNumber: 0, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/DN/DN12.html"
+      );
+    });
+    test("dn only", () => {
+      expect(createWebsiteLink({ site: "DT", book: "dn", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/DN/index_DN.html"
+      );
+    });
+    test("dn39 wrong citation", () => {
+      expect(
+        createWebsiteLink({
+          site: "DT",
+          book: "dn",
+          firstNumber: 39,
+          secondNumber: 0,
+          error: "Sutta number too high. Not in Dīgha Nikāya.",
+        })
+      ).toBe("");
+    });
+
     test("mn141 citation", () => {
       expect(createWebsiteLink({ site: "DT", book: "mn", firstNumber: 141, secondNumber: 0, error: "" })).toBe(
         "https://www.dhammatalks.org/suttas/MN/MN141.html"
@@ -637,46 +663,171 @@ describe("DT", () => {
         "https://www.dhammatalks.org/suttas/MN/index_MN.html"
       );
     });
+    test("mn345 Wrong citation", () => {
+      expect(
+        createWebsiteLink({
+          site: "DT",
+          book: "mn",
+          firstNumber: 345,
+          secondNumber: 0,
+          error: "Sutta number too high. Not in Majjhima Nikāya.",
+        })
+      ).toBe("");
+    });
 
-    test("test for single book links", () => {
+    test("sn only", () => {
       expect(createWebsiteLink({ site: "DT", book: "sn", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
         "https://www.dhammatalks.org/suttas/SN/index_SN.html"
       );
+    });
+    test("sn11.3 (exact)", () => {
+      expect(createWebsiteLink({ site: "DT", book: "sn", firstNumber: 11, secondNumber: 3, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/SN/SN11_3.html"
+      );
+    });
+    test("sn15.15 (range sutta)", () => {
+      expect(createWebsiteLink({ site: "DT", book: "sn", firstNumber: 15, secondNumber: 15, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/SN/SN15_14.html"
+      );
+    });
+    test("sn34.500", () => {
+      expect(
+        createWebsiteLink({
+          site: "DT",
+          book: "sn",
+          firstNumber: 34,
+          secondNumber: 500,
+          error: "Sutta number too high. Not in Saṁyutta Nikāya.",
+        })
+      ).toBe("");
+    });
+
+    test("an4.10(exact)", () => {
+      expect(createWebsiteLink({ site: "DT", book: "an", firstNumber: 4, secondNumber: 10, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/AN/AN4_10.html"
+      );
+    });
+    test("an5.255 (range)", () => {
+      expect(createWebsiteLink({ site: "DT", book: "an", firstNumber: 5, secondNumber: 255, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/AN/AN5_254.html"
+      );
+    });
+    test("an1.992 (incorrect)", () => {
+      expect(
+        createWebsiteLink({
+          site: "DT",
+          book: "an",
+          firstNumber: 1,
+          secondNumber: 2,
+          error: "Sutta number too high. Not in Aṅguttara Nikāya.",
+        })
+      ).toBe("");
     });
     test("an1.22 citation", () => {
       expect(createWebsiteLink({ site: "DT", book: "an", firstNumber: 1, secondNumber: 22, error: "" })).toBe(
         "https://www.dhammatalks.org/suttas/AN/AN1_21.html"
       );
     });
-    test("an1.2 citation", () => {
+    test("an1.2 (doesn't exist)", () => {
       expect(createWebsiteLink({ site: "DT", book: "an", firstNumber: 1, secondNumber: 2, error: "" })).toBe("");
     });
   });
 
   describe("DT-KN", () => {
+    test("kp only", () => {
+      expect(createWebsiteLink({ site: "DT", book: "kp", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/KN/Khp/index_Khp.html"
+      );
+    });
+    test("kp6", () => {
+      expect(createWebsiteLink({ site: "DT", book: "kp", firstNumber: 6, secondNumber: 0, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/KN/Khp/khp6.html"
+      );
+    });
+
     test("Dhp123", () => {
       expect(createWebsiteLink({ site: "DT", book: "dhp", firstNumber: 123, secondNumber: 0, error: "" })).toBe(
         "https://www.dhammatalks.org/suttas/KN/Dhp/Ch09.html#dhp123"
       );
     });
-    test("itivuttaka range, itv11", () => {
+    test("dhp only", () => {
+      expect(createWebsiteLink({ site: "DT", book: "dhp", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/KN/Dhp/index_Dhp.html"
+      );
+    });
+    test("dhp245", () => {
+      expect(createWebsiteLink({ site: "DT", book: "dhp", firstNumber: 245, secondNumber: 0, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/KN/Dhp/Ch18.html#dhp245"
+      );
+    });
+
+    test("ud only", () => {
+      expect(createWebsiteLink({ site: "DT", book: "ud", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/KN/Ud/index_Ud.html"
+      );
+    });
+    test("ud5.4", () => {
+      expect(createWebsiteLink({ site: "DT", book: "ud", firstNumber: 5, secondNumber: 4, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/KN/Ud/ud5_4.html"
+      );
+    });
+
+    test("iti range, itv11", () => {
       expect(createWebsiteLink({ site: "DT", book: "iti", firstNumber: 11, secondNumber: 0, error: "" })).toBe(
         "https://www.dhammatalks.org/suttas/KN/Iti/iti10.html"
       );
     });
-    test("test All snp1.8 citations", () => {
+    test("iti only", () => {
+      expect(createWebsiteLink({ site: "DT", book: "iti", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/KN/Iti/index_Iti.html"
+      );
+    });
+    test("iti67", () => {
+      expect(createWebsiteLink({ site: "DT", book: "iti", firstNumber: 67, secondNumber: 0, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/KN/Iti/iti67.html"
+      );
+    });
+
+    test("snp1.8 citations", () => {
       expect(createWebsiteLink({ site: "DT", book: "snp", firstNumber: 1, secondNumber: 8, error: "" })).toBe(
         "https://www.dhammatalks.org/suttas/KN/StNp/StNp1_8.html"
       );
     });
-    test("test DT thag18 citation", () => {
+    test("snp only", () => {
+      expect(createWebsiteLink({ site: "DT", book: "snp", firstNumber: 0, secondNumber: 8, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/KN/StNp/index_StNp.html"
+      );
+    });
+    test("snp1.8 citations", () => {
+      expect(createWebsiteLink({ site: "DT", book: "snp", firstNumber: 1, secondNumber: 8, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/KN/StNp/StNp1_8.html"
+      );
+    });
+
+    test("thag18 (breaks the pattern)", () => {
       expect(createWebsiteLink({ site: "DT", book: "thag", firstNumber: 18, secondNumber: 0, error: "" })).toBe(
         "https://www.dhammatalks.org/suttas/KN/Thag/thag18.html"
       );
     });
-    test("test DT thag18 citation", () => {
-      expect(createWebsiteLink({ site: "DT", book: "thag", firstNumber: 18, secondNumber: 0, error: "" })).toBe(
-        "https://www.dhammatalks.org/suttas/KN/Thag/thag18.html"
+    test("thag1.2 citation", () => {
+      expect(createWebsiteLink({ site: "DT", book: "thag", firstNumber: 1, secondNumber: 2, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/KN/Thag/thag1_2.html"
+      );
+    });
+    test("thag only", () => {
+      expect(createWebsiteLink({ site: "DT", book: "thag", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/KN/Thag/index_Thag.html"
+      );
+    });
+
+    test("thig only", () => {
+      expect(createWebsiteLink({ site: "DT", book: "thig", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/KN/Thig/index_Thig.html"
+      );
+    });
+    test("thig3.2", () => {
+      expect(createWebsiteLink({ site: "DT", book: "thig", firstNumber: 3, secondNumber: 2, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/KN/Thig/thig3_2.html"
       );
     });
   });
