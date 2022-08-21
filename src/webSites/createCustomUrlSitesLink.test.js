@@ -474,7 +474,7 @@ describe("DPR Vinaya", () => {
       ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=v.0.0.0.4.2.1.m");
     });
 
-    test("test DPR bupc99", () => {
+    test("test DPR bupc90", () => {
       expect(
         createCustomUrlSitesLink({
           site: "DPR",
@@ -592,5 +592,117 @@ describe("DPR Vinaya", () => {
     //     })
     //   ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=v.1.0.0.2.3.0.m");
     // });
+  });
+});
+
+describe("PA ", () => {
+  test("PA dn (main page)", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "PA",
+        book: "dn",
+        firstNumber: 0,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://www.paliaudio.com/digha-nikaya");
+  });
+  test("PA dn7 (main page)", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "PA",
+        book: "dn",
+        firstNumber: 7,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://paliaudio.com/dn7");
+  });
+  test("PA mn (main page)", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "PA",
+        book: "mn",
+        firstNumber: 0,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://www.paliaudio.com/majjhima-nikaya");
+  });
+  test("PA mn56 (main page)", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "PA",
+        book: "mn",
+        firstNumber: 56,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://paliaudio.com/mn56");
+  });
+  test("PA sn (main page)", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "PA",
+        book: "sn",
+        firstNumber: 0,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://www.paliaudio.com/samyutta-nikaya");
+  });
+  test("PA sn31.20 (main page)", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "PA",
+        book: "sn",
+        firstNumber: 31,
+        secondNumber: 20,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://paliaudio.com/sn-31");
+  });
+  test("PA sn55.1", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "PA",
+        book: "sn",
+        firstNumber: 55,
+        secondNumber: 1,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://paliaudio.com/sn55");
+  });
+
+  test("PA an (main page)", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "PA",
+        book: "an",
+        firstNumber: 0,
+        secondNumber: 0,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://www.paliaudio.com/anguttara-nikaya");
+  });
+  test("PA an1.1", () => {
+    expect(
+      createCustomUrlSitesLink({
+        site: "PA",
+        book: "an",
+        firstNumber: 1,
+        secondNumber: 5,
+        error: "",
+        chapterFlag: false,
+      })
+    ).toBe("https://paliaudio.com/section-of-ones");
   });
 });

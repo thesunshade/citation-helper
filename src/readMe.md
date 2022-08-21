@@ -19,6 +19,7 @@
 
 ### improvements
 
+- [ ] can probably remove all instances of range_required
 - [ ] only put into page title when it's a valid citation
 - [ ] allow creation of urls to books/chapters
       this requirs allowing secondNumber===0 without causing other things to break

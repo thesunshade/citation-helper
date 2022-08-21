@@ -522,7 +522,7 @@ export let suttaCentral = {
     links: {
       card: "/minor/kn/snp",
       all: "/snp",
-      main_page: "https://suttacentral.net/pitaka/sutta/minor/kn/snpn",
+      main_page: "https://suttacentral.net/pitaka/sutta/minor/kn/snp",
       chapter_links: {
         1: "https://suttacentral.net/pitaka/sutta/minor/kn/snp/snp-uragavagga",
         2: "https://suttacentral.net/pitaka/sutta/minor/kn/snp/snp-culavagga",
@@ -582,7 +582,7 @@ export let suttaCentral = {
     complete: true,
   },
   ja: {
-    links: { card: "minor/kn/ja", all: "/ja", main_page: "https://suttacentral.net/pitaka/suttaminor/kn/ja" },
+    links: { card: "minor/kn/ja", all: "/ja", main_page: "https://suttacentral.net/pitaka/sutta/minor/kn/ja" },
     complete: true,
   },
 
