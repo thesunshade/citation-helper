@@ -24,7 +24,7 @@ describe("SC", () => {
       ).toBe("");
     });
 
-    test("mn152 citation", () => {
+    test("mn152", () => {
       expect(createWebsiteLink({ site: "SC", book: "mn", firstNumber: 152, secondNumber: 0, error: "" })).toBe(
         "https://suttacentral.net/mn152"
       );
