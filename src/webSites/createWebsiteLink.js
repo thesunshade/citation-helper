@@ -10,6 +10,10 @@ export default function createWebsiteLink(props) {
   let url = "";
   let website;
 
+  if (error) {
+    return "";
+  }
+
   switch (site) {
     case "SC":
       website = require("./suttaCentral.js").suttaCentral;
@@ -35,7 +39,7 @@ export default function createWebsiteLink(props) {
 
   if (!bookObject) {
     //the book in question does not exist in the website in question so we are done here.
-    return url;
+    return "";
   }
 
   const { rootUrl, suffixUrl, chapterConnector, rangeConnector } = website.constants;
@@ -247,26 +251,23 @@ export default function createWebsiteLink(props) {
   }
 
   // -------------------- the actual function ---------------------------------
-  if (error === "") {
-    books.forEach(bookKey => {
-      const format = structure[bookKey].format[0];
-      if (book === bookKey) {
-        if (format === "sutta") {
-          createSuttaLink();
-          //below adds verse number to url if appropriate
-          if (bookObject.links.idPrefix && firstNumber > 0 && chapterFlag !== true) {
-            let suffix = bookObject.links.idSuffix ? bookObject.links.idSuffix : "";
-            let idForVerse = firstNumber;
-            if (bookObject.links.idLeadingZero === true) {
-              idForVerse = ("00" + idForVerse).slice(-3);
-            }
-            url = url + bookObject.links.idPrefix + idForVerse + suffix;
-          }
-        } else if (format === "chapter") {
-          createChapterLink();
-        }
+  // books.forEach(bookKey => {
+  const format = structure[book].format[0];
+  // if (book === bookKey) {
+  if (format === "sutta") {
+    createSuttaLink();
+    //below adds verse number to url if appropriate
+    if (bookObject.links.idPrefix && firstNumber > 0 && chapterFlag !== true) {
+      let suffix = bookObject.links.idSuffix ? bookObject.links.idSuffix : "";
+      let idForVerse = firstNumber;
+      if (bookObject.links.idLeadingZero === true) {
+        idForVerse = ("00" + idForVerse).slice(-3);
       }
-    });
+      url = url + bookObject.links.idPrefix + idForVerse + suffix;
+    }
+  } else if (format === "chapter") {
+    createChapterLink();
   }
+
   return url;
 }

@@ -7,7 +7,7 @@ export let digitalPaliReader = {
   dn: {
     format: ["sutta"],
 
-    links: { card: "", all: "", main_page: "https://www.paliaudio.com/digha-nikaya" },
+    links: { card: "", all: "", main_page: "" },
     available: [
       [1, "d.0.0.0.0.0.0.m"],
       [2, "d.0.0.0.1.0.0.m"],
