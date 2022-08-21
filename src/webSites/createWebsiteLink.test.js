@@ -24,7 +24,7 @@ describe("SC", () => {
       ).toBe("");
     });
 
-    test("mn152 citation", () => {
+    test("mn152", () => {
       expect(createWebsiteLink({ site: "SC", book: "mn", firstNumber: 152, secondNumber: 0, error: "" })).toBe(
         "https://suttacentral.net/mn152"
       );
@@ -96,7 +96,7 @@ describe("SC", () => {
     });
   });
 
-  describe("KN", () => {
+  describe("SC-KN", () => {
     test("kp6", () => {
       expect(createWebsiteLink({ site: "SC", book: "kp", firstNumber: 6, secondNumber: 0, error: "" })).toBe(
         "https://suttacentral.net/kp6"
@@ -336,7 +336,7 @@ describe("SC", () => {
             error: "",
             chapterFlag: false,
           })
-        ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=v.2.0.0.0.0.1.m");
+        ).toBe("https://suttacentral.net/pli-tv-bi-vb-pj6");
       });
 
       test("biss8", () => {
@@ -349,7 +349,7 @@ describe("SC", () => {
             error: "",
             chapterFlag: false,
           })
-        ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=v.2.0.0.0.0.3.m");
+        ).toBe("https://suttacentral.net/pli-tv-bi-vb-ss8");
       });
 
       test("binp12", () => {
@@ -362,7 +362,7 @@ describe("SC", () => {
             error: "",
             chapterFlag: false,
           })
-        ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=v.2.0.0.2.0.11.m");
+        ).toBe("https://suttacentral.net/pli-tv-bi-vb-np12");
       });
 
       test("bipc90", () => {
@@ -375,7 +375,7 @@ describe("SC", () => {
             error: "",
             chapterFlag: false,
           })
-        ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=v.2.0.0.3.8.6.m");
+        ).toBe("https://suttacentral.net/pli-tv-bi-vb-pc9-93");
       });
 
       test("bipd1", () => {
@@ -388,7 +388,7 @@ describe("SC", () => {
             error: "",
             chapterFlag: false,
           })
-        ).toBe("https://www.digitalpalireader.online/_dprhtml/index.html?loc=v.2.0.0.4.0.0.m");
+        ).toBe("https://suttacentral.net/pli-tv-bi-vb-pd1");
       });
 
       // test("bisk34", () => {
@@ -409,7 +409,29 @@ describe("SC", () => {
 
 describe("SF", () => {
   describe("SF-Main Nikayas", () => {
-    test("test All mn141 citation", () => {
+    test("dn24 citation", () => {
+      expect(createWebsiteLink({ site: "SF", book: "dn", firstNumber: 24, secondNumber: 0, error: "" })).toBe(
+        "https://suttafriends.org/sutta/dn24"
+      );
+    });
+    test("dn only", () => {
+      expect(createWebsiteLink({ site: "SF", book: "dn", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
+        "https://suttafriends.org/dn"
+      );
+    });
+    test("dn39 wrong citation", () => {
+      expect(
+        createWebsiteLink({
+          site: "SF",
+          book: "dn",
+          firstNumber: 39,
+          secondNumber: 0,
+          error: "Sutta number too high. Not in Dīgha Nikāya.",
+        })
+      ).toBe("");
+    });
+
+    test("mn141 citation", () => {
       expect(createWebsiteLink({ site: "SF", book: "mn", firstNumber: 141, secondNumber: 0, error: "" })).toBe(
         "https://suttafriends.org/sutta/mn141"
       );
@@ -419,17 +441,71 @@ describe("SF", () => {
         "https://suttafriends.org/mn"
       );
     });
+    test("mn345 Wrong citation", () => {
+      expect(
+        createWebsiteLink({
+          site: "SF",
+          book: "mn",
+          firstNumber: 0,
+          secondNumber: 0,
+          error: "Sutta number too high. Not in Majjhima Nikāya.",
+        })
+      ).toBe("");
+    });
 
     test("sn only", () => {
       expect(createWebsiteLink({ site: "SF", book: "sn", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
         "https://suttafriends.org/sn"
       );
     });
+    test("sn11.3 (exact)", () => {
+      expect(createWebsiteLink({ site: "SF", book: "sn", firstNumber: 11, secondNumber: 3, error: "" })).toBe(
+        "https://suttafriends.org/sutta/sn11-3"
+      );
+    });
+    test("sn56.118 (range sutta)", () => {
+      expect(createWebsiteLink({ site: "SF", book: "sn", firstNumber: 56, secondNumber: 118, error: "" })).toBe(
+        "https://suttafriends.org/sutta/sn56-117"
+      );
+    });
+    test("sn34.500", () => {
+      expect(
+        createWebsiteLink({
+          site: "SF",
+          book: "sn",
+          firstNumber: 34,
+          secondNumber: 500,
+          error: "Sutta number too high. Not in Saṁyutta Nikāya.",
+        })
+      ).toBe("");
+    });
 
     test("an1.2 citation", () => {
       expect(createWebsiteLink({ site: "SF", book: "an", firstNumber: 1, secondNumber: 2, error: "" })).toBe(
         "https://suttafriends.org/sutta/an1-1"
       );
+    });
+
+    test("an10.150(exact)", () => {
+      expect(createWebsiteLink({ site: "SC", book: "an", firstNumber: 10, secondNumber: 150, error: "" })).toBe(
+        "https://suttacentral.net/an10.150"
+      );
+    });
+    test("an1.2 (range)", () => {
+      expect(createWebsiteLink({ site: "SC", book: "an", firstNumber: 1, secondNumber: 2, error: "" })).toBe(
+        "https://suttacentral.net/an1.1-10"
+      );
+    });
+    test("an1.992 (incorrect)", () => {
+      expect(
+        createWebsiteLink({
+          site: "SC",
+          book: "an",
+          firstNumber: 1,
+          secondNumber: 2,
+          error: "Sutta number too high. Not in Aṅguttara Nikāya.",
+        })
+      ).toBe("");
     });
   });
 
@@ -439,24 +515,111 @@ describe("SF", () => {
         "https://suttacentral.net/pitaka/sutta/minor/kn/kp"
       );
     });
+    test("kp6", () => {
+      expect(createWebsiteLink({ site: "SF", book: "kp", firstNumber: 6, secondNumber: 0, error: "" })).toBe(
+        "https://suttafriends.org/sutta/sutta/khp6"
+      );
+    });
+
+    test("dhp only", () => {
+      expect(createWebsiteLink({ site: "SF", book: "dhp", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
+        "https://suttafriends.org/dhp"
+      );
+    });
+    test("dhp245", () => {
+      expect(createWebsiteLink({ site: "SF", book: "dhp", firstNumber: 245, secondNumber: 0, error: "" })).toBe(
+        "https://suttafriends.org/sutta/dhp18#v245"
+      );
+    });
+
+    test("ud only", () => {
+      expect(createWebsiteLink({ site: "SF", book: "ud", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
+        "https://suttafriends.org/ud"
+      );
+    });
+    test("ud5.4", () => {
+      expect(createWebsiteLink({ site: "SF", book: "ud", firstNumber: 5, secondNumber: 4, error: "" })).toBe(
+        "https://suttafriends.org/sutta/ud5-4"
+      );
+    });
+
+    test("iti only", () => {
+      expect(createWebsiteLink({ site: "SF", book: "iti", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
+        "https://suttafriends.org/itv"
+      );
+    });
+    test("iti67", () => {
+      expect(createWebsiteLink({ site: "SF", book: "iti", firstNumber: 67, secondNumber: 0, error: "" })).toBe(
+        "https://suttafriends.org/sutta/itv67"
+      );
+    });
+
+    test("snp only", () => {
+      expect(createWebsiteLink({ site: "SF", book: "snp", firstNumber: 0, secondNumber: 8, error: "" })).toBe(
+        "https://suttafriends.org/snp"
+      );
+    });
     test("snp1.8 citations", () => {
       expect(createWebsiteLink({ site: "SF", book: "snp", firstNumber: 1, secondNumber: 8, error: "" })).toBe(
         "https://suttafriends.org/sutta/snp1-8"
       );
     });
+
     test("vv only", () => {
       expect(createWebsiteLink({ site: "SF", book: "vv", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
         "https://suttafriends.org/vv"
       );
     });
+
     test("thag1.2 citation", () => {
       expect(createWebsiteLink({ site: "SF", book: "thag", firstNumber: 1, secondNumber: 2, error: "" })).toBe(
         "https://suttafriends.org/sutta/thag1-1"
       );
     });
+
     test("test Dhp for SuttaFriends", () => {
       expect(createWebsiteLink({ site: "SF", book: "dhp", firstNumber: 123, secondNumber: 0, error: "" })).toBe(
         "https://suttafriends.org/sutta/dhp9#v123"
+      );
+    });
+
+    test("vv only", () => {
+      expect(createWebsiteLink({ site: "SF", book: "vv", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
+        "https://suttafriends.org/vv"
+      );
+    });
+    test("vv67", () => {
+      expect(createWebsiteLink({ site: "SF", book: "vv", firstNumber: 67, secondNumber: 0, error: "" })).toBe("/vv67");
+    });
+
+    test("pv only", () => {
+      expect(createWebsiteLink({ site: "SF", book: "pv", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
+        "/pitaka/sutta/minor/kn/pv"
+      );
+    });
+    test("pv67", () => {
+      expect(createWebsiteLink({ site: "SF", book: "pv", firstNumber: 47, secondNumber: 0, error: "" })).toBe("/pv47");
+    });
+
+    test("thag only", () => {
+      expect(createWebsiteLink({ site: "SF", book: "thag", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
+        "/pitaka/sutta/minor/kn/thag"
+      );
+    });
+    test("thag4.2", () => {
+      expect(createWebsiteLink({ site: "SF", book: "thag", firstNumber: 4, secondNumber: 2, error: "" })).toBe(
+        "/thag4.2"
+      );
+    });
+
+    test("thig only", () => {
+      expect(createWebsiteLink({ site: "SF", book: "thig", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
+        "/pitaka/sutta/minor/kn/thig"
+      );
+    });
+    test("thig3.2", () => {
+      expect(createWebsiteLink({ site: "SF", book: "thig", firstNumber: 3, secondNumber: 2, error: "" })).toBe(
+        "/thig3.2"
       );
     });
   });
