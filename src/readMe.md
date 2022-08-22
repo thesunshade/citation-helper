@@ -21,7 +21,7 @@
 
 - [ ] can probably remove all instances of range_required
 - [ ] only put into page title when it's a valid citation
-- [ ] allow creation of urls to books/chapters
+- [x] allow creation of urls to books/chapters
       this requirs allowing secondNumber===0 without causing other things to break
       And not every chapter book should have this optinon. e.g Thag
       WAS WORKING, NOW BROKEN for SN
@@ -29,11 +29,12 @@
 - [ ] give alert for thag/thig that v can be used to get to a verse
 - [ ] remove chapter alert message when a chapter flag is used
 - [ ] remove verse alert message when a verse flag is used
+- [ ] add unit tests for addParamsToSuttaCentralUrl.js
 
 ### new features
 
 - [ ] allow setting translator/layout in text input
-
+- [ ] give equivelent bhikkhu rules for bi vinaya
 - [ ] dhpch1 should show chapter 1 for ABT
 
 # fixing dhammaTalks

@@ -7,7 +7,7 @@ export let ancientBuddhistTexts = {
   dn: {
     format: ["sutta"],
 
-    links: { card: "/long/dn", all: "/dn" },
+    links: { card: "", all: "" },
     available: [
       [16, "/Texts-and-Translations/Mahaparinibbanasuttam/index.htm"],
       [22, "/Texts-and-Translations/Satipatthana/index.htm"],
@@ -16,7 +16,7 @@ export let ancientBuddhistTexts = {
   mn: {
     format: ["sutta"],
 
-    links: { all: "/MN/MN" },
+    links: { all: "" },
     available: [
       [26, "/Texts-and-Translations/Ariyapariyesana/index.htm"],
       [44, "/Texts-and-Translations/Culavedalla/Culavedalla.htm"],
@@ -32,8 +32,8 @@ export let ancientBuddhistTexts = {
   },
   sn: {
     format: ["chapter"],
-    links: { card: "/linked/sn", all: "/sn" },
-    range_suttas_required: false,
+    links: { card: "", all: "" },
+    // range_suttas_required: false,
     available: {
       5: [
         [1, "/Texts-and-Translations/Bhikkhunisamyuttam/01-Alavika.htm"],
@@ -57,7 +57,7 @@ export let ancientBuddhistTexts = {
 
   an: {
     format: ["chapter"],
-    links: { card: "/numbered/an", all: "/an" },
+    links: { card: "", all: "" },
     available: {
       3: [[62, "/Texts-and-Translations/Short-Pieces/Titthayatanasuttam.htm"]],
       4: [
@@ -78,15 +78,15 @@ export let ancientBuddhistTexts = {
     },
   },
 
-  kn: {
-    format: ["sutta"],
-    links: { card: "/minor/kn", all: "/kn" },
-    available: [],
-  },
+  // kn: {
+  //   format: ["sutta"],
+  //   links: { card: "", all: "" },
+  //   available: [],
+  // },
   kp: {
     format: ["sutta"],
     links: {
-      all: "/KN/Khp/khp",
+      all: "",
       main_page: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Khuddakapatha/Khuddakapatha.htm",
     },
     available: [
@@ -104,36 +104,36 @@ export let ancientBuddhistTexts = {
   },
   dhp: {
     links: {
-      card: "/minor/dhp",
-      all: "/dhp",
+      card: "",
+      all: "",
       main_page: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/index.htm",
       chapter_links: {
-        1: "/Texts-and-Translations/Dhammapada/01-Pairs.htm",
-        2: "/Texts-and-Translations/Dhammapada/02-Heedfulness.htm",
-        3: "/Texts-and-Translations/Dhammapada/03-Mind.htm",
-        4: "/Texts-and-Translations/Dhammapada/04-Flowers.htm",
-        5: "/Texts-and-Translations/Dhammapada/05-Fools.htm",
-        6: "/Texts-and-Translations/Dhammapada/06-Wise.htm",
-        7: "/Texts-and-Translations/Dhammapada/07-Arahats.htm",
-        8: "/Texts-and-Translations/Dhammapada/08-Thousands.htm",
-        9: "/Texts-and-Translations/Dhammapada/09-Wickedness.htm",
-        10: "/Texts-and-Translations/Dhammapada/10-Stick.htm",
-        11: "/Texts-and-Translations/Dhammapada/11-Old-Age.htm",
-        12: "/Texts-and-Translations/Dhammapada/12-Self.htm",
-        13: "/Texts-and-Translations/Dhammapada/13-World.htm",
-        14: "/Texts-and-Translations/Dhammapada/14-Buddha.htm",
-        15: "/Texts-and-Translations/Dhammapada/15-Happiness.htm",
-        16: "/Texts-and-Translations/Dhammapada/16-Love.htm",
-        17: "/Texts-and-Translations/Dhammapada/17-Anger.htm",
-        18: "/Texts-and-Translations/Dhammapada/18-Stains.htm",
-        19: "/Texts-and-Translations/Dhammapada/19-Dhamma.htm",
-        20: "/Texts-and-Translations/Dhammapada/20-Path.htm",
-        21: "/Texts-and-Translations/Dhammapada/21-Miscellaneous.htm",
-        22: "/Texts-and-Translations/Dhammapada/22-Underworld.htm",
-        23: "/Texts-and-Translations/Dhammapada/23-Elephant.htm",
-        24: "/Texts-and-Translations/Dhammapada/24-Craving.htm",
-        25: "/Texts-and-Translations/Dhammapada/25-Monastics.htm",
-        26: "/Texts-and-Translations/Dhammapada/26-Brahmins.htm",
+        1: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/01-Pairs.htm",
+        2: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/02-Heedfulness.htm",
+        3: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/03-Mind.htm",
+        4: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/04-Flowers.htm",
+        5: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/05-Fools.htm",
+        6: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/06-Wise.htm",
+        7: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/07-Arahats.htm",
+        8: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/08-Thousands.htm",
+        9: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/09-Wickedness.htm",
+        10: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/10-Stick.htm",
+        11: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/11-Old-Age.htm",
+        12: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/12-Self.htm",
+        13: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/13-World.htm",
+        14: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/14-Buddha.htm",
+        15: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/15-Happiness.htm",
+        16: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/16-Love.htm",
+        17: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/17-Anger.htm",
+        18: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/18-Stains.htm",
+        19: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/19-Dhamma.htm",
+        20: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/20-Path.htm",
+        21: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/21-Miscellaneous.htm",
+        22: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/22-Underworld.htm",
+        23: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/23-Elephant.htm",
+        24: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/24-Craving.htm",
+        25: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/25-Monastics.htm",
+        26: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Dhammapada/26-Brahmins.htm",
       },
     },
     complete: true,
@@ -197,8 +197,8 @@ export let ancientBuddhistTexts = {
   ud: {
     format: ["chapter", "sutta"],
     links: {
-      card: "/minor/kn/ud",
-      all: "/ud",
+      card: "",
+      all: "",
       main_page: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Udana/index.htm",
     },
     complete: true,
@@ -305,9 +305,9 @@ export let ancientBuddhistTexts = {
   snp: {
     format: ["chapter"],
     links: {
-      card: "/minor/kn/snp",
-      all: "/snp",
-      chapter_links: { 5: "/Texts-and-Translations/Parayanavagga/index.htm" },
+      card: "",
+      all: "",
+      chapter_links: { 5: "https://www.ancient-buddhist-texts.net/Texts-and-Translations/Parayanavagga/index.htm" },
     },
     available: {
       5: [

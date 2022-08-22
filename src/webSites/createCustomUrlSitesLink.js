@@ -43,7 +43,7 @@ export default function createCustomUrlSitesLink(props) {
     if (chapterFlag === true) {
       // this is probably only going to be used for Dhp.
       if (chapter_links && firstNumber <= Object.keys(structure[book].chapters).length) {
-        return rootUrl + chapter_links[firstNumber];
+        return chapter_links[firstNumber];
       }
       return ""; // because they wanted a chapter page but there wasn't one
     }
@@ -63,7 +63,7 @@ export default function createCustomUrlSitesLink(props) {
       }
     }
 
-    if (available.length > 0) {
+    if (available && available.length > 0) {
       for (let i = 0; i < available.length; i++) {
         if (firstNumber === available[i][0]) {
           return rootUrl + available[i][1] + suffixUrl;
@@ -88,10 +88,15 @@ export default function createCustomUrlSitesLink(props) {
       chapter_links[firstNumber]
     ) {
       //chapter flag true
-      return rootUrl + chapter_links[firstNumber];
+      return chapter_links[firstNumber];
     } else if (bookObject && bookObject.links.main_page && firstNumber === 0) {
       // first number is zero and there is a link in the book object to a main page
       return bookObject.links.main_page;
+    } else if (secondNumber === 0) {
+      // only first number given and chapter links exist
+      if (bookObject.links.chapter_links) {
+        url = bookObject.links.chapter_links[firstNumber];
+      }
     } else if (bookObject.complete && secondNumber > 0) {
       // this is a complete book and there is a second number
       return rootUrl + available[firstNumber][secondNumber - 1][1] + suffixUrl;

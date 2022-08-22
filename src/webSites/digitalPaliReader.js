@@ -47,7 +47,7 @@ export let digitalPaliReader = {
   },
   mn: {
     format: ["sutta"],
-    links: { all: "/", main_page: "https://www.paliaudio.com/majjhima-nikaya" },
+    links: { all: "/", main_page: "" },
     available: [
       [1, "m.0.0.0.0.0.0.m"],
       [2, "m.0.0.0.0.1.0.m"],
@@ -206,7 +206,7 @@ export let digitalPaliReader = {
   sn: {
     format: ["chapter"],
     links: { card: "", all: "", main_page: "" },
-    range_suttas_required: true,
+    // range_suttas_required: true,
     available: {
       1: [
         [1, "s.0.0.0.0.0.0.m"],
@@ -2013,11 +2013,11 @@ export let digitalPaliReader = {
   an: {
     format: ["chapter"],
     links: {
-      main_page: "https://www.paliaudio.com/anguttara-nikaya",
+      main_page: "",
       card: "",
       all: "",
     },
-    range_suttas_required: true,
+    // range_suttas_required: true,
     available: {
       1: [
         [1, 10, "a.0.0.0.0.0.0.m"],
@@ -3388,7 +3388,7 @@ export let digitalPaliReader = {
     format: ["sutta"],
     links: {
       all: "",
-      main_page: "k.0.x.x.x.x.x.m",
+      main_page: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.0.x.x.x.x.x.m",
     },
     available: [
       [1, "k.0.0.0.0.0.0.m"],
@@ -3405,36 +3405,36 @@ export let digitalPaliReader = {
 
   dhp: {
     links: {
-      card: "/minor/dhp",
-      all: "/dhp",
-      main_page: "k.1.m",
+      card: "",
+      all: "",
+      main_page: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.m",
       chapter_links: {
-        1: "k.1.0.0.0.0.0.m",
-        2: "k.1.0.0.1.0.0.m",
-        3: "k.1.0.0.2.0.0.m",
-        4: "k.1.0.0.3.0.0.m",
-        5: "k.1.0.0.4.0.0.m",
-        6: "k.1.0.0.5.0.0.m",
-        7: "k.1.0.0.6.0.0.m",
-        8: "k.1.0.0.7.0.0.m",
-        9: "k.1.0.0.8.0.0.m",
-        10: "k.1.0.0.9.0.0.m",
-        11: "k.1.0.0.0.0.0.m",
-        12: "k.1.0.0.1.0.0.m",
-        13: "k.1.0.0.2.0.0.m",
-        14: "k.1.0.0.3.0.0.m",
-        15: "k.1.0.0.4.0.0.m",
-        16: "k.1.0.0.5.0.0.m",
-        17: "k.1.0.0.6.0.0.m",
-        18: "k.1.0.0.7.0.0.m",
-        19: "k.1.0.0.8.0.0.m",
-        20: "k.1.0.0.9.0.0.m",
-        21: "k.1.0.0.0.0.0.m",
-        22: "k.1.0.0.1.0.0.m",
-        23: "k.1.0.0.2.0.0.m",
-        24: "k.1.0.0.3.0.0.m",
-        25: "k.1.0.0.4.0.0.m",
-        26: "k.1.0.0.5.0.0.m",
+        1: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.0.0.0.m",
+        2: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.1.0.0.m",
+        3: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.2.0.0.m",
+        4: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.3.0.0.m",
+        5: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.4.0.0.m",
+        6: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.5.0.0.m",
+        7: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.6.0.0.m",
+        8: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.7.0.0.m",
+        9: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.8.0.0.m",
+        10: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.9.0.0.m",
+        11: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.0.0.0.m",
+        12: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.1.0.0.m",
+        13: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.2.0.0.m",
+        14: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.3.0.0.m",
+        15: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.4.0.0.m",
+        16: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.5.0.0.m",
+        17: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.6.0.0.m",
+        18: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.7.0.0.m",
+        19: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.8.0.0.m",
+        20: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.9.0.0.m",
+        21: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.0.0.0.m",
+        22: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.1.0.0.m",
+        23: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.2.0.0.m",
+        24: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.3.0.0.m",
+        25: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.4.0.0.m",
+        26: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.1.0.0.5.0.0.m",
       },
     },
     complete: true,
@@ -3501,7 +3501,7 @@ export let digitalPaliReader = {
     links: {
       card: "",
       all: "",
-      main_page: "k.2.m",
+      main_page: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.2.m",
     },
     complete: true,
     available: {
@@ -3609,7 +3609,7 @@ export let digitalPaliReader = {
     links: {
       card: "",
       all: "",
-      main_page: "k.3.m",
+      main_page: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.3.m",
     },
     complete: true,
     available: [
@@ -3733,7 +3733,7 @@ export let digitalPaliReader = {
     links: {
       card: "",
       all: "",
-      main_page: "k.4.m",
+      main_page: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.4.m",
     },
     available: {
       1: [
@@ -3824,7 +3824,7 @@ export let digitalPaliReader = {
     links: {
       card: "",
       all: "",
-      main_page: "k.5.m",
+      main_page: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.5.m",
     },
     complete: true,
     available: [
@@ -3921,7 +3921,7 @@ export let digitalPaliReader = {
     links: {
       card: "",
       all: "",
-      main_page: "k.6.m",
+      main_page: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.6.m",
     },
     complete: true,
     available: [
@@ -3984,7 +3984,7 @@ export let digitalPaliReader = {
     links: {
       card: "",
       all: "",
-      main_page: "k.7.m",
+      main_page: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.7.m",
     },
     available: {
       1: [
@@ -4287,7 +4287,7 @@ export let digitalPaliReader = {
     links: {
       card: "",
       all: "",
-      main_page: "k.7.m",
+      main_page: "https://www.digitalpalireader.online/_dprhtml/index.html?loc=k.7.m",
     },
     available: {
       1: [
@@ -4966,9 +4966,9 @@ export let digitalPaliReader = {
   bunp: {
     format: ["sutta"],
     links: {
-      card: "pli-tv-bu-vb-np",
-      all: "/pli-tv-bu-vb-np",
-      main_page: "https://suttacentral.net/pli-tv-bu-vb-np",
+      card: "",
+      all: "",
+      main_page: "",
     },
     complete: true,
     available: [
@@ -5007,9 +5007,9 @@ export let digitalPaliReader = {
   bupc: {
     format: ["sutta"],
     links: {
-      card: "pli-tv-bu-vb-pc",
-      all: "/pli-tv-bu-vb-pc",
-      main_page: "https://suttacentral.net/pli-tv-bu-vb-pc",
+      card: "",
+      all: "",
+      main_page: "",
     },
     complete: true,
     available: [
@@ -5110,9 +5110,9 @@ export let digitalPaliReader = {
   bupd: {
     format: ["sutta"],
     links: {
-      card: "pli-tv-bu-vb-pd",
-      all: "/pli-tv-bu-vb-pd",
-      main_page: "https://suttacentral.net/pli-tv-bu-vb-pd",
+      card: "",
+      all: "",
+      main_page: "",
     },
     complete: true,
     available: [
@@ -5125,8 +5125,8 @@ export let digitalPaliReader = {
   busk: {
     format: ["sutta"],
     links: {
-      card: "pli-tv-bu-vb-sk",
-      all: "/pli-tv-bu-vb-sk",
+      card: "",
+      all: "",
       main_page: "",
     },
     complete: true,
@@ -5173,9 +5173,9 @@ export let digitalPaliReader = {
   bipj: {
     format: ["sutta"],
     links: {
-      card: "pli-tv-bi-vb-pj",
-      all: "/pli-tv-bi-vb-pj",
-      main_page: "https://suttacentral.net/pli-tv-bi-vb-pj",
+      card: "",
+      all: "",
+      main_page: "",
     },
     complete: false,
     available: [
@@ -5189,9 +5189,9 @@ export let digitalPaliReader = {
   biss: {
     format: ["sutta"],
     links: {
-      card: "pli-tv-bi-vb-ss",
-      all: "/pli-tv-bi-vb-ss",
-      main_page: "https://suttacentral.net/pli-tv-bi-vb-ss",
+      card: "",
+      all: "",
+      main_page: "",
     },
     complete: false,
     available: [
@@ -5206,9 +5206,9 @@ export let digitalPaliReader = {
   binp: {
     format: ["sutta"],
     links: {
-      card: "pli-tv-bi-vb-np",
-      all: "/pli-tv-bi-vb-np",
-      main_page: "https://suttacentral.net/pli-tv-bi-vb-np",
+      card: "",
+      all: "",
+      main_page: "",
     },
     complete: false,
     available: [
@@ -5336,8 +5336,8 @@ export let digitalPaliReader = {
   bipd: {
     format: ["sutta"],
     links: {
-      card: "pli-tv-bi-vb-pd",
-      all: "/pli-tv-bi-vb-pd",
+      card: "",
+      all: "",
       main_page: "",
     },
     complete: true,
