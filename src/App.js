@@ -20,6 +20,7 @@ function App() {
   window.onpopstate = function (e) {
     setUserInput(urlToUserInput(e.state.page).userInput);
   };
+
   function urlToUserInput(url) {
     // this function takes what is in the url search param and puts it into the user input format
     // as well as updating suttaName and the page title
@@ -29,6 +30,7 @@ function App() {
     // return userInput;
     return { userInput: userInput, suttaName: nowSuttaName };
   }
+
   let [suttaName, setSuttaName] = useState(urlToUserInput(decodeURI(document.location.search)).suttaName);
   let [userInput, setUserInput] = useState(urlToUserInput(decodeURI(document.location.search)).userInput);
   window.history.replaceState({ page: decodeURI(document.location.search) }, "", document.location);
