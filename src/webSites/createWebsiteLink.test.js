@@ -46,6 +46,11 @@ describe("SC", () => {
       ).toBe("");
     });
 
+    test("sn12 (within a range", () => {
+      expect(createWebsiteLink({ site: "SC", book: "sn", firstNumber: 12, secondNumber: 0, error: "" })).toBe(
+        "https://suttacentral.net/sn12"
+      );
+    });
     test("sn12.75 (within a range", () => {
       expect(createWebsiteLink({ site: "SC", book: "sn", firstNumber: 12, secondNumber: 75, error: "" })).toBe(
         "https://suttacentral.net/sn12.72-81"
@@ -70,6 +75,11 @@ describe("SC", () => {
     test("sn only", () => {
       expect(createWebsiteLink({ site: "SC", book: "sn", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
         "https://suttacentral.net/pitaka/sutta/linked/sn"
+      );
+    });
+    test("sn chapter  only", () => {
+      expect(createWebsiteLink({ site: "SC", book: "sn", firstNumber: 1, secondNumber: 0, error: "" })).toBe(
+        "https://suttacentral.net/sn1"
       );
     });
 
@@ -458,6 +468,11 @@ describe("SF", () => {
         "https://suttafriends.org/sn"
       );
     });
+    test("sn11 (chapter page)", () => {
+      expect(createWebsiteLink({ site: "SF", book: "sn", firstNumber: 11, secondNumber: 0, error: "" })).toBe(
+        "https://suttafriends.org/sn-11-sakka-samyutta-stories-of-god-sakka/"
+      );
+    });
     test("sn11.3 (exact)", () => {
       expect(createWebsiteLink({ site: "SF", book: "sn", firstNumber: 11, secondNumber: 3, error: "" })).toBe(
         "https://suttafriends.org/sutta/sn11-3"
@@ -730,6 +745,16 @@ describe("DT", () => {
     });
     test("an1.2 (doesn't exist)", () => {
       expect(createWebsiteLink({ site: "DT", book: "an", firstNumber: 1, secondNumber: 2, error: "" })).toBe("");
+    });
+    test("an3 (chapter page)", () => {
+      expect(createWebsiteLink({ site: "DT", book: "an", firstNumber: 3, secondNumber: 0, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/AN/index_AN.html#Threes"
+      );
+    });
+    test("an only", () => {
+      expect(createWebsiteLink({ site: "DT", book: "an", firstNumber: 1, secondNumber: 0, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/AN/index_AN.html"
+      );
     });
   });
 

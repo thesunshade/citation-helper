@@ -118,7 +118,10 @@ export let dhammaTalks = {
     ],
   },
   sn: {
-    links: { all: "/SN/SN", main_page: "https://www.dhammatalks.org/suttas/SN/index_SN.html" },
+    links: {
+      all: "/SN/SN",
+      main_page: "https://www.dhammatalks.org/suttas/SN/index_SN.html",
+    },
     range_suttas: {
       15: [[14, 19]],
       45: [[56, 62]],
@@ -177,7 +180,23 @@ export let dhammaTalks = {
   },
 
   an: {
-    links: { all: "/AN/AN", main_page: "https://www.dhammatalks.org/suttas/AN/index_AN.html" },
+    links: {
+      all: "/AN/AN",
+      main_page: "https://www.dhammatalks.org/suttas/AN/index_AN.html",
+      chapter_links: {
+        1: "https://www.dhammatalks.org/suttas/AN/index_AN.html",
+        2: "https://www.dhammatalks.org/suttas/AN/index_AN.html#Twos",
+        3: "https://www.dhammatalks.org/suttas/AN/index_AN.html#Threes",
+        4: "https://www.dhammatalks.org/suttas/AN/index_AN.html#Fours",
+        5: "https://www.dhammatalks.org/suttas/AN/index_AN.html#Fives",
+        6: "https://www.dhammatalks.org/suttas/AN/index_AN.html#Sixes",
+        7: "https://www.dhammatalks.org/suttas/AN/index_AN.html#Sevens",
+        8: "https://www.dhammatalks.org/suttas/AN/index_AN.html#Eights",
+        9: "https://www.dhammatalks.org/suttas/AN/index_AN.html#Nines",
+        10: "https://www.dhammatalks.org/suttas/AN/index_AN.html#Tens",
+        11: "https://www.dhammatalks.org/suttas/AN/index_AN.html#Elevens",
+      },
+    },
     range_suttas: {
       1: [
         [21, 30],

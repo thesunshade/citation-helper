@@ -7,6 +7,8 @@
 import makePrettyName from "../functions/makePrettyName.js";
 
 export default function LinkButton(props) {
+  if (!props.url) return null;
+
   const url = props.url.replace("www.", "");
   const site = props.site;
 

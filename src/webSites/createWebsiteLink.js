@@ -163,6 +163,11 @@ export default function createWebsiteLink(props) {
     ) {
       // this deals with the specific situation where DT has no sutta numbers for Thag/thig suttas with only one sutta in the chapter
       url = rootUrl + bookObject.links.all + firstNumber + suffixUrl;
+    } else if (secondNumber === 0) {
+      // only first number given and chapter links exist
+      if (bookObject.links.chapter_links) {
+        url = bookObject.links.chapter_links[firstNumber];
+      }
     } else if (secondNumber > 0) {
       //commenting out this
       // will make the thag18 work, but breaks ud (also comment out the closing)
