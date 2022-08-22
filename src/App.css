@@ -322,6 +322,11 @@ a:focus .url-button-class {
   box-shadow: inset 0px 0px 10px #a36341;
   width: 350px;
 }
+.BMC {
+  background: var(--dhammatalks);
+  box-shadow: inset 0px 0px 10px #a36341;
+  width: 350px;
+}
 .ABT {
   background: var(--ancientbuddhist);
   box-shadow: inset 0px 0px 10px #738859;

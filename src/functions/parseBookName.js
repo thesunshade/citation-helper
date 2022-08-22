@@ -8,6 +8,12 @@ export default function parseBookName(userInput) {
   const books = Object.keys(structure);
   let sanitizedBookName = "";
 
+  if (/bmcon/.test(userInput)) {
+    localStorage.bmc = true;
+  } else if (/bmcoff/.test(userInput)) {
+    localStorage.bmc = false;
+  }
+
   books.forEach(bookKey => {
     for (let i = 0; i < structure[bookKey].book_abbreviation.length; i++) {
       const regex = new RegExp("^" + structure[bookKey].book_abbreviation[i], "i");

@@ -25,6 +25,9 @@ export default function makePrettyName(id) {
     case "DPR":
       prettySiteUrl = "DigitalPaliReader.online";
       break;
+    case "BMC":
+      prettySiteUrl = "DhammaTalks.org";
+      break;
     default:
       prettySiteUrl = "";
   }
