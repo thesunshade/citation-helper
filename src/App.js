@@ -188,6 +188,13 @@ function App() {
               })}
             />
             <LinkButton
+              site={"BMC"}
+              url={createCustomUrlSitesLink({
+                site: "BMC",
+                ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
+              })}
+            />
+            <LinkButton
               site={"SCV"}
               url={createWebsiteLink({
                 site: "SCV",

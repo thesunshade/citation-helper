@@ -11,6 +11,10 @@ export default function createCustomUrlSitesLink(props) {
   let url = ""; // this is the only thing that will be returned
   let website;
 
+  if (site === "BMC" && localStorage.bmc === "false") {
+    return "";
+  }
+
   switch (site) {
     case "ABT":
       website = require("./ancientBuddhistTexts.js").ancientBuddhistTexts;
@@ -23,6 +27,9 @@ export default function createCustomUrlSitesLink(props) {
       break;
     case "PA":
       website = require("./paliAudio.js").paliAudio;
+      break;
+    case "BMC":
+      website = require("./buddhistMonasticCode.js").buddhistMonasticCode;
       break;
     default:
       console.warn("error getting site file");
