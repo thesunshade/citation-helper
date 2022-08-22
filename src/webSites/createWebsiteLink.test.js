@@ -646,16 +646,22 @@ describe("SF", () => {
 
 describe("DT", () => {
   describe("DT-Main Nikayas", () => {
-    test("dn12 citation", () => {
-      expect(createWebsiteLink({ site: "DT", book: "dn", firstNumber: 12, secondNumber: 0, error: "" })).toBe(
-        "https://www.dhammatalks.org/suttas/DN/DN12.html"
-      );
-    });
     test("dn only", () => {
       expect(createWebsiteLink({ site: "DT", book: "dn", firstNumber: 0, secondNumber: 0, error: "" })).toBe(
         "https://www.dhammatalks.org/suttas/DN/index_DN.html"
       );
     });
+    test("dn12 citation", () => {
+      expect(createWebsiteLink({ site: "DT", book: "dn", firstNumber: 12, secondNumber: 0, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/DN/DN12.html"
+      );
+    });
+    test("dn9 citation (add leading zero)", () => {
+      expect(createWebsiteLink({ site: "DT", book: "dn", firstNumber: 9, secondNumber: 0, error: "" })).toBe(
+        "https://www.dhammatalks.org/suttas/DN/DN09.html"
+      );
+    });
+
     test("dn39 wrong citation", () => {
       expect(
         createWebsiteLink({

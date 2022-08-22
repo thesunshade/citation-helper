@@ -206,7 +206,6 @@ export let digitalPaliReader = {
   sn: {
     format: ["chapter"],
     links: { card: "", all: "", main_page: "" },
-    // range_suttas_required: true,
     available: {
       1: [
         [1, "s.0.0.0.0.0.0.m"],
@@ -2017,7 +2016,6 @@ export let digitalPaliReader = {
       card: "",
       all: "",
     },
-    // range_suttas_required: true,
     available: {
       1: [
         [1, 10, "a.0.0.0.0.0.0.m"],
@@ -5139,16 +5137,6 @@ export let digitalPaliReader = {
       [51, 60, "v.1.0.0.2.5.0.m"],
       [61, 75, "v.1.0.0.2.6.0.m"],
     ],
-    range_suttas_required: true,
-    range_suttas: [
-      [1, 5],
-      [11, 20],
-      [21, 30],
-      [31, 40],
-      [41, 50],
-      [51, 60],
-      [61, 75],
-    ],
   },
   buas: {
     format: ["sutta"],
@@ -5358,7 +5346,7 @@ export let digitalPaliReader = {
   //   links: {
   //     card: "pli-tv-bi-vb-sk",
   //     all: "/pli-tv-bi-vb-sk",
-  //     main_page: "https://suttacentral.net/pli-tv-bi-vb-sk",
+  //     main_page: "",
   //   },
   //   complete: true,
   // },
@@ -5367,7 +5355,7 @@ export let digitalPaliReader = {
   //   links: {
   //     card: "pli-tv-bi-vb-as",
   //     all: "/pli-tv-bi-vb-as",
-  //     main_page: "https://suttacentral.net/pli-tv-bi-vb-as",
+  //     main_page: "",
   //   },
   //   complete: true,
   // },

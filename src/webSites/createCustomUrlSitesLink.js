@@ -1,4 +1,3 @@
-import { SignalWifiStatusbarNullOutlined } from "@mui/icons-material";
 import { structure } from "../structure.js";
 
 export default function createCustomUrlSitesLink(props) {
@@ -45,7 +44,7 @@ export default function createCustomUrlSitesLink(props) {
 
   const chapter_links = bookObject.links.chapter_links;
 
-  // this is used for books that are sutta based
+  // -----------------  this is used for books that are sutta based
   function createSuttaLink() {
     if (chapterFlag === true) {
       // this is probably only going to be used for Dhp.
@@ -59,8 +58,10 @@ export default function createCustomUrlSitesLink(props) {
     }
 
     const available = bookObject.available;
+
     if (bookObject.range_suttas) {
       const rangeArray = bookObject.range_suttas;
+      console.log(rangeArray);
       for (let i = 0; i < rangeArray.length; i++) {
         const [lower, upper] = rangeArray[i];
         if ((firstNumber >= lower) & (firstNumber <= upper)) {
@@ -72,8 +73,16 @@ export default function createCustomUrlSitesLink(props) {
 
     if (available && available.length > 0) {
       for (let i = 0; i < available.length; i++) {
-        if (firstNumber === available[i][0]) {
-          return rootUrl + available[i][1] + suffixUrl;
+        if (available[i].length === 2) {
+          if (firstNumber === available[i][0]) {
+            return rootUrl + available[i][1] + suffixUrl;
+          }
+        } else if (available[i].length === 3) {
+          const lower = available[i][0];
+          const upper = available[i][1];
+          if (firstNumber >= lower && firstNumber <= upper) {
+            return rootUrl + available[i][2] + suffixUrl;
+          }
         }
       }
     }
