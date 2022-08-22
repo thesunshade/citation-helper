@@ -88,6 +88,8 @@ export default function createWebsiteLink(props) {
                 if (bookObject.range_suttas) {
                   // there is the possibility that url is a range
                   makeUrlWhenRangeIsPossibleForSutta(book, firstNumber);
+                } else if (book === "dn" && site === "DT" && firstNumber < 10) {
+                  url = rootUrl + bookObject.links.all + "0" + firstNumber + suffixUrl;
                 } else {
                   url = rootUrl + bookObject.links.all + firstNumber + suffixUrl;
                 }
