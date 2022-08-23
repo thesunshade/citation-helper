@@ -121,6 +121,10 @@ export let dhammaTalks = {
     links: {
       all: "/SN/SN",
       main_page: "https://www.dhammatalks.org/suttas/SN/index_SN.html",
+      chapter_links: {
+        43: "https://www.dhammatalks.org/suttas/SN/SN43.html",
+        44: "https://www.dhammatalks.org/suttas/SN/SN44.html",
+      },
     },
     range_suttas: {
       15: [[14, 19]],

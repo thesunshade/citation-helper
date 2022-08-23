@@ -723,13 +723,16 @@ button {
   gap: 1rem;
   align-items: center;
 }
-.settings-button {
+.settings-button img {
   display: flex;
   margin-top: 0.2rem;
+  rotate: 0deg;
+  transition: rotate ease-in-out 1s;
 }
 
 .settings-button img:hover {
-  filter: opacity(50%);
+  /* filter: opacity(50%); */
+  rotate: 90deg;
 }
 
 .hidden {

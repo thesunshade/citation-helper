@@ -61,7 +61,7 @@ export default function createCustomUrlSitesLink(props) {
 
     if (bookObject.range_suttas) {
       const rangeArray = bookObject.range_suttas;
-      console.log(rangeArray);
+
       for (let i = 0; i < rangeArray.length; i++) {
         const [lower, upper] = rangeArray[i];
         if ((firstNumber >= lower) & (firstNumber <= upper)) {

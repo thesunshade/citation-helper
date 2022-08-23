@@ -608,7 +608,6 @@ export let structure = {
     pali_name: "Theragāthā",
     book_abbreviation: ["Thag"],
     format: ["chapter", "verse"],
-    // links: { card: "/minor/kn/thag", all: "/thag" },
     verses: [
       [
         [1, 1],

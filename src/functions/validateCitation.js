@@ -28,6 +28,7 @@ export default function validateCitation(book, numbers) {
       error = `Sutta number too high. Not in ${structure[book].pali_name}.`;
     } else {
       if (
+        !chapterFlag &&
         structure[book].format[1] &&
         (structure[book].format[1] === "chapter") | (structure[book].format[1] === "verse")
       ) {
@@ -61,9 +62,14 @@ export default function validateCitation(book, numbers) {
     if (error !== "") {
       return;
     }
-    if (structure[book].format[1] && structure[book].format[1] === "sutta") {
+    if (!chapterFlag && structure[book].format[1] && structure[book].format[1] === "sutta") {
       warning = `Get chapter page if it exisits by adding ‘ch’, e.g. ${book}ch1`;
     }
+
+    if (book === "thag" || book === "thig") {
+      warning = `Get verse by adding ‘v’, e.g. ${book}v123`;
+    }
+
     if (firstNumber > maxChapterNumber) {
       // first number is larger than number of chapters
       // HOWEVER it might be able to be transformed into a workign citation, e.g. ud56===ud6.6
@@ -116,6 +122,7 @@ export default function validateCitation(book, numbers) {
               secondNumber = sutta;
               i = chapterVersePairs.length;
               verseFlag = false;
+              warning = "";
             }
           }
           if (verseFlag === true) {

@@ -25,9 +25,9 @@
       this requirs allowing secondNumber===0 without causing other things to break
       And not every chapter book should have this optinon. e.g Thag
       WAS WORKING, NOW BROKEN for SN
-- [ ] sn4 and an4 should automatically give chapter pages
-- [ ] give alert for thag/thig that v can be used to get to a verse
-- [ ] remove chapter alert message when a chapter flag is used
+- [x] sn4 and an4 should automatically give chapter pages
+- [x] give alert for thag/thig that v can be used to get to a verse
+- [x] remove chapter alert message when a chapter flag is used
 - [ ] remove verse alert message when a verse flag is used
 - [ ] add unit tests for addParamsToSuttaCentralUrl.js
 
@@ -35,7 +35,7 @@
 
 - [ ] allow setting translator/layout in text input
 - [ ] give equivelent bhikkhu rules for bi vinaya
-- [ ] dhpch1 should show chapter 1 for ABT
+- [x] dhpch1 should show chapter 1 for ABT
 
 # fixing dhammaTalks
 
