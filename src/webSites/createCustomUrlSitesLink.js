@@ -162,6 +162,5 @@ export default function createCustomUrlSitesLink(props) {
     return createChapterLink();
   }
 
-  console.log("final " + site + " " + url);
   // return url;
 }
