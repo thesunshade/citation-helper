@@ -8,7 +8,7 @@ export default function findSuttaName(bookName, suttaNumber) {
   if (firstNumber === 0) {
     return null;
   }
-  const completeCitation = `${bookName} ${firstNumber}${secondNumber ? ":" + secondNumber : ""}`;
+  const completeCitation = `${bookName} ${firstNumber}${secondNumber ? "." + secondNumber : ""}`;
 
   for (let i = 0; i < suttas.length; i++) {
     if (completeCitation === suttas[i][0].toLowerCase()) {

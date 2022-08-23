@@ -8,6 +8,7 @@ import rfIcon from "../images/favicon-rf-black.png";
 import githubIcon from "../images/GitHub-Mark-64px-black.png";
 import drfIcon from "../images/favicon-drf-black.png";
 import randomIcon from "../images/favicon-random-black.png";
+import labsIcon from "../images/labs.png";
 
 export default function OtherToolsIcons() {
   return (
@@ -52,6 +53,15 @@ export default function OtherToolsIcons() {
         target="_blank"
       >
         <img width="20px" src={dppnIcon} alt="DPPN search icon" />
+      </a>
+      <a
+        href="https://readingfaithfully.org/lab/"
+        title="Other tools under development"
+        rel="noreferrer"
+        target="_blank"
+        className="labs"
+      >
+        <img width="17px" src={labsIcon} style={{ position: "relative", top: "2px" }} alt="Labs icon" />
       </a>
       <a
         href="https://github.com/thesunshade/citation-helper#readme"
