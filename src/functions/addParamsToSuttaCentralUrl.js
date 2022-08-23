@@ -32,13 +32,11 @@ export default function addParamsToSuttaCentralUrl(userInput, translator, layout
     }
   } else if (/pitaka/.test(url)) {
     // this is a whole book
-    console.log("whole book");
     return url;
   } else if (["sn", "an"].includes(parseBookResult) && parseNumbersResult.secondNumber === 0) {
     // this is a chapter in SN or AN
     return url;
   } else if (translator === "/en/sujato") {
-    console.log("translator is sujato");
     return url + translator + layout;
   } else {
     // we don't add `layout` here because for now sujato is the only one that has layout options
