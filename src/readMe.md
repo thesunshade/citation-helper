@@ -23,12 +23,12 @@
 
 - [ ] can probably remove all instances of range_required
 - [ ] only put into page title when it's a valid citation
+- [ ] remove verse alert message when a verse flag is used
+- [ ] add unit tests for addParamsToSuttaCentralUrl.js
 - [x] allow creation of urls to books/chapters; this requirs allowing secondNumber===0 without causing other things to break; And not every chapter book should have this optinon. e.g Thag
 - [x] sn4 and an4 should automatically give chapter pages
 - [x] give alert for thag/thig that v can be used to get to a verse
 - [x] remove chapter alert message when a chapter flag is used
-- [ ] remove verse alert message when a verse flag is used
-- [ ] add unit tests for addParamsToSuttaCentralUrl.js
 
 ### new features
 
