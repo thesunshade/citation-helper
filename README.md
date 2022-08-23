@@ -18,3 +18,7 @@ This tool is designed to allow you to enter citations for suttas in the first fo
 - [ ] Add css style for class of site code
 - [ ] Add site to `makePrettyName.js`
 - [ ] Add site to array `checkList` in `app.js` so it appears in options list
+
+### credits
+
+https://www.iconfinder.com/icons/9025380/flask_laboratory_icon

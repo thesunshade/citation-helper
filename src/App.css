@@ -752,3 +752,11 @@ button {
 .icon-links-area a:hover {
   top: -5px;
 }
+.icon-links-area a.labs {
+  rotate: 0deg;
+  transition: rotate ease 1s;
+}
+.icon-links-area a.labs:hover {
+  rotate: 55deg;
+  top: 0px !important;
+}
