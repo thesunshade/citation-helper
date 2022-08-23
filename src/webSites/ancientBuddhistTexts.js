@@ -6,7 +6,6 @@ export let ancientBuddhistTexts = {
   },
   dn: {
     format: ["sutta"],
-
     links: { card: "", all: "" },
     available: [
       [16, "/Texts-and-Translations/Mahaparinibbanasuttam/index.htm"],

@@ -16,15 +16,14 @@
 - [ ] vv9.1 should throw chapter error
       currently, it gives vv9
 - [ ] vv7.12 should throw sutta error
+- [x] DT SN 43, and 44 are all one page.
+- [x] DT Thag18.1 is really Thag18
 
 ### improvements
 
 - [ ] can probably remove all instances of range_required
 - [ ] only put into page title when it's a valid citation
-- [x] allow creation of urls to books/chapters
-      this requirs allowing secondNumber===0 without causing other things to break
-      And not every chapter book should have this optinon. e.g Thag
-      WAS WORKING, NOW BROKEN for SN
+- [x] allow creation of urls to books/chapters; this requirs allowing secondNumber===0 without causing other things to break; And not every chapter book should have this optinon. e.g Thag
 - [x] sn4 and an4 should automatically give chapter pages
 - [x] give alert for thag/thig that v can be used to get to a verse
 - [x] remove chapter alert message when a chapter flag is used
@@ -36,11 +35,6 @@
 - [ ] allow setting translator/layout in text input
 - [ ] give equivelent bhikkhu rules for bi vinaya
 - [x] dhpch1 should show chapter 1 for ABT
-
-# fixing dhammaTalks
-
-SN 43, and 44 are all one page.
-Thag18.1 is really Thag18
 
 # fixing SF
 

@@ -656,11 +656,6 @@ describe("DT", () => {
         "https://www.dhammatalks.org/suttas/DN/DN12.html"
       );
     });
-    test("dn9 citation (add leading zero)", () => {
-      expect(createWebsiteLink({ site: "DT", book: "dn", firstNumber: 9, secondNumber: 0, error: "" })).toBe(
-        "https://www.dhammatalks.org/suttas/DN/DN09.html"
-      );
-    });
 
     test("dn39 wrong citation", () => {
       expect(

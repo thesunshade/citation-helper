@@ -30,6 +30,9 @@ export default function createCustomUrlSitesLink(props) {
     case "BMC":
       website = require("./buddhistMonasticCode.js").buddhistMonasticCode;
       break;
+    case "DT":
+      website = require("./dhammaTalksCustom.js").dhammaTalksCustom;
+      break;
     default:
       console.warn("error getting site file");
   }
