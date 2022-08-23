@@ -1,5 +1,13 @@
 import createCustomUrlSitesLink from "./createCustomUrlSitesLink.js";
 
+describe("DT custom citations", () => {
+  test("dn9 citation (add leading zero)", () => {
+    expect(createCustomUrlSitesLink({ site: "DT", book: "dn", firstNumber: 9, secondNumber: 0, error: "" })).toBe(
+      "https://www.dhammatalks.org/suttas/DN/DN09.html"
+    );
+  });
+});
+
 describe("ABT", () => {
   test("test ABT mn141 citation", () => {
     expect(createCustomUrlSitesLink({ site: "ABT", book: "mn", firstNumber: 141, secondNumber: 0, error: "" })).toBe(

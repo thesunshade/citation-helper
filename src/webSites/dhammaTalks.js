@@ -6,7 +6,7 @@ export let dhammaTalks = {
   },
   dn: {
     links: { all: "/DN/DN", main_page: "https://www.dhammatalks.org/suttas/DN/index_DN.html" },
-    available: [1, 2, 9, 11, 12, 15, 16, 20, 21, 22, 26, 29, 33, 34],
+    available: [11, 12, 15, 16, 20, 21, 22, 26, 29, 33, 34],
   },
   mn: {
     links: { all: "/MN/MN", main_page: "https://www.dhammatalks.org/suttas/MN/index_MN.html" },

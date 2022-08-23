@@ -267,7 +267,7 @@ export let paliAudio = {
         56: "https://www.paliaudio.com/sn56",
       },
     },
-    range_suttas_required: true,
+    // range_suttas_required: true,
     available: {
       1: [[1, 81, "/sn1-1"]],
       2: [[1, 30, "/sn2-1"]],
