@@ -34,6 +34,7 @@ export let suttaFriends = {
       },
     },
     range_suttas: {
+      55: [[63, 74]],
       56: [
         [61, 70],
         [81, 90],

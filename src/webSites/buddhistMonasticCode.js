@@ -284,25 +284,4 @@ export let buddhistMonasticCode = {
       [7, "bmc/Section0027.html#As7"],
     ],
   },
-
-  kd: {
-    complete: true,
-    format: ["sutta"],
-    links: {
-      all: "",
-      main_page: "",
-    },
-    available: [
-      [1, "Mv/MvI_Index.html"],
-      [2, "Mv/MvII_Index.html"],
-      [3, "Mv/MvIII_Index.html"],
-      [4, "Mv/MvIII_Index.html"],
-      [5, "Mv/MvV_Index.html"],
-      [6, "Mv/MvVI_Index.html"],
-      [7, "Mv/MvVII_Index.html"],
-      [8, "Mv/MvVIII_Index.html"],
-      [9, "Mv/MvIX_Index.html"],
-      [10, "Mv/MvX_Index.html"],
-    ],
-  },
 };
