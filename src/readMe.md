@@ -21,10 +21,11 @@
 
 ### improvements
 
-- [ ] can probably remove all instances of range_required
 - [ ] only put into page title when it's a valid citation
 - [ ] remove verse alert message when a verse flag is used
 - [ ] add unit tests for addParamsToSuttaCentralUrl.js
+- [x] move Mahavagga from BMC file to dhammaTalksCustom.js
+- [x] can probably remove all instances of range_required
 - [x] allow creation of urls to books/chapters; this requirs allowing secondNumber===0 without causing other things to break; And not every chapter book should have this optinon. e.g Thag
 - [x] sn4 and an4 should automatically give chapter pages
 - [x] give alert for thag/thig that v can be used to get to a verse
@@ -35,12 +36,6 @@
 - [ ] allow setting translator/layout in text input
 - [ ] give equivelent bhikkhu rules for bi vinaya
 - [x] dhpch1 should show chapter 1 for ABT
-
-# fixing SF
-
-fix range
-https://suttafriends.org/sutta/sn55-63/
-https://suttafriends.org/sutta/sn56-61-2/ and further
 
 // if second number exists
 // then see if first number is <= the number of chapters.
