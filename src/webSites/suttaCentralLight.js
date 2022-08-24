@@ -8,20 +8,20 @@ export let suttaCentralLight = {
   },
   dn: {
     format: ["sutta"],
-    links: { card: "", all: "", main_page: "" },
+    links: { card: "", all: "DN", main_page: "" },
     available: [],
     complete: true,
   },
   mn: {
     format: ["sutta"],
-    links: { card: "", all: "", main_page: "" },
+    links: { card: "", all: "MN", main_page: "" },
     available: [],
     complete: true,
   },
   sn: {
     links: {
       card: "",
-      all: "",
+      all: "SN",
       main_page: "",
       chapter_links: {
         1: "",
@@ -264,7 +264,7 @@ export let suttaCentralLight = {
     format: ["chapter"],
     links: {
       card: "",
-      all: "",
+      all: "AN",
       main_page: "",
       chapter_links: {
         1: "",
@@ -411,7 +411,7 @@ export let suttaCentralLight = {
   },
   kp: {
     format: ["sutta"],
-    links: { card: "", all: "", main_page: "" },
+    links: { card: "", all: "Kp", main_page: "" },
     available: [],
     complete: true,
   },
@@ -419,7 +419,7 @@ export let suttaCentralLight = {
     links: {
       card: "",
       main_page: "",
-      all: "",
+      all: "Dhp",
       idPrefix: "#dhp",
       idSuffix: ":1",
       chapter_links: {
@@ -485,7 +485,7 @@ export let suttaCentralLight = {
     format: ["chapter", "sutta"],
     links: {
       card: "",
-      all: "",
+      all: "Ud",
       main_page: "",
       chapter_links: {
         1: "",
@@ -505,7 +505,7 @@ export let suttaCentralLight = {
     format: ["sutta", "chapter"],
     links: {
       card: "",
-      all: "",
+      all: "Iti",
       main_page: "",
       chapter_links: {
         1: "",
@@ -521,7 +521,7 @@ export let suttaCentralLight = {
     format: ["chapter"],
     links: {
       card: "",
-      all: "",
+      all: "Snp",
       main_page: "",
       chapter_links: {
         1: "",
