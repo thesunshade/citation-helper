@@ -571,13 +571,13 @@ export let suttaCentralLight = {
   // },
   thag: {
     format: ["verse", "chapter"],
-    links: { card: "", all: "thag", main_page: "" },
+    links: { card: "", all: "Thag", main_page: "" },
     available: [],
     complete: true,
   },
   thig: {
     format: ["verse", "chapter"],
-    links: { card: "", all: "thig", main_page: "" },
+    links: { card: "", all: "Thig", main_page: "" },
     available: [],
     complete: true,
   },

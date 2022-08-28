@@ -20,6 +20,7 @@ export default function validateCitation(book, numbers) {
   let { firstNumber, secondNumber, verseFlag, chapterFlag } = numbers;
   let error = "";
   let warning = "";
+  const chapterBooksUsingVerses = ["thag", "thig"];
 
   //                               SUTTA
   function parseSutta() {
@@ -66,7 +67,7 @@ export default function validateCitation(book, numbers) {
       warning = `Get chapter page if it exisits by adding ‘ch’, e.g. ${book}ch1`;
     }
 
-    if (book === "thag" || book === "thig") {
+    if (chapterBooksUsingVerses.includes(book)) {
       warning = `Get verse by adding ‘v’, e.g. ${book}v123`;
     }
 
