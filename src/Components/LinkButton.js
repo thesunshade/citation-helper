@@ -30,6 +30,7 @@ export default function LinkButton(props) {
       }
     }
     displayUrl = displayUrl.replace(/suttas\/KN/, "…").replace("tipitaka/kn", "…");
+    const icon = require(`../images/${site}.png`);
     return (
       <a
         className={`url-button-class url-button-link ${site}`}
@@ -40,7 +41,7 @@ export default function LinkButton(props) {
         title={site === "SCL" ? "Light version of Sutta Central" : `Open on ${makePrettyName(site)}`}
       >
         <span className="image-container">
-          <img width="20px" className="logoImage" src={require(`../images/${site}.png`).default} alt="logo"></img>
+          <img width="20px" className="logoImage" src={icon} alt="logo"></img>
         </span>
 
         <span className="display-url">{displayUrl}</span>

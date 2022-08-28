@@ -294,7 +294,7 @@ function App() {
                     defaultChecked={translator === "/en/bodhi" ? "checked" : ""}
                   />{" "}
                   Bhante Bodhi
-                  <div className="option-descriptions">If it's not available you will get Bhikkhu Sujato's.</div>
+                  <div className="option-descriptions">If it’s not available you will get Bhikkhu Sujato’s.</div>
                 </label>
                 <label>
                   <input
