@@ -251,6 +251,7 @@ button:focus {
   overflow: hidden;
   text-decoration: none;
   margin: 0px;
+  transition: all 0.25s ease;
 }
 
 a:focus .url-button-class {
