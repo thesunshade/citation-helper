@@ -17,7 +17,10 @@ import { vinayaBooks } from "./vinayBooks.js";
 
 export default function validateCitation(book, numbers) {
   const books = Object.keys(structure);
-  let { firstNumber, secondNumber, verseFlag, chapterFlag } = numbers;
+  let { firstNumber, secondNumber, verseFlag } = numbers;
+  firstNumber = parseInt(firstNumber, 10);
+  secondNumber = parseInt(secondNumber, 10);
+  const { chapterFlag } = numbers;
   let error = "";
   let warning = "";
   const chapterBooksUsingVerses = ["thag", "thig"];
