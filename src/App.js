@@ -369,6 +369,9 @@ function App() {
       </div>
       {/* end of url-builder */}
       <TabbedLinkArea />
+      <a rel="me" href="https://mastodon.social/@ReadingFaithfully_org">
+        Visit ReadingFaithfully on Mastodon
+      </a>
     </div>
   );
 }
