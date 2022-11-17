@@ -5478,7 +5478,7 @@ export const suttas = [
   ["Thag 2.34", "Isidinnatheragāthā"],
   ["Thag 2.35", "Sambulakaccānatheragāthā"],
   ["Thag 2.36", "Khitakatheragāthā"],
-  ["Thag 2.37", "Selissariyatheragāthā"],
+  ["Thag 2.37", "Soṇapoṭiriyaputtatheragathā [Selissariyatheragāthā]"],
   ["Thag 2.38", "Nisabhatheragāthā"],
   ["Thag 2.39", "Usabhatheragāthā"],
   ["Thag 2.40", "Kappaṭakuratheragāthā"],
