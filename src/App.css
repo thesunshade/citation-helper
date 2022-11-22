@@ -63,6 +63,7 @@ button:focus {
   margin-top: -1rem;
   margin-bottom: 1rem;
 }
+
 .sutta-name {
   margin: 0rem;
   text-align: center;
@@ -88,6 +89,7 @@ button:focus {
   gap: 1rem;
   justify-content: center;
 }
+
 #input-area-link-area {
   display: flex;
   flex-direction: column;
@@ -100,7 +102,8 @@ button:focus {
   background-position: center top;
   display: flex;
   flex-direction: column;
-  align-items: center; /**/
+  align-items: center;
+  /**/
   max-width: 360px;
   text-align: center;
   min-height: 242px;
@@ -239,6 +242,7 @@ button:focus {
 #warning-message {
   color: green;
 }
+
 #error-message {
   color: red;
 }
@@ -297,6 +301,7 @@ a:focus .url-button-class {
   min-width: 20px;
   max-width: 20px;
 }
+
 .url-button-class.SCL:hover {
   background: rgba(0, 0, 0, 0.116);
   box-shadow: inset 0px 0px 5px black;
@@ -318,26 +323,31 @@ a:focus .url-button-class {
   box-shadow: inset 0px 0px 10px #9e4746;
   width: 350px;
 }
+
 .DT {
   background: var(--dhammatalks);
   box-shadow: inset 0px 0px 10px #a36341;
   width: 350px;
 }
+
 .BMC {
   background: var(--dhammatalks);
   box-shadow: inset 0px 0px 10px #a36341;
   width: 350px;
 }
+
 .ABT {
   background: var(--ancientbuddhist);
   box-shadow: inset 0px 0px 10px #738859;
   width: 350px;
 }
+
 .DPR {
   background: #e0b20b;
   box-shadow: inset 0px 0px 10px #c09f29;
   width: 350px;
 }
+
 .ATI {
   background: var(--accesstoinsight);
   box-shadow: inset 0px 0px 10px #490202;
@@ -347,11 +357,13 @@ a:focus .url-button-class {
 .ATI:hover {
   box-shadow: inset 0px 0px 10px rgb(29, 29, 29) !important;
 }
+
 .PA {
   background: var(--paliaudio);
   box-shadow: inset 0px 0px 10px #d16501;
   width: 350px;
 }
+
 .SCV {
   background: black;
   box-shadow: inset 0px 0px 10px #756a9b;
@@ -367,6 +379,7 @@ a:focus .url-button-class {
   box-shadow: inset 0px 0px 10px var(--dark-gray);
   /* rgb(70, 70, 70); */
 }
+
 .url-button-class.SCV:hover {
   /* background: rgba(0, 0, 0, 0.466); */
   box-shadow: inset 0px 0px 10px white;
@@ -377,6 +390,7 @@ a:focus .url-button-class {
     width: 350px;
     margin: 2rem auto auto auto;
   }
+
   #input-field-container {
     padding: 1rem;
     border-radius: 10px;
@@ -456,13 +470,16 @@ a:focus .url-button-class {
   .Thig {
     max-width: 45px;
   }
+
   #SC-section .nikaya-group a,
   a index-button-sections a.index {
     padding: 0.5rem 1rem;
   }
+
   #ABT-section li {
     margin: 0.5rem 0 !important;
   }
+
   #SC-index,
   #ABT-index,
   #SF-index,
@@ -507,6 +524,7 @@ h4 {
   flex-direction: row;
   column-gap: 1rem;
 }
+
 .copy-buttons li {
   list-style: none;
 }
@@ -531,6 +549,12 @@ h4 {
   border: solid 1px var(--light-gray);
   border-radius: 7px;
   color: black;
+}
+
+.completelness {
+  display: block;
+  font-size: .8rem;
+  color: var(--med-gray);
 }
 
 #SF-index,
@@ -574,6 +598,7 @@ a.all-link:hover {
 .AN {
   background: #e6e6fa;
 }
+
 .KN {
   background: #ffffff;
 }
@@ -622,6 +647,7 @@ a.all-link:hover {
   background: #dce3c7;
   flex: 1;
 }
+
 .Ja {
   background: #d8fffa;
 }
@@ -641,6 +667,7 @@ a.all-link:hover {
   overflow: hidden;
   border-radius: 10px;
 }
+
 .bloc-tabs {
   display: flex;
 }
@@ -662,6 +689,7 @@ a.all-link:hover {
   position: relative;
   outline: none;
 }
+
 .tabs:not(:last-child) {
   border-right: 1px solid var(--gray);
 }
@@ -673,9 +701,11 @@ a.all-link:hover {
 button {
   border: none;
 }
+
 .content-tabs {
   flex-grow: 1;
 }
+
 .content {
   background: white;
   padding: 5px;
@@ -687,14 +717,17 @@ button {
 .SC-tabs {
   background-color: var(--suttacentral);
 }
+
 .content.SF-content,
 .SF-tabs {
   background-color: var(--suttafriends);
 }
+
 .content.DT-content,
 .DT-tabs {
   background-color: var(--dhammatalks);
 }
+
 .content.ABT-content,
 .ABT-tabs {
   background-color: var(--ancientbuddhist);
@@ -703,6 +736,7 @@ button {
 .content h2 {
   padding: 0px 0 5px 0px;
 }
+
 /* .content hr {
   width: 100px;
   height: 2px;
@@ -713,6 +747,7 @@ button {
   width: 100%;
   height: 100%;
 }
+
 .active-content {
   display: block;
 }
@@ -724,6 +759,7 @@ button {
   gap: 1rem;
   align-items: center;
 }
+
 .settings-button img {
   display: flex;
   margin-top: 0.2rem;
@@ -753,13 +789,16 @@ button {
   top: 0;
   transition: top ease 0.5s;
 }
+
 .icon-links-area a:hover {
   top: -5px;
 }
+
 .icon-links-area a.labs {
   rotate: 0deg;
   transition: rotate ease 1s;
 }
+
 .icon-links-area a.labs:hover {
   rotate: 55deg;
   top: 0px !important;

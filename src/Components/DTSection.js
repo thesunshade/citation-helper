@@ -38,6 +38,7 @@ export default function DTSection() {
       <h3>DhammaTalks.org</h3>
       <h4>Homepage & Misc</h4>
       <IndexArea />
+      <h4>Sutta Translations</h4>
       <div className="nikaya-group">
         <a
           className="all-link DN"
@@ -144,6 +145,105 @@ export default function DTSection() {
           target="_blank"
         >
           Thig
+        </a>
+      </div>
+      <h4>Ebooks</h4>
+      <div className="nikaya-group">
+        <a
+          className="all-link DN"
+          title="Dīgha Nikāya"
+          rel="noreferrer"
+          href="https://www.dhammatalks.org/ebook_index.html#dighaNikaya"
+          target="_blank"
+        >
+          DN <span className="completelness">Anthology</span>
+        </a>
+        <a
+          className="all-link MN"
+          title="Majjhima Nikāya"
+          rel="noreferrer"
+          href="https://www.dhammatalks.org/ebook_index.html#majjhimaNikaya"
+          target="_blank"
+        >
+          MN <span className="completelness">Anthology</span>
+        </a>
+        <a
+          className="all-link SN"
+          title="Saṁyutta Nikāya"
+          rel="noreferrer"
+          href="https://www.dhammatalks.org/ebook_index.html#samyuttaNikaya"
+          target="_blank"
+        >
+          SN <span className="completelness">Anthology</span>
+        </a>
+        <a
+          className="all-link AN"
+          title="Aṅgutara Nikāya"
+          rel="noreferrer"
+          href="https://www.dhammatalks.org/ebook_index.html#anguttaraNikaya"
+          target="_blank"
+        >
+          AN <span className="completelness">Anthology</span>
+        </a>
+      </div>
+      <div className="nikaya-group">
+        <a
+          className="all-link Khp"
+          title="Khuddakapāṭha"
+          rel="noreferrer"
+          href="https://www.dhammatalks.org/ebook_index.html#khuddakapatha"
+          target="_blank"
+        >
+          Khp <span className="completelness">Complete</span>
+        </a>
+        <a
+          className="all-link Dhp"
+          title="Dhammapada"
+          rel="noreferrer"
+          href="https://www.dhammatalks.org/ebook_index.html#dhammapada"
+          target="_blank"
+        >
+          Dhp <span className="completelness">Complete</span>
+        </a>
+
+        <a
+          className="all-link Ud"
+          title="Udāna"
+          rel="noreferrer"
+          href="https://www.dhammatalks.org/ebook_index.html#udana"
+          target="_blank"
+        >
+          Ud <span className="completelness">Complete</span>
+        </a>
+
+        <a
+          className="all-link Itv"
+          title="Itivuttaka"
+          rel="noreferrer"
+          href="https://www.dhammatalks.org/ebook_index.html#itivuttaka"
+          target="_blank"
+        >
+          Iti <span className="completelness">Complete</span>
+        </a>
+
+        <a
+          className="all-link Snp"
+          title="Sutta Nipāta"
+          rel="noreferrer"
+          href="https://www.dhammatalks.org/ebook_index.html#suttanipata"
+          target="_blank"
+        >
+          Snp <span className="completelness">Complete</span>
+        </a>
+
+        <a
+          className="all-link Thig"
+          title="Theragāthā"
+          rel="noreferrer"
+          href="https://www.dhammatalks.org/ebook_index.html#TheragathaTherigatha"
+          target="_blank"
+        >
+          Thag-Thig <span className="completelness">Anthology</span>
         </a>
       </div>
     </div>
