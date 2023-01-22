@@ -115,10 +115,17 @@ function App() {
       <div id="url-builder">
         <div className="sutta-name-container">
           <div>
-            <Tippy content={suttaBlurb} hideOnClick="true" interactive="true" theme="tip" trigger="mouseenter click">
-              <p className="sutta-name" tabindex="0">
+            <Tippy
+              content={suttaBlurb}
+              hideOnClick="true"
+              interactive="true"
+              trigger="mouseenter click"
+              allowHTML="true"
+              disabled={!suttaBlurb}
+            >
+              <p className="sutta-name" tabIndex="0">
                 {suttaName}
-                {suttaBlurb ? <img height="18px" src={infoIcon} /> : ""}
+                {suttaBlurb ? <img height="18px" style={{ paddingLeft: 0.3 + "rem" }} src={infoIcon} /> : ""}
               </p>
             </Tippy>
           </div>
