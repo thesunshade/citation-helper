@@ -803,3 +803,17 @@ button {
   rotate: 55deg;
   top: 0px !important;
 }
+
+.tippy-box {
+  border: solid 0px;
+  border-radius: 5px;
+  padding: .3rem;
+  font-style: normal;
+}
+
+.sutta-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}

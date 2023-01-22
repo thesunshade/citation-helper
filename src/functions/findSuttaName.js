@@ -1,10 +1,9 @@
-import { suttas } from "../suttas.js";
+import { suttas } from "../data/suttas.js";
 
 export default function findSuttaName(bookName, suttaNumber) {
   const firstNumber = suttaNumber.firstNumber;
   const secondNumber = suttaNumber.secondNumber;
   let suttaName = "";
-
 
   const completeCitation = `${bookName}${firstNumber ? " " + firstNumber : ""}${
     secondNumber ? "." + secondNumber : ""
@@ -16,8 +15,6 @@ export default function findSuttaName(bookName, suttaNumber) {
       i = suttas.length + 1;
     }
   }
-
-
 
   return suttaName;
 }

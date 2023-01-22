@@ -2,7 +2,10 @@ import "./App.css";
 import { useState } from "react";
 import { useEffect } from "react";
 import clsx from "clsx";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css"; // optional
 import settingsIcon from "./images/settings.png";
+import infoIcon from "./images/info-icon.png";
 import parseBookName from "./functions/parseBookName.js";
 import parseNumbers from "./functions/parseNumbers.js";
 import validateCitation from "./functions/validateCitation.js";
@@ -14,6 +17,7 @@ import addParamsToSuttaCentralUrl from "./functions/addParamsToSuttaCentralUrl.j
 import OtherToolsIcons from "./Components/OtherToolsIcons.js";
 import TabbedLinkArea from "./Components/TabbedLinkArea.js";
 import findSuttaName from "./functions/findSuttaName.js";
+import findSuttaBlurb from "./functions/findSuttaBlurb.js";
 import LanguagesDropdown from "./Components/LanguagesDropdown.js";
 
 function App() {
@@ -26,12 +30,14 @@ function App() {
     // as well as updating suttaName and the page title
     const userInput = url.replace("?q=", "").replace(/-/g, " ").replace(/\s/g, " ");
     const nowSuttaName = findSuttaName(parseBookName(userInput), parseNumbers(userInput));
+    const nowSuttaBlurb = findSuttaBlurb(parseBookName(userInput), parseNumbers(userInput));
     document.title = `${userInput} ${nowSuttaName ? nowSuttaName : ""}`;
     // return userInput;
-    return { userInput: userInput, suttaName: nowSuttaName };
+    return { userInput: userInput, suttaName: nowSuttaName, suttaBlurb: nowSuttaBlurb };
   }
 
   let [suttaName, setSuttaName] = useState(urlToUserInput(decodeURI(document.location.search)).suttaName);
+  let [suttaBlurb, setSuttaBlurb] = useState(urlToUserInput(decodeURI(document.location.search)).suttaBlurb);
   let [userInput, setUserInput] = useState(urlToUserInput(decodeURI(document.location.search)).userInput);
   window.history.replaceState({ page: decodeURI(document.location.search) }, "", document.location);
   let [errorMessage, setErrorMessage] = useState("");
@@ -90,6 +96,7 @@ function App() {
     setUserInput(userInput);
     const nowSuttaName = findSuttaName(parseBookName(userInput), parseNumbers(userInput));
     setSuttaName(nowSuttaName);
+    setSuttaBlurb(findSuttaBlurb(parseBookName(userInput), parseNumbers(userInput)));
     clearTimeout(window.prevTimer);
     const forHistory = "?q=" + userInput.replace(/\s/g, "-");
     window.prevTimer = setTimeout(() => {
@@ -108,7 +115,12 @@ function App() {
       <div id="url-builder">
         <div className="sutta-name-container">
           <div>
-            <p className="sutta-name">{suttaName}</p>
+            <Tippy content={suttaBlurb} hideOnClick="true" interactive="true" theme="tip" trigger="mouseenter click">
+              <p className="sutta-name" tabindex="0">
+                {suttaName}
+                {suttaBlurb ? <img height="18px" src={infoIcon} /> : ""}
+              </p>
+            </Tippy>
           </div>
         </div>
         <div id="input-area-link-area">
