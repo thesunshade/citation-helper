@@ -120,8 +120,8 @@ function App() {
               hideOnClick="true"
               interactive="true"
               trigger="mouseenter click"
-              allowHTML="true"
               disabled={!suttaBlurb}
+              allowHTML="true"
             >
               <p className="sutta-name" tabIndex="0">
                 {suttaName}

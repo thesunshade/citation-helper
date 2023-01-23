@@ -2,8 +2,828 @@ export const blurbs = {
   dn: "The Long Discourses (Dīgha Nikāya, abbreviated DN) is a collection of 34 discourses in the Pali canon (Tipiṭaka) of the Theravāda school. The word “long” refers to the length of the individual discourses, not the collection as a whole, which is in fact the smallest of the five Pali Nikāyas. It is one of the fundamental collections of early Buddhist teachings, depicting the Buddha in a lively range of settings. Compared to other collections it contains more extended narratives in diverse literary styles. Many discourses feature interreligious dialog with brahmins and other non-Buddhists.",
   mn: "The Middle Discourses (Majjhima Nikāya, abbreviated MN) is a collection of 152 discourses in the Pali canon (Tipiṭaka) of the Theravada school of Buddhism. The word “middle” refers to the length of the individual discourses. This is perhaps the most popular collection of early discourses. It contains a wide variety of teachings, many of them presented as narratives between the Buddha and a diverse range of his contemporaries.",
   sn: "The “Linked” or “Connected” Discourses (Saṁyutta Nikāya, abbreviated SN) is a collection of over a thousand short discourses in the Pali canon. The word “linked” refers to the fact that the texts are collected and organized by topic. In most cases the organizing principle is a particular theme of Dhamma, for example, the five aggregates, dependent origination, the noble eightfold path, mindfulness meditation, or the four noble truths. This collection contains the most extensive range of texts on these core themes. In other cases chapters are organized according to the person or kind of person who speaks.",
-  an: "The “Numbered” or “Numerical” Discourses are usually known as Aṅguttara Nikāya in Pali, abbreviated AN. However, the Pali tradition also knows the form Ekottara (“one-up” or “incremental”), and this is the form usually found in the northern collections. These collections organize texts in numbered sets, from one to eleven. Compared to the other <i lang='pi' translate='no'>nikāyas</i>, they are more oriented to the lay community.",
+  an: "The “Numbered” or “Numerical” Discourses are usually known as Aṅguttara Nikāya in Pali, abbreviated AN. However, the Pali tradition also knows the form Ekottara (“one-up” or “incremental”), and this is the form usually found in the northern collections. These collections organize texts in numbered sets, from one to eleven. Compared to the other nikāyas, they are more oriented to the lay community.",
+  kp: "Nine short texts, which appear to have been collected as a kind of basic study curriculum for novices.",
+  dhp: "This famous text consists of 423 verses organized into memorable themes.",
 
+  ud: "Eighty short discourses in mixed prose and verse. These take the form of a simple prose narrative, which serves to frame an inspired saying, usually in verse.",
+  iti: "112 short discourses in mixed prose and verse, arranged in the Aṅguttara style of ascending numbered sets, from one to four. Alone among Buddhist texts, its survival is attributed not to the Saṅgha, but to a laywoman named Khujjuttarā. According to the Pali commentaries, she was a maid to the Queen of Kosambi, and memorized these teachings from the Buddha, earning her the title of the most learned of the laywomen disciples.",
+  snp: "The “Group of Discourses” contains 74 mostly short texts in verse or mixed prose and verse, arranged in five chapters. This contains some of the most beloved texts in popular Buddhism, such as the Ratana, Maṅgala, and Mettā Suttas, which are known to all Theravada Buddhists and recited as uplifting and protective chants at auspicious ceremonies. ",
+  vv: "The “Stories of Celestial Mansions” contains eighty-five stories in verse that illustrate the heavenly rewards of virtuous deeds, especially making offerings to the Buddha or the Saṅgha. ",
+  pv: "The Stories of Hungry Ghosts” contains fifty-one stories in verse that illustrate rebirth as a hungry ghost as a result of bad deeds. ",
+  thag: "The “Verses of the Senior Monks” is a collection of about 1288 verses attributed to 264 of the senior monks alive in the Buddha’s time, or in a few cases, a little later. These verses celebrate the joy of freedom and the life of meditation in the forest. ",
+  thig: "The “Verses of the Senior Nuns” is a collection of about 524 verses attributed to 73 of the senior nuns alive in the Buddha’s time, or in a few cases, a little later. These verses celebrate the bliss of freedom and the life of meditation, full of proud and joyous proclamations of their spiritual attainments and their gratitude to other nuns as guides and teachers. The Therīgāthā is one of the oldest spiritual texts recording only women’s voices. ",
+  ja: "A collection of 547 sets of verses telling stories of the Buddha’s past lives. The canonical Pali collection consists of verses arranged in numbered sets in the Aṅguttara fashion. The shorter sets illustrate a high point of a story, while the longer sets tell a complete story. ",
+
+  dhp1: "1. Intention shapes experiences;\nintention is first, they’re made by intention.\nIf with corrupt intent\nyou speak or act,\nsuffering follows you,\nlike a wheel, the ox’s foot.\n",
+  dhp2: "2. Intention shapes experiences;\nintention is first, they’re made by intention.\nIf with pure intent\nyou speak or act,\nhappiness follows you\nlike a shadow that never leaves.\n",
+  dhp3: "3. “They abused me, they hit me!\nThey beat me, they robbed me!”\nFor those who bear such a grudge,\nhatred never ends.\n",
+  dhp4: "4. “They abused me, they hit me!\nThey beat me, they robbed me!”\nFor those who bear no such grudge,\nhatred has an end.\n",
+  dhp5: "5. For never is hatred\nsettled by hate,\nit’s only settled by love:\nthis is an ancient law. \n",
+  dhp6: "6. Others don’t understand\nthat here we need to be restrained.\nBut those who do understand this,\nbeing clever, settle their conflicts.\n",
+  dhp7: "7. Those who contemplate the beautiful,\ntheir faculties unrestrained,\nimmoderate in eating,\nlazy, lacking energy:\nMāra strikes them down\nlike the wind, a feeble tree.\n",
+  dhp8: "8. Those who contemplate the ugly,\ntheir faculties well-restrained,\neating in moderation, \nfaithful and energetic:\nMāra cannot strike them down,\nlike the wind, a rocky mountain.\n",
+  dhp9: "9. One who, not free of stains themselves,\nwould wear the robe stained in ocher,\nbereft of self-control and of truth:\nthey are not worthy of the ocher robe.\n",
+  dhp10:
+    "10. One who’s purged all their stains,\nsteady in ethics,\npossessed of self-control and of truth,\nthey are truly worthy of the ocher robe.\n",
+  dhp11:
+    "11. Thinking the inessential is essential,\nseeing the essential as inessential;\nthey don’t realize the essential,\nfor wrong thoughts are their pasture.\n",
+  dhp12:
+    "12. Having known the essential as essential,\nand the inessential as inessential;\nthey realize the essential,\nfor right thoughts are their pasture.\n",
+  dhp13: "13. Just as rain seeps into\na poorly roofed house,\nlust seeps into\nan undeveloped mind.\n",
+  dhp14: "14. Just as rain doesn’t seep into\na well roofed house,\nlust doesn’t seep into\na well developed mind.\n",
+  dhp15:
+    "15. Here they grieve, hereafter they grieve,\nan evildoer grieves in both places.\nThey grieve and fret,\nseeing their own corrupt deeds.\n",
+  dhp16:
+    "16. Here they rejoice, hereafter they rejoice,\none who does good rejoices in both places.\nThey rejoice and celebrate,\nseeing their own pure deeds.\n",
+  dhp17:
+    "17. Here they’re tormented, hereafter they’re tormented,\nan evildoer is tormented in both places.\nThey’re tormented thinking of bad things they’ve done;\nwhen gone to a bad place, they’re tormented all the more.\n",
+  dhp18:
+    "18. Here they delight, hereafter they delight,\none who does good delights in both places.\nThey delight thinking of good things they’ve done;\nwhen gone to a good place, they delight all the more.\n",
+  dhp19:
+    "19. Much though they may recite scripture,\nif a negligent person does not apply them,\nthen, like a cowherd who counts the cattle of others,\nthey miss out on the blessings of the ascetic life.\n",
+  dhp20:
+    "20. Little though they may recite scripture,\nif they live in line with the teachings,\nhaving given up greed, hate, and delusion,\nwith deep understanding and heart well-freed,\nnot grasping to this world or the next,\nthey share in the blessings of the ascetic life.\n",
+  dhp21:
+    "21. Heedfulness is the deathless state;\nheedlessness is the state of death.\nThe heedful do not die,\nwhile the heedless are like the dead.\n",
+  dhp22:
+    "22. Understanding this distinction\nwhen it comes to heedfulness,\nthe astute rejoice in heedfulness,\nhappy in the noble ones’ domain.\n",
+  dhp23:
+    "23. They who regularly meditate,\nalways staunchly vigorous;\nthose wise ones realize quenching,\nthe supreme sanctuary. \n",
+  dhp24:
+    "24. For the hard-working and mindful,\npure of deed and attentive,\nrestrained, living righteously, and diligent,\ntheir reputation only grows.\n",
+  dhp25:
+    "25. By hard work and diligence,\nby restraint and by self-control,\na smart person would build an island\nthat the floods cannot overflow.\n",
+  dhp26:
+    "26. Fools and half-wits\ndevote themselves to negligence.\nBut the wise protect diligence\nas their best treasure.\n",
+  dhp27:
+    "27. Don’t devote yourself to negligence,\nor delight in sexual intimacy.\nFor if you’re diligent and meditate,\nyou’ll attain abundant happiness. \n",
+  dhp28:
+    "28. When the astute dispel negligence\nby means of diligence,\nascending the palace of wisdom,\nsorrowless, they behold this generation of sorrow,\nas a wise man on a mountain-top\nbeholds the fools below.\n",
+  dhp29:
+    "29. Heedful among the heedless,\nwide awake while others sleep—\na true sage leaves them behind,\nlike a swift horse passing a feeble.\n",
+  dhp30:
+    "30. Maghavā became chief of the gods\nby means of diligence.\nPeople praise diligence,\nwhile negligence is always deplored.\n",
+  dhp31:
+    "31. A mendicant who loves to be diligent,\nseeing fear in negligence—\nadvances like fire, \nburning up fetters big and small.\n",
+  dhp32:
+    "32. A mendicant who loves to be diligent,\nseeing fear in negligence—\nsuch a one can’t decline,\nand has drawn near to extinguishment.\n",
+  dhp33:
+    "33. The mind quivers and shakes,\nhard to guard, hard to curb.\nThe discerning straighten it out,\nlike a fletcher straightens an arrow.\n",
+  dhp34:
+    "34. Like a fish pulled from the sea\nand cast upon the shore,\nthis mind flounders about,\ntrying to throw off Māra’s sway.\n",
+  dhp35:
+    "35. Hard to hold back, flighty,\nalighting where it will;\nit’s good to tame the mind;\na tamed mind leads to bliss.\n",
+  dhp36:
+    "36. So hard to see, so subtle,\nalighting where it will;\nthe discerning protect the mind,\na guarded mind leads to bliss.\n",
+  dhp37:
+    "37. The mind travels far, wandering alone;\nincorporeal, it hides in a cave.\nThose who will restrain the mind\nare freed from Māra’s bonds. \n",
+  dhp38:
+    "38. Those of unsteady mind,\nwho don’t understand the true teaching,\nand whose confidence wavers,\ndo not perfect their wisdom.\n",
+  dhp39:
+    "39. One whose mind is uncorrupted,\nwhose heart is undamaged,\nwho’s given up right and wrong,\nalert, has nothing to fear.\n",
+  dhp40:
+    "40. Knowing this body breaks like a pot,\nand fortifying the mind like a citadel,\nattack Māra with the sword of wisdom,\nguard your conquest, and never settle.\n",
+  dhp41:
+    "41. All too soon this body\nwill lie upon the earth,\nbereft of consciousness,\ntossed aside like a useless log.\n",
+  dhp42: "42. A wrongly directed mind\nwould do you more harm\nthan a hater to the hated,\nor an enemy to their foe.\n",
+  dhp43: "43. A rightly directed mind\nwould do you more good\nthan your mother or father\nor any other relative.\n",
+  dhp44:
+    "44. Who shall explore this land,\nand the Yama realm with its gods?\nWho shall examine the well-taught word of truth,\nas an expert examines a flower?\n",
+  dhp45:
+    "45. A trainee shall explore this land,\nand the Yama realm with its gods.\nA trainee shall examine the well-taught word of truth,\nas an expert examines a flower.\n",
+  dhp46:
+    "46. Knowing this body’s like foam,\nrealizing it’s all just a mirage,\nand cutting off Māra’s blossoming,\nvanish from the King of Death.\n",
+  dhp47:
+    "47. As a mighty flood sweeps off a sleeping village,\ndeath steals away a man\neven as he gathers flowers,\nhis mind caught up in them.\n",
+  dhp48:
+    "48. The terminator gains control of the man\nwho has not had his fill of pleasures,\neven as he gathers flowers,\nhis mind caught up in them.\n",
+  dhp49:
+    "49. A bee takes the nectar\nand moves on, doing no damage\nto the flower’s beauty and fragrance;\nand that’s how a sage should walk in the village.\n",
+  dhp50:
+    "50. Don’t find fault with others,\nwith what they’ve done or left undone.\nYou should only watch yourself,\nwhat you’ve done or left undone.\n",
+  dhp51:
+    "51. Just like a glorious flower\nthat’s colorful but lacks fragrance;\neloquent speech is fruitless\nfor one who does not act on it.\n",
+  dhp52:
+    "52. Just like a glorious flower\nthat’s both colorful and fragrant,\neloquent speech is fruitful\nfor one who acts on it.\n",
+  dhp53:
+    "53. Just as one would create many garlands\nfrom a heap of flowers,\nwhen a person has come to be born,\nthey should do many skillful things.\n",
+  dhp54:
+    "54. The fragrance of flowers doesn’t spread upwind,\nnor sandalwood, pinwheel, or jasmine;\nbut the fragrance of the good spreads upwind;\na good person’s virtue spreads in every direction.\n",
+  dhp55:
+    "55. Among all the fragrances—\nsandalwood or pinwheel\nor lotus or jasmine—\nthe fragrance of virtue is supreme.\n",
+  dhp56:
+    "56. Faint is the fragrance\nof sandal or pinwheel;\nbut the fragrance of the virtuous\nfloats to the highest gods.\n",
+  dhp57:
+    "57. For those accomplished in ethics,\nmeditating diligently,\nfreed through the highest knowledge,\nMāra cannot find their path.\n",
+  dhp58: "58. From a forsaken heap\ndiscarded on the highway,\na lotus might blossom,\nfragrant and delightful.\n",
+  dhp59:
+    "59. So too, among the forsaken,\na disciple of the perfect Buddha\noutshines with their wisdom\nthe blind ordinary folk.\n",
+  dhp60:
+    "60. Long is the night for the wakeful;\nlong is the league for the weary;\nlong transmigrate the fools\nwho don’t understand the true teaching.\n",
+  dhp61:
+    "61. If while wandering you find no partner\nequal or better than yourself,\nthen firmly resolve to wander alone—\nthere’s no fellowship with fools.\n",
+  dhp62:
+    "62. “Sons are mine, wealth is mine”—\nthus the fool frets.\nBut you can’t even call your self your own,\nlet alone your sons or wealth.\n",
+  dhp63:
+    "63. The fool who thinks they’re a fool\nis wise at least to that extent.\nBut the true fool is said to be one\nwho imagines that they are wise.\n",
+  dhp64:
+    "64. Though a fool attends to the wise\neven for the rest of their life,\nthey still don’t experience the teaching,\nlike a spoon the taste of the soup.\n",
+  dhp65:
+    "65. If a clever person attends to the wise\neven just for an hour or so,\nthey swiftly experience the teaching,\nlike a tongue the taste of the soup.\n",
+  dhp66: "66. Witless fools behave\nlike their own worst enemies,\ndoing wicked deeds\nthat ripen as bitter fruit.\n",
+  dhp67:
+    "67. It’s not good to do a deed\nthat plagues you later on,\nfor which you weep and wail,\nas its effect stays with you.\n",
+  dhp68:
+    "68. It is good to do a deed\nthat doesn’t plague you later on,\nthat gladdens and cheers,\nas its effect stays with you.\n",
+  dhp69:
+    "69. The fool imagines that evil is sweet,\nso long as it has not yet ripened.\nBut as soon as that evil ripens,\nthey fall into suffering.\n",
+  dhp70:
+    "70. Month after month a fool may eat\nfood from a grass-blade’s tip;\nbut they’ll never be worth a sixteenth part\nof one who has fathomed the teaching.\n",
+  dhp71:
+    "71. For a wicked deed that has been done\ndoes not spoil quickly like milk.\nSmoldering, it follows the fool,\nlike a fire smothered over with ash.\n",
+  dhp72:
+    "72. Whatever fame a fool may get,\nit only gives rise to harm.\nWhatever good features they have it ruins,\nand blows their head into bits.\n",
+  dhp73:
+    "73. They’d seek the esteem that they lack,\nand status among the mendicants;\nauthority over monasteries,\nand honor among other families.\n",
+  dhp74:
+    "74. “Let both layfolk and renunciants think\nthe work was done by me alone.\nIn anything at all that’s to be done,\nlet them fall under my sway alone.”\nSo thinks the fool,\ntheir greed and pride only growing.\n",
+  dhp75:
+    "75. For the means to profit and the path to quenching\nare two quite different things.\nA mendicant disciple of the Buddha,\nunderstanding what this really means,\nwould never delight in honors,\nbut rather would foster seclusion.\n",
+  dhp76:
+    "76. Regard one who sees your faults\nas a guide to a hidden treasure.\nStay close to one so wise and astute\nwho corrects you when you need it.\nSticking close to such an impartial person,\nthings get better, not worse. \n",
+  dhp77: "77. Advise and instruct;\ncurb wickedness:\nfor you shall be loved by the good,\nand disliked by the bad.\n",
+  dhp78:
+    "78. Don’t mix with bad friends,\nnor with the worst of men.\nMix with spiritual friends,\nand with the best of men.\n",
+  dhp79:
+    "79. Through joy in the teaching you sleep at ease,\nwith clear and confident heart.\nAn astute person always delights in the teaching\nproclaimed by the Noble One.\n",
+  dhp80:
+    "80. While irrigators guide water,\nfletchers straighten arrows,\nand carpenters carve timber,\nthe astute tame themselves.\n",
+  dhp81: "81. As the wind cannot stir\na solid mass of rock,\nso too praise and blame\ndo not affect the wise.\n",
+  dhp82: "82. Like a deep lake,\nclear and unclouded,\nso clear are the astute\nwhen they hear the teachings.\n",
+  dhp83:
+    "83. Good people give up everything,\nthey don’t cajole for the things they desire.\nThough touched by sadness or happiness,\nthe astute appear neither depressed nor elated.\n",
+  dhp84:
+    "84. Never wish for success by unjust means,\nfor your own sake or that of another,\ndesiring children, wealth, or nation;\nrather, be virtuous, wise, and just.\n",
+  dhp85: "85. Few are those among humans\nwho cross to the far shore.\nThe rest just run around\non the near shore. \n",
+  dhp86:
+    "86. When the teaching is well explained,\nthose who practice accordingly\nwill cross over \nDeath’s domain so hard to pass.\n",
+  dhp87:
+    "87. Rid of dark qualities,\nan astute person should develop the bright.\nLeaving home behind \nfor the seclusion so hard to enjoy, \n",
+  dhp88:
+    "88. find delight there,\nhaving left behind sensual pleasures.\nWith no possessions, an astute person\nwould cleanse themselves of mental corruptions. \n",
+  dhp89:
+    "89. Those whose minds are rightly developed\nin the awakening factors;\nwho, letting go of attachments,\ndelight in not grasping:\nwith defilements ended, brilliant,\nthey in this world are quenched.\n",
+  dhp90: "90. At journey’s end, rid of sorrow;\neverywhere free,\nall ties given up, \nno fever is found in them.\n",
+  dhp91:
+    "91. The mindful apply themselves;\nthey delight in no abode.\nLike a swan from the marsh that’s gone,\nthey leave behind home after home.\n",
+  dhp92:
+    "92. Those with nothing stored up,\nwho have understood their food,\nwhose domain is the liberation\nof the signless and the empty:\ntheir path is hard to trace,\nlike birds in the sky.\n",
+  dhp93:
+    "93. One whose defilements have ended;\nwho’s not attached to food;\nwhose domain is the liberation\nof the signless and the empty:\ntheir track is hard to trace,\nlike birds in the sky.\n",
+  dhp94:
+    "94. Whose faculties have become serene,\nlike horses tamed by a charioteer,\nwho has abandoned conceit and defilements;\nthe poised one is envied by even the gods.\n",
+  dhp95:
+    "95. Undisturbed like the earth,\ntrue to their vows, steady as a post,\nlike a lake clear of mud;\nsuch a one does not transmigrate.\n",
+  dhp96:
+    "96. Their mind is peaceful,\npeaceful are their speech and deeds.\nSuch a one is at peace,\nrightly freed through enlightenment.\n",
+  dhp97:
+    "97. Lacking faith, a house-breaker,\none who acknowledges nothing,\npurged of hope, they’ve wasted their chance:\nthat is indeed the supreme person!\n",
+  dhp98:
+    "98. Whether in village or wilderness,\nin a valley or the uplands,\nwherever the perfected ones live\nis a delightful place.\n",
+  dhp99:
+    "99. Delightful are the wildernesses\nwhere no people delight.\nThose free of greed will delight there,\nnot those who seek sensual pleasures.\n",
+  dhp100:
+    "100. Better than a thousand\nmeaningless sayings\nis a single meaningful saying,\nhearing which brings you peace.\n",
+  dhp101:
+    "101. Better than a thousand\nmeaningless verses\nis a single meaningful verse,\nhearing which brings you peace.\n",
+  dhp102:
+    "102. Better than reciting\na hundred meaningless verses\nis a single saying of Dhamma,\nhearing which brings you peace.\n",
+  dhp103:
+    "103. The supreme conqueror is\nnot he who conquers a million men in battle,\nbut he who conquers a single man:\nhimself.\n",
+  dhp104:
+    "104. It is surely better to conquer oneself\nthan all those other folk.\nWhen a person has tamed themselves,\nalways living restrained,\n",
+  dhp105: "105. no god nor fairy,\nnor Māra nor Brahmā,\ncan undo the victory\nof such a one.\n",
+  dhp106:
+    "106. Rather than a thousand-fold sacrifice,\nevery month for a hundred years,\nit’s better to honor for a single moment\none who has developed themselves.\nThat offering is better\nthan the hundred year sacrifice.\n",
+  dhp107:
+    "107. Rather than serve the sacred flame\nin the forest for a hundred years,\nit’s better to honor for a single moment\none who has developed themselves.\nThat offering is better\nthan the hundred year sacrifice.\n",
+  dhp108:
+    "108. Whatever sacrifice or offering in the world\na seeker of merit may make for a year,\nnone of it is worth a quarter\nof bowing to the upright.\n",
+  dhp109:
+    "109. For one in the habit of bowing,\nalways honoring the elders,\nfour blessings grow:\nlifespan, beauty, happiness, and strength. \n",
+  dhp110:
+    "110. Better to live a single day\nethical and absorbed in meditation\nthan to live a hundred years\nunethical and lacking immersion.\n",
+  dhp111:
+    "111. Better to live a single day\nwise and absorbed in meditation\nthan to live a hundred years\nwitless and lacking immersion.\n",
+  dhp112:
+    "112. Better to live a single day\nenergetic and strong,\nthan to live a hundred years\nlazy and lacking energy.\n",
+  dhp113:
+    "113. Better to live a single day\nseeing rise and fall\nthan to live a hundred years\nblind to rise and fall.\n",
+  dhp114:
+    "114. Better to live a single day\nseeing the deathless state\nthan to live a hundred years\nblind to the deathless state.\n",
+  dhp115:
+    "115. Better to live a single day\nseeing the supreme teaching\nthan to live a hundred years\nblind to the supreme teaching.\n",
+  dhp116:
+    "116. Rush to do good,\nshield your mind from evil;\nfor when you’re slow to do good,\nyour thoughts delight in wickedness.\n",
+  dhp117:
+    "117. If you do something bad,\ndon’t do it again and again,\ndon’t set your heart on it,\nfor piling up evil is suffering.\n",
+  dhp118:
+    "118. If you do something good,\ndo it again and again,\nset your heart on it,\nfor piling up goodness is joyful.\n",
+  dhp119:
+    "119. Even the wicked see good things,\nso long as their wickedness has not ripened. \nBut as soon as that wickedness ripens,\nthen the wicked see wicked things.\n",
+  dhp120:
+    "120. Even the good see wicked things,\nso long as their goodness has not ripened.\nBut as soon as that goodness ripens,\nthen the good see good things.\n",
+  dhp121:
+    "121. Think not lightly of evil,\nthat it won’t come back to you.\nThe pot is filled with water\nfalling drop by drop;\nthe fool is filled with wickedness\npiled up bit by bit.\n",
+  dhp122:
+    "122. Think not lightly of goodness,\nthat it won’t come back to you.\nThe pot is filled with water\nfalling drop by drop;\nthe sage is filled with goodness\npiled up bit by bit.\n",
+  dhp123:
+    "123. Avoid wickedness,\nas a merchant with rich cargo and small escort\nwould avoid a dangerous road,\nor one who loves life would avoid drinking poison.\n",
+  dhp124:
+    "124. You can carry poison in your hand\nif it has no wound,\nfor poison does not infect without a wound;\nnothing bad happens unless you do bad.\n",
+  dhp125:
+    "125. Whoever wrongs a man who has done no wrong,\na pure man who has not a blemish,\nthe evil backfires on the fool, \nlike fine dust thrown upwind.\n",
+  dhp126:
+    "126. Some are born in a womb;\nevil-doers go to hell;\nthe virtuous go to heaven;\nthe stainless are extinguished.\n",
+  dhp127:
+    "127. Not in the sky, nor mid-ocean,\nnor hiding in a mountain cleft;\nyou’ll find no place in the world\nto escape your wicked deeds.\n",
+  dhp128:
+    "128. Not in the sky, nor mid-ocean,\nnor hiding in a mountain cleft;\nyou’ll find no place in the world\nwhere you won’t be vanquished by death.\n",
+  dhp129:
+    "129. All tremble at the rod,\nall fear death.\nTreating others like oneself,\nneither kill nor incite to kill.\n",
+  dhp130:
+    "130. All tremble at the rod,\nall love life.\nTreating others like oneself,\nneither kill nor incite to kill.\n",
+  dhp131:
+    "131. Creatures love happiness,\nso if you harm them with a stick\nin search of your own happiness,\nafter death you won’t find happiness.\n",
+  dhp132:
+    "132. Creatures love happiness,\nso if you don’t hurt them with a stick\nin search of your own happiness,\nafter death you will find happiness.\n",
+  dhp133:
+    "133. Don’t speak harshly,\nthey may speak harshly back.\nFor aggressive speech is painful,\nand the rod may spring back on you.\n",
+  dhp134: "134. If you still yourself\nlike a broken gong,\nyou’re quenched\nand conflict-free.\n",
+  dhp135:
+    "135. As a cowherd drives the cows\nto pasture with the rod,\nso too old age and death\ndrive life from living beings.\n",
+  dhp136:
+    "136. The fool does not understand\nthe evil that they do.\nBut because of those deeds, that dullard\nis tormented as if burnt by fire.\n",
+  dhp137: "137. One who violently attacks\nthe peaceful and the innocent\nswiftly falls\nto one of ten bad states:\n",
+  dhp138: "138. harsh pain; loss;\nthe breakup of the body;\nserious illness;\nmental distress;\n",
+  dhp139: "139. hazards from rulers;\nvicious slander;\nloss of kin;\ndestruction of wealth;\n",
+  dhp140:
+    "140. or else their home\nis consumed by fire.\nWhen their body breaks up, that witless person\nis reborn in hell. \n",
+  dhp141:
+    "141. Not nakedness, nor matted hair, nor mud,\nnor fasting, nor lying on bare ground,\nnor wearing dust and dirt, or squatting on the heels,\nwill cleanse a mortal not free of doubt.\n",
+  dhp142:
+    "142. Dressed-up they may be, but if they live well—\npeaceful, tamed, committed to the spiritual path,\nhaving laid aside violence towards all creatures—\nthey are a brahmin, an ascetic, a mendicant.\n",
+  dhp143:
+    "143. Can a person constrained by conscience\nbe found in the world?\nWho shies away from blame, \nlike a fine horse from the whip?\n",
+  dhp144:
+    "144. Like a fine horse under the whip,\nbe keen and full of urgency.\nWith faith, ethics, and energy,\nimmersion, and investigation of principles,\naccomplished in knowledge and conduct, mindful,\ngive up this vast suffering.\n",
+  dhp145:
+    "145. While irrigators guide water,\nfletchers shape arrows,\nand carpenters carve timber—\nthose true to their vows tame themselves.\n",
+  dhp146:
+    "146. What is joy, what is laughter,\nwhen the flames are ever burning?\nShrouded by darkness,\nwould you not seek a light?\n",
+  dhp147:
+    "147. See this fancy puppet,\na body built of sores,\ndiseased, obsessed over,\nin which nothing lasts at all.\n",
+  dhp148:
+    "148. This body is decrepit and frail,\na nest of disease.\nThis foul carcass falls apart,\nfor life ends only in death.\n",
+  dhp149:
+    "149. These dove-grey bones\nare tossed away like\ndried gourds in the autumn—\nwhat joy is there in such a sight?\n",
+  dhp150:
+    "150. In this city built of bones,\nplastered with flesh and blood,\nold age and death are stashed away,\nalong with conceit and contempt.\n",
+  dhp151:
+    "151. Fancy chariots of kings wear out,\nand even this body gets old.\nBut the teaching of the good never gets old;\nso the true and the good proclaim.\n",
+  dhp152: "152. A person of little learning\nages like an ox—\ntheir flesh grows,\nbut not their wisdom.\n",
+  dhp153:
+    "153. Transmigrating through countless rebirths,\nI’ve journeyed without reward,\nsearching for the house-builder;\npainful is birth again and again.\n",
+  dhp154:
+    "154. I’ve seen you, house-builder!\nYou won’t build a house again!\nYour rafters are all broken,\nyour roof-peak is demolished.\nMy mind, set on demolition,\nhas reached the end of craving.\n",
+  dhp155:
+    "155. When young they spurned the spiritual path\nand failed to earn any wealth.\nNow they languish like old cranes\nin a pond bereft of fish.\n",
+  dhp156:
+    "156. When young they spurned the spiritual path\nand failed to earn any wealth.\nNow they lie like spent arrows,\nbemoaning over things past.\n",
+  dhp157:
+    "157. If you’d only love yourself,\nyou’d look after yourself right well.\nIn one of the night’s three watches,\nan astute person would remain alert.\n",
+  dhp158:
+    "158. The astute would avoid being corrupted\nby grounding themselves first of all\nin what is suitable,\nand only then instructing others. \n",
+  dhp159:
+    "159. If one so acts\nas one instructs,\nthe well-tamed would tame others,\nfor the self is hard to tame, they say.\n",
+  dhp160:
+    "160. Self is indeed the lord of self,\nfor who else would be one’s lord?\nWhen one’s self is well-tamed,\none gains a lord that’s rare indeed.\n",
+  dhp161:
+    "161. For the evil that one does,\nborn and produced in oneself,\ngrinds down a fool,\nas diamond grinds a lesser gem.\n",
+  dhp162: "162. One choked by immorality,\nas a sal tree by a creeper,\ndoes to themselves\nwhat a foe only wishes.\n",
+  dhp163:
+    "163. It’s easy to do bad things\nharmful to oneself,\nbut good things that are helpful\nare the hardest things to do.\n",
+  dhp164:
+    "164. On account of wicked views—\nscorning the guidance\nof the perfected ones,\nthe noble ones living righteously—\nthe idiot begets their own demise,\nlike the bamboo bearing fruit.\n",
+  dhp165:
+    "165. For it is by oneself that evil’s done,\none is corrupted by oneself.\nIt’s by oneself that evil’s not done,\none is purified by oneself.\nPurity and impurity are personal matters,\nno one can purify another.\n",
+  dhp166:
+    "166. Never neglect your own good\nfor the sake of another, however great.\nKnowing well what’s good for you,\nbe intent upon your true goal.\n",
+  dhp167:
+    "167. Don’t resort to lowly things,\ndon’t abide in negligence,\ndon’t resort to wrong views,\ndon’t perpetuate the world.\n",
+  dhp168:
+    "168. Get up, don’t be heedless,\nlive by principle, with good conduct.\nFor one of good conduct sleeps at ease,\nin this world and the next. \n",
+  dhp169:
+    "169. Live by principle, with good conduct,\ndon’t conduct yourself badly.\nFor one of good conduct sleeps at ease,\nin this world and the next. \n",
+  dhp170: "170. Look upon the world\nas a bubble\nor a mirage,\nthen the King of Death won’t see you.\n",
+  dhp171:
+    "171. Come, see this world decked out\nlike a fancy royal chariot.\nHere fools flounder,\nbut the discerning are not chained.\n",
+  dhp172:
+    "172. He who once was heedless,\nbut turned to heedfulness,\nlights up the world\nlike the moon freed from clouds.\n",
+  dhp173:
+    "173. Someone whose bad deed\nis supplanted by the good,\nlights up the world,\nlike the moon freed from clouds.\n",
+  dhp174:
+    "174. Blind is the world,\nfew are those who clearly see.\nOnly a handful go to heaven,\nlike a bird freed from a net.\n",
+  dhp175:
+    "175. Swans fly by the sun’s path,\npsychic sages fly through space.\nThe wise leave the world, \nhaving vanquished Māra and his mount.\n",
+  dhp176:
+    "176. When a person, spurning the hereafter,\ntransgresses in just one thing—\nlying—\nthere is no evil they would not do.\n",
+  dhp177:
+    "177. The miserly don’t ascend to heaven,\nit takes a fool to not praise giving.\nThe wise celebrate giving,\nand so find happiness in the hereafter.\n",
+  dhp178:
+    "178. The fruit of stream-entry is better\nthan being the one king of the earth,\nthan going to heaven,\nthan lordship over all the world.\n",
+  dhp179:
+    "179. He whose victory may not be undone,\na victory unrivaled in all the world;\nby what track would you trace that Buddha,\nwho leaves no track in his infinite range?\n",
+  dhp180:
+    "180. Of craving, the weaver, the clinger, he has none:\nso where can he be traced?\nBy what track would you trace that Buddha,\nwho leaves no track in his infinite range?\n",
+  dhp181:
+    "181. The wise intent on absorption,\nwho love the peace of renunciation,\nthe Buddhas, ever mindful,\nare envied by even the gods.\n",
+  dhp182:
+    "182. It’s hard to gain a human birth;\nthe life of mortals is hard;\nit’s hard to hear the true teaching;\nthe arising of Buddhas is hard.\n",
+  dhp183:
+    "183. Not to do any evil; \nto embrace the good;\nto purify one’s mind:\nthis is the instruction of the Buddhas.\n",
+  dhp184:
+    "184. Patient acceptance is the ultimate austerity.\nExtinguishment is the ultimate, say the Buddhas. \nNo true renunciate injures another,\nnor does an ascetic hurt another. \n",
+  dhp185:
+    "185. Not speaking ill nor doing harm;\nrestraint in the monastic code;\nmoderation in eating; \nstaying in remote lodgings;\ncommitment to the higher mind—\nthis is the instruction of the Buddhas.\n",
+  dhp186:
+    "186. Even if it were raining money,\nyou’d not be sated in sensual pleasures.\nAn astute person understands that sensual pleasures\noffer little gratification and much suffering.\n",
+  dhp187:
+    "187. Thus they find no delight\neven in celestial pleasures.\nA disciple of the fully awakened Buddha\ndelights in the ending of craving.\n",
+  dhp188:
+    "188. So many go for refuge\nto mountains and forest groves,\nto tree shrines in tended parks;\nthose people are driven by fear.\n",
+  dhp189:
+    "189. But such refuge is no sanctuary,\nit is no supreme refuge.\nBy going to that refuge,\nyou’re not released from suffering.\n",
+  dhp190:
+    "190. One gone for refuge to the Buddha,\nto his teaching and to the Saṅgha,\nsees the four noble truths\nwith right understanding:\n",
+  dhp191:
+    "191. suffering, suffering’s origin,\nsuffering’s transcendence,\nand the noble eightfold path\nthat leads to the stilling of suffering.\n",
+  dhp192:
+    "192. Such refuge is a sanctuary,\nit is the supreme refuge.\nBy going to that refuge,\nyou’re released from all suffering.\n",
+  dhp193:
+    "193. It’s hard to find a thoroughbred man\nthey’re not born just anywhere.\nA family where that sage is born\nprospers in happiness.\n",
+  dhp194:
+    "194. Happy, the arising of Buddhas!\nHappy, the teaching of Dhamma!\nHappy is the harmony of the Saṅgha,\nand the striving of the harmonious is happy.\n",
+  dhp195:
+    "195. When a person venerates the worthy—\nthe Buddha or his disciple,\nwho have transcended proliferation,\nand have left behind grief and lamentation,\n",
+  dhp196:
+    "196. quenched, fearing nothing from any quarter—\nthe merit of one venerating such as these,\ncannot be calculated by anyone,\nsaying it is just this much.\n",
+  dhp197:
+    "197. Let us live so very happily,\nloving among the hostile.\nAmong hostile people,\nlet us live with love.\n",
+  dhp198: "198. Let us live so very happily,\nhealthy among the ailing.\nAmong ailing people\nlet us live healthily.\n",
+  dhp199: "199. Let us live so very happily,\ncontent among the greedy.\nAmong greedy people,\nlet us live content.\n",
+  dhp200:
+    "200. Let us live so very happily,\nwe who have nothing.\nWe shall feed on rapture, \nlike the gods of streaming radiance.\n",
+  dhp201:
+    "201. Victory breeds enmity; \nthe defeated sleep badly. \nThe peaceful sleep at ease,\nhaving left victory and defeat behind.\n",
+  dhp202:
+    "202. There is no fire like greed,\nno crime like hate,\nno suffering like the aggregates,\nno bliss beyond peace.\n",
+  dhp203:
+    "203. Hunger is the worst illness,\nconditions are the worst suffering,\nFor one who truly knows this,\nextinguishment is the ultimate happiness. \n",
+  dhp204:
+    "204. Health is the ultimate blessing;\ncontentment, the ultimate wealth;\ntrust is the ultimate family;\nextinguishment, the ultimate happiness. \n",
+  dhp205:
+    "205. Having drunk the nectar of seclusion\nand the nectar of peace,\nfree of stress, free of evil,\none drinks the joyous nectar of Dhamma.\n",
+  dhp206:
+    "206. It’s good to see the noble ones,\nstaying with them is always good.\nWere you not to see fools,\nyou’d always be happy.\n",
+  dhp207:
+    "207. For one who consorts with fools\ngrieves long.\nPainful is dwelling with fools,\nlike being stuck with your enemy.\nHappy is dwelling with a sage,\nlike meeting with your kin.\n",
+  dhp208:
+    "208. Therefore:\nA sage, wise and learned,\na mammoth of virtue, true to their vows, noble:\nfollow a good and intelligent person such as this,\nas the moon tracks the path of the stars.\n",
+  dhp209:
+    "209. Applying yourself where you ought not,\nneglecting what you should be doing,\nforgetting your goal, you cling to what you hold dear,\njealous of those devoted to their own goal.\n",
+  dhp210:
+    "210. Don’t ever get too close\nto those you like or dislike.\nFor not seeing the liked is suffering,\nand so is seeing the disliked.\n",
+  dhp211:
+    "211. Therefore don’t hold anything dear,\nfor it’s bad to lose those you love.\nNo ties are found in they who\nhold nothing loved or loathed.\n",
+  dhp212:
+    "212. Sorrow springs from what we hold dear,\nfear springs from what we hold dear;\none free from holding anything dear\nhas no sorrow, let alone fear.\n",
+  dhp213:
+    "213. Sorrow springs from attachment,\nfear springs from attachment;\none free from attachment\nhas no sorrow, let alone fear.\n",
+  dhp214:
+    "214. Sorrow springs from relishing,\nfear springs from relishing;\none free from relishing\nhas no sorrow, let alone fear.\n",
+  dhp215:
+    "215. Sorrow springs from desire,\nfear springs from desire;\none free from desire\nhas no sorrow, let alone fear.\n",
+  dhp216:
+    "216. Sorrow springs from craving,\nfear springs from craving;\none free from craving\nhas no sorrow, let alone fear.\n",
+  dhp217:
+    "217. One accomplished in virtue and vision,\nfirm in principle, and truthful,\ndoing oneself what ought be done:\nthat’s who the people love.\n",
+  dhp218:
+    "218. One eager to realize the ineffable\nwould be filled with awareness.\nTheir mind not bound to pleasures of sense,\nthey’re said to be heading upstream.\n",
+  dhp219:
+    "219. When a man returns safely\nafter a long time spent abroad,\nfamily, friends, and loved ones\ncelebrate his return.\n",
+  dhp220:
+    "220. Just so, when one who has done good\ngoes from this world to the next,\ntheir good deeds receive them there,\nas family welcomes home one they love.\n",
+  dhp221:
+    "221. Give up anger, get rid of conceit,\nand escape every fetter.\nSufferings don’t befall one who has nothing,\nnot clinging to name and form. \n",
+  dhp222:
+    "222. When anger surges like a lurching chariot,\nkeep it in check.\nThat’s what I call a charioteer;\nothers just hold the reins.\n",
+  dhp223: "223. Defeat anger with kindness,\nvillainy with virtue,\nstinginess with giving,\nand lies with truth.\n",
+  dhp224:
+    "224. Speak the truth, do not be angry,\nand give when asked, if only a little.\nBy these three means,\nyou may enter the presence of the gods.\n",
+  dhp225:
+    "225. Those harmless sages,\nalways restrained in body,\ngo to the imperishable state,\nwhere there is no sorrow. \n",
+  dhp226:
+    "226. Always wakeful,\npracticing night and day,\nfocused only on quenching,\ntheir defilements come to an end.\n",
+  dhp227:
+    "227. It’s always been like this,\nit’s not just today.\nThey blame you when you’re silent,\nthey blame you when you speak a lot,\nand even when you speak just right:\nno-one in the world escapes blame.\n",
+  dhp228:
+    "228. There never was, nor will be,\nnor is there today,\nsomeone who is wholly praised \nor wholly blamed.\n",
+  dhp229:
+    "229. If, after watching them day in day out,\ndiscerning people praise\nthat sage of impeccable conduct,\nendowed with ethics and wisdom;\n",
+  dhp230:
+    "230. like a pendant of river gold,\nwho is worthy to criticize them?\nEven the gods praise them, \nand by Brahmā, too, they’re praised.\n",
+  dhp231:
+    "231. Guard against ill-tempered deeds,\nbe restrained in body.\nGiving up bad bodily conduct,\nconduct yourself well in body.\n",
+  dhp232:
+    "232. Guard against ill-tempered words,\nbe restrained in speech.\nGiving up bad verbal conduct,\nconduct yourself well in speech.\n",
+  dhp233:
+    "233. Guard against ill-tempered thoughts,\nbe restrained in mind.\nGiving up bad mental conduct,\nconduct yourself well in mind.\n",
+  dhp234:
+    "234. A sage is restrained in body\nrestrained also in speech,\nin thought, too, they are restrained:\nthey are restrained in every way.\n",
+  dhp235:
+    "235. Today you’re like a withered leaf,\nYama’s men await you.\nYou stand at the departure gates,\nyet you have no supplies for the road.\n",
+  dhp236:
+    "236. Make an island of yourself!\nSwiftly strive, learn to be wise!\nPurged of stains, flawless,\nyou’ll go to the divine realm of the noble ones.\n",
+  dhp237:
+    "237. You’ve journeyed the stages of life,\nand now you set out to meet Yama.\nAlong the way there’s nowhere to stay,\nyet you have no supplies for the road.\n",
+  dhp238:
+    "238. Make an island of yourself!\nSwiftly strive, learn to be wise!\nPurged of stains, flawless,\nyou’ll not come again to rebirth and old age.\n",
+  dhp239:
+    "239. A smart person would purge\ntheir own stains gradually,\nbit by bit, moment by moment,\nlike a smith smelting silver.\n",
+  dhp240:
+    "240. It is the rust born on the iron\nthat eats away the place it arose.\nAnd so it is their own deeds\nthat lead the overly-ascetic to a bad place.\n",
+  dhp241:
+    "241. Not reciting is the stain of hymns.\nThe stain of houses is neglect.\nLaziness is the stain of beauty. \nA guard’s stain is negligence. \n",
+  dhp242:
+    "242. Misconduct is a woman’s stain.\nA giver’s stain is stinginess.\nBad qualities are a stain \nin this world and the next. \n",
+  dhp243:
+    "243. But a worse stain than these\nis ignorance, the worst stain of all.\nHaving given up that stain,\nbe without stains, mendicants! \n",
+  dhp244:
+    "244. Life is easy for the shameless.\nWith all the rude courage of a crow,\nthey live pushy,\nrude, and corrupt.\n",
+  dhp245:
+    "245. Life is hard for the conscientious,\nalways seeking purity,\nneither clinging nor rude,\npure of livelihood and discerning.\n",
+  dhp246: "246. Take anyone in this world\nwho kills living creatures,\nspeaks falsely, steals,\ncommits adultery, \n",
+  dhp247: "247. and indulges in drinking \nalcohol and liquor.\nRight here they dig up\nthe root of their own self.\n",
+  dhp248:
+    "248. Know this, good sir:\nthey are unrestrained and wicked.\nDon’t let greed and hate\nsubject you to pain for long.\n",
+  dhp249:
+    "249. The people give according to their faith,\naccording to their confidence.\nIf you get upset over that,\nover other’s food and drink,\nyou’ll not, by day or by night,\nbecome immersed in samādhi.\n",
+  dhp250:
+    "250. Those who have cut that out,\ndug it up at the root, eradicated it,\nthey will, by day or by night,\nbecome immersed in samādhi.\n",
+  dhp251: "251. There is no fire like greed,\nno crime like hate,\nno net like delusion,\nno river like craving.\n",
+  dhp252:
+    "252. It’s easy to see the faults of others,\nhard to see one’s own.\nFor the faults of others \nare tossed high like chaff,\nwhile one’s own are hidden,\nas a cheat hides a bad hand.\n",
+  dhp253:
+    "253. When you look for the flaws of others,\nalways finding fault,\nyour defilements only grow,\nyou’re far from ending defilements.\n",
+  dhp254:
+    "254. In the sky there is no track,\nthere’s no true ascetic outside here.\nPeople enjoy proliferation,\nthe Realized Ones are free of proliferation.\n",
+  dhp255:
+    "255. In the sky there is no track,\nthere’s no true ascetic outside here.\nNo conditions last forever,\nthe Awakened Ones are not shaken.\n",
+  dhp256:
+    "256. You don’t become just\nby passing hasty judgement.\nAn astute person evaluates both\nwhat is pertinent and what is irrelevant.\n",
+  dhp257:
+    "257. A wise one judges others without haste,\njustly and impartially;\nthat guardian of the law\nis said to be just.\n",
+  dhp258:
+    "258. You’re not an astute scholar\njust because you speak a lot.\nOne who is secure, free of enmity and fear,\nis said to be astute.\n",
+  dhp259:
+    "259. You’re not one who has memorized the teaching\njust because you recite a lot.\nSomeone who directly sees the teaching\nafter hearing only a little\nis truly one who has memorized the teaching,\nfor they can never forget it.\n",
+  dhp260:
+    "260. You don’t become a senior\nby getting some grey hairs;\nfor one ripe only in age,\nis said to have aged in vain.\n",
+  dhp261:
+    "261. One who has truth and principle,\nharmlessness, restraint, and self-control,\nthat wise one, purged of stains,\nis said to be a senior.\n",
+  dhp262:
+    "262. Not by mere eloquence,\nor a beautiful complexion\ndoes a person appear holy,\nif they’re jealous, stingy, and devious. \n",
+  dhp263:
+    "263. But if they’ve cut that out,\ndug it up at the root, eradicated it,\nthat wise one, purged of vice,\nis said to be holy.\n",
+  dhp264:
+    "264. A liar and breaker of vows is no ascetic\njust because they shave their head.\nHow on earth can one be an ascetic\nwho’s full of desire and greed?\n",
+  dhp265:
+    "265. One who stops all wicked deeds,\ngreat and small,\nbecause of stopping wicked deeds\nis said to be an ascetic.\n",
+  dhp266:
+    "266. You don’t become a mendicant\njust by begging from others.\nOne who has undertaken domestic duties \nhas not yet become a mendicant. \n",
+  dhp267:
+    "267. But one living a spiritual life,\nwho has banished both merit and evil,\nwho wanders having assessed the world,\nis said to be a mendicant.\n",
+  dhp268:
+    "268. You don’t become a sage by silence,\nwhile still confused and ignorant.\nThe astute one holds up the scales,\ntaking only the best,\n",
+  dhp269:
+    "269. and rejecting the bad;\na sage becomes a sage by measuring.\nOne who measures good and bad in the world,\nis thereby said to be a sage.\n",
+  dhp270:
+    "270. You don’t become a noble one\nby harming living beings.\nOne harmless towards all living beings\nis said to be a noble one.\n",
+  dhp271:
+    "271. Not by precepts and observances,\nnor by much learning,\nnor by meditative immersion,\nnor by living in seclusion,\n",
+  dhp272:
+    "272. do I experience the bliss of renunciation\nnot frequented by ordinary people.\nA mendicant cannot rest confident\nwithout attaining the end of defilements.\n",
+  dhp273:
+    "273. Of paths, the eightfold is the best;\nof truths, the four statements;\ndispassion is the best of things,\nand the Seer is the best of humans.\n",
+  dhp274:
+    "274. *This* is the path, there is no other\nfor the purification of vision.\nYou all must practice this,\nit is the way to baffle Māra.\n",
+  dhp275:
+    "275. When you all are practicing this,\nyou will make an end of suffering.\nI have explained the path to you\nfor extracting the thorn with wisdom.\n",
+  dhp276:
+    "276. You yourselves must do the work,\nthe Realized Ones just show the way.\nMeditators practicing absorption\nare released from Māra’s bonds.\n",
+  dhp277:
+    "277. All conditions are impermanent—\nwhen this is seen with wisdom,\none grows disillusioned with suffering:\nthis is the path to purity.\n",
+  dhp278:
+    "278. All conditions are suffering—\nwhen this is seen with wisdom,\none grows disillusioned with suffering:\nthis is the path to purity.\n",
+  dhp279:
+    "279. All things are not-self—\nwhen this is seen with wisdom,\none grows disillusioned with suffering:\nthis is the path to purity.\n",
+  dhp280:
+    "280. They don’t get going when it’s time to start;\nthey’re young and strong, but given to sloth.\nTheir mind depressed in sunken thought,\nlazy and slothful, they can’t discern the path.\n",
+  dhp281:
+    "281. Guarded in speech, restrained in mind,\ndoing no unskillful bodily deed.\nPurify these three ways of performing deeds,\nand win the path known to hermits.\n",
+  dhp282:
+    "282. From meditation springs wisdom,\nwithout meditation, wisdom ends.\nKnowing these two paths—\nof progress and decline—\nyou should conduct yourself\nso that wisdom grows.\n",
+  dhp283:
+    "283. Cut down the jungle, not just a tree;\nfrom the jungle springs fear.\nHaving cut down jungle and vine,\nbe free of jungles, mendicants! \n",
+  dhp284:
+    "284. So long as the vine, no matter how small,\nthat ties a man to women is not cut,\nhis mind remains trapped,\nlike a calf suckling its mother.\n",
+  dhp285:
+    "285. Cut out fondness for oneself,\nlike plucking an autumn lotus.\nFoster only the path to peace,\nthe quenching the Holy One taught.\n",
+  dhp286:
+    "286. “Here I will stay for the rains;\nhere for winter, here the summer”;\nthus the fool thinks,\nnot realizing the danger.\n",
+  dhp287:
+    "287. As a mighty flood sweeps away a sleeping village,\ndeath steals away a man\nwho dotes on children and cattle,\nhis mind caught up in them.\n",
+  dhp288:
+    "288. Children provide you no shelter,\nnor does father, nor relatives.\nWhen you’re seized by the terminator,\nthere’s no shelter in family.\n",
+  dhp289:
+    "289. Knowing the reason for this,\nastute, and ethically restrained,\none would quickly clear the path\nthat leads to extinguishment.\n",
+  dhp290:
+    "290. If by giving up material happiness\none sees abundant happiness,\na wise one would give up material happiness,\nseeing the abundant happiness.\n",
+  dhp291:
+    "291. Some seek their own happiness\nby imposing suffering on others.\nLiving intimate with enmity,\nthey’re not freed from enmity. \n",
+  dhp292:
+    "292. They disregard what should be done,\nand do what should not be done.\nFor the insolent and the negligent,\ntheir defilements only grow.\n",
+  dhp293:
+    "293. Those that have properly undertaken\nconstant mindfulness of the body,\ndon’t cultivate what should not be done,\nbut always do what should be done.\nMindful and aware,\ntheir defilements come to an end.\n",
+  dhp294:
+    "294. Having slain mother and father,\nand two aristocratic kings,\nand having wiped out the kingdom with its subjects,\nthe brahmin walks on without worry.\n",
+  dhp295:
+    "295. Having slain mother and father,\nand two aristocratic kings,\nand a tiger as the fifth,\nthe brahmin walks on without worry.\n",
+  dhp296:
+    "296. The disciples of Gotama\nalways wake up refreshed,\nwho day and night\nconstantly recollect the Buddha.\n",
+  dhp297:
+    "297. The disciples of Gotama\nalways wake up refreshed,\nwho day and night\nconstantly recollect the teaching.\n",
+  dhp298:
+    "298. The disciples of Gotama\nalways wake up refreshed,\nwho day and night\nconstantly recollect the Saṅgha.\n",
+  dhp299:
+    "299. The disciples of Gotama\nalways wake up refreshed,\nwho day and night\nare constantly mindful of the body.\n",
+  dhp300:
+    "300. The disciples of Gotama\nalways wake up refreshed,\nwhose minds day and night\ndelight in harmlessness.\n",
+  dhp301:
+    "301. The disciples of Gotama\nalways wake up refreshed,\nwhose minds day and night\ndelight in meditation.\n",
+  dhp302:
+    "302. Going forth is hard, it’s hard to be happy;\nlife at home is hard too, and painful,\nit’s painful to stay when you’ve nothing in common.\nA traveler is a prey to pain,\nso don’t be a traveler,\ndon’t be prey to pain.\n",
+  dhp303:
+    "303. One who is faithful, accomplished in ethics,\nblessed with fame and wealth,\nis honored in whatever place\nthey frequent.\n",
+  dhp304:
+    "304. The good shine from afar,\nlike the Himalayan peaks,\nbut the wicked are not seen,\nlike arrows scattered in the night.\n",
+  dhp305:
+    "305. Sitting alone, sleeping alone,\ntirelessly wandering alone;\none who tames themselves alone\nwould delight within a forest.\n",
+  dhp306:
+    "306. A liar goes to hell, \nas does one who denies what they did.\nBoth are equal in the hereafter,\nthose men of base deeds.\n",
+  dhp307:
+    "307. Many who wrap their necks in ocher robes\nare unrestrained and wicked.\nBeing wicked, they are reborn in hell\ndue to their bad deeds.\n",
+  dhp308:
+    "308. It’d be better for the immoral and unrestrained\nto eat an iron ball,\nscorching, like a burning flame,\nthan to eat the nation’s alms.\n",
+  dhp309:
+    "309. Four things befall a heedless man\nwho sleeps with another’s wife:\nbad karma, poor sleep,\nill-repute, and rebirth in hell.\n",
+  dhp310:
+    "310. He accrues bad karma and is reborn in a bad place,\nall so a frightened couple may snatch a moment’s pleasure,\nfor which rulers impose a heavy punishment.\nThat’s why a man should not sleep with another’s wife.\n",
+  dhp311:
+    "311. When kusa grass is wrongly grasped\nit only cuts the hand.\nSo too, the ascetic life, when wrongly taken,\ndrags you to hell.\n",
+  dhp312: "312. Any lax act,\nany corrupt observance, \nor suspicious spiritual life,\nis not very fruitful.\n",
+  dhp313:
+    "313. If one is to do what should be done,\none should staunchly strive.\nFor the life gone forth when laxly led \njust stirs up dust all the more. \n",
+  dhp314:
+    "314. A bad deed is better left undone,\nfor it will plague you later on.\nA good deed is better done,\none that does not plague you.\n",
+  dhp315:
+    "315. As a frontier city\nis guarded inside and out,\nso you should ward yourselves—\ndon’t let the moment pass you by.\nFor if you miss your moment\nyou’ll grieve when sent to hell.\n",
+  dhp316:
+    "316. Unashamed of what is shameful,\nashamed of what is not shameful;\nbeings who uphold wrong view\ngo to a bad place.\n",
+  dhp317:
+    "317. Seeing danger where there is none,\nand blind to the actual danger,\nbeings who uphold wrong view\ngo to a bad place.\n",
+  dhp318:
+    "318. Seeing fault where there is none,\nand blind to the actual fault,\nbeings who uphold wrong view\ngo to a bad place.\n",
+  dhp319:
+    "319. Knowing a fault as a fault\nand the faultless as faultless,\nbeings who uphold right view\ngo to a good place.\n",
+  dhp320:
+    "320. Like an elephant struck\nwith arrows in battle,\nI shall put up with abuse,\nfor so many folk are badly behaved.\n",
+  dhp321:
+    "321. The well-tamed beast is the one led to the crowd;\nthe tamed elephant’s the one the king mounts;\nthe tamed person who endures abuse\nis the best of human beings.\n",
+  dhp322:
+    "322. Those who have tamed themselves are better\nthan fine tamed mules,\nthoroughbreds from Sindh,\nor giant tuskers.\n",
+  dhp323:
+    "323. For not on those mounts\nwould you go to the untrodden place,\nwhereas, with the help of one whose self is well tamed,\nyou go there, tamed by the tamed.\n",
+  dhp324:
+    "324. The tusker named Dhanapāla\nis musky in rut, hard to control.\nBound, he eats not a bite,\nfor he misses the elephant forest.\n",
+  dhp325:
+    "325. One who gets drowsy from overeating,\nfond of sleep, rolling round the bed\nlike a great hog stuffed with grain:\nthat idiot is reborn again and again. \n",
+  dhp326:
+    "326. In the past my mind wandered\nhow it wished, where it liked, as it pleased.\nNow I’ll carefully guide it,\nas a trainer with a hook guides a rutting elephant.\n",
+  dhp327:
+    "327. Delight in diligence!\nTake good care of your mind!\nPull yourself out of this pit,\nlike an elephant sunk in a bog.\n",
+  dhp328:
+    "328. If you find an alert companion,\na wise and virtuous friend,\nthen, overcoming all adversities, \nwander with them, joyful and mindful. \n",
+  dhp329:
+    "329. If you find no alert companion,\nno wise and virtuous friend,\nthen, like a king who flees his conquered realm,\nwander alone like a tusker in the wilds. \n",
+  dhp330:
+    "330. It’s better to wander alone,\nthere’s no fellowship with fools.\nWander alone and do no wrong, \nat ease like a tusker in the wilds.\n",
+  dhp331:
+    "331. A friend in need is a blessing;\nit’s a blessing to be content with whatever;\ngood deeds are a blessing at the end of life,\nand giving up all suffering is a blessing.\n",
+  dhp332:
+    "332. In this world it’s a blessing to serve\none’s mother and one’s father.\nAnd it’s a blessing also to serve\nascetics and brahmins.\n",
+  dhp333:
+    "333. It’s a blessing to keep precepts until you grow old;\na blessing to be grounded in faith;\nthe getting of wisdom’s a blessing;\nand it’s a blessing to avoid doing wrong.\n",
+  dhp334:
+    "334. When a person lives heedlessly,\ncraving grows in them like a parasitic creeper.\nThey jump from life to life, like a monkey\ngreedy for fruit in a forest grove.\n",
+  dhp335:
+    "335. Whoever is beaten by this wretched craving,\nthis attachment to the world,\ntheir sorrow grows,\nlike grass in the rain.\n",
+  dhp336:
+    "336. But whoever prevails over this wretched craving,\nso hard to get over in the world,\ntheir sorrows fall from them,\nlike a drop from a lotus-leaf.\n",
+  dhp337:
+    "337. I say this to you, good people,\nall those who have gathered here:\ndig up the root of craving,\nas you’d dig up grass in search of roots.\nDon’t let Māra break you again and again,\nlike a stream breaking a reed.\n",
+  dhp338:
+    "338. A tree grows back even when cut down,\nso long as its roots are healthy;\nsuffering springs up again and again,\nso long as the tendency to craving is not pulled out.\n",
+  dhp339:
+    "339. A person of low views\nin whom the thirty-six streams\nthat flow to pleasure are mighty,\nis swept away by lustful thoughts.\n",
+  dhp340:
+    "340. The streams flow everywhere;\na weed springs up and remains.\nSeeing this weed that has been born, \ncut the root with wisdom.\n",
+  dhp341:
+    "341. A persons’s joys\nflow from senses and cravings.\nSeekers of happiness, bent on pleasure,\ncontinue to be reborn and grow old. \n",
+  dhp342:
+    "342. People governed by thirst,\ncrawl about like a trapped rabbit.\nBound and fettered, for a long time\nthey return to pain time and again.\n",
+  dhp343:
+    "343. People governed by thirst,\ncrawl about like a trapped rabbit.\nThat’s why one who longs for dispassion\nshould dispel thirst.\n",
+  dhp344:
+    "344. Rejecting the household jungle, they set out for the real jungle,\nthen they run right back to the jungle they left behind.\nJust look at this person!\nFreed, they run to bondage.\n",
+  dhp345:
+    "345. The wise say that shackle is not strong\nthat’s made of iron, wood, or knots.\nBut obsession with jeweled earrings, \nconcern for your partners and children: \n",
+  dhp346:
+    "346. this, say the wise, is a strong shackle\ndragging the indulgent down, hard to escape.\nHaving cut this one too they go forth,\nunconcerned, having given up sensual pleasures.\n",
+  dhp347:
+    "347. Besotted by lust they fall into the stream,\nlike a spider caught in the web she wove.\nThe wise proceed, having cut this one too,\nunconcerned, having given up all suffering.\n",
+  dhp348:
+    "348. Let go of the past, let go of the future,\nlet go of the present, having gone beyond rebirth.\nWith your heart freed in every respect,\nyou’ll not come again to rebirth and old age.\n",
+  dhp349:
+    "349. For a person crushed by thoughts,\nvery lustful, focusing on beauty,\ntheir craving grows and grows,\ntying them with a stout bond.\n",
+  dhp350:
+    "350. But one who loves to calm their thoughts,\ndeveloping perception of ugliness, ever mindful,\nwill surely eliminate that craving,\ncutting off the bonds of Māra.\n",
+  dhp351:
+    "351. One who is confident, unafraid,\nrid of craving, free of blemish,\nhaving struck down the arrows flying to future lives,\nthis bag of bones is their last.\n",
+  dhp352:
+    "352. Rid of craving, free of grasping,\nexpert in the interpretation of terms,\nknowing the correct\nstructure and sequence of syllables,\nthey are said to be one who bears their final body,\none of great wisdom, a great person.\n",
+  dhp353:
+    "353. I am the champion, the knower of all,\nunsullied in the midst of all things.\nI’ve given up all, freed in the ending of craving.\nSince I know for myself, whose follower should I be?\n",
+  dhp354:
+    "354. The gift of the teaching beats all other gifts;\nthe taste of the teaching beats all other tastes;\nthe joy of the teaching beats all other joys;\none who has ended craving beats all suffering.\n",
+  dhp355:
+    "355. Riches ruin an idiot,\nbut not a seeker of the far shore.\nFrom craving for wealth, an idiot\nruins themselves and others.\n",
+  dhp356:
+    "356. Weeds are the bane of crops,\nbut greed is these folk’s bane.\nThat’s why a gift to one rid of greed\nis so very fruitful.\n",
+  dhp357:
+    "357. Weeds are the bane of crops,\nbut hate is these folk’s bane.\nThat’s why a gift to one rid of hate\nis so very fruitful.\n",
+  dhp358:
+    "358. Weeds are the bane of crops,\nbut delusion is these folk’s bane.\nThat’s why a gift to one rid of delusion\nis so very fruitful.\n",
+  dhp359:
+    "359. Weeds are the bane of crops,\nbut desire is these folk’s bane.\nThat’s why a gift to one rid of desire\nis so very fruitful.\n",
+  dhp360:
+    "360. Restraint of the eye is good;\ngood is restraint of the ear;\nrestraint of the nose is good; \ngood is restraint of the tongue.\n",
+  dhp361:
+    "361. Restraint of the body is good;\ngood is restraint of speech;\nrestraint of mind is good; \neverywhere, restraint is good.\nThe mendicant restrained everywhere\nis released from suffering.\n",
+  dhp362:
+    "362. One restrained in hand and foot,\nand in speech, the supreme restraint;\nhappy inside, serene, \nsolitary, content, I call a mendicant.\n",
+  dhp363:
+    "363. When a mendicant of restrained mouth,\nthoughtful in counsel, and stable,\nexplains the text and its meaning,\ntheir words are sweet.\n",
+  dhp364:
+    "364. Delighting in the teaching, enjoying the teaching,\ncontemplating the teaching,\na mendicant who recollects the teaching\ndoesn’t decline in the true teaching.\n",
+  dhp365:
+    "365. A well-off mendicant ought not look down\non others, nor should they be envious.\nA mendicant who envies others\ndoes not achieve immersion.\n",
+  dhp366:
+    "366. If a mendicant is poor in offerings,\nthe well-to-do ought not look down on them.\nFor the gods indeed praise them,\nwho are tireless and pure of livelihood.\n",
+  dhp367:
+    "367. One who has no sense of ownership\nin the whole realm of name and form,\nwho does not grieve for that which is not,\nis said to be a mendicant.\n",
+  dhp368:
+    "368. A mendicant who meditates on love,\ndevoted to the Buddha’s teaching,\nwould realize the peaceful state,\nthe blissful stilling of conditions.\n",
+  dhp369:
+    "369. Bail out this boat, mendicant!\nWhen bailed out it will float lightly.\nHaving cut off desire and hate,\nyou shall reach quenching.\n",
+  dhp370:
+    "370. Five to cut, five to drop,\nand five more to develop.\nA mendicant who escapes five chains \nis said to have crossed the flood.\n",
+  dhp371:
+    "371. Practice absorption, don’t be negligent!\nDon’t let the mind delight in the senses!\nDon’t heedlessly swallow a hot iron ball!\nAnd when it burns, don’t cry, “Oh, the pain!”\n",
+  dhp372:
+    "372. No absorption for one without wisdom,\nno wisdom for one without absorption.\nBut one with absorption and wisdom—\nthey have truly drawn near to extinguishment.\n",
+  dhp373:
+    "373. A mendicant who enters an empty hut\nwith mind at peace\nfinds a superhuman delight\nas they rightly discern the Dhamma.\n",
+  dhp374:
+    "374. Whenever they are mindful\nof the rise and fall of the aggregates,\nthey feel rapture and joy:\nthat is the deathless for one who knows.\n",
+  dhp375:
+    "375. This is the very start of the path\nfor a wise mendicant:\nguarding the senses, contentment,\nand restraint in the monastic code.\n",
+  dhp376:
+    "376. Mix with spiritual friends,\nwho are tireless and pure of livelihood.\nShare what you have with others,\nbeing skillful in your conduct.\nAnd when you’re full of joy, \nyou’ll make an end to suffering.\n",
+  dhp377: "377. As a jasmine sheds\nits withered flowers,\nO mendicants,\ncast off greed and hate.\n",
+  dhp378:
+    "378. Calm in body, calm in speech,\npeaceful and serene;\na mendicant who’s spat out the world’s bait\nis said to be one at peace.\n",
+  dhp379:
+    "379. Urge yourself on,\nreflect on yourself.\nA mendicant self-controlled and mindful\nwill always dwell in happiness.\n",
+  dhp380:
+    "380. Self is indeed the lord of self,\nfor who else would be one’s lord?\nSelf is indeed the home of self,\nso restrain yourself,\nas a merchant his thoroughbred steed.\n",
+  dhp381:
+    "381. A monk full of joy\ntrusting in the Buddha’s teaching,\nwould realize the peaceful state,\nthe blissful stilling of conditions.\n",
+  dhp382:
+    "382. A young mendicant\ndevoted to the Buddha’s teaching,\nlights up the world,\nlike the moon freed from a cloud.\n",
+  dhp383:
+    "383. Strive and cut the stream!\nDispel sensual pleasures, brahmin.\nKnowing the ending of conditions,\nknow the uncreated, brahmin.\n",
+  dhp384: "384. When a brahmin\nhas gone beyond two things,\nthen they consciously\nmake an end of all fetters.\n",
+  dhp385:
+    "385. When one does not recognize the near shore,\nthe far shore, or both;\nstress-free, detached,\nthat’s who I call a brahmin. \n",
+  dhp386:
+    "386. Absorbed, rid of hopes,\ntheir task completed, without defilements,\narrived at the highest goal: \nthat’s who I call a brahmin. \n",
+  dhp387:
+    "387. The sun blazes by day, \nthe moon glows at night, \nthe aristocrat shines in armor,\nand the brahmin shines in absorption. \nBut all day and all night, \nthe Buddha shines with glory.\n",
+  dhp388:
+    "388. A brahmin’s so-called because they have banished evil,\nan ascetic’s so-called since they live a serene life.\nOne who has renounced all stains\nis said to be a “renunciant”.\n",
+  dhp389:
+    "389. One should never strike a brahmin,\nnor should a brahmin retaliate.\nWoe to the one who hurts a brahmin,\nand woe for the one who retaliates.\n",
+  dhp390:
+    "390. Nothing is better for a brahmin\nthan to hold their mind back from attachment.\nAs cruelty in the mind gradually subsides,\nsuffering also subsides.\n",
+  dhp391:
+    "391. Who does nothing wrong\nby body, speech or mind,\nrestrained in these three respects,\nthat’s who I call a brahmin. \n",
+  dhp392:
+    "392. You should graciously honor\nthe one from whom you learn the Dhamma\ntaught by the awakened Buddha,\nas a brahmin honors the sacred flame.\n",
+  dhp393:
+    "393. Not by matted hair or family,\nor birth is one a brahmin.\nThose who have truth and principle:\nthey are pure, they are brahmins.\n",
+  dhp394:
+    "394. Why the matted hair, you fool,\nand why the skin of deer?\nThe tangle is inside you,\nyet you polish up your outsides.\n",
+  dhp395:
+    "395. A person who wears robes of rags,\nlean, their limbs showing veins,\nmeditating alone in the forest,\nthat’s who I call a brahmin. \n",
+  dhp396:
+    "396. I don’t call someone a brahmin\nafter the mother or womb they came from.\nIf they still have attachments,\nthey’re just someone who says “sir”.\nHaving nothing, taking nothing: \nthat’s who I call a brahmin. \n",
+  dhp397:
+    "397. Having cut off all fetters\nthey have no anxiety.\nThey’ve got over clinging, and are detached:\nthat’s who I call a brahmin. \n",
+  dhp398:
+    "398. They’ve cut the strap and harness,\nthe reins and bridle too,\nwith cross-bar lifted, they’re awakened: \nthat’s who I call a brahmin. \n",
+  dhp399:
+    "399. Abuse, killing, caging: \nthey endure these without anger.\nPatience is their powerful army: \nthat’s who I call a brahmin. \n",
+  dhp400:
+    "400. Not irritable or stuck up,\ndutiful in precepts and observances,\ntamed, bearing their final body:\nthat’s who I call a brahmin. \n",
+  dhp401:
+    "401. Like water from a lotus leaf,\nlike a mustard seed off a pin-point,\nsensual pleasures slip off them: \nthat’s who I call a brahmin. \n",
+  dhp402:
+    "402. They understand for themselves\nthe end of suffering in this life;\nwith burden put down, detached: \nthat’s who I call a brahmin. \n",
+  dhp403:
+    "403. Deep in wisdom, intelligent,\nexpert in the variety of paths;\narrived at the highest goal: \nthat’s who I call a brahmin. \n",
+  dhp404:
+    "404. Socializing with neither \nhouseholders nor the homeless.\nA migrant with no shelter, few in wishes:\nthat’s who I call a brahmin. \n",
+  dhp405:
+    "405. They’ve laid aside violence\nagainst creatures firm and frail;\nnot killing or making others kill: \nthat’s who I call a brahmin. \n",
+  dhp406:
+    "406. Not fighting among those who fight,\nextinguished among those who are armed,\nnot taking among those who take:\nthat’s who I call a brahmin. \n",
+  dhp407:
+    "407. They’ve discarded greed and hate,\nalong with conceit and contempt,\nlike a mustard seed off the point of a pin:\nthat’s who I call a brahmin. \n",
+  dhp408:
+    "408. The words they utter \nare sweet, informative, and true,\nand don’t offend anyone: \nthat’s who I call a brahmin. \n",
+  dhp409:
+    "409. They don’t steal anything in the world,\nlong or short,\nfine or coarse, beautiful or ugly: \nthat’s who I call a brahmin. \n",
+  dhp410:
+    "410. They have no hope \nin this world or the next. \nwith no need for hope, detached:\nthat’s who I call a brahmin. \n",
+  dhp411:
+    "411. They have no clinging, \nknowledge has freed them of indecision,\nthey’ve plunged right into the deathless:\nthat’s who I call a brahmin. \n",
+  dhp412:
+    "412. They’ve escaped clinging \nto both good and bad deeds; \nsorrowless, stainless, pure:\nthat’s who I call a brahmin. \n",
+  dhp413:
+    "413. Pure as the spotless moon,\nclear and undisturbed,\nthey’ve ended desire to be reborn: \nthat’s who I call a brahmin. \n",
+  dhp414:
+    "414. They’ve got past this grueling swamp\nof delusion, transmigration.\nThey’ve crossed over to the far shore,\nstilled and free of indecision.\nThey’re extinguished by not grasping: \nthat’s who I call a brahmin. \n",
+  dhp415:
+    "415. They’ve given up sensual stimulations,\nand have gone forth from lay life;\nthey’ve ended rebirth in the sensual realm:\nthat’s who I call a brahmin. \n",
+  dhp416:
+    "416. They’ve given up craving,\nand have gone forth from lay life;\nthey’ve ended craving to be reborn: \nthat’s who I call a brahmin. \n",
+  dhp417:
+    "417. They’ve given up human bonds,\nand gone beyond heavenly bonds;\ndetached from all attachments: \nthat’s who I call a brahmin. \n",
+  dhp418:
+    "418. Giving up discontent and desire,\nthey’re cooled and free of attachments;\na hero, master of the whole world:\nthat’s who I call a brahmin. \n",
+  dhp419:
+    "419. They know the passing away\nand rebirth of all beings;\nunattached, holy, awakened: \nthat’s who I call a brahmin. \n",
+  dhp420:
+    "420. Gods, fairies, and humans\ndon’t know their destiny;\nthe perfected ones with defilements ended:\nthat’s who I call a brahmin. \n",
+  dhp421:
+    "421. They have nothing before or after,\nor even in between.\nHaving nothing, taking nothing: \nthat’s who I call a brahmin. \n",
+  dhp422:
+    "422. Leader of the herd, excellent hero,\ngreat hermit and victor;\nunstirred, washed, awakened: \nthat’s who I call a brahmin. \n",
+  dhp423:
+    "423. They know their past lives,\nseeing heaven and places of loss,\nand have attained the end of rebirth;\nthat sage who has perfect insight,\nat the summit of spiritual perfection:\nthat’s who I call a brahmin. \n",
   dn1: "While others may praise or criticize the Buddha, they tend to focus on trivial details. The Buddha presents an analysis of 62 kinds of wrong view, seeing through which one becomes detached from meaningless speculations.",
   dn2: "The newly crowned King Ajātasattu is disturbed by the violent means by which he achieved the crown. He visits the Buddha to find peace of mind, and asks him about the benefits of spiritual practice. This is one of the greatest literary and spiritual texts of early Buddhism.",
   dn3: "A young brahmin student attacks the Buddha’s family, but is put in his place.",
@@ -230,7 +1050,7 @@ export const blurbs = {
   mn152:
     "A brahmin teacher advocates that purification of the senses consists in simply avoiding seeing and hearing things. The Buddha explains that it is not about avoiding sense experience, but understanding it and learning to not be affected by sense experience.",
   sn1: "The “Linked Discourses on Deities” contains 81 discourses, each one of which depicts the Buddha in conversation with a deity. Typically a deity approaches the Buddha in the monastery at Sāvatthī, illuminating the night with their glory. The deity addresses the Buddha with a question or verse, which may be a praise, a challenge, a riddle, or simply a reflection. The Buddha responds, usually elevating the discourse to a higher plane. As always in Buddhist texts, a deity is not worshiped, but is regarded as a temporary rebirth in a higher plane; the deities learn from the Buddha, not the other way around. In most cases, the narrative framework is slim, and after a while it is dropped entirely, retaining just the verses. There’s no particular theme to the discourses, which range from the simple to the profound.",
-  sn2: "The “Linked Discourses on Gods” contains 30 discourses, each one of which depicts the Buddha in conversation with a god. Here the term <i lang='pi' translate='no'>devaputta</i> is used, rather than <i lang='pi' translate='no'>devatā</i> in the previous <i lang='pi' translate='no'>saṁyutta</i>. The difference is purely nominal and there is no difference in the meaning. The style of discourses is similar to the “Linked Discourses on Deities”, although here there is a greater emphasis on the theme of renunciation. A number of these discourses are regularly recited in modern Theravāda; the Tāyana verses on diligent striving at SN 2.8 are often recited by monastics, while the discourses on the sun and the moon (SN 2.9 and SN 2.10) are popular protection chants, which are also found in Tibetan.",
+  sn2: "The “Linked Discourses on Gods” contains 30 discourses, each one of which depicts the Buddha in conversation with a god. Here the term devaputta is used, rather than devatā in the previous saṁyutta. The difference is purely nominal and there is no difference in the meaning. The style of discourses is similar to the “Linked Discourses on Deities”, although here there is a greater emphasis on the theme of renunciation. A number of these discourses are regularly recited in modern Theravāda; the Tāyana verses on diligent striving at SN 2.8 are often recited by monastics, while the discourses on the sun and the moon (SN 2.9 and SN 2.10) are popular protection chants, which are also found in Tibetan.",
   sn3: "The “Linked Discourses with the Kosalan” contains 25 discourses featuring King Pasenadi of Kosala. Pasenadi shines through in the early texts as a complex human figure, one with foibles and foolishness, but with a great devotion and capacity to grow. He appears frequently elsewhere in the suttas; MN 87 tells the story of how Queen Mallikā led him to the Dhamma. Here Mallikā appears again, and in SN 3.8 she shows how she is not afraid to challenge her king. The suttas in this collection typically set the verses in substantive prose narratives, illustrating the struggles and problems that beset a king intent on Dhamma who must nonetheless rule in a world with spies, sacrifices, punishments, wars, and the many temptations of royal life.",
   sn4: "The “Linked Discourses with Māra” contains 25 discourses featuring Māra, the god of temptation, deceit, and death. In these discourses, Māra typically appears in some terrifying or beguiling form, hoping to disturb the Buddha, or else he challenges the Buddha with a critical verse. Like the previous section, the narrative prose here is substantive. The Buddha recognizes him at once and exposes his deceit in a verse. Māra also appears throughout the next collection, where the nuns take him on. ",
   sn5: "The “Linked Discourses with Nuns” contains 10 discourses describing occasions when various nuns retreat to a forest for meditation, only to be challenged by Māra. The verses here partly overlap with the Therīgāthā, though there are some that are unique to this context, and we also have a prose narrative to flesh out the context. Māra’s challenges are various; sometimes he is sexist, alleging that women are weak in wisdom (SN 5.2). Several of these short texts are among the most frequently quoted of all the suttas.",
@@ -238,51 +1058,51 @@ export const blurbs = {
   sn7: "The “Linked Discourses with Brahmins” contains 22 discourses featuring the Buddha interacting with various members of the brahmanical caste. The brahmins were the custodians of the brahmanical scriptures and traditions, and saw themselves as the spiritual elite of society. A central platform of the Buddha’s ethical teaching was that one’s worth is determined by one’s deeds, not by caste. This was a direct challenge to brahmanical authority, and a number of discourses have an understandably combative air to them. But the brahmins were a diverse community, and it’s just as common to find them relating to the Buddha with respect and gratitude.",
   sn8: "The “Linked Discourses with Vaṅgīsa” contains 12 discourses with verses spoken by Vaṅgīsa, the most renowned poet of early Buddhism. His verses have a sophistication and personal vulnerability that stamp them as perhaps the most distinctive literary voice of the early texts. Several of these discourses speak of his insecurities and struggles, and how he was helped to overcome them. Others speak from his joyous devotion to the Buddha and the Saṅgha, and of his final triumph.",
   sn9: "The “Linked Discourses in the Woods” contains 14 discourses with verses telling the experiences of certain monks living the woods. Typically the monk is slack or negligent in some way, and a deity appears to call them out and encourage them to greater diligence.",
-  sn10: "The “Linked Discourses with Spirits” contains 12 discourses with verses telling the encounters between the Buddha—or in one case the monk Anuruddha—and various spirits (<i lang='pi' translate='no'>yakkha</i>). The spirits were local deities worshiped in ancient India, of a lower order than the gods and Brahmās. While in later forms of Buddhism, such spirits were typically depicted as malevolent or dangerous, in the early texts they are more ambivalent, and many of them are friendly, merely asking Dhamma questions, or extolling Dhamma virtues like mindfulness. That’s not to say they couldn’t be scary, and several discourses reveal a more ferocious aspect. Particularly interesting is the emphasis on the love that the female spirits feel for their children.",
+  sn10: "The “Linked Discourses with Spirits” contains 12 discourses with verses telling the encounters between the Buddha—or in one case the monk Anuruddha—and various spirits (yakkha). The spirits were local deities worshiped in ancient India, of a lower order than the gods and Brahmās. While in later forms of Buddhism, such spirits were typically depicted as malevolent or dangerous, in the early texts they are more ambivalent, and many of them are friendly, merely asking Dhamma questions, or extolling Dhamma virtues like mindfulness. That’s not to say they couldn’t be scary, and several discourses reveal a more ferocious aspect. Particularly interesting is the emphasis on the love that the female spirits feel for their children.",
   sn11: "The “Linked Discourses with Sakka” contains 25 discourses with verses telling stories involving Sakka, the Lord of the Thirty-Three gods. Many of these discourses are relatively lengthy, featuring substantive prose and extended dialogues in verse. Sakka is shown devoted to the Buddha, defending Buddhist virtues of kindness and forgiveness, even in the waging of war with the demons.",
   sn12: "The “Linked Discourses on Causation” is a major collection containing 93 discourses on the core Buddhist teaching of dependent origination. Dependent origination presents a series of conditional links laying bare how suffering originates and how it ends. As such, it is an extended treatment of the second and third noble truths. It integrates psychological and existential aspects of suffering, showing how when bound by attachment we make choices that bind us to transmigrating into future lives. One of the core purposes is to explain how rebirth takes place without having to invoke metaphysical concepts such as a “soul”. The collection begins by defining each of the terms in the standard 12-linked chain, definitions which are assumed to apply throughout. Remaining discourses iterate on this theme, introducing new perspectives and formulations. ",
   sn13: "The “Linked Discourses on the Breakthrough” contains 11 discourses on the value of realizing the Dhamma. Each discourse features a memorable simile illustrating the truly momentous implications of seeing the four noble truths.",
-  sn14: "The “Linked Discourses on the Elements” contains 39 discourses on various factors classified as “elements” (<i lang='pi' translate='no'>dhātu</i>). In Buddhism, the term “element” is applied to a range of phenomena, most commonly the main material properties of earth, water, fire and air. Here, however, these four elements play only a small role, and much of the text is devoted to analysis of the perceptual process, and to various character traits. The relation or dependence of elements on each other is a major theme, and this chapter can be seen as an appendix to the chapter on causality.",
-  sn15: "The “Linked Discourses on the Unknowable Beginning” contains 20 discourses that speak of how the ultimate origin of the process of transmigration (<i lang='pi' translate='no'>saṁsāra</i>) is unknowable. This theme is a direct counter to the hubris of the creation myths found in most religions, which confidently recount events which are in fact permanently hidden from view. The Buddha emphasized that transmigration has been ongoing for a fathomless period of time, illustrating it with a series of powerful similes.",
+  sn14: "The “Linked Discourses on the Elements” contains 39 discourses on various factors classified as “elements” (dhātu). In Buddhism, the term “element” is applied to a range of phenomena, most commonly the main material properties of earth, water, fire and air. Here, however, these four elements play only a small role, and much of the text is devoted to analysis of the perceptual process, and to various character traits. The relation or dependence of elements on each other is a major theme, and this chapter can be seen as an appendix to the chapter on causality.",
+  sn15: "The “Linked Discourses on the Unknowable Beginning” contains 20 discourses that speak of how the ultimate origin of the process of transmigration (saṁsāra) is unknowable. This theme is a direct counter to the hubris of the creation myths found in most religions, which confidently recount events which are in fact permanently hidden from view. The Buddha emphasized that transmigration has been ongoing for a fathomless period of time, illustrating it with a series of powerful similes.",
   sn16: "The “Linked Discourses with Kassapa” contains 13 discourses featuring one of the most famous of the Buddha’s disciples, the monk Kassapa. Kassapa was an ascetic and diligent practitioner, whose sometimes critical voice was tempered by a love of nature and a tender concern for the lay community. These discourses show his magnificent spiritual attainments, and his overriding concern for the health and longevity of the Buddhist community.",
   sn17: "The “Linked Discourses on Gains and Honor” contains 43 discourses warning the mendicants of the terrible dangers inherent in material possessions and love of popularity and honors.",
   sn18: "The “Linked Discourses with Rāhula” contains 22 discourses with the Buddha interrogating his son Rāhula on fundamental doctrines such as the aggregates or sense fields.",
   sn19: "The “Linked Discourses with Lakkhaṇa” contains 21 discourses with the Buddha featuring the monk Lakkhaṇa (“Mark”). Through his psychic powers he sees beings in various states of torment and distress, and describes them to the Buddha.",
   sn20: "The “Linked Discourses with Similes” contains 12 discourses with parables or similes illustrating diverse points of the teaching. This chapter highlights the Buddha’s skill in choosing vivid and suitable similes for any occasion.",
   sn21: "The “Linked Discourses with Monks” contains 12 discourses featuring different monks. Unlike the chapter on nuns, this does not use a consistent template, but depicts a diverse range of scenarios. Each case shows a personal challenge or spiritual triumph, shedding a light on the life of the monks.",
-  sn22: "The “Linked Discourses on the Aggregates” contains 159 discourses on the core doctrinal topic of the five aggregates. This term was introduced in the first sermon as the summary of the noble truth of suffering, and became a foundational teaching in all forms of Buddhism. The basic idea of an “aggregate” is a set or class of phenomena. The five are form (<i lang='pi' translate='no'>rūpa</i>, i.e. “physical phenomena”, or sometimes simply “body”; note that in Buddhism, <i lang='pi' translate='no'>rūpa</i> includes all things with material properties such as shape and color, including visions perceived only in the mind), feeling (<i lang='pi' translate='no'>vedanā</i>, i.e. the pleasant, painful, or neutral tone of experience), perception (<i lang='pi' translate='no'>saññā</i>, i.e. the recognition or interpretation of experience, <em>not</em> sense awareness), choices (<i lang='pi' translate='no'>saṅkhārā</i>, i.e. intention, will, or volition; the choice to perform an act, especially one with an ethical dimension), and consciousness (<i lang='pi' translate='no'>viññāṇa</i>, i.e. the subjective process of awareness itself). The “aggregates” are the various different phenomena so classified. Almost always, they are referred to as the “aggregates connected with grasping” (<i lang='pi' translate='no'>upādānakkhandha</i>). The relation between “grasping” and “aggregate” encompasses a number of aspects. The aggregates are the <em>subject</em> of grasping, in that they are the things that are normally attached to and taken to be the permanent “self”. But they are not merely passive spectators: they are also the <em>functional support</em> of grasping, the things that make grasping work. As active participants in the process of grasping, they <em>stimulate</em> grasping to themselves (<i lang='pi' translate='no'>upādāniya</i>). And finally, they are the <em>product</em> of grasping in the sense that attachments in past lives have given rise to the aggregates in this life (<i lang='pi' translate='no'>upādinna</i>). One of the key functions of the aggregates is to categorize theories of the self. From the discourses, non-Buddhists seem to be familiar with this, yet we cannot identify the aggregates in any pre-Buddhist texts. Regardless of whether the set of categories was pre-Buddhist, the Buddha treated them in his own distinctive way, emphasizing that nothing in the aggregates was a permanent self or soul. In this collection we find a large number of striking and lively narratives, showing how the aggregates could be a solace at the time of death, a guide to the knotty theoretical debates on identity, or a framework for insight meditation. Many of the short abbreviated texts are built from the same templates employed in the “Linked Discourses on the Six Sense Fields”.",
-  sn23: "The “Linked Discourses with Rādha” contains 46 discourses with a monk named Rādha on the topic of the five aggregates, and may be considered as an appendix to the previous <i lang='pi' translate='no'>saṁyutta</i>. ",
+  sn22: "The “Linked Discourses on the Aggregates” contains 159 discourses on the core doctrinal topic of the five aggregates. This term was introduced in the first sermon as the summary of the noble truth of suffering, and became a foundational teaching in all forms of Buddhism. The basic idea of an “aggregate” is a set or class of phenomena. The five are form (rūpa, i.e. “physical phenomena”, or sometimes simply “body”; note that in Buddhism, rūpa includes all things with material properties such as shape and color, including visions perceived only in the mind), feeling (vedanā, i.e. the pleasant, painful, or neutral tone of experience), perception (saññā, i.e. the recognition or interpretation of experience, not sense awareness), choices (saṅkhārā, i.e. intention, will, or volition; the choice to perform an act, especially one with an ethical dimension), and consciousness (viññāṇa, i.e. the subjective process of awareness itself). The “aggregates” are the various different phenomena so classified. Almost always, they are referred to as the “aggregates connected with grasping” (upādānakkhandha). The relation between “grasping” and “aggregate” encompasses a number of aspects. The aggregates are the subject of grasping, in that they are the things that are normally attached to and taken to be the permanent “self”. But they are not merely passive spectators: they are also the functional support of grasping, the things that make grasping work. As active participants in the process of grasping, they stimulate grasping to themselves (upādāniya). And finally, they are the product of grasping in the sense that attachments in past lives have given rise to the aggregates in this life (upādinna). One of the key functions of the aggregates is to categorize theories of the self. From the discourses, non-Buddhists seem to be familiar with this, yet we cannot identify the aggregates in any pre-Buddhist texts. Regardless of whether the set of categories was pre-Buddhist, the Buddha treated them in his own distinctive way, emphasizing that nothing in the aggregates was a permanent self or soul. In this collection we find a large number of striking and lively narratives, showing how the aggregates could be a solace at the time of death, a guide to the knotty theoretical debates on identity, or a framework for insight meditation. Many of the short abbreviated texts are built from the same templates employed in the “Linked Discourses on the Six Sense Fields”.",
+  sn23: "The “Linked Discourses with Rādha” contains 46 discourses with a monk named Rādha on the topic of the five aggregates, and may be considered as an appendix to the previous saṁyutta. ",
   sn24: "The “Linked Discourses on Views” contains 96 discourses on views, methodically analyzed through the lens of the aggregates. A wide variety of views is assessed, most of which are familiar from elsewhere in the canon, although the first one is unique.",
   sn25: "The “Linked Discourses on Arrival” is the first of three similar sections, each of which takes a set of ten doctrinal items (shared also with SN 18 Rāhula) and presents it according to a set pattern. The current chapter focuses on the distinction between those who accept the teachings by either faith or intellectual understanding, and those who have realized them for themselves.",
   sn26: "The “Linked Discourses on Arising” is the second of three similar sections, each of which takes a set of ten doctrinal items and presents it according to a set pattern. The current chapter focuses on the fact that anyone who has these things will suffer.",
   sn27: "The “Linked Discourses on Corruptions” is the third of three similar sections, each of which takes a set of ten doctrinal items and presents it according to a set pattern. The current chapter focuses on the fact that desire for these things is a corruption of the mind.",
   sn28: "The “Linked Discourses with Sāriputta” describes Sāriputta’s deep meditation practice, and his conversations with Ānanda, who noticed how radiant and glowing he was. An exception to this pattern is the final sutta, which depicts Sāriputta responding to the challenges of a female wanderer.",
-  sn29: "The “Linked Discourses on Dragons” is the first of four similar sections dealing with the modes in which various semi-celestial beings may be reborn. The current chapter is on the “dragons” or <i lang='pi' translate='no'>nāgas</i>, a powerful but morally ambiguous serpentine creature of the waterways.",
-  sn30: "The “Linked Discourses on Phoenixes” is the second of four similar sections dealing with the modes in which various semi-celestial beings may be reborn. The current chapter is on the “phoenixes” or <i lang='pi' translate='no'>supaṇṇas</i>, otherwise known as <i lang='pi' translate='no'>garuḍa</i>, powerful bird-spirits that are the natural antagonists to the dragons in Indian mythology.",
-  sn31: "The “Linked Discourses on Fairies” is the third of four similar sections dealing with the modes in which various semi-celestial beings may be reborn. The current chapter is on the “fairies” or <i lang='pi' translate='no'>gandhabbas</i>, who take on a number of benign aspects as minor deities associated with music, childbirth, and as here, plants.",
-  sn32: "The “Linked Discourses on Cloud Gods” is the last of four similar sections dealing with the modes in which various semi-celestial beings may be reborn. The current chapter is on the “cloud gods” or <i lang='pi' translate='no'>valāhakas</i>, who are deities of the weather controlling the clouds.",
-  sn33: "The “Linked Discourses with Vacchagotta” contains 55 discourses, each with a philosophical inquiry by the wanderer Vacchagotta. These do not exhaust his questions; he also appears in a number of other discourses, notably MN 71–73, where he resolves his doubts and becomes perfected. The current chapter shows him repeatedly raising the question of the ten speculative views, and why they appear. The discourses are entirely formulaic and appear to have been produced from a template. Unusually for a section of this length, it lacks <i lang='pi' translate='no'>vaggas</i>.",
+  sn29: "The “Linked Discourses on Dragons” is the first of four similar sections dealing with the modes in which various semi-celestial beings may be reborn. The current chapter is on the “dragons” or nāgas, a powerful but morally ambiguous serpentine creature of the waterways.",
+  sn30: "The “Linked Discourses on Phoenixes” is the second of four similar sections dealing with the modes in which various semi-celestial beings may be reborn. The current chapter is on the “phoenixes” or supaṇṇas, otherwise known as garuḍa, powerful bird-spirits that are the natural antagonists to the dragons in Indian mythology.",
+  sn31: "The “Linked Discourses on Fairies” is the third of four similar sections dealing with the modes in which various semi-celestial beings may be reborn. The current chapter is on the “fairies” or gandhabbas, who take on a number of benign aspects as minor deities associated with music, childbirth, and as here, plants.",
+  sn32: "The “Linked Discourses on Cloud Gods” is the last of four similar sections dealing with the modes in which various semi-celestial beings may be reborn. The current chapter is on the “cloud gods” or valāhakas, who are deities of the weather controlling the clouds.",
+  sn33: "The “Linked Discourses with Vacchagotta” contains 55 discourses, each with a philosophical inquiry by the wanderer Vacchagotta. These do not exhaust his questions; he also appears in a number of other discourses, notably MN 71–73, where he resolves his doubts and becomes perfected. The current chapter shows him repeatedly raising the question of the ten speculative views, and why they appear. The discourses are entirely formulaic and appear to have been produced from a template. Unusually for a section of this length, it lacks vaggas.",
   sn34: "The “Linked Discourses on Absorption” (Jhānasaṁyutta) is also known as the “Linked Discourses on Immersion” (Samādhisaṁyutta). It contains 55 discourses dealing with the meditative skills required to perfect absorption. Each discourse describes a meditator who is skilled in some aspects, but not in others, and holds the one skilled in all aspects to be the best.",
-  sn35: "The number of discourses in the “Linked Discourses on the Six Sense Fields” varies between editions, mainly due to the way repetitions are counted; SuttaCentral follows Bhikkhu Bodhi’s translation in counting 248 discourses. The six sense fields complement the five aggregates as the summary of the noble truth of suffering. Where the aggregates focus on the functional structure of experience as basis for views of self, the emphasis here is on how sense experience stimulates desire. Despite this difference in orientation, the two collections share much in common, and often the exact same template is applied in both cases. The six sense fields are the means through which the world is known, and so each of them has an “inner” and an “outer” aspect—the “eye” and “sights”, etc. Though common, it’s best to avoid thinking of the external sense field as the “object”, since in the suttas they are depicted in relation to the observing mind, and not as independently existing entities. This is straightforward until we come to the last sense, the “mind” and “thoughts” or “mental phenomena”. Just to clear up a possible confusion, this “sixth sense” is simply the mental faculty, and has nothing to do with psychic powers. The outer aspect is <i lang='pi' translate='no'>dhammā</i>, a term so ambiguous its translation is always difficult. Here it refers to anything that may be known directly by the mind, distinct from the five senses. The most technically correct translation is probably “mental phenomena”, but “thought’ may be used as a more colloquial rendering, so long as it includes ideas, imagination, and so on, not just verbalized cognition.",
-  sn36: "The “Linked Discourses on Feelings” contains 31 discourses on the three kinds of feeling. In Sinhalese-script manuscripts, this is reckoned as the last portion of the section on six sense fields. The term “feelings” renders <i lang='pi' translate='no'>vedanā</i>, which is the simple affective or hedonic tone of experience as pleasant, painful, and neutral, rather than the complex states we call “emotions”. In the process of experience, feeling emerges from sense contact, and stimulates craving. One of the aims of mental development is to first loosen, then eliminate that second link, so that one still has feelings, but does not experience craving for them. The current collection includes a number of rich and significant discourses on this theme.",
-  sn37: "The “Linked Discourses on Females” contains 34 discourses regarding various qualities of women. Note that the Pali texts use two distinct terms for women, <i lang='pi' translate='no'>itthī</i> and <i lang='pi' translate='no'>mātugāma</i>, the latter of which can be translated as “females”. These texts deal with such themes as the kinds of suffering unique to women, why women are reborn in various states, or the qualities that lead to a woman taking charge in her marriage.",
+  sn35: "The number of discourses in the “Linked Discourses on the Six Sense Fields” varies between editions, mainly due to the way repetitions are counted; SuttaCentral follows Bhikkhu Bodhi’s translation in counting 248 discourses. The six sense fields complement the five aggregates as the summary of the noble truth of suffering. Where the aggregates focus on the functional structure of experience as basis for views of self, the emphasis here is on how sense experience stimulates desire. Despite this difference in orientation, the two collections share much in common, and often the exact same template is applied in both cases. The six sense fields are the means through which the world is known, and so each of them has an “inner” and an “outer” aspect—the “eye” and “sights”, etc. Though common, it’s best to avoid thinking of the external sense field as the “object”, since in the suttas they are depicted in relation to the observing mind, and not as independently existing entities. This is straightforward until we come to the last sense, the “mind” and “thoughts” or “mental phenomena”. Just to clear up a possible confusion, this “sixth sense” is simply the mental faculty, and has nothing to do with psychic powers. The outer aspect is dhammā, a term so ambiguous its translation is always difficult. Here it refers to anything that may be known directly by the mind, distinct from the five senses. The most technically correct translation is probably “mental phenomena”, but “thought’ may be used as a more colloquial rendering, so long as it includes ideas, imagination, and so on, not just verbalized cognition.",
+  sn36: "The “Linked Discourses on Feelings” contains 31 discourses on the three kinds of feeling. In Sinhalese-script manuscripts, this is reckoned as the last portion of the section on six sense fields. The term “feelings” renders vedanā, which is the simple affective or hedonic tone of experience as pleasant, painful, and neutral, rather than the complex states we call “emotions”. In the process of experience, feeling emerges from sense contact, and stimulates craving. One of the aims of mental development is to first loosen, then eliminate that second link, so that one still has feelings, but does not experience craving for them. The current collection includes a number of rich and significant discourses on this theme.",
+  sn37: "The “Linked Discourses on Females” contains 34 discourses regarding various qualities of women. Note that the Pali texts use two distinct terms for women, itthī and mātugāma, the latter of which can be translated as “females”. These texts deal with such themes as the kinds of suffering unique to women, why women are reborn in various states, or the qualities that lead to a woman taking charge in her marriage.",
   sn38: "The “Linked Discourses with Jambukhādaka” contains 16 discourses recording the answers given by Sāriputta to the questions of a wanderer named Jambukhādaka. The questions cover a wide range of themes, from the nature of extinguishment to the difficulty of practicing the Dhamma. This chapter is practically identical to the next, differing only in the name of the wanderer.",
   sn39: "The “Linked Discourses with Sāmaṇḍaka” contains 16 discourses recording the answers given by Sāriputta to the questions of a wanderer named Sāmaṇḍaka. The questions cover a wide range of themes, from the nature of extinguishment to the difficulty of practicing the Dhamma. This chapter is practically identical to the previous, differing only in the name of the wanderer, and the Pali editions abbreviate, instructing that it is to be expanded.",
   sn40: "The “Linked Discourses with Moggallāna” contains 11 discourses featuring Moggallāna, one of the chief disciples. He tells the monks of his struggles in meditation, and how he was encouraged by the Buddha. In the last two discourses, he visit the heavens and teaches the gods.",
   sn41: "The “Linked Discourses with Citta” contains 10 discourses featuring the householder Citta, who was praised by the Buddha as the foremost lay disciple in speaking on the Dhamma. Here he engages in a series of insightful and sharp-witted dialogues with various monks. Citta emerges as a distinctive personality, knowledgeable and witty, curious and incisive, with no lack of humor. But he is more than just a clever speaker, for he also lays claim to exalted meditation and spiritual attainments.",
   sn42: "The “Linked Discourses with Chiefs” contains 13 discourses featuring various headmen or chiefs. They sometimes ask questions relating to their professions, from entertainers to warriors, while several discourses touch on familiar Dhamma themes, such as overcoming anger, the validity of brahmanical rites, or whether monastics should use money. Some of the chiefs are quite adversarial, aiming to trip up the Buddha in debate, or accusing him of being a magician. In the end, though, the Buddha’s compassionate and measured responses win them over.",
-  sn43: "The “Linked Discourses on the Unconditioned” contains 44 discourses on the theme of the unconditioned, i.e. <i lang='pi' translate='no'>nibbāna</i> or “extinguishment”. They focus on the various practices that lead to the unconditioned. This chapter includes an extensive range of terms and idioms describing the final goal of Buddhist practice.",
+  sn43: "The “Linked Discourses on the Unconditioned” contains 44 discourses on the theme of the unconditioned, i.e. nibbāna or “extinguishment”. They focus on the various practices that lead to the unconditioned. This chapter includes an extensive range of terms and idioms describing the final goal of Buddhist practice.",
   sn44: "The “Linked Discourses on the Undeclared” contains 44 discourses on the theme of the ten “undeclared” questions. These are a stock series of metaphysical hypotheses, which the Buddha dismissed as being based on the implicit assumption of a self, and hence as being counterproductive to liberation. The first discourse here features a conversation between King Pasenadi and the nun Khemā on this topic.",
-  sn45: "The “Linked Discourses on the Path” contains 180 discourses on the noble eightfold path, the “middle way” which is the first and most important of all the Buddha’s teachings on the path of spiritual practice. It is mentioned in the first discourse as the fourth noble truth. It begins with “right view” which is initially an accurate conceptual understanding, based on hearing the teachings and reflecting on their meaning. The second factor is right intention, referring to the attitude or motivation that shapes practice. Next come three factors dealing with ethical conduct. And the final three factors directly deal with meditation. Once all these factors are mature, “right immersion” or the four absorptions (<i lang='pi' translate='no'>jhānas</i>) enables the initial conceptual understanding to ascend to a higher level of insight and letting go. While this and subsequent chapters contains many substantive discourses on this theme, the large number of discourses is mainly attributable to the formulaic “repetition series” which append each chapter.",
+  sn45: "The “Linked Discourses on the Path” contains 180 discourses on the noble eightfold path, the “middle way” which is the first and most important of all the Buddha’s teachings on the path of spiritual practice. It is mentioned in the first discourse as the fourth noble truth. It begins with “right view” which is initially an accurate conceptual understanding, based on hearing the teachings and reflecting on their meaning. The second factor is right intention, referring to the attitude or motivation that shapes practice. Next come three factors dealing with ethical conduct. And the final three factors directly deal with meditation. Once all these factors are mature, “right immersion” or the four absorptions (jhānas) enables the initial conceptual understanding to ascend to a higher level of insight and letting go. While this and subsequent chapters contains many substantive discourses on this theme, the large number of discourses is mainly attributable to the formulaic “repetition series” which append each chapter.",
   sn46: "The “Linked Discourses on the Awakening Factors” contains 184 discourses on the seven awakening factors. These are qualities such as mindfulness and investigation which lead the meditator to awakening. The focus here is specifically on meditation, rather than the more holistic approach included in the previous chapter on the Path. Some distinctive features of this collection include the use recitation of the awakening factors in order to inspire those who are sick, and the frequent contrast between the seven awakening factors and the five hindrances.",
-  sn47: "The “Linked Discourses on Mindfulness Meditation” contains 104 discourses on the four kinds of mindfulness meditation (<i lang='pi' translate='no'>satipaṭṭhāna</i>, otherwise known as the “foundations of mindfulness” or “establishments of mindfulness”). These are the body, feelings, mind, and principles. The last of these is translated in various ways, but a close reading of the texts in this chapter shows that it originally referred to the “principles” of causality underlying the process of meditation itself. These discourses on this fundamental topic are much less known than the longer “Discourse on Mindfulness Meditation” found in versions in MN 10 and DN 22; however, they are historically earlier than that late compilation. Where MN 10 emphasizes insight meditation, in this collection we frequently find mindfulness closely connected to absorption, as it is the factor of the path that leads directly to “right immersion”. Insight is mentioned only rarely. The root meaning of the term mindfulness (<i lang='pi' translate='no'>sati</i>) is “memory”, and when used in meditation it refers to not “forgetting” one’s meditation, but keeping focus on the breath or other theme of meditation. This collection presents a range of perspectives on mindfulness meditation; one of its most memorable features is a series of similes or parables illustrating the practice. The partner of mindfulness (<i lang='pi' translate='no'>sati</i>) is “situational awareness” (<i lang='pi' translate='no'>sampajañña</i>, sometimes rendered as “clear comprehension”), which refers to keeping a broad awareness and understanding especially in daily activities.",
-  sn48: "The “Linked Discourses on the Faculties” contains 178 discourses on various sets of “faculties” (<i lang='pi' translate='no'>indriya</i>). The “five faculties” of faith, energy, mindfulness, immersion, and wisdom are the most natural fit in this context. However the chapter also finds room for discourses on a wider range of 22 faculties, including the six sense faculties, five affective faculties (kinds of feeling), three faculties relating the process of enlightenment, and three concerning biology and gender. This flexible category thus serves as a link between the teachings on wisdom and those on the path.",
-  sn49: "The “Linked Discourses on the Right Efforts” contains 54 discourses, which are, however, a mere instantiation of the standard repetition series as applied to the four right efforts. There are many discourses on right effort throughout the Pali <i lang='pi' translate='no'>nikāyas</i>, but for some reason the redactors did not collect them here.",
+  sn47: "The “Linked Discourses on Mindfulness Meditation” contains 104 discourses on the four kinds of mindfulness meditation (satipaṭṭhāna, otherwise known as the “foundations of mindfulness” or “establishments of mindfulness”). These are the body, feelings, mind, and principles. The last of these is translated in various ways, but a close reading of the texts in this chapter shows that it originally referred to the “principles” of causality underlying the process of meditation itself. These discourses on this fundamental topic are much less known than the longer “Discourse on Mindfulness Meditation” found in versions in MN 10 and DN 22; however, they are historically earlier than that late compilation. Where MN 10 emphasizes insight meditation, in this collection we frequently find mindfulness closely connected to absorption, as it is the factor of the path that leads directly to “right immersion”. Insight is mentioned only rarely. The root meaning of the term mindfulness (sati) is “memory”, and when used in meditation it refers to not “forgetting” one’s meditation, but keeping focus on the breath or other theme of meditation. This collection presents a range of perspectives on mindfulness meditation; one of its most memorable features is a series of similes or parables illustrating the practice. The partner of mindfulness (sati) is “situational awareness” (sampajañña, sometimes rendered as “clear comprehension”), which refers to keeping a broad awareness and understanding especially in daily activities.",
+  sn48: "The “Linked Discourses on the Faculties” contains 178 discourses on various sets of “faculties” (indriya). The “five faculties” of faith, energy, mindfulness, immersion, and wisdom are the most natural fit in this context. However the chapter also finds room for discourses on a wider range of 22 faculties, including the six sense faculties, five affective faculties (kinds of feeling), three faculties relating the process of enlightenment, and three concerning biology and gender. This flexible category thus serves as a link between the teachings on wisdom and those on the path.",
+  sn49: "The “Linked Discourses on the Right Efforts” contains 54 discourses, which are, however, a mere instantiation of the standard repetition series as applied to the four right efforts. There are many discourses on right effort throughout the Pali nikāyas, but for some reason the redactors did not collect them here.",
   sn50: "The “Linked Discourses on the Five Powers” contains 108 discourses, which are, however, a mere instantiation of the standard repetition series as applied to the five powers. These powers are effectively identical with the five faculties, as stated at SN 48.43, being merely distinguished as a different teaching approach. There are several discourses on these qualities found mainly in the Aṅguttara Fives, but for some reason the redactors did not collect them here.",
-  sn51: "The “Linked Discourses on the Bases of Psychic Power” contains 86 discourses dealing with the qualities of enthusiasm or desire for practice, energy, higher consciousness, and inquiry, which are said to lead to the development of various psychic powers. The purpose of Buddhism, of course, is not to develop such powers. But they are a matter of constant interest and intrigue among spiritual practitioners—not just in ancient India—and it seems the Buddha formulated this approach to the path to inspire those interested in them. The emphasis is on the development of deep meditation immersion (<i lang='pi' translate='no'>samādhi</i>) through applying effort.",
+  sn51: "The “Linked Discourses on the Bases of Psychic Power” contains 86 discourses dealing with the qualities of enthusiasm or desire for practice, energy, higher consciousness, and inquiry, which are said to lead to the development of various psychic powers. The purpose of Buddhism, of course, is not to develop such powers. But they are a matter of constant interest and intrigue among spiritual practitioners—not just in ancient India—and it seems the Buddha formulated this approach to the path to inspire those interested in them. The emphasis is on the development of deep meditation immersion (samādhi) through applying effort.",
   sn52: "The “Linked Discourses with Anuruddha” contains 24 discourses with Anuruddha, famous for his powers of clairvoyance, but here revealed as an exponent of mindfulness meditation. It is to mindfulness meditation that he attributes his spiritual attainments, whether psychic powers, absorptions, or awakening. This series of texts can be regarded as a supplement to SN 47.",
-  sn53: "The “Linked Discourses on Absorption” contains 54 discourses on the topic of absorption meditation (<i lang='pi' translate='no'>jhāna</i>), which however merely apply the standard repetition series to the formula for the four absorptions.",
-  sn54: "The “Linked Discourses on Breath Meditation” contains 20 discourses on breath meditation (<i lang='pi' translate='no'>ānāpānassati</i>), the most revered form of meditation from early Buddhism until the present day. It was practiced by the Buddha himself. The meditation is taught in a detailed series of sixteen steps. These are partially sequential, but also overlap in some cases. The development of these fulfills all four kinds of mindfulness meditation and the seven factors of awakening. Thus this one form of meditation can lead to awakening; which is not, however, to say that it is invariably the best approach. The Buddha taught many different meditations for a reason; each has its own qualities and benefits. Breath meditation is seen as a peaceful and pleasant meditation which helps still distracting thoughts. It is a simple practice broadly suitable for most meditators, but leading to profound depths.",
+  sn53: "The “Linked Discourses on Absorption” contains 54 discourses on the topic of absorption meditation (jhāna), which however merely apply the standard repetition series to the formula for the four absorptions.",
+  sn54: "The “Linked Discourses on Breath Meditation” contains 20 discourses on breath meditation (ānāpānassati), the most revered form of meditation from early Buddhism until the present day. It was practiced by the Buddha himself. The meditation is taught in a detailed series of sixteen steps. These are partially sequential, but also overlap in some cases. The development of these fulfills all four kinds of mindfulness meditation and the seven factors of awakening. Thus this one form of meditation can lead to awakening; which is not, however, to say that it is invariably the best approach. The Buddha taught many different meditations for a reason; each has its own qualities and benefits. Breath meditation is seen as a peaceful and pleasant meditation which helps still distracting thoughts. It is a simple practice broadly suitable for most meditators, but leading to profound depths.",
   sn55: "The “Linked Discourses on Stream-Entry” contains 74 discourses on the topic of stream-entry, or more precisely, two sets of four qualities, one of which distinguishes a person as a stream-enterer, and one which help lead to stream-entry. The primary qualities of the first set are faith and ethical conduct. For the second, it is hearing the teaching and practicing accordingly. Note that these sets do not exhaust the qualities of a stream-enterer, many others of which are described elsewhere, but serve to emphasis the crucial role especially of faith.",
   sn56: "The “Linked Discourses on the Truths” contains 131 discourses on the four noble truths: suffering, its origin, its cessation, and the path. These formed the main subject of the Buddha’s first discourse, which is included here as SN 56.11. The Buddha said that all of his teaching was comprised within the four noble truths. Indeed, the overall structure of the main doctrinal Saṁyuttas can be seen as an expanded example of this: The sections on the Aggregates and the Sense Fields deal with the first noble truth; Dependent Origination deals with the second and third; and the chapters on the Path deal with the final truth. This chapter thus provides an overall perspective on the other teachings, and the chapter occurs at the end just as the realization of the four noble truths emerges from the path.",
   "sn1.1": "The Buddha crossed the flood of suffering by neither standing nor swimming.",
@@ -1934,7 +2754,7 @@ export const blurbs = {
   "sn41.5":
     "Venerable Kāmabhū asks Citta to explain an enigmatic verse on a “one-spoked chariot”. After a brief consideration, Citta is able to explain it in detail.",
   "sn41.6":
-    "Citta asks Kāmabhū about the different kinds of processes (<i lang='pi' translate='no'>saṅkhāra</i>) in a series of questions that lead to the most profound of meditation experiences. ",
+    "Citta asks Kāmabhū about the different kinds of processes (saṅkhāra) in a series of questions that lead to the most profound of meditation experiences. ",
   "sn41.7":
     "Venerable Godatta asks Citta whether the liberations of measurelessness, nothingness, emptiness, and signlessness are different states, or just different words for the same thing. Citta explains that they are both: they are terms for different meditation experiences, but may also be used of perfection or arahantship.",
   "sn41.8":
@@ -2033,8 +2853,7 @@ export const blurbs = {
   "sn45.26":
     "A bad person practices wrong eightfold path, and a worse person has wrong knowledge and wrong liberation, too; a good person is the opposite.",
   "sn45.27": "Someone without the eightfold path is easily knocked over, like a pot without a stand.",
-  "sn45.28":
-    "The eightfold path is the necessary prerequisite for right immersion (<i lang='pi' translate='no'>samādhi</i>).",
+  "sn45.28": "The eightfold path is the necessary prerequisite for right immersion (samādhi).",
   "sn45.29": "The eightfold path is developed to understand the three feelings.",
   "sn45.30": "The Buddha taught the eightfold path in order to give up the five kinds of sensual stimulation.",
   "sn45.31": "The wrong eightfold path is wrong practice; the right eightfold path is right practice.",
@@ -2058,7 +2877,7 @@ export const blurbs = {
     "As the dawn precedes the sun, ethics, enthusiasm, confidence, right view, and diligence precede the eightfold path.",
   "sn45.55": "As the dawn precedes the sun, proper attention precedes the eightfold path.",
   "sn45.170":
-    "Develop the eightfold path to abandon the three cravings. This sutta is doubled by replacing <i lang='pi' translate='no'>taṇhā</i> with another form of the same word, <i lang='pi' translate='no'>tasina</i>. This variation is found in Burmese but not Sinhalese manuscripts. ",
+    "Develop the eightfold path to abandon the three cravings. This sutta is doubled by replacing taṇhā with another form of the same word, tasina. This variation is found in Burmese but not Sinhalese manuscripts. ",
   "sn46.1":
     "Dragons nurture their strength in the Himalayas, then enter the rivers and reach the ocean. So too, a mendicant nurtures ethics and then develops the seven awakening factors.",
   "sn46.2":
@@ -2141,7 +2960,7 @@ export const blurbs = {
   "sn47.3":
     "When a mendicant asks for a teaching to take on retreat, the Buddha issues an unexpected rebuke. Evidently the mendicant had been badly behaved; but now, he insists, he is sincere. The Buddha relents, and teaches the four kinds of mindfulness meditation, well grounded on ethics.",
   "sn47.4":
-    "Newly ordained mendicants <em>should</em> practice the four kinds of mindfulness meditation; trainees <em>are</em> practicing them, and perfected ones have perfected the practice.",
+    "Newly ordained mendicants should practice the four kinds of mindfulness meditation; trainees are practicing them, and perfected ones have perfected the practice.",
   "sn47.5": "The four kinds of mindfulness meditation are a complete heap of what is skillful.",
   "sn47.6":
     "The parable of the quail and the hawk. When the quail ventured outside her ancestral territory, she became vulnerable. And what is a mendicant’s ancestral territory? The four kinds of mindfulness meditation.",
@@ -2866,7 +3685,7 @@ export const blurbs = {
   "an4.104": "Four people similar to ponds.",
   "an4.105": "Four people similar to mangoes.",
   "an4.106":
-    "This is a ghost sutta: there is no text for it in any available editions. However, the summary verse at the end of  the chapter (AN 4.110) mentions “two on mangoes”. The commentary notes the existence of a discourse here, but merely says that its meaning is clear. A note in the VRI edition says that there is a reading that has <i lang='pi' translate='no'>obhāsa</i> where the previous sutta has <i lang='pi' translate='no'>vaṇṇa</i>.",
+    "This is a ghost sutta: there is no text for it in any available editions. However, the summary verse at the end of  the chapter (AN 4.110) mentions “two on mangoes”. The commentary notes the existence of a discourse here, but merely says that its meaning is clear. A note in the VRI edition says that there is a reading that has obhāsa where the previous sutta has vaṇṇa.",
   "an4.107": "Four people similar to mice.",
   "an4.108": "Four people similar to oxen.",
   "an4.109": "Four people similar to trees.",
@@ -3086,10 +3905,8 @@ export const blurbs = {
   "an5.34":
     "The Buddha teaches General Sīha the benefits which he can see for himself in this life, and those in the next life, which he must take on faith.",
   "an5.35": "Five benefits of generosity for lay people.",
-  "an5.36":
-    "Gifts at the right time, in a appropriate way. The verses are the classic <i lang='pi' translate='no'>kāladāna</i> blessing.",
-  "an5.37":
-    "Give and you shall receive. The verses are a classic blessing, beginning with <i lang='pi' translate='no'>Āyudo balado dhīro</i>.",
+  "an5.36": "Gifts at the right time, in a appropriate way. The verses are the classic kāladāna blessing.",
+  "an5.37": "Give and you shall receive. The verses are a classic blessing, beginning with Āyudo balado dhīro.",
   "an5.38": "When someone is a donor, they reap the benefits of association with the Saṅgha.",
   "an5.39": "Reasons why parents want to have children.",
   "an5.40": "How a virtuous family head is like a great tree in the mountains.",
@@ -4066,815 +4883,6 @@ export const blurbs = {
   kp7: "The Supreme Buddha explains how to share merit with past relatives.",
   kp8: "Merit is the only sure investment",
   kp9: "The practice of developing universal goodwill: the practices that form a foundation for the practice, the attitude of universal goodwill itself, and the steps that lead from goodwill to awakening.",
-  dhp1: "1. Intention shapes experiences;\nintention is first, they’re made by intention.\nIf with corrupt intent\nyou speak or act,\nsuffering follows you,\nlike a wheel, the ox’s foot.\n",
-  dhp2: "2. Intention shapes experiences;\nintention is first, they’re made by intention.\nIf with pure intent\nyou speak or act,\nhappiness follows you\nlike a shadow that never leaves.\n",
-  dhp3: "3. “They abused me, they hit me!\nThey beat me, they robbed me!”\nFor those who bear such a grudge,\nhatred never ends.\n",
-  dhp4: "4. “They abused me, they hit me!\nThey beat me, they robbed me!”\nFor those who bear no such grudge,\nhatred has an end.\n",
-  dhp5: "5. For never is hatred\nsettled by hate,\nit’s only settled by love:\nthis is an ancient law. \n",
-  dhp6: "6. Others don’t understand\nthat here we need to be restrained.\nBut those who do understand this,\nbeing clever, settle their conflicts.\n",
-  dhp7: "7. Those who contemplate the beautiful,\ntheir faculties unrestrained,\nimmoderate in eating,\nlazy, lacking energy:\nMāra strikes them down\nlike the wind, a feeble tree.\n",
-  dhp8: "8. Those who contemplate the ugly,\ntheir faculties well-restrained,\neating in moderation, \nfaithful and energetic:\nMāra cannot strike them down,\nlike the wind, a rocky mountain.\n",
-  dhp9: "9. One who, not free of stains themselves,\nwould wear the robe stained in ocher,\nbereft of self-control and of truth:\nthey are not worthy of the ocher robe.\n",
-  dhp10:
-    "10. One who’s purged all their stains,\nsteady in ethics,\npossessed of self-control and of truth,\nthey are truly worthy of the ocher robe.\n",
-  dhp11:
-    "11. Thinking the inessential is essential,\nseeing the essential as inessential;\nthey don’t realize the essential,\nfor wrong thoughts are their pasture.\n",
-  dhp12:
-    "12. Having known the essential as essential,\nand the inessential as inessential;\nthey realize the essential,\nfor right thoughts are their pasture.\n",
-  dhp13: "13. Just as rain seeps into\na poorly roofed house,\nlust seeps into\nan undeveloped mind.\n",
-  dhp14: "14. Just as rain doesn’t seep into\na well roofed house,\nlust doesn’t seep into\na well developed mind.\n",
-  dhp15:
-    "15. Here they grieve, hereafter they grieve,\nan evildoer grieves in both places.\nThey grieve and fret,\nseeing their own corrupt deeds.\n",
-  dhp16:
-    "16. Here they rejoice, hereafter they rejoice,\none who does good rejoices in both places.\nThey rejoice and celebrate,\nseeing their own pure deeds.\n",
-  dhp17:
-    "17. Here they’re tormented, hereafter they’re tormented,\nan evildoer is tormented in both places.\nThey’re tormented thinking of bad things they’ve done;\nwhen gone to a bad place, they’re tormented all the more.\n",
-  dhp18:
-    "18. Here they delight, hereafter they delight,\none who does good delights in both places.\nThey delight thinking of good things they’ve done;\nwhen gone to a good place, they delight all the more.\n",
-  dhp19:
-    "19. Much though they may recite scripture,\nif a negligent person does not apply them,\nthen, like a cowherd who counts the cattle of others,\nthey miss out on the blessings of the ascetic life.\n",
-  dhp20:
-    "20. Little though they may recite scripture,\nif they live in line with the teachings,\nhaving given up greed, hate, and delusion,\nwith deep understanding and heart well-freed,\nnot grasping to this world or the next,\nthey share in the blessings of the ascetic life.\n",
-  dhp21:
-    "21. Heedfulness is the deathless state;\nheedlessness is the state of death.\nThe heedful do not die,\nwhile the heedless are like the dead.\n",
-  dhp22:
-    "22. Understanding this distinction\nwhen it comes to heedfulness,\nthe astute rejoice in heedfulness,\nhappy in the noble ones’ domain.\n",
-  dhp23:
-    "23. They who regularly meditate,\nalways staunchly vigorous;\nthose wise ones realize quenching,\nthe supreme sanctuary. \n",
-  dhp24:
-    "24. For the hard-working and mindful,\npure of deed and attentive,\nrestrained, living righteously, and diligent,\ntheir reputation only grows.\n",
-  dhp25:
-    "25. By hard work and diligence,\nby restraint and by self-control,\na smart person would build an island\nthat the floods cannot overflow.\n",
-  dhp26:
-    "26. Fools and half-wits\ndevote themselves to negligence.\nBut the wise protect diligence\nas their best treasure.\n",
-  dhp27:
-    "27. Don’t devote yourself to negligence,\nor delight in sexual intimacy.\nFor if you’re diligent and meditate,\nyou’ll attain abundant happiness. \n",
-  dhp28:
-    "28. When the astute dispel negligence\nby means of diligence,\nascending the palace of wisdom,\nsorrowless, they behold this generation of sorrow,\nas a wise man on a mountain-top\nbeholds the fools below.\n",
-  dhp29:
-    "29. Heedful among the heedless,\nwide awake while others sleep—\na true sage leaves them behind,\nlike a swift horse passing a feeble.\n",
-  dhp30:
-    "30. Maghavā became chief of the gods\nby means of diligence.\nPeople praise diligence,\nwhile negligence is always deplored.\n",
-  dhp31:
-    "31. A mendicant who loves to be diligent,\nseeing fear in negligence—\nadvances like fire, \nburning up fetters big and small.\n",
-  dhp32:
-    "32. A mendicant who loves to be diligent,\nseeing fear in negligence—\nsuch a one can’t decline,\nand has drawn near to extinguishment.\n",
-  dhp33:
-    "33. The mind quivers and shakes,\nhard to guard, hard to curb.\nThe discerning straighten it out,\nlike a fletcher straightens an arrow.\n",
-  dhp34:
-    "34. Like a fish pulled from the sea\nand cast upon the shore,\nthis mind flounders about,\ntrying to throw off Māra’s sway.\n",
-  dhp35:
-    "35. Hard to hold back, flighty,\nalighting where it will;\nit’s good to tame the mind;\na tamed mind leads to bliss.\n",
-  dhp36:
-    "36. So hard to see, so subtle,\nalighting where it will;\nthe discerning protect the mind,\na guarded mind leads to bliss.\n",
-  dhp37:
-    "37. The mind travels far, wandering alone;\nincorporeal, it hides in a cave.\nThose who will restrain the mind\nare freed from Māra’s bonds. \n",
-  dhp38:
-    "38. Those of unsteady mind,\nwho don’t understand the true teaching,\nand whose confidence wavers,\ndo not perfect their wisdom.\n",
-  dhp39:
-    "39. One whose mind is uncorrupted,\nwhose heart is undamaged,\nwho’s given up right and wrong,\nalert, has nothing to fear.\n",
-  dhp40:
-    "40. Knowing this body breaks like a pot,\nand fortifying the mind like a citadel,\nattack Māra with the sword of wisdom,\nguard your conquest, and never settle.\n",
-  dhp41:
-    "41. All too soon this body\nwill lie upon the earth,\nbereft of consciousness,\ntossed aside like a useless log.\n",
-  dhp42: "42. A wrongly directed mind\nwould do you more harm\nthan a hater to the hated,\nor an enemy to their foe.\n",
-  dhp43: "43. A rightly directed mind\nwould do you more good\nthan your mother or father\nor any other relative.\n",
-  dhp44:
-    "44. Who shall explore this land,\nand the Yama realm with its gods?\nWho shall examine the well-taught word of truth,\nas an expert examines a flower?\n",
-  dhp45:
-    "45. A trainee shall explore this land,\nand the Yama realm with its gods.\nA trainee shall examine the well-taught word of truth,\nas an expert examines a flower.\n",
-  dhp46:
-    "46. Knowing this body’s like foam,\nrealizing it’s all just a mirage,\nand cutting off Māra’s blossoming,\nvanish from the King of Death.\n",
-  dhp47:
-    "47. As a mighty flood sweeps off a sleeping village,\ndeath steals away a man\neven as he gathers flowers,\nhis mind caught up in them.\n",
-  dhp48:
-    "48. The terminator gains control of the man\nwho has not had his fill of pleasures,\neven as he gathers flowers,\nhis mind caught up in them.\n",
-  dhp49:
-    "49. A bee takes the nectar\nand moves on, doing no damage\nto the flower’s beauty and fragrance;\nand that’s how a sage should walk in the village.\n",
-  dhp50:
-    "50. Don’t find fault with others,\nwith what they’ve done or left undone.\nYou should only watch yourself,\nwhat you’ve done or left undone.\n",
-  dhp51:
-    "51. Just like a glorious flower\nthat’s colorful but lacks fragrance;\neloquent speech is fruitless\nfor one who does not act on it.\n",
-  dhp52:
-    "52. Just like a glorious flower\nthat’s both colorful and fragrant,\neloquent speech is fruitful\nfor one who acts on it.\n",
-  dhp53:
-    "53. Just as one would create many garlands\nfrom a heap of flowers,\nwhen a person has come to be born,\nthey should do many skillful things.\n",
-  dhp54:
-    "54. The fragrance of flowers doesn’t spread upwind,\nnor sandalwood, pinwheel, or jasmine;\nbut the fragrance of the good spreads upwind;\na good person’s virtue spreads in every direction.\n",
-  dhp55:
-    "55. Among all the fragrances—\nsandalwood or pinwheel\nor lotus or jasmine—\nthe fragrance of virtue is supreme.\n",
-  dhp56:
-    "56. Faint is the fragrance\nof sandal or pinwheel;\nbut the fragrance of the virtuous\nfloats to the highest gods.\n",
-  dhp57:
-    "57. For those accomplished in ethics,\nmeditating diligently,\nfreed through the highest knowledge,\nMāra cannot find their path.\n",
-  dhp58: "58. From a forsaken heap\ndiscarded on the highway,\na lotus might blossom,\nfragrant and delightful.\n",
-  dhp59:
-    "59. So too, among the forsaken,\na disciple of the perfect Buddha\noutshines with their wisdom\nthe blind ordinary folk.\n",
-  dhp60:
-    "60. Long is the night for the wakeful;\nlong is the league for the weary;\nlong transmigrate the fools\nwho don’t understand the true teaching.\n",
-  dhp61:
-    "61. If while wandering you find no partner\nequal or better than yourself,\nthen firmly resolve to wander alone—\nthere’s no fellowship with fools.\n",
-  dhp62:
-    "62. “Sons are mine, wealth is mine”—\nthus the fool frets.\nBut you can’t even call your self your own,\nlet alone your sons or wealth.\n",
-  dhp63:
-    "63. The fool who thinks they’re a fool\nis wise at least to that extent.\nBut the true fool is said to be one\nwho imagines that they are wise.\n",
-  dhp64:
-    "64. Though a fool attends to the wise\neven for the rest of their life,\nthey still don’t experience the teaching,\nlike a spoon the taste of the soup.\n",
-  dhp65:
-    "65. If a clever person attends to the wise\neven just for an hour or so,\nthey swiftly experience the teaching,\nlike a tongue the taste of the soup.\n",
-  dhp66: "66. Witless fools behave\nlike their own worst enemies,\ndoing wicked deeds\nthat ripen as bitter fruit.\n",
-  dhp67:
-    "67. It’s not good to do a deed\nthat plagues you later on,\nfor which you weep and wail,\nas its effect stays with you.\n",
-  dhp68:
-    "68. It is good to do a deed\nthat doesn’t plague you later on,\nthat gladdens and cheers,\nas its effect stays with you.\n",
-  dhp69:
-    "69. The fool imagines that evil is sweet,\nso long as it has not yet ripened.\nBut as soon as that evil ripens,\nthey fall into suffering.\n",
-  dhp70:
-    "70. Month after month a fool may eat\nfood from a grass-blade’s tip;\nbut they’ll never be worth a sixteenth part\nof one who has fathomed the teaching.\n",
-  dhp71:
-    "71. For a wicked deed that has been done\ndoes not spoil quickly like milk.\nSmoldering, it follows the fool,\nlike a fire smothered over with ash.\n",
-  dhp72:
-    "72. Whatever fame a fool may get,\nit only gives rise to harm.\nWhatever good features they have it ruins,\nand blows their head into bits.\n",
-  dhp73:
-    "73. They’d seek the esteem that they lack,\nand status among the mendicants;\nauthority over monasteries,\nand honor among other families.\n",
-  dhp74:
-    "74. “Let both layfolk and renunciants think\nthe work was done by me alone.\nIn anything at all that’s to be done,\nlet them fall under my sway alone.”\nSo thinks the fool,\ntheir greed and pride only growing.\n",
-  dhp75:
-    "75. For the means to profit and the path to quenching\nare two quite different things.\nA mendicant disciple of the Buddha,\nunderstanding what this really means,\nwould never delight in honors,\nbut rather would foster seclusion.\n",
-  dhp76:
-    "76. Regard one who sees your faults\nas a guide to a hidden treasure.\nStay close to one so wise and astute\nwho corrects you when you need it.\nSticking close to such an impartial person,\nthings get better, not worse. \n",
-  dhp77: "77. Advise and instruct;\ncurb wickedness:\nfor you shall be loved by the good,\nand disliked by the bad.\n",
-  dhp78:
-    "78. Don’t mix with bad friends,\nnor with the worst of men.\nMix with spiritual friends,\nand with the best of men.\n",
-  dhp79:
-    "79. Through joy in the teaching you sleep at ease,\nwith clear and confident heart.\nAn astute person always delights in the teaching\nproclaimed by the Noble One.\n",
-  dhp80:
-    "80. While irrigators guide water,\nfletchers straighten arrows,\nand carpenters carve timber,\nthe astute tame themselves.\n",
-  dhp81: "81. As the wind cannot stir\na solid mass of rock,\nso too praise and blame\ndo not affect the wise.\n",
-  dhp82: "82. Like a deep lake,\nclear and unclouded,\nso clear are the astute\nwhen they hear the teachings.\n",
-  dhp83:
-    "83. Good people give up everything,\nthey don’t cajole for the things they desire.\nThough touched by sadness or happiness,\nthe astute appear neither depressed nor elated.\n",
-  dhp84:
-    "84. Never wish for success by unjust means,\nfor your own sake or that of another,\ndesiring children, wealth, or nation;\nrather, be virtuous, wise, and just.\n",
-  dhp85: "85. Few are those among humans\nwho cross to the far shore.\nThe rest just run around\non the near shore. \n",
-  dhp86:
-    "86. When the teaching is well explained,\nthose who practice accordingly\nwill cross over \nDeath’s domain so hard to pass.\n",
-  dhp87:
-    "87. Rid of dark qualities,\nan astute person should develop the bright.\nLeaving home behind \nfor the seclusion so hard to enjoy, \n",
-  dhp88:
-    "88. find delight there,\nhaving left behind sensual pleasures.\nWith no possessions, an astute person\nwould cleanse themselves of mental corruptions. \n",
-  dhp89:
-    "89. Those whose minds are rightly developed\nin the awakening factors;\nwho, letting go of attachments,\ndelight in not grasping:\nwith defilements ended, brilliant,\nthey in this world are quenched.\n",
-  dhp90: "90. At journey’s end, rid of sorrow;\neverywhere free,\nall ties given up, \nno fever is found in them.\n",
-  dhp91:
-    "91. The mindful apply themselves;\nthey delight in no abode.\nLike a swan from the marsh that’s gone,\nthey leave behind home after home.\n",
-  dhp92:
-    "92. Those with nothing stored up,\nwho have understood their food,\nwhose domain is the liberation\nof the signless and the empty:\ntheir path is hard to trace,\nlike birds in the sky.\n",
-  dhp93:
-    "93. One whose defilements have ended;\nwho’s not attached to food;\nwhose domain is the liberation\nof the signless and the empty:\ntheir track is hard to trace,\nlike birds in the sky.\n",
-  dhp94:
-    "94. Whose faculties have become serene,\nlike horses tamed by a charioteer,\nwho has abandoned conceit and defilements;\nthe poised one is envied by even the gods.\n",
-  dhp95:
-    "95. Undisturbed like the earth,\ntrue to their vows, steady as a post,\nlike a lake clear of mud;\nsuch a one does not transmigrate.\n",
-  dhp96:
-    "96. Their mind is peaceful,\npeaceful are their speech and deeds.\nSuch a one is at peace,\nrightly freed through enlightenment.\n",
-  dhp97:
-    "97. Lacking faith, a house-breaker,\none who acknowledges nothing,\npurged of hope, they’ve wasted their chance:\nthat is indeed the supreme person!\n",
-  dhp98:
-    "98. Whether in village or wilderness,\nin a valley or the uplands,\nwherever the perfected ones live\nis a delightful place.\n",
-  dhp99:
-    "99. Delightful are the wildernesses\nwhere no people delight.\nThose free of greed will delight there,\nnot those who seek sensual pleasures.\n",
-  dhp100:
-    "100. Better than a thousand\nmeaningless sayings\nis a single meaningful saying,\nhearing which brings you peace.\n",
-  dhp101:
-    "101. Better than a thousand\nmeaningless verses\nis a single meaningful verse,\nhearing which brings you peace.\n",
-  dhp102:
-    "102. Better than reciting\na hundred meaningless verses\nis a single saying of Dhamma,\nhearing which brings you peace.\n",
-  dhp103:
-    "103. The supreme conqueror is\nnot he who conquers a million men in battle,\nbut he who conquers a single man:\nhimself.\n",
-  dhp104:
-    "104. It is surely better to conquer oneself\nthan all those other folk.\nWhen a person has tamed themselves,\nalways living restrained,\n",
-  dhp105: "105. no god nor fairy,\nnor Māra nor Brahmā,\ncan undo the victory\nof such a one.\n",
-  dhp106:
-    "106. Rather than a thousand-fold sacrifice,\nevery month for a hundred years,\nit’s better to honor for a single moment\none who has developed themselves.\nThat offering is better\nthan the hundred year sacrifice.\n",
-  dhp107:
-    "107. Rather than serve the sacred flame\nin the forest for a hundred years,\nit’s better to honor for a single moment\none who has developed themselves.\nThat offering is better\nthan the hundred year sacrifice.\n",
-  dhp108:
-    "108. Whatever sacrifice or offering in the world\na seeker of merit may make for a year,\nnone of it is worth a quarter\nof bowing to the upright.\n",
-  dhp109:
-    "109. For one in the habit of bowing,\nalways honoring the elders,\nfour blessings grow:\nlifespan, beauty, happiness, and strength. \n",
-  dhp110:
-    "110. Better to live a single day\nethical and absorbed in meditation\nthan to live a hundred years\nunethical and lacking immersion.\n",
-  dhp111:
-    "111. Better to live a single day\nwise and absorbed in meditation\nthan to live a hundred years\nwitless and lacking immersion.\n",
-  dhp112:
-    "112. Better to live a single day\nenergetic and strong,\nthan to live a hundred years\nlazy and lacking energy.\n",
-  dhp113:
-    "113. Better to live a single day\nseeing rise and fall\nthan to live a hundred years\nblind to rise and fall.\n",
-  dhp114:
-    "114. Better to live a single day\nseeing the deathless state\nthan to live a hundred years\nblind to the deathless state.\n",
-  dhp115:
-    "115. Better to live a single day\nseeing the supreme teaching\nthan to live a hundred years\nblind to the supreme teaching.\n",
-  dhp116:
-    "116. Rush to do good,\nshield your mind from evil;\nfor when you’re slow to do good,\nyour thoughts delight in wickedness.\n",
-  dhp117:
-    "117. If you do something bad,\ndon’t do it again and again,\ndon’t set your heart on it,\nfor piling up evil is suffering.\n",
-  dhp118:
-    "118. If you do something good,\ndo it again and again,\nset your heart on it,\nfor piling up goodness is joyful.\n",
-  dhp119:
-    "119. Even the wicked see good things,\nso long as their wickedness has not ripened. \nBut as soon as that wickedness ripens,\nthen the wicked see wicked things.\n",
-  dhp120:
-    "120. Even the good see wicked things,\nso long as their goodness has not ripened.\nBut as soon as that goodness ripens,\nthen the good see good things.\n",
-  dhp121:
-    "121. Think not lightly of evil,\nthat it won’t come back to you.\nThe pot is filled with water\nfalling drop by drop;\nthe fool is filled with wickedness\npiled up bit by bit.\n",
-  dhp122:
-    "122. Think not lightly of goodness,\nthat it won’t come back to you.\nThe pot is filled with water\nfalling drop by drop;\nthe sage is filled with goodness\npiled up bit by bit.\n",
-  dhp123:
-    "123. Avoid wickedness,\nas a merchant with rich cargo and small escort\nwould avoid a dangerous road,\nor one who loves life would avoid drinking poison.\n",
-  dhp124:
-    "124. You can carry poison in your hand\nif it has no wound,\nfor poison does not infect without a wound;\nnothing bad happens unless you do bad.\n",
-  dhp125:
-    "125. Whoever wrongs a man who has done no wrong,\na pure man who has not a blemish,\nthe evil backfires on the fool, \nlike fine dust thrown upwind.\n",
-  dhp126:
-    "126. Some are born in a womb;\nevil-doers go to hell;\nthe virtuous go to heaven;\nthe stainless are extinguished.\n",
-  dhp127:
-    "127. Not in the sky, nor mid-ocean,\nnor hiding in a mountain cleft;\nyou’ll find no place in the world\nto escape your wicked deeds.\n",
-  dhp128:
-    "128. Not in the sky, nor mid-ocean,\nnor hiding in a mountain cleft;\nyou’ll find no place in the world\nwhere you won’t be vanquished by death.\n",
-  dhp129:
-    "129. All tremble at the rod,\nall fear death.\nTreating others like oneself,\nneither kill nor incite to kill.\n",
-  dhp130:
-    "130. All tremble at the rod,\nall love life.\nTreating others like oneself,\nneither kill nor incite to kill.\n",
-  dhp131:
-    "131. Creatures love happiness,\nso if you harm them with a stick\nin search of your own happiness,\nafter death you won’t find happiness.\n",
-  dhp132:
-    "132. Creatures love happiness,\nso if you don’t hurt them with a stick\nin search of your own happiness,\nafter death you will find happiness.\n",
-  dhp133:
-    "133. Don’t speak harshly,\nthey may speak harshly back.\nFor aggressive speech is painful,\nand the rod may spring back on you.\n",
-  dhp134: "134. If you still yourself\nlike a broken gong,\nyou’re quenched\nand conflict-free.\n",
-  dhp135:
-    "135. As a cowherd drives the cows\nto pasture with the rod,\nso too old age and death\ndrive life from living beings.\n",
-  dhp136:
-    "136. The fool does not understand\nthe evil that they do.\nBut because of those deeds, that dullard\nis tormented as if burnt by fire.\n",
-  dhp137: "137. One who violently attacks\nthe peaceful and the innocent\nswiftly falls\nto one of ten bad states:\n",
-  dhp138: "138. harsh pain; loss;\nthe breakup of the body;\nserious illness;\nmental distress;\n",
-  dhp139: "139. hazards from rulers;\nvicious slander;\nloss of kin;\ndestruction of wealth;\n",
-  dhp140:
-    "140. or else their home\nis consumed by fire.\nWhen their body breaks up, that witless person\nis reborn in hell. \n",
-  dhp141:
-    "141. Not nakedness, nor matted hair, nor mud,\nnor fasting, nor lying on bare ground,\nnor wearing dust and dirt, or squatting on the heels,\nwill cleanse a mortal not free of doubt.\n",
-  dhp142:
-    "142. Dressed-up they may be, but if they live well—\npeaceful, tamed, committed to the spiritual path,\nhaving laid aside violence towards all creatures—\nthey are a brahmin, an ascetic, a mendicant.\n",
-  dhp143:
-    "143. Can a person constrained by conscience\nbe found in the world?\nWho shies away from blame, \nlike a fine horse from the whip?\n",
-  dhp144:
-    "144. Like a fine horse under the whip,\nbe keen and full of urgency.\nWith faith, ethics, and energy,\nimmersion, and investigation of principles,\naccomplished in knowledge and conduct, mindful,\ngive up this vast suffering.\n",
-  dhp145:
-    "145. While irrigators guide water,\nfletchers shape arrows,\nand carpenters carve timber—\nthose true to their vows tame themselves.\n",
-  dhp146:
-    "146. What is joy, what is laughter,\nwhen the flames are ever burning?\nShrouded by darkness,\nwould you not seek a light?\n",
-  dhp147:
-    "147. See this fancy puppet,\na body built of sores,\ndiseased, obsessed over,\nin which nothing lasts at all.\n",
-  dhp148:
-    "148. This body is decrepit and frail,\na nest of disease.\nThis foul carcass falls apart,\nfor life ends only in death.\n",
-  dhp149:
-    "149. These dove-grey bones\nare tossed away like\ndried gourds in the autumn—\nwhat joy is there in such a sight?\n",
-  dhp150:
-    "150. In this city built of bones,\nplastered with flesh and blood,\nold age and death are stashed away,\nalong with conceit and contempt.\n",
-  dhp151:
-    "151. Fancy chariots of kings wear out,\nand even this body gets old.\nBut the teaching of the good never gets old;\nso the true and the good proclaim.\n",
-  dhp152: "152. A person of little learning\nages like an ox—\ntheir flesh grows,\nbut not their wisdom.\n",
-  dhp153:
-    "153. Transmigrating through countless rebirths,\nI’ve journeyed without reward,\nsearching for the house-builder;\npainful is birth again and again.\n",
-  dhp154:
-    "154. I’ve seen you, house-builder!\nYou won’t build a house again!\nYour rafters are all broken,\nyour roof-peak is demolished.\nMy mind, set on demolition,\nhas reached the end of craving.\n",
-  dhp155:
-    "155. When young they spurned the spiritual path\nand failed to earn any wealth.\nNow they languish like old cranes\nin a pond bereft of fish.\n",
-  dhp156:
-    "156. When young they spurned the spiritual path\nand failed to earn any wealth.\nNow they lie like spent arrows,\nbemoaning over things past.\n",
-  dhp157:
-    "157. If you’d only love yourself,\nyou’d look after yourself right well.\nIn one of the night’s three watches,\nan astute person would remain alert.\n",
-  dhp158:
-    "158. The astute would avoid being corrupted\nby grounding themselves first of all\nin what is suitable,\nand only then instructing others. \n",
-  dhp159:
-    "159. If one so acts\nas one instructs,\nthe well-tamed would tame others,\nfor the self is hard to tame, they say.\n",
-  dhp160:
-    "160. Self is indeed the lord of self,\nfor who else would be one’s lord?\nWhen one’s self is well-tamed,\none gains a lord that’s rare indeed.\n",
-  dhp161:
-    "161. For the evil that one does,\nborn and produced in oneself,\ngrinds down a fool,\nas diamond grinds a lesser gem.\n",
-  dhp162: "162. One choked by immorality,\nas a sal tree by a creeper,\ndoes to themselves\nwhat a foe only wishes.\n",
-  dhp163:
-    "163. It’s easy to do bad things\nharmful to oneself,\nbut good things that are helpful\nare the hardest things to do.\n",
-  dhp164:
-    "164. On account of wicked views—\nscorning the guidance\nof the perfected ones,\nthe noble ones living righteously—\nthe idiot begets their own demise,\nlike the bamboo bearing fruit.\n",
-  dhp165:
-    "165. For it is by oneself that evil’s done,\none is corrupted by oneself.\nIt’s by oneself that evil’s not done,\none is purified by oneself.\nPurity and impurity are personal matters,\nno one can purify another.\n",
-  dhp166:
-    "166. Never neglect your own good\nfor the sake of another, however great.\nKnowing well what’s good for you,\nbe intent upon your true goal.\n",
-  dhp167:
-    "167. Don’t resort to lowly things,\ndon’t abide in negligence,\ndon’t resort to wrong views,\ndon’t perpetuate the world.\n",
-  dhp168:
-    "168. Get up, don’t be heedless,\nlive by principle, with good conduct.\nFor one of good conduct sleeps at ease,\nin this world and the next. \n",
-  dhp169:
-    "169. Live by principle, with good conduct,\ndon’t conduct yourself badly.\nFor one of good conduct sleeps at ease,\nin this world and the next. \n",
-  dhp170: "170. Look upon the world\nas a bubble\nor a mirage,\nthen the King of Death won’t see you.\n",
-  dhp171:
-    "171. Come, see this world decked out\nlike a fancy royal chariot.\nHere fools flounder,\nbut the discerning are not chained.\n",
-  dhp172:
-    "172. He who once was heedless,\nbut turned to heedfulness,\nlights up the world\nlike the moon freed from clouds.\n",
-  dhp173:
-    "173. Someone whose bad deed\nis supplanted by the good,\nlights up the world,\nlike the moon freed from clouds.\n",
-  dhp174:
-    "174. Blind is the world,\nfew are those who clearly see.\nOnly a handful go to heaven,\nlike a bird freed from a net.\n",
-  dhp175:
-    "175. Swans fly by the sun’s path,\npsychic sages fly through space.\nThe wise leave the world, \nhaving vanquished Māra and his mount.\n",
-  dhp176:
-    "176. When a person, spurning the hereafter,\ntransgresses in just one thing—\nlying—\nthere is no evil they would not do.\n",
-  dhp177:
-    "177. The miserly don’t ascend to heaven,\nit takes a fool to not praise giving.\nThe wise celebrate giving,\nand so find happiness in the hereafter.\n",
-  dhp178:
-    "178. The fruit of stream-entry is better\nthan being the one king of the earth,\nthan going to heaven,\nthan lordship over all the world.\n",
-  dhp179:
-    "179. He whose victory may not be undone,\na victory unrivaled in all the world;\nby what track would you trace that Buddha,\nwho leaves no track in his infinite range?\n",
-  dhp180:
-    "180. Of craving, the weaver, the clinger, he has none:\nso where can he be traced?\nBy what track would you trace that Buddha,\nwho leaves no track in his infinite range?\n",
-  dhp181:
-    "181. The wise intent on absorption,\nwho love the peace of renunciation,\nthe Buddhas, ever mindful,\nare envied by even the gods.\n",
-  dhp182:
-    "182. It’s hard to gain a human birth;\nthe life of mortals is hard;\nit’s hard to hear the true teaching;\nthe arising of Buddhas is hard.\n",
-  dhp183:
-    "183. Not to do any evil; \nto embrace the good;\nto purify one’s mind:\nthis is the instruction of the Buddhas.\n",
-  dhp184:
-    "184. Patient acceptance is the ultimate austerity.\nExtinguishment is the ultimate, say the Buddhas. \nNo true renunciate injures another,\nnor does an ascetic hurt another. \n",
-  dhp185:
-    "185. Not speaking ill nor doing harm;\nrestraint in the monastic code;\nmoderation in eating; \nstaying in remote lodgings;\ncommitment to the higher mind—\nthis is the instruction of the Buddhas.\n",
-  dhp186:
-    "186. Even if it were raining money,\nyou’d not be sated in sensual pleasures.\nAn astute person understands that sensual pleasures\noffer little gratification and much suffering.\n",
-  dhp187:
-    "187. Thus they find no delight\neven in celestial pleasures.\nA disciple of the fully awakened Buddha\ndelights in the ending of craving.\n",
-  dhp188:
-    "188. So many go for refuge\nto mountains and forest groves,\nto tree shrines in tended parks;\nthose people are driven by fear.\n",
-  dhp189:
-    "189. But such refuge is no sanctuary,\nit is no supreme refuge.\nBy going to that refuge,\nyou’re not released from suffering.\n",
-  dhp190:
-    "190. One gone for refuge to the Buddha,\nto his teaching and to the Saṅgha,\nsees the four noble truths\nwith right understanding:\n",
-  dhp191:
-    "191. suffering, suffering’s origin,\nsuffering’s transcendence,\nand the noble eightfold path\nthat leads to the stilling of suffering.\n",
-  dhp192:
-    "192. Such refuge is a sanctuary,\nit is the supreme refuge.\nBy going to that refuge,\nyou’re released from all suffering.\n",
-  dhp193:
-    "193. It’s hard to find a thoroughbred man\nthey’re not born just anywhere.\nA family where that sage is born\nprospers in happiness.\n",
-  dhp194:
-    "194. Happy, the arising of Buddhas!\nHappy, the teaching of Dhamma!\nHappy is the harmony of the Saṅgha,\nand the striving of the harmonious is happy.\n",
-  dhp195:
-    "195. When a person venerates the worthy—\nthe Buddha or his disciple,\nwho have transcended proliferation,\nand have left behind grief and lamentation,\n",
-  dhp196:
-    "196. quenched, fearing nothing from any quarter—\nthe merit of one venerating such as these,\ncannot be calculated by anyone,\nsaying it is just this much.\n",
-  dhp197:
-    "197. Let us live so very happily,\nloving among the hostile.\nAmong hostile people,\nlet us live with love.\n",
-  dhp198: "198. Let us live so very happily,\nhealthy among the ailing.\nAmong ailing people\nlet us live healthily.\n",
-  dhp199: "199. Let us live so very happily,\ncontent among the greedy.\nAmong greedy people,\nlet us live content.\n",
-  dhp200:
-    "200. Let us live so very happily,\nwe who have nothing.\nWe shall feed on rapture, \nlike the gods of streaming radiance.\n",
-  dhp201:
-    "201. Victory breeds enmity; \nthe defeated sleep badly. \nThe peaceful sleep at ease,\nhaving left victory and defeat behind.\n",
-  dhp202:
-    "202. There is no fire like greed,\nno crime like hate,\nno suffering like the aggregates,\nno bliss beyond peace.\n",
-  dhp203:
-    "203. Hunger is the worst illness,\nconditions are the worst suffering,\nFor one who truly knows this,\nextinguishment is the ultimate happiness. \n",
-  dhp204:
-    "204. Health is the ultimate blessing;\ncontentment, the ultimate wealth;\ntrust is the ultimate family;\nextinguishment, the ultimate happiness. \n",
-  dhp205:
-    "205. Having drunk the nectar of seclusion\nand the nectar of peace,\nfree of stress, free of evil,\none drinks the joyous nectar of Dhamma.\n",
-  dhp206:
-    "206. It’s good to see the noble ones,\nstaying with them is always good.\nWere you not to see fools,\nyou’d always be happy.\n",
-  dhp207:
-    "207. For one who consorts with fools\ngrieves long.\nPainful is dwelling with fools,\nlike being stuck with your enemy.\nHappy is dwelling with a sage,\nlike meeting with your kin.\n",
-  dhp208:
-    "208. Therefore:\nA sage, wise and learned,\na mammoth of virtue, true to their vows, noble:\nfollow a good and intelligent person such as this,\nas the moon tracks the path of the stars.\n",
-  dhp209:
-    "209. Applying yourself where you ought not,\nneglecting what you should be doing,\nforgetting your goal, you cling to what you hold dear,\njealous of those devoted to their own goal.\n",
-  dhp210:
-    "210. Don’t ever get too close\nto those you like or dislike.\nFor not seeing the liked is suffering,\nand so is seeing the disliked.\n",
-  dhp211:
-    "211. Therefore don’t hold anything dear,\nfor it’s bad to lose those you love.\nNo ties are found in they who\nhold nothing loved or loathed.\n",
-  dhp212:
-    "212. Sorrow springs from what we hold dear,\nfear springs from what we hold dear;\none free from holding anything dear\nhas no sorrow, let alone fear.\n",
-  dhp213:
-    "213. Sorrow springs from attachment,\nfear springs from attachment;\none free from attachment\nhas no sorrow, let alone fear.\n",
-  dhp214:
-    "214. Sorrow springs from relishing,\nfear springs from relishing;\none free from relishing\nhas no sorrow, let alone fear.\n",
-  dhp215:
-    "215. Sorrow springs from desire,\nfear springs from desire;\none free from desire\nhas no sorrow, let alone fear.\n",
-  dhp216:
-    "216. Sorrow springs from craving,\nfear springs from craving;\none free from craving\nhas no sorrow, let alone fear.\n",
-  dhp217:
-    "217. One accomplished in virtue and vision,\nfirm in principle, and truthful,\ndoing oneself what ought be done:\nthat’s who the people love.\n",
-  dhp218:
-    "218. One eager to realize the ineffable\nwould be filled with awareness.\nTheir mind not bound to pleasures of sense,\nthey’re said to be heading upstream.\n",
-  dhp219:
-    "219. When a man returns safely\nafter a long time spent abroad,\nfamily, friends, and loved ones\ncelebrate his return.\n",
-  dhp220:
-    "220. Just so, when one who has done good\ngoes from this world to the next,\ntheir good deeds receive them there,\nas family welcomes home one they love.\n",
-  dhp221:
-    "221. Give up anger, get rid of conceit,\nand escape every fetter.\nSufferings don’t befall one who has nothing,\nnot clinging to name and form. \n",
-  dhp222:
-    "222. When anger surges like a lurching chariot,\nkeep it in check.\nThat’s what I call a charioteer;\nothers just hold the reins.\n",
-  dhp223: "223. Defeat anger with kindness,\nvillainy with virtue,\nstinginess with giving,\nand lies with truth.\n",
-  dhp224:
-    "224. Speak the truth, do not be angry,\nand give when asked, if only a little.\nBy these three means,\nyou may enter the presence of the gods.\n",
-  dhp225:
-    "225. Those harmless sages,\nalways restrained in body,\ngo to the imperishable state,\nwhere there is no sorrow. \n",
-  dhp226:
-    "226. Always wakeful,\npracticing night and day,\nfocused only on quenching,\ntheir defilements come to an end.\n",
-  dhp227:
-    "227. It’s always been like this,\nit’s not just today.\nThey blame you when you’re silent,\nthey blame you when you speak a lot,\nand even when you speak just right:\nno-one in the world escapes blame.\n",
-  dhp228:
-    "228. There never was, nor will be,\nnor is there today,\nsomeone who is wholly praised \nor wholly blamed.\n",
-  dhp229:
-    "229. If, after watching them day in day out,\ndiscerning people praise\nthat sage of impeccable conduct,\nendowed with ethics and wisdom;\n",
-  dhp230:
-    "230. like a pendant of river gold,\nwho is worthy to criticize them?\nEven the gods praise them, \nand by Brahmā, too, they’re praised.\n",
-  dhp231:
-    "231. Guard against ill-tempered deeds,\nbe restrained in body.\nGiving up bad bodily conduct,\nconduct yourself well in body.\n",
-  dhp232:
-    "232. Guard against ill-tempered words,\nbe restrained in speech.\nGiving up bad verbal conduct,\nconduct yourself well in speech.\n",
-  dhp233:
-    "233. Guard against ill-tempered thoughts,\nbe restrained in mind.\nGiving up bad mental conduct,\nconduct yourself well in mind.\n",
-  dhp234:
-    "234. A sage is restrained in body\nrestrained also in speech,\nin thought, too, they are restrained:\nthey are restrained in every way.\n",
-  dhp235:
-    "235. Today you’re like a withered leaf,\nYama’s men await you.\nYou stand at the departure gates,\nyet you have no supplies for the road.\n",
-  dhp236:
-    "236. Make an island of yourself!\nSwiftly strive, learn to be wise!\nPurged of stains, flawless,\nyou’ll go to the divine realm of the noble ones.\n",
-  dhp237:
-    "237. You’ve journeyed the stages of life,\nand now you set out to meet Yama.\nAlong the way there’s nowhere to stay,\nyet you have no supplies for the road.\n",
-  dhp238:
-    "238. Make an island of yourself!\nSwiftly strive, learn to be wise!\nPurged of stains, flawless,\nyou’ll not come again to rebirth and old age.\n",
-  dhp239:
-    "239. A smart person would purge\ntheir own stains gradually,\nbit by bit, moment by moment,\nlike a smith smelting silver.\n",
-  dhp240:
-    "240. It is the rust born on the iron\nthat eats away the place it arose.\nAnd so it is their own deeds\nthat lead the overly-ascetic to a bad place.\n",
-  dhp241:
-    "241. Not reciting is the stain of hymns.\nThe stain of houses is neglect.\nLaziness is the stain of beauty. \nA guard’s stain is negligence. \n",
-  dhp242:
-    "242. Misconduct is a woman’s stain.\nA giver’s stain is stinginess.\nBad qualities are a stain \nin this world and the next. \n",
-  dhp243:
-    "243. But a worse stain than these\nis ignorance, the worst stain of all.\nHaving given up that stain,\nbe without stains, mendicants! \n",
-  dhp244:
-    "244. Life is easy for the shameless.\nWith all the rude courage of a crow,\nthey live pushy,\nrude, and corrupt.\n",
-  dhp245:
-    "245. Life is hard for the conscientious,\nalways seeking purity,\nneither clinging nor rude,\npure of livelihood and discerning.\n",
-  dhp246: "246. Take anyone in this world\nwho kills living creatures,\nspeaks falsely, steals,\ncommits adultery, \n",
-  dhp247: "247. and indulges in drinking \nalcohol and liquor.\nRight here they dig up\nthe root of their own self.\n",
-  dhp248:
-    "248. Know this, good sir:\nthey are unrestrained and wicked.\nDon’t let greed and hate\nsubject you to pain for long.\n",
-  dhp249:
-    "249. The people give according to their faith,\naccording to their confidence.\nIf you get upset over that,\nover other’s food and drink,\nyou’ll not, by day or by night,\nbecome immersed in samādhi.\n",
-  dhp250:
-    "250. Those who have cut that out,\ndug it up at the root, eradicated it,\nthey will, by day or by night,\nbecome immersed in samādhi.\n",
-  dhp251: "251. There is no fire like greed,\nno crime like hate,\nno net like delusion,\nno river like craving.\n",
-  dhp252:
-    "252. It’s easy to see the faults of others,\nhard to see one’s own.\nFor the faults of others \nare tossed high like chaff,\nwhile one’s own are hidden,\nas a cheat hides a bad hand.\n",
-  dhp253:
-    "253. When you look for the flaws of others,\nalways finding fault,\nyour defilements only grow,\nyou’re far from ending defilements.\n",
-  dhp254:
-    "254. In the sky there is no track,\nthere’s no true ascetic outside here.\nPeople enjoy proliferation,\nthe Realized Ones are free of proliferation.\n",
-  dhp255:
-    "255. In the sky there is no track,\nthere’s no true ascetic outside here.\nNo conditions last forever,\nthe Awakened Ones are not shaken.\n",
-  dhp256:
-    "256. You don’t become just\nby passing hasty judgement.\nAn astute person evaluates both\nwhat is pertinent and what is irrelevant.\n",
-  dhp257:
-    "257. A wise one judges others without haste,\njustly and impartially;\nthat guardian of the law\nis said to be just.\n",
-  dhp258:
-    "258. You’re not an astute scholar\njust because you speak a lot.\nOne who is secure, free of enmity and fear,\nis said to be astute.\n",
-  dhp259:
-    "259. You’re not one who has memorized the teaching\njust because you recite a lot.\nSomeone who directly sees the teaching\nafter hearing only a little\nis truly one who has memorized the teaching,\nfor they can never forget it.\n",
-  dhp260:
-    "260. You don’t become a senior\nby getting some grey hairs;\nfor one ripe only in age,\nis said to have aged in vain.\n",
-  dhp261:
-    "261. One who has truth and principle,\nharmlessness, restraint, and self-control,\nthat wise one, purged of stains,\nis said to be a senior.\n",
-  dhp262:
-    "262. Not by mere eloquence,\nor a beautiful complexion\ndoes a person appear holy,\nif they’re jealous, stingy, and devious. \n",
-  dhp263:
-    "263. But if they’ve cut that out,\ndug it up at the root, eradicated it,\nthat wise one, purged of vice,\nis said to be holy.\n",
-  dhp264:
-    "264. A liar and breaker of vows is no ascetic\njust because they shave their head.\nHow on earth can one be an ascetic\nwho’s full of desire and greed?\n",
-  dhp265:
-    "265. One who stops all wicked deeds,\ngreat and small,\nbecause of stopping wicked deeds\nis said to be an ascetic.\n",
-  dhp266:
-    "266. You don’t become a mendicant\njust by begging from others.\nOne who has undertaken domestic duties \nhas not yet become a mendicant. \n",
-  dhp267:
-    "267. But one living a spiritual life,\nwho has banished both merit and evil,\nwho wanders having assessed the world,\nis said to be a mendicant.\n",
-  dhp268:
-    "268. You don’t become a sage by silence,\nwhile still confused and ignorant.\nThe astute one holds up the scales,\ntaking only the best,\n",
-  dhp269:
-    "269. and rejecting the bad;\na sage becomes a sage by measuring.\nOne who measures good and bad in the world,\nis thereby said to be a sage.\n",
-  dhp270:
-    "270. You don’t become a noble one\nby harming living beings.\nOne harmless towards all living beings\nis said to be a noble one.\n",
-  dhp271:
-    "271. Not by precepts and observances,\nnor by much learning,\nnor by meditative immersion,\nnor by living in seclusion,\n",
-  dhp272:
-    "272. do I experience the bliss of renunciation\nnot frequented by ordinary people.\nA mendicant cannot rest confident\nwithout attaining the end of defilements.\n",
-  dhp273:
-    "273. Of paths, the eightfold is the best;\nof truths, the four statements;\ndispassion is the best of things,\nand the Seer is the best of humans.\n",
-  dhp274:
-    "274. *This* is the path, there is no other\nfor the purification of vision.\nYou all must practice this,\nit is the way to baffle Māra.\n",
-  dhp275:
-    "275. When you all are practicing this,\nyou will make an end of suffering.\nI have explained the path to you\nfor extracting the thorn with wisdom.\n",
-  dhp276:
-    "276. You yourselves must do the work,\nthe Realized Ones just show the way.\nMeditators practicing absorption\nare released from Māra’s bonds.\n",
-  dhp277:
-    "277. All conditions are impermanent—\nwhen this is seen with wisdom,\none grows disillusioned with suffering:\nthis is the path to purity.\n",
-  dhp278:
-    "278. All conditions are suffering—\nwhen this is seen with wisdom,\none grows disillusioned with suffering:\nthis is the path to purity.\n",
-  dhp279:
-    "279. All things are not-self—\nwhen this is seen with wisdom,\none grows disillusioned with suffering:\nthis is the path to purity.\n",
-  dhp280:
-    "280. They don’t get going when it’s time to start;\nthey’re young and strong, but given to sloth.\nTheir mind depressed in sunken thought,\nlazy and slothful, they can’t discern the path.\n",
-  dhp281:
-    "281. Guarded in speech, restrained in mind,\ndoing no unskillful bodily deed.\nPurify these three ways of performing deeds,\nand win the path known to hermits.\n",
-  dhp282:
-    "282. From meditation springs wisdom,\nwithout meditation, wisdom ends.\nKnowing these two paths—\nof progress and decline—\nyou should conduct yourself\nso that wisdom grows.\n",
-  dhp283:
-    "283. Cut down the jungle, not just a tree;\nfrom the jungle springs fear.\nHaving cut down jungle and vine,\nbe free of jungles, mendicants! \n",
-  dhp284:
-    "284. So long as the vine, no matter how small,\nthat ties a man to women is not cut,\nhis mind remains trapped,\nlike a calf suckling its mother.\n",
-  dhp285:
-    "285. Cut out fondness for oneself,\nlike plucking an autumn lotus.\nFoster only the path to peace,\nthe quenching the Holy One taught.\n",
-  dhp286:
-    "286. “Here I will stay for the rains;\nhere for winter, here the summer”;\nthus the fool thinks,\nnot realizing the danger.\n",
-  dhp287:
-    "287. As a mighty flood sweeps away a sleeping village,\ndeath steals away a man\nwho dotes on children and cattle,\nhis mind caught up in them.\n",
-  dhp288:
-    "288. Children provide you no shelter,\nnor does father, nor relatives.\nWhen you’re seized by the terminator,\nthere’s no shelter in family.\n",
-  dhp289:
-    "289. Knowing the reason for this,\nastute, and ethically restrained,\none would quickly clear the path\nthat leads to extinguishment.\n",
-  dhp290:
-    "290. If by giving up material happiness\none sees abundant happiness,\na wise one would give up material happiness,\nseeing the abundant happiness.\n",
-  dhp291:
-    "291. Some seek their own happiness\nby imposing suffering on others.\nLiving intimate with enmity,\nthey’re not freed from enmity. \n",
-  dhp292:
-    "292. They disregard what should be done,\nand do what should not be done.\nFor the insolent and the negligent,\ntheir defilements only grow.\n",
-  dhp293:
-    "293. Those that have properly undertaken\nconstant mindfulness of the body,\ndon’t cultivate what should not be done,\nbut always do what should be done.\nMindful and aware,\ntheir defilements come to an end.\n",
-  dhp294:
-    "294. Having slain mother and father,\nand two aristocratic kings,\nand having wiped out the kingdom with its subjects,\nthe brahmin walks on without worry.\n",
-  dhp295:
-    "295. Having slain mother and father,\nand two aristocratic kings,\nand a tiger as the fifth,\nthe brahmin walks on without worry.\n",
-  dhp296:
-    "296. The disciples of Gotama\nalways wake up refreshed,\nwho day and night\nconstantly recollect the Buddha.\n",
-  dhp297:
-    "297. The disciples of Gotama\nalways wake up refreshed,\nwho day and night\nconstantly recollect the teaching.\n",
-  dhp298:
-    "298. The disciples of Gotama\nalways wake up refreshed,\nwho day and night\nconstantly recollect the Saṅgha.\n",
-  dhp299:
-    "299. The disciples of Gotama\nalways wake up refreshed,\nwho day and night\nare constantly mindful of the body.\n",
-  dhp300:
-    "300. The disciples of Gotama\nalways wake up refreshed,\nwhose minds day and night\ndelight in harmlessness.\n",
-  dhp301:
-    "301. The disciples of Gotama\nalways wake up refreshed,\nwhose minds day and night\ndelight in meditation.\n",
-  dhp302:
-    "302. Going forth is hard, it’s hard to be happy;\nlife at home is hard too, and painful,\nit’s painful to stay when you’ve nothing in common.\nA traveler is a prey to pain,\nso don’t be a traveler,\ndon’t be prey to pain.\n",
-  dhp303:
-    "303. One who is faithful, accomplished in ethics,\nblessed with fame and wealth,\nis honored in whatever place\nthey frequent.\n",
-  dhp304:
-    "304. The good shine from afar,\nlike the Himalayan peaks,\nbut the wicked are not seen,\nlike arrows scattered in the night.\n",
-  dhp305:
-    "305. Sitting alone, sleeping alone,\ntirelessly wandering alone;\none who tames themselves alone\nwould delight within a forest.\n",
-  dhp306:
-    "306. A liar goes to hell, \nas does one who denies what they did.\nBoth are equal in the hereafter,\nthose men of base deeds.\n",
-  dhp307:
-    "307. Many who wrap their necks in ocher robes\nare unrestrained and wicked.\nBeing wicked, they are reborn in hell\ndue to their bad deeds.\n",
-  dhp308:
-    "308. It’d be better for the immoral and unrestrained\nto eat an iron ball,\nscorching, like a burning flame,\nthan to eat the nation’s alms.\n",
-  dhp309:
-    "309. Four things befall a heedless man\nwho sleeps with another’s wife:\nbad karma, poor sleep,\nill-repute, and rebirth in hell.\n",
-  dhp310:
-    "310. He accrues bad karma and is reborn in a bad place,\nall so a frightened couple may snatch a moment’s pleasure,\nfor which rulers impose a heavy punishment.\nThat’s why a man should not sleep with another’s wife.\n",
-  dhp311:
-    "311. When kusa grass is wrongly grasped\nit only cuts the hand.\nSo too, the ascetic life, when wrongly taken,\ndrags you to hell.\n",
-  dhp312: "312. Any lax act,\nany corrupt observance, \nor suspicious spiritual life,\nis not very fruitful.\n",
-  dhp313:
-    "313. If one is to do what should be done,\none should staunchly strive.\nFor the life gone forth when laxly led \njust stirs up dust all the more. \n",
-  dhp314:
-    "314. A bad deed is better left undone,\nfor it will plague you later on.\nA good deed is better done,\none that does not plague you.\n",
-  dhp315:
-    "315. As a frontier city\nis guarded inside and out,\nso you should ward yourselves—\ndon’t let the moment pass you by.\nFor if you miss your moment\nyou’ll grieve when sent to hell.\n",
-  dhp316:
-    "316. Unashamed of what is shameful,\nashamed of what is not shameful;\nbeings who uphold wrong view\ngo to a bad place.\n",
-  dhp317:
-    "317. Seeing danger where there is none,\nand blind to the actual danger,\nbeings who uphold wrong view\ngo to a bad place.\n",
-  dhp318:
-    "318. Seeing fault where there is none,\nand blind to the actual fault,\nbeings who uphold wrong view\ngo to a bad place.\n",
-  dhp319:
-    "319. Knowing a fault as a fault\nand the faultless as faultless,\nbeings who uphold right view\ngo to a good place.\n",
-  dhp320:
-    "320. Like an elephant struck\nwith arrows in battle,\nI shall put up with abuse,\nfor so many folk are badly behaved.\n",
-  dhp321:
-    "321. The well-tamed beast is the one led to the crowd;\nthe tamed elephant’s the one the king mounts;\nthe tamed person who endures abuse\nis the best of human beings.\n",
-  dhp322:
-    "322. Those who have tamed themselves are better\nthan fine tamed mules,\nthoroughbreds from Sindh,\nor giant tuskers.\n",
-  dhp323:
-    "323. For not on those mounts\nwould you go to the untrodden place,\nwhereas, with the help of one whose self is well tamed,\nyou go there, tamed by the tamed.\n",
-  dhp324:
-    "324. The tusker named Dhanapāla\nis musky in rut, hard to control.\nBound, he eats not a bite,\nfor he misses the elephant forest.\n",
-  dhp325:
-    "325. One who gets drowsy from overeating,\nfond of sleep, rolling round the bed\nlike a great hog stuffed with grain:\nthat idiot is reborn again and again. \n",
-  dhp326:
-    "326. In the past my mind wandered\nhow it wished, where it liked, as it pleased.\nNow I’ll carefully guide it,\nas a trainer with a hook guides a rutting elephant.\n",
-  dhp327:
-    "327. Delight in diligence!\nTake good care of your mind!\nPull yourself out of this pit,\nlike an elephant sunk in a bog.\n",
-  dhp328:
-    "328. If you find an alert companion,\na wise and virtuous friend,\nthen, overcoming all adversities, \nwander with them, joyful and mindful. \n",
-  dhp329:
-    "329. If you find no alert companion,\nno wise and virtuous friend,\nthen, like a king who flees his conquered realm,\nwander alone like a tusker in the wilds. \n",
-  dhp330:
-    "330. It’s better to wander alone,\nthere’s no fellowship with fools.\nWander alone and do no wrong, \nat ease like a tusker in the wilds.\n",
-  dhp331:
-    "331. A friend in need is a blessing;\nit’s a blessing to be content with whatever;\ngood deeds are a blessing at the end of life,\nand giving up all suffering is a blessing.\n",
-  dhp332:
-    "332. In this world it’s a blessing to serve\none’s mother and one’s father.\nAnd it’s a blessing also to serve\nascetics and brahmins.\n",
-  dhp333:
-    "333. It’s a blessing to keep precepts until you grow old;\na blessing to be grounded in faith;\nthe getting of wisdom’s a blessing;\nand it’s a blessing to avoid doing wrong.\n",
-  dhp334:
-    "334. When a person lives heedlessly,\ncraving grows in them like a parasitic creeper.\nThey jump from life to life, like a monkey\ngreedy for fruit in a forest grove.\n",
-  dhp335:
-    "335. Whoever is beaten by this wretched craving,\nthis attachment to the world,\ntheir sorrow grows,\nlike grass in the rain.\n",
-  dhp336:
-    "336. But whoever prevails over this wretched craving,\nso hard to get over in the world,\ntheir sorrows fall from them,\nlike a drop from a lotus-leaf.\n",
-  dhp337:
-    "337. I say this to you, good people,\nall those who have gathered here:\ndig up the root of craving,\nas you’d dig up grass in search of roots.\nDon’t let Māra break you again and again,\nlike a stream breaking a reed.\n",
-  dhp338:
-    "338. A tree grows back even when cut down,\nso long as its roots are healthy;\nsuffering springs up again and again,\nso long as the tendency to craving is not pulled out.\n",
-  dhp339:
-    "339. A person of low views\nin whom the thirty-six streams\nthat flow to pleasure are mighty,\nis swept away by lustful thoughts.\n",
-  dhp340:
-    "340. The streams flow everywhere;\na weed springs up and remains.\nSeeing this weed that has been born, \ncut the root with wisdom.\n",
-  dhp341:
-    "341. A persons’s joys\nflow from senses and cravings.\nSeekers of happiness, bent on pleasure,\ncontinue to be reborn and grow old. \n",
-  dhp342:
-    "342. People governed by thirst,\ncrawl about like a trapped rabbit.\nBound and fettered, for a long time\nthey return to pain time and again.\n",
-  dhp343:
-    "343. People governed by thirst,\ncrawl about like a trapped rabbit.\nThat’s why one who longs for dispassion\nshould dispel thirst.\n",
-  dhp344:
-    "344. Rejecting the household jungle, they set out for the real jungle,\nthen they run right back to the jungle they left behind.\nJust look at this person!\nFreed, they run to bondage.\n",
-  dhp345:
-    "345. The wise say that shackle is not strong\nthat’s made of iron, wood, or knots.\nBut obsession with jeweled earrings, \nconcern for your partners and children: \n",
-  dhp346:
-    "346. this, say the wise, is a strong shackle\ndragging the indulgent down, hard to escape.\nHaving cut this one too they go forth,\nunconcerned, having given up sensual pleasures.\n",
-  dhp347:
-    "347. Besotted by lust they fall into the stream,\nlike a spider caught in the web she wove.\nThe wise proceed, having cut this one too,\nunconcerned, having given up all suffering.\n",
-  dhp348:
-    "348. Let go of the past, let go of the future,\nlet go of the present, having gone beyond rebirth.\nWith your heart freed in every respect,\nyou’ll not come again to rebirth and old age.\n",
-  dhp349:
-    "349. For a person crushed by thoughts,\nvery lustful, focusing on beauty,\ntheir craving grows and grows,\ntying them with a stout bond.\n",
-  dhp350:
-    "350. But one who loves to calm their thoughts,\ndeveloping perception of ugliness, ever mindful,\nwill surely eliminate that craving,\ncutting off the bonds of Māra.\n",
-  dhp351:
-    "351. One who is confident, unafraid,\nrid of craving, free of blemish,\nhaving struck down the arrows flying to future lives,\nthis bag of bones is their last.\n",
-  dhp352:
-    "352. Rid of craving, free of grasping,\nexpert in the interpretation of terms,\nknowing the correct\nstructure and sequence of syllables,\nthey are said to be one who bears their final body,\none of great wisdom, a great person.\n",
-  dhp353:
-    "353. I am the champion, the knower of all,\nunsullied in the midst of all things.\nI’ve given up all, freed in the ending of craving.\nSince I know for myself, whose follower should I be?\n",
-  dhp354:
-    "354. The gift of the teaching beats all other gifts;\nthe taste of the teaching beats all other tastes;\nthe joy of the teaching beats all other joys;\none who has ended craving beats all suffering.\n",
-  dhp355:
-    "355. Riches ruin an idiot,\nbut not a seeker of the far shore.\nFrom craving for wealth, an idiot\nruins themselves and others.\n",
-  dhp356:
-    "356. Weeds are the bane of crops,\nbut greed is these folk’s bane.\nThat’s why a gift to one rid of greed\nis so very fruitful.\n",
-  dhp357:
-    "357. Weeds are the bane of crops,\nbut hate is these folk’s bane.\nThat’s why a gift to one rid of hate\nis so very fruitful.\n",
-  dhp358:
-    "358. Weeds are the bane of crops,\nbut delusion is these folk’s bane.\nThat’s why a gift to one rid of delusion\nis so very fruitful.\n",
-  dhp359:
-    "359. Weeds are the bane of crops,\nbut desire is these folk’s bane.\nThat’s why a gift to one rid of desire\nis so very fruitful.\n",
-  dhp360:
-    "360. Restraint of the eye is good;\ngood is restraint of the ear;\nrestraint of the nose is good; \ngood is restraint of the tongue.\n",
-  dhp361:
-    "361. Restraint of the body is good;\ngood is restraint of speech;\nrestraint of mind is good; \neverywhere, restraint is good.\nThe mendicant restrained everywhere\nis released from suffering.\n",
-  dhp362:
-    "362. One restrained in hand and foot,\nand in speech, the supreme restraint;\nhappy inside, serene, \nsolitary, content, I call a mendicant.\n",
-  dhp363:
-    "363. When a mendicant of restrained mouth,\nthoughtful in counsel, and stable,\nexplains the text and its meaning,\ntheir words are sweet.\n",
-  dhp364:
-    "364. Delighting in the teaching, enjoying the teaching,\ncontemplating the teaching,\na mendicant who recollects the teaching\ndoesn’t decline in the true teaching.\n",
-  dhp365:
-    "365. A well-off mendicant ought not look down\non others, nor should they be envious.\nA mendicant who envies others\ndoes not achieve immersion.\n",
-  dhp366:
-    "366. If a mendicant is poor in offerings,\nthe well-to-do ought not look down on them.\nFor the gods indeed praise them,\nwho are tireless and pure of livelihood.\n",
-  dhp367:
-    "367. One who has no sense of ownership\nin the whole realm of name and form,\nwho does not grieve for that which is not,\nis said to be a mendicant.\n",
-  dhp368:
-    "368. A mendicant who meditates on love,\ndevoted to the Buddha’s teaching,\nwould realize the peaceful state,\nthe blissful stilling of conditions.\n",
-  dhp369:
-    "369. Bail out this boat, mendicant!\nWhen bailed out it will float lightly.\nHaving cut off desire and hate,\nyou shall reach quenching.\n",
-  dhp370:
-    "370. Five to cut, five to drop,\nand five more to develop.\nA mendicant who escapes five chains \nis said to have crossed the flood.\n",
-  dhp371:
-    "371. Practice absorption, don’t be negligent!\nDon’t let the mind delight in the senses!\nDon’t heedlessly swallow a hot iron ball!\nAnd when it burns, don’t cry, “Oh, the pain!”\n",
-  dhp372:
-    "372. No absorption for one without wisdom,\nno wisdom for one without absorption.\nBut one with absorption and wisdom—\nthey have truly drawn near to extinguishment.\n",
-  dhp373:
-    "373. A mendicant who enters an empty hut\nwith mind at peace\nfinds a superhuman delight\nas they rightly discern the Dhamma.\n",
-  dhp374:
-    "374. Whenever they are mindful\nof the rise and fall of the aggregates,\nthey feel rapture and joy:\nthat is the deathless for one who knows.\n",
-  dhp375:
-    "375. This is the very start of the path\nfor a wise mendicant:\nguarding the senses, contentment,\nand restraint in the monastic code.\n",
-  dhp376:
-    "376. Mix with spiritual friends,\nwho are tireless and pure of livelihood.\nShare what you have with others,\nbeing skillful in your conduct.\nAnd when you’re full of joy, \nyou’ll make an end to suffering.\n",
-  dhp377: "377. As a jasmine sheds\nits withered flowers,\nO mendicants,\ncast off greed and hate.\n",
-  dhp378:
-    "378. Calm in body, calm in speech,\npeaceful and serene;\na mendicant who’s spat out the world’s bait\nis said to be one at peace.\n",
-  dhp379:
-    "379. Urge yourself on,\nreflect on yourself.\nA mendicant self-controlled and mindful\nwill always dwell in happiness.\n",
-  dhp380:
-    "380. Self is indeed the lord of self,\nfor who else would be one’s lord?\nSelf is indeed the home of self,\nso restrain yourself,\nas a merchant his thoroughbred steed.\n",
-  dhp381:
-    "381. A monk full of joy\ntrusting in the Buddha’s teaching,\nwould realize the peaceful state,\nthe blissful stilling of conditions.\n",
-  dhp382:
-    "382. A young mendicant\ndevoted to the Buddha’s teaching,\nlights up the world,\nlike the moon freed from a cloud.\n",
-  dhp383:
-    "383. Strive and cut the stream!\nDispel sensual pleasures, brahmin.\nKnowing the ending of conditions,\nknow the uncreated, brahmin.\n",
-  dhp384: "384. When a brahmin\nhas gone beyond two things,\nthen they consciously\nmake an end of all fetters.\n",
-  dhp385:
-    "385. When one does not recognize the near shore,\nthe far shore, or both;\nstress-free, detached,\nthat’s who I call a brahmin. \n",
-  dhp386:
-    "386. Absorbed, rid of hopes,\ntheir task completed, without defilements,\narrived at the highest goal: \nthat’s who I call a brahmin. \n",
-  dhp387:
-    "387. The sun blazes by day, \nthe moon glows at night, \nthe aristocrat shines in armor,\nand the brahmin shines in absorption. \nBut all day and all night, \nthe Buddha shines with glory.\n",
-  dhp388:
-    "388. A brahmin’s so-called because they have banished evil,\nan ascetic’s so-called since they live a serene life.\nOne who has renounced all stains\nis said to be a “renunciant”.\n",
-  dhp389:
-    "389. One should never strike a brahmin,\nnor should a brahmin retaliate.\nWoe to the one who hurts a brahmin,\nand woe for the one who retaliates.\n",
-  dhp390:
-    "390. Nothing is better for a brahmin\nthan to hold their mind back from attachment.\nAs cruelty in the mind gradually subsides,\nsuffering also subsides.\n",
-  dhp391:
-    "391. Who does nothing wrong\nby body, speech or mind,\nrestrained in these three respects,\nthat’s who I call a brahmin. \n",
-  dhp392:
-    "392. You should graciously honor\nthe one from whom you learn the Dhamma\ntaught by the awakened Buddha,\nas a brahmin honors the sacred flame.\n",
-  dhp393:
-    "393. Not by matted hair or family,\nor birth is one a brahmin.\nThose who have truth and principle:\nthey are pure, they are brahmins.\n",
-  dhp394:
-    "394. Why the matted hair, you fool,\nand why the skin of deer?\nThe tangle is inside you,\nyet you polish up your outsides.\n",
-  dhp395:
-    "395. A person who wears robes of rags,\nlean, their limbs showing veins,\nmeditating alone in the forest,\nthat’s who I call a brahmin. \n",
-  dhp396:
-    "396. I don’t call someone a brahmin\nafter the mother or womb they came from.\nIf they still have attachments,\nthey’re just someone who says “sir”.\nHaving nothing, taking nothing: \nthat’s who I call a brahmin. \n",
-  dhp397:
-    "397. Having cut off all fetters\nthey have no anxiety.\nThey’ve got over clinging, and are detached:\nthat’s who I call a brahmin. \n",
-  dhp398:
-    "398. They’ve cut the strap and harness,\nthe reins and bridle too,\nwith cross-bar lifted, they’re awakened: \nthat’s who I call a brahmin. \n",
-  dhp399:
-    "399. Abuse, killing, caging: \nthey endure these without anger.\nPatience is their powerful army: \nthat’s who I call a brahmin. \n",
-  dhp400:
-    "400. Not irritable or stuck up,\ndutiful in precepts and observances,\ntamed, bearing their final body:\nthat’s who I call a brahmin. \n",
-  dhp401:
-    "401. Like water from a lotus leaf,\nlike a mustard seed off a pin-point,\nsensual pleasures slip off them: \nthat’s who I call a brahmin. \n",
-  dhp402:
-    "402. They understand for themselves\nthe end of suffering in this life;\nwith burden put down, detached: \nthat’s who I call a brahmin. \n",
-  dhp403:
-    "403. Deep in wisdom, intelligent,\nexpert in the variety of paths;\narrived at the highest goal: \nthat’s who I call a brahmin. \n",
-  dhp404:
-    "404. Socializing with neither \nhouseholders nor the homeless.\nA migrant with no shelter, few in wishes:\nthat’s who I call a brahmin. \n",
-  dhp405:
-    "405. They’ve laid aside violence\nagainst creatures firm and frail;\nnot killing or making others kill: \nthat’s who I call a brahmin. \n",
-  dhp406:
-    "406. Not fighting among those who fight,\nextinguished among those who are armed,\nnot taking among those who take:\nthat’s who I call a brahmin. \n",
-  dhp407:
-    "407. They’ve discarded greed and hate,\nalong with conceit and contempt,\nlike a mustard seed off the point of a pin:\nthat’s who I call a brahmin. \n",
-  dhp408:
-    "408. The words they utter \nare sweet, informative, and true,\nand don’t offend anyone: \nthat’s who I call a brahmin. \n",
-  dhp409:
-    "409. They don’t steal anything in the world,\nlong or short,\nfine or coarse, beautiful or ugly: \nthat’s who I call a brahmin. \n",
-  dhp410:
-    "410. They have no hope \nin this world or the next. \nwith no need for hope, detached:\nthat’s who I call a brahmin. \n",
-  dhp411:
-    "411. They have no clinging, \nknowledge has freed them of indecision,\nthey’ve plunged right into the deathless:\nthat’s who I call a brahmin. \n",
-  dhp412:
-    "412. They’ve escaped clinging \nto both good and bad deeds; \nsorrowless, stainless, pure:\nthat’s who I call a brahmin. \n",
-  dhp413:
-    "413. Pure as the spotless moon,\nclear and undisturbed,\nthey’ve ended desire to be reborn: \nthat’s who I call a brahmin. \n",
-  dhp414:
-    "414. They’ve got past this grueling swamp\nof delusion, transmigration.\nThey’ve crossed over to the far shore,\nstilled and free of indecision.\nThey’re extinguished by not grasping: \nthat’s who I call a brahmin. \n",
-  dhp415:
-    "415. They’ve given up sensual stimulations,\nand have gone forth from lay life;\nthey’ve ended rebirth in the sensual realm:\nthat’s who I call a brahmin. \n",
-  dhp416:
-    "416. They’ve given up craving,\nand have gone forth from lay life;\nthey’ve ended craving to be reborn: \nthat’s who I call a brahmin. \n",
-  dhp417:
-    "417. They’ve given up human bonds,\nand gone beyond heavenly bonds;\ndetached from all attachments: \nthat’s who I call a brahmin. \n",
-  dhp418:
-    "418. Giving up discontent and desire,\nthey’re cooled and free of attachments;\na hero, master of the whole world:\nthat’s who I call a brahmin. \n",
-  dhp419:
-    "419. They know the passing away\nand rebirth of all beings;\nunattached, holy, awakened: \nthat’s who I call a brahmin. \n",
-  dhp420:
-    "420. Gods, fairies, and humans\ndon’t know their destiny;\nthe perfected ones with defilements ended:\nthat’s who I call a brahmin. \n",
-  dhp421:
-    "421. They have nothing before or after,\nor even in between.\nHaving nothing, taking nothing: \nthat’s who I call a brahmin. \n",
-  dhp422:
-    "422. Leader of the herd, excellent hero,\ngreat hermit and victor;\nunstirred, washed, awakened: \nthat’s who I call a brahmin. \n",
-  dhp423:
-    "423. They know their past lives,\nseeing heaven and places of loss,\nand have attained the end of rebirth;\nthat sage who has perfect insight,\nat the summit of spiritual perfection:\nthat’s who I call a brahmin. \n",
   "ud1.1": "The Buddha, soon after awakening, contemplates specific conditionality and dependent co-arising.",
   "ud1.2": "The Buddha, soon after awakening, contemplates specific conditionality and dependent co-arising.",
   "ud1.3": "The Buddha, soon after awakening, contemplates specific conditionality and dependent co-arising.",
@@ -5317,345 +5325,6 @@ export const blurbs = {
   pv49: "What happens when you earn money in bad ways?",
   pv50: "Ghosts discuss their past about not practicing generosity.",
   pv51: "Arahant Moggallana asks a ghost about his past evil actions.",
-  "thag1.1": "The Verse of Arahant Subhūti.",
-  "thag1.2": "The Verse of Arahant Mahākoṭṭhita.",
-  "thag1.3": "The Verse of Arahant Kaṅkhārevata.",
-  "thag1.4": "The Verse of Arahant Puṇṇa.",
-  "thag1.5": "The Verse of Arahant Dabba.",
-  "thag1.6": "The Verse of Arahant Sītavaniya.",
-  "thag1.7": "The Verse of Arahant Bhalliya.",
-  "thag1.8": "The Verse of Arahant Vīra.",
-  "thag1.9": "The Verse of Arahant Pilindavaccha.",
-  "thag1.10": "The Verse of Arahant Puṇṇamāsa.",
-  "thag1.11": "The Verse of Arahant Cūlavaccha.",
-  "thag1.12": "The Verse of Arahant Mahāvaccha.",
-  "thag1.13": "The Verse of Arahant Vanavaccha.",
-  "thag1.14": "The Verse of Arahant Vanavaccha’s Pupil.",
-  "thag1.15": "The Verse of Arahant Kuṇḍadhāna.",
-  "thag1.16": "The Verse of Arahant Bellaṭṭhisīsa.",
-  "thag1.17": "The Verse of Arahant Dāsaka.",
-  "thag1.18": "The Verse of Arahant Siṅgālapitu.",
-  "thag1.19": "The Verse of Arahant Kuṇdala.",
-  "thag1.20": "The Verse of Arahant Ajita.",
-  "thag1.21": "The Verse of Arahant Nigrodha.",
-  "thag1.22": "The Verse of Arahant Cittaka.",
-  "thag1.23": "The Verse of Arahant Gosāla.",
-  "thag1.24": "The Verse of Arahant Sugandha.",
-  "thag1.25": "The Verse of Arahant Nandiya.",
-  "thag1.26": "The Verse of Arahant Ubhaya.",
-  "thag1.27": "The Verse of Arahant Lomasakaṅgiya.",
-  "thag1.28": "The Verse of Arahant Jambugāmikaputta.",
-  "thag1.29": "The Verse of Arahant Hārita.",
-  "thag1.30": "The Verse of Arahant Uttiya.",
-  "thag1.31": "The Verse of Arahant Gabbharatīriya.",
-  "thag1.32": "The Verse of Arahant Suppiya.",
-  "thag1.33": "The Verse of Arahant Sopāka.",
-  "thag1.34": "The Verse of Arahant Posiya.",
-  "thag1.35": "The Verse of Arahant Sāmaññakāni.",
-  "thag1.36": "The Verse of Arahant Kumāputta.",
-  "thag1.37": "The Verse of Arahant Kumāputta’s Friend.",
-  "thag1.38": "The Verse of Arahant Gavampati.",
-  "thag1.39": "The Verse of Arahant Tissa.",
-  "thag1.40": "The Verse of Arahant Vaḍḍhamāna.",
-  "thag1.41": "The Verse of Arahant Sirivaḍḍha.",
-  "thag1.42": "The Verse of Arahant Khadiravaniya.",
-  "thag1.43": "The Verse of Arahant Sumaṅgala.",
-  "thag1.44": "The Verse of Arahant Sānu.",
-  "thag1.45": "The Verse of Arahant Ramaṇīyavihāri.",
-  "thag1.46": "The Verse of Arahant Samiddhi.",
-  "thag1.47": "The Verse of Arahant Ujjaya.",
-  "thag1.48": "The Verse of Arahant Sañjaya.",
-  "thag1.49": "The Verse of Arahant Rāmaṇeyyaka.",
-  "thag1.50": "The Verse of Arahant Vimala.",
-  "thag1.51": "The Verse of Arahant Godhika.",
-  "thag1.52": "The Verse of Arahant Subāhu.",
-  "thag1.53": "The Verse of Arahant Valliya.",
-  "thag1.54": "The Verse of Arahant Uttiya.",
-  "thag1.55": "The Verse of Arahant Añjanavaniya.",
-  "thag1.56": "The Verse of Arahant Kuṭivihāri.",
-  "thag1.57": "The Verse of Arahant Dutiya Kuṭivihāri.",
-  "thag1.58": "The Verse of Arahant Ramaṇiya Kuṭivihāri.",
-  "thag1.59": "The Verse of Arahant Kosalavihāri.",
-  "thag1.60": "The Verse of Arahant Sīvali.",
-  "thag1.61": "The Verse of Arahant Vappa.",
-  "thag1.62": "The Verse of Arahant Vajjiputta.",
-  "thag1.63": "The Verse of Arahant Pakkha.",
-  "thag1.64": "The Verse of Arahant Vimalakoṇḍañña.",
-  "thag1.65": "The Verse of Arahant Ukkhepakatavaccha.",
-  "thag1.66": "The Verse of Arahant Meghiya.",
-  "thag1.67": "The Verse of Arahant Ekadhammasavanīya.",
-  "thag1.68": "The Verse of Arahant Ekudāniya.",
-  "thag1.69": "The Verse of Arahant Channa.",
-  "thag1.70": "The Verse of Arahant Puṇṇa.",
-  "thag1.71": "The Verse of Arahant Vacchapāla.",
-  "thag1.72": "The Verse of Arahant Ātuma.",
-  "thag1.73": "The Verse of Arahant Māṇava.",
-  "thag1.74": "The Verse of Arahant Suyāma.",
-  "thag1.75": "The Verse of Arahant Susārada.",
-  "thag1.76": "The Verse of Arahant Piyañjaha.",
-  "thag1.77": "The Verse of Arahant Hatthārohaputta.",
-  "thag1.78": "The Verse of Arahant Meṇḍasira.",
-  "thag1.79": "The Verse of Arahant Rakkhita.",
-  "thag1.80": "The Verse of Arahant Ugga.",
-  "thag1.81": "The Verse of Arahant Samatigutta.",
-  "thag1.82": "The Verse of Arahant Kassapa.",
-  "thag1.83": "The Verse of Arahant Sīha.",
-  "thag1.84": "The Verse of Arahant Nīta.",
-  "thag1.85": "The Verse of Arahant Sunāga.",
-  "thag1.86": "The Verse of Arahant Nāgita.",
-  "thag1.87": "The Verse of Arahant Paviṭṭha.",
-  "thag1.88": "The Verse of Arahant Ajjuna.",
-  "thag1.89": "The Verse of Arahant Devasabha.",
-  "thag1.90": "The Verse of Arahant Sāmidatta.",
-  "thag1.91": "The Verse of Arahant Paripuṇṇaka.",
-  "thag1.92": "The Verse of Arahant Vijaya.",
-  "thag1.93": "The Verse of Arahant Eraka.",
-  "thag1.94": "The Verse of Arahant Mettaji.",
-  "thag1.95": "The Verse of Arahant Cakkhupāla..",
-  "thag1.96": "The Verse of Arahant Khaṇḍasumana.",
-  "thag1.97": "The Verse of Arahant Tissa.",
-  "thag1.98": "The Verse of Arahant Abhaya.",
-  "thag1.99": "The Verse of Arahant Uttiya.",
-  "thag1.100": "The Verse of Arahant Devasabha.",
-  "thag1.101": "The Verse of Arahant Belaṭṭhakāni.",
-  "thag1.102": "The Verse of Arahant Setuccha..",
-  "thag1.103": "The Verse of Arahant Bandhura.",
-  "thag1.104": "The Verse of Arahant Khitaka.",
-  "thag1.105": "The Verse of Arahant Malitavambha.",
-  "thag1.106": "The Verse of Arahant Suhemanta.",
-  "thag1.107": "The Verse of Arahant Dhammasava.",
-  "thag1.108": "The Verse of Arahant Dhammasava’s Father.",
-  "thag1.109": "The Verse of Arahant Saṅgharakkhita.",
-  "thag1.110": "The Verse of Arahant Usabha.",
-  "thag1.111": "The Verse of Arahant Jenta.",
-  "thag1.112": "The Verse of Arahant Vacchagotta.",
-  "thag1.113": "The Verse of Arahant Vanavaccha.",
-  "thag1.114": "The Verse of Arahant Adhimutta.",
-  "thag1.115": "The Verse of Arahant Mahānāma.",
-  "thag1.116": "The Verse of Arahant Pārāsariya.",
-  "thag1.117": "The Verse of Arahant Yasa.",
-  "thag1.118": "The Verse of Arahant Kimbila.",
-  "thag1.119": "The Verse of Arahant Vajjiputta.",
-  "thag1.120": "The Verse of Arahant Isidatta.",
-  "thag2.1": "The Verses of Arahant Uttara.",
-  "thag2.2": "The Verses of Arahant Piṇḍolabhāradvāja.",
-  "thag2.3": "The Verses of Arahant Valliya.",
-  "thag2.4": "The Verses of Arahant Gaṅgātīrya.",
-  "thag2.5": "The Verses of Arahant Ajina.",
-  "thag2.6": "The Verses of Arahant Meḷajina.",
-  "thag2.7": "The Verses of Arahant Rādha.",
-  "thag2.8": "The Verses of Arahant Surādha.",
-  "thag2.9": "The Verses of Arahant Gotama.",
-  "thag2.10": "The Verses of Arahant Vasabha.",
-  "thag2.11": "The Verses of Arahant Mahācunda.",
-  "thag2.12": "The Verses of Arahant Jotidāsa.",
-  "thag2.13": "The Verses of Arahant Heraññakāni.",
-  "thag2.14": "The Verses of Arahant Somamitta.",
-  "thag2.15": "The Verses of Arahant Sabbamitta.",
-  "thag2.16": "The Verses of Arahant Mahākāla.",
-  "thag2.17": "The Verses of Arahant Tissa.",
-  "thag2.18": "The Verses of Arahant Kimbila.",
-  "thag2.19": "The Verses of Arahant Nanda.",
-  "thag2.20": "The Verses of Arahant Sirimanta.",
-  "thag2.21": "The Verses of Arahant Uttara.",
-  "thag2.22": "The Verses of Arahant Bhaddaji.",
-  "thag2.23": "The Verses of Arahant Sobhita.",
-  "thag2.24": "The Verses of Arahant Valliya.",
-  "thag2.25": "The Verses of Arahant Vītasoka.",
-  "thag2.26": "The Verses of Arahant Puṇṇamāsa.",
-  "thag2.27": "The Verses of Arahant Nandaka.",
-  "thag2.28": "The Verses of Arahant Bharata.",
-  "thag2.29": "The Verses of Arahant Bhāradvāja.",
-  "thag2.30": "The Verses of Arahant Kaṇhadinna.",
-  "thag2.31": "The Verses of Arahant Migasira.",
-  "thag2.32": "The Verses of Arahant Sīvaka.",
-  "thag2.33": "The Verses of Arahant Upavāna.",
-  "thag2.34": "The Verses of Arahant Isidinna.",
-  "thag2.35": "The Verses of Arahant Sambulakaccāna.",
-  "thag2.36": "The Verses of Arahant Khitaka.",
-  "thag2.37": "The Verses of Arahant Selissariya.",
-  "thag2.38": "The Verses of Arahant Nisabha.",
-  "thag2.39": "The Verses of Arahant Usabha.",
-  "thag2.40": "The Verses of Arahant Kappaṭakura.",
-  "thag2.41": "The Verses of Arahant Kumārakassapa.",
-  "thag2.42": "The Verses of Arahant Dhammapāla.",
-  "thag2.43": "The Verses of Arahant Brahmāli.",
-  "thag2.44": "The Verses of Arahant Mogharāja.",
-  "thag2.45": "The Verses of Arahant Visākha Pañcālaputta.",
-  "thag2.46": "The Verses of Arahant Cūḷaka.",
-  "thag2.47": "The Verses of Arahant Anūpama.",
-  "thag2.48": "The Verses of Arahant Vajjita.",
-  "thag2.49": "The Verses of Arahant Sanbhita.",
-  thag1: "Arahant Monks with Single Verses (1-120)",
-  thag2: "Arahant Monks with Two Verses (121-218)",
-  "thag3.1": "The Verses of Arahant Aggikabhāradvāja (219-221)",
-  "thag3.2": "The Verses of Arahant Paccaya (222-224)",
-  "thag3.3": "The Verses of Arahant Bakkula (225-227)",
-  "thag3.4": "The Verses of Arahant Dhaniya (228-230)",
-  "thag3.5": "The Verses of Arahant Mātaṅgaputta (231-233)",
-  "thag3.6": "The Verses of Arahant Khujjasobhita (234-236)",
-  "thag3.7": "The Verses of Arahant Vāraṇa (237-239)",
-  "thag3.8": "The Verses of Arahant Passika (240-242)",
-  "thag3.9": "The Verses of Arahant Yasoja (243-245)",
-  "thag3.10": "The Verses of Arahant Sāṭimattiya (246-248)",
-  "thag3.11": "The Verses of Arahant Upāli (249-251)",
-  "thag3.12": "The Verses of Arahant Uttarapāla (252-254)",
-  "thag3.13": "The Verses of Arahant Abhibhūta (255-257)",
-  "thag3.14": "The Verses of Arahant Gotama (258-260)",
-  "thag3.15": "The Verses of Arahant Hārita (261-263)",
-  "thag3.16": "The Verses of Arahant Vimala (264-266)",
-  "thag4.1": "The Verses of Arahant Nāgasamāla (267-270)",
-  "thag4.2": "The Verses of Arahant Bhagu (271-274)",
-  "thag4.3": "The Verses of Arahant Sabhiya (275-278)",
-  "thag4.4": "The Verses of Arahant Nandaka (279-282)",
-  "thag4.5": "The Verses of Arahant Jambuka (283-286)",
-  "thag4.6": "The Verses of Arahant Senaka (287-290)",
-  "thag4.7": "The Verses of Arahant Sambhūta (291-294)",
-  "thag4.8": "The Verses of Arahant Rāhula (295-298)",
-  "thag4.9": "The Verses of Arahant Candana (299-302)",
-  "thag4.10": "The Verses of Arahant Dhammika (303-306)",
-  "thag4.11": "The Verses of Arahant Sappaka (307-310)",
-  "thag4.12": "The Verses of Arahant Mudita (311-314)",
-  "thag5.1": "The Verses of Arahant Rājadatta (315-319)",
-  "thag5.2": "The Verses of Arahant Subhūta (320-324)",
-  "thag5.3": "The Verses of Arahant Grimānanda (325-329)",
-  "thag5.4": "The Verses of Arahant Sumana (330-334)",
-  "thag5.5": "The Verses of Arahant Vaḍḍha (335-339)",
-  "thag5.6": "The Verses of Arahant Nadī Kassapa (340-344)",
-  "thag5.7": "The Verses of Arahant Gayā Kassapa (345-349)",
-  "thag5.8": "The Verses of Arahant Vakkali (350-354)",
-  "thag5.9": "The Verses of Arahant Vijitasena (355-359)",
-  "thag5.10": "The Verses of Arahant Yasadatta (360-364)",
-  "thag5.11": "The Verses of Arahant Soṇa Kuṭikaṇṇa (365-369)",
-  "thag5.12": "The Verses of Arahant Kosiya (370-374)",
-  "thag6.1": "The Verses of Arahant Uruveḷa Kassapa (375-380)",
-  "thag6.2": "The Verses of Arahant Tekicchakāni (381-386)",
-  "thag6.3": "The Verses of Arahant Mahānāga (387-392)",
-  "thag6.4": "The Verses of Arahant Kulla (393-398)",
-  "thag6.5": "The Verses of Arahant Māluṅkyaputta (399-404)",
-  "thag6.6": "The Verses of Arahant Sappadāsa (405-410)",
-  "thag6.7": "The Verses of Arahant Kātiyāna (411-416)",
-  "thag6.8": "The Verses of Arahant Migajāla (417-422)",
-  "thag6.9": "The Verses of Arahant Jenta (423-428)",
-  "thag6.10": "The Verses of Arahant Sumana (429-434)",
-  "thag6.11": "The Verses of Arahant Nahātakamuni (435-440)",
-  "thag6.12": "The Verses of Arahant Brahmadatta (441-446)",
-  "thag6.13": "The Verses of Arahant Sirimaṇḍa (447-452)",
-  "thag6.14": "The Verses of Arahant Sabbakāmi (453-458)",
-  "thag7.1": "The Verses of Arahant Sundara Samudda (459-465)",
-  "thag7.2": "The Verses of Arahant Lakuṇṭaka Bhaddiya (466-472)",
-  "thag7.3": "The Verses of Arahant Bhadda (473-479)",
-  "thag7.4": "The Verses of Arahant Sopāka (480-486)",
-  "thag7.5": "The Verses of Arahant Sarabhaṅga (487-493)",
-  "thag8.1": "The Verses of Arahant Mahā Kaccāyana (494-501)",
-  "thag8.2": "The Verses of Arahant Sirimitta (502-509)",
-  "thag8.3": "The Verses of Arahant Mahāpanthaka (510-517)",
-  "thag9.1": "The Verses of Arahant Bhūta (518-526)",
-  "thag10.1": "The Verses of Arahant Kāḷudāyi (527-536)",
-  "thag10.2": "The Verses of Arahant Eka Vihāriya (537-546)",
-  "thag10.3": "The Verses of Arahant Mahā Kappina (547-556)",
-  "thag10.4": "The Verses of Arahant Cūḷapanthaka (557-566)",
-  "thag10.5": "The Verses of Arahant Kappa (567-576)",
-  "thag10.6": "The Verses of Arahant Upasena (577-586)",
-  "thag10.7": "The Verses of Arahant Apara Gotama (587-596)",
-  "thag11.1": "The Verses of Arahant Saṅkicca (597-607)",
-  "thag12.1": "The Verses of Arahant Sīlava (608-619)",
-  "thag12.2": "The Verses of Arahant Sunīta (620-631)",
-  "thag13.1": "The Verses of Arahant Soṇa (632-644)",
-  "thag14.1": "The Verses of Arahant Khadiravaniya Revata (645-658)",
-  "thag14.2": "The Verses of Arahant Godatta (659-672)",
-  "thag15.1": "The Verses of Arahant Aññākoṇḍañña (673-688)",
-  "thag15.2": "The Verses of Arahant Udāyi (689-704)",
-  "thag16.1": "The Verses of Arahant Adhimutta (705-725)",
-  "thag16.2": "The Verses of Arahant Pārāsariya (726-746)",
-  "thag16.3": "The Verses of Arahant Telakāni (747-768)",
-  "thag16.4": "The Verses of Arahant Raṭṭhapāla (769-793)",
-  "thag16.5": "The Verses of Arahant Māluṅkyaputta (794-817)",
-  "thag16.6": "The Verses of Arahant Sela (818-841)",
-  "thag16.7": "The Verses of Arahant Bhaddiya (842-865)",
-  "thag16.8": "The Verses of Arahant Aṅgulimāla (866-891)",
-  "thag16.9": "The Verses of Arahant Anuruddha (892-919)",
-  "thag16.10": "The Verses of Arahant Pārāsariya (920-948)",
-  "thag17.1": "The Verses of Arahant Phussa (949-980)",
-  "thag17.2": "The Verses of Arahant Sāriputta (981-1016)",
-  "thag17.3": "The Verses of Arahant Ānanda(1017-1055)",
-  "thag18.1": "The Verses of Arahant Mahā Kassapa (1056-1095)",
-  "thag19.1": "The Verses of Arahant Tāḷapuṭa (1096-1150)",
-  "thag20.1": "The Verses of Arahant Mahā Moggallāna (1151-1219)",
-  "thag21.1": "The Verses of Arahant Vaṅgīsa (1220-1291)",
-  "thig1.1": "The verse of a certain Arahant Nun",
-  "thig1.2": "The verse of Arahant Nun Muttā",
-  "thig1.3": "The verse of Arahant Nun Puṇṇā",
-  "thig1.4": "The verse of Arahant Nun Tissā",
-  "thig1.5": "The verse of Arahant Nun Tissā",
-  "thig1.6": "The verse of Arahant Nun Dhīrā",
-  "thig1.7": "The verse of Arahant Nun Vīrā",
-  "thig1.8": "The verse of Arahant Nun Mittā",
-  "thig1.9": "The verse of Arahant Nun Bhadrā",
-  "thig1.10": "The verse of Arahant Nun Upasamā",
-  "thig1.11": "The verse of Arahant Nun Muttā",
-  "thig1.12": "The verse of Arahant Nun Dhammadinnā",
-  "thig1.13": "The verse of Arahant Nun Visākhā",
-  "thig1.14": "The verse of Arahant Nun Sumanā",
-  "thig1.15": "The verse of Arahant Nun Uttarā",
-  "thig1.16": "The verse of Arahant Nun Sumanā, who became a nun when she was old.",
-  "thig1.17": "The verse of Arahant Dhammā",
-  "thig1.18": "The verse of Arahant Saṅghā",
-  "thig2.1": "The Verses of Arahant Nun Gorgeous Nandā",
-  "thig2.2": "The Verses of Arahant Nun Jentā",
-  "thig2.3": "The Verses of Arahant Nun Sumangalamātā",
-  "thig2.4": "The Verses of Arahant Nun Aḍḍhakāsī",
-  "thig2.5": "The Verses of Arahant Nun Cittā",
-  "thig2.6": "The Verses of Arahant Nun Mettikā",
-  "thig2.7": "The Verses of Arahant Nun Mettā",
-  "thig2.8": "The Verses of Arahant Nun Abhayamātā",
-  "thig2.9": "The Verses of Arahant Nun Abhayā",
-  "thig2.10": "The Verses of Arahant Nun Sāmā",
-  "thig3.1": "The Verses of Arahant Nun Sāmā (39-41)",
-  "thig3.2": "The Verses of Arahant Nun Uttamā (42-44)",
-  "thig3.3": "The Verses of Arahant Nun Uttamā (45-47)",
-  "thig3.4": "The Verses of Arahant Nun Dantikā (48-50)",
-  "thig3.5": "The Verses of Arahant Nun Ubbirī (51-53)",
-  "thig3.6": "The Verses of Arahant Nun Sukkā (54-56)",
-  "thig3.7": "The Verses of Arahant Nun Selā (57-59)",
-  "thig3.8": "The Verses of Arahant Nun Somā (60-62)",
-  "thig4.1": "The Verses of Arahant Nun Bhaddā Kāpilānī (63-66)",
-  "thig5.1": "The Verses of a certain Arahant Nun (67-71)",
-  "thig5.2": "The Verses of Arahant Nun Vimalā (72-76)",
-  "thig5.3": "The Verses of Arahant Nun Sīhā (77-81)",
-  "thig5.4": "The Verses of Arahant Nun Nandā (82-86)",
-  "thig5.5": "The Verses of Arahant Nun Nanduttarā (87-91)",
-  "thig5.6": "The Verses of Arahant Nun Mittakālī (92-96)",
-  "thig5.7": "The Verses of Arahant Nun Sakulā (97-101)",
-  "thig5.8": "The Verses of Arahant Nun Soṇā (102-106)",
-  "thig5.9": "The Verses of Arahant Nun Bhaddā Kuṇḍalakesā (107-111)",
-  "thig5.10": "The Verses of Arahant Nun Paṭācārā (112-116)",
-  "thig5.11": "The Verses of thirty Arahant Nuns (117-121)",
-  "thig5.12": "The Verses of Arahant Nun Candā (122-126)",
-  "thig6.1": "The Verses of five hundred Arahant Nuns (127-132)",
-  "thig6.2": "The Verses of Arahant Nun Vāseṭṭhi (133-138)",
-  "thig6.3": "The Verses of Arahant Nun Khemā (139-144)",
-  "thig6.4": "The Verses of Arahant Nun Sujātā (145-150)",
-  "thig6.5": "The Verses of Arahant Nun Anupamā (151-156)",
-  "thig6.6": "The Verses of Arahant Nun Mahā Pajāpatī Gotamī (157-162)",
-  "thig6.7": "The Verses of Arahant Nun Guttā (163-168)",
-  "thig6.8": "The Verses of Arahant Nun Vijayā (169-174)",
-  "thig7.1": "The Verses of Arahant Nun Uttarā (175-181)",
-  "thig7.2": "The Verses of Arahant Nun Cālā (182-188)",
-  "thig7.3": "The Verses of Arahant Nun Upacālā (189-195)",
-  "thig8.1": "The Verses of Arahant Nun Sisūpacālā (196-203)",
-  "thig9.1": "The Verses of Arahant Nun Vaḍḍhamātā (204-212)",
-  "thig10.1": "The Verses of Arahant Nun Kisāgotamī (213-223)",
-  "thig11.1": "The Verses of Arahant Nun Uppalavaṇṇā (224-235)",
-  "thig12.1": "The Verses of Arahant Nun Puṇṇā (236-251)",
-  "thig13.1": "The Verses of Arahant Nun Ambapāli (252-270)",
-  "thig13.2": "The Verses of Arahant Nun Rohiṇī (271-290)",
-  "thig13.3": "The Verses of Arahant Nun Cāpā (291-311)",
-  "thig13.4": "The Verses of Arahant Nun Sundarī (312-336)",
-  "thig13.5": "The Verses of Arahant Nun Subhā, the Smith’s Daughter (337-364)",
-  "thig14.1": "The Verses of Arahant Nun Subhā, Who Dwelled in the Jīvaka Mango Garden (365-398)",
-  "thig15.1": "The Verses of Arahant Nun Isidāsī (399-446)",
-  "thig16.1": "The Verses of Arahant Nun Sumedhā (447-521)",
   ja1: "This discourse regarding Truth was delivered by the Blessed One, while he was dwelling in the Great Monastery at Jetavana near Savatthi. But who, you ask, was it that led up to this tale?",
   ja2: "“Untiring, deep they dug.”—This discourse was delivered by the Blessed One whilst he was dwelling at Savatthi.",
   ja3: "“If in this faith.” This lesson too was taught by the Blessed One while at Savatthi, also about a Brother who gave up persevering.",

@@ -21,4 +21,5 @@ This tool is designed to allow you to enter citations for suttas in the first fo
 
 ### credits
 
-https://www.iconfinder.com/icons/9025380/flask_laboratory_icon
+- Icons: [iconfinder.com](https://www.iconfinder.com/icons/9025380/flask_laboratory_icon)
+- Tool tips: [Tippy.js] (https://atomiks.github.io/tippyjs/)
