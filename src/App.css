@@ -62,13 +62,19 @@ button:focus {
   height: 1rem;
   margin-top: -1rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .sutta-name {
-  margin: 0rem;
+  margin: auto;
   text-align: center;
   color: var(--dark-gray);
   font-style: italic;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 #url-builder input {
@@ -809,11 +815,4 @@ button {
   border-radius: 5px;
   padding: .3rem;
   font-style: normal;
-}
-
-.sutta-name {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
 }

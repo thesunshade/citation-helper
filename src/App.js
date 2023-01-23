@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import clsx from "clsx";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css"; // optional
+import "tippy.js/animations/perspective-extreme.css";
 import settingsIcon from "./images/settings.png";
 import infoIcon from "./images/info-icon.png";
 import parseBookName from "./functions/parseBookName.js";
@@ -122,11 +123,13 @@ function App() {
               trigger="mouseenter click"
               disabled={!suttaBlurb}
               allowHTML="true"
+              animation="perspective-extreme"
+              delay={[400, null]}
             >
-              <p className="sutta-name" tabIndex="0">
+              <span className="sutta-name" tabIndex="0">
                 {suttaName}
                 {suttaBlurb ? <img height="18px" style={{ paddingLeft: 0.3 + "rem" }} src={infoIcon} /> : ""}
-              </p>
+              </span>
             </Tippy>
           </div>
         </div>

@@ -10,7 +10,7 @@ export const blurbs = {
   iti: "112 short discourses in mixed prose and verse, arranged in the Aṅguttara style of ascending numbered sets, from one to four. Alone among Buddhist texts, its survival is attributed not to the Saṅgha, but to a laywoman named Khujjuttarā. According to the Pali commentaries, she was a maid to the Queen of Kosambi, and memorized these teachings from the Buddha, earning her the title of the most learned of the laywomen disciples.",
   snp: "The “Group of Discourses” contains 74 mostly short texts in verse or mixed prose and verse, arranged in five chapters. This contains some of the most beloved texts in popular Buddhism, such as the Ratana, Maṅgala, and Mettā Suttas, which are known to all Theravada Buddhists and recited as uplifting and protective chants at auspicious ceremonies. ",
   vv: "The “Stories of Celestial Mansions” contains eighty-five stories in verse that illustrate the heavenly rewards of virtuous deeds, especially making offerings to the Buddha or the Saṅgha. ",
-  pv: "The Stories of Hungry Ghosts” contains fifty-one stories in verse that illustrate rebirth as a hungry ghost as a result of bad deeds. ",
+  pv: "“The Stories of Hungry Ghosts” contains fifty-one stories in verse that illustrate rebirth as a hungry ghost as a result of bad deeds. ",
   thag: "The “Verses of the Senior Monks” is a collection of about 1288 verses attributed to 264 of the senior monks alive in the Buddha’s time, or in a few cases, a little later. These verses celebrate the joy of freedom and the life of meditation in the forest. ",
   thig: "The “Verses of the Senior Nuns” is a collection of about 524 verses attributed to 73 of the senior nuns alive in the Buddha’s time, or in a few cases, a little later. These verses celebrate the bliss of freedom and the life of meditation, full of proud and joyous proclamations of their spiritual attainments and their gratitude to other nuns as guides and teachers. The Therīgāthā is one of the oldest spiritual texts recording only women’s voices. ",
   ja: "A collection of 547 sets of verses telling stories of the Buddha’s past lives. The canonical Pali collection consists of verses arranged in numbered sets in the Aṅguttara fashion. The shorter sets illustrate a high point of a story, while the longer sets tell a complete story. ",
@@ -6220,4 +6220,538 @@ export const blurbs = {
     "“Thou art pale and thin and weak”—The Master told this tale while dwelling in Jetavana, concerning the Perfection of Wisdom.",
   ja547:
     "“Ten boons”—This story the Master told while dwelling near Kapilavatthu in the Banyan Grove, about a shower of rain.",
+
+  bupj: "The rules in this category are known in Pali as pārājika. The exact meaning of the Pali word is disputed, but there is no doubt that it refers to expulsion from the Sangha. There are four such rules for the monks, all of which are shared with the nuns. Anyone who breaches any of these rules immediately loses his status as a monk. He is expelled from the Sangha and ineligible for re-ordination for the rest of his life. The pārājikas, together with the next category of rules, the saṅghādisesas, are collectively known as serious offenses, garukāpatti. These rules are the most fundamental ones for the proper living of the monastic life.",
+  bupj1:
+    "A monk who has sexual intercourse is expelled. The introduction to the rule tells the background story to the laying down of the monastic law. The main principle applied by the Buddha was to lay down rules and procedures only when required by circumstances.",
+  bupj2: "A monk who steals anything of value is expelled.",
+  bupj3:
+    "A monk who kills a human being is expelled. The origin narrative to this rule includes an unusual and much debated story about a number of monks who meditate on the unattractiveness of the body. As a result they end up committing suicide and asking others to kill them. The Buddha then teaches the meditation on mindfulness of breathing.",
+  bupj4:
+    "A monk who falsely claims a profound spiritual attainment is expelled. In the origin story to this rule the Buddha declares that anyone who gets people to support him or her by lying about their spiritual attainments is the worst kind of thief.",
+  buss: "The rules in this category are known in Pali as saṅghādisesa. The meaning of the word is disputed, but according to the commentary it means that the Sangha is required at the beginning (ādi) and for the rest (sesa) of the procedure. There are thirteen such rules for the monks, seven of which are shared with the nuns. Offenders must undergo a period of probation before being rehabilitated to their former status in the Sangha.",
+  buss1:
+    "A monk who intentionally ejaculates is to be suspended. The introductory narrative to this and the next four rules, as well as a number of other rules in the monastic code, feature the monk Udāyī, who had a serious problem with keeping his sexual urges in check. Either that or he is a literary stand-in for the real offenders.",
+  buss2: "A lustful monk who touches a woman is to be suspended.",
+  buss3: "A lustful monk who uses sexually explicit language when speaking to a woman is to be suspended.",
+  buss4: "A lustful monk who recommends to a woman that they have sexual intercourse is to be suspended.",
+  buss5: "A monk who acts as a go-between for a relationship between a man and a woman is to be suspended.",
+  buss6:
+    "When a monk builds a hut by means of begging, he must get the Order to approve the site and the hut must not exceed the maximum size limit. A monk who breaches either of these conditions is to be suspended. The origin story to this rule includes the Maṇikaṇṭha Jātaka tale, found in a slightly different form in the Jātaka collection. There is also another edifying tale and an apparent reference to Raṭṭhapāla of the Raṭṭhapāla Sutta, MN82.",
+  buss7: "A monk who builds a large dwelling without getting the site approved by the Order is to be suspended.",
+  buss8:
+    "A monk who in anger falsely accuses another monk of an offense entailing expulsion is to be suspended. The background narrative to this rule features the extraordinary monk Dabba the Mallian who became an arahant at the age of seven. ",
+  buss9:
+    "A monk who in anger uses a ploy to falsely accuse another monk of an offense entailing expulsion is to be suspended.",
+  buss10:
+    "A monk who tries to cause a schism in the Order is to be suspended. The origin story to this rule gives an account of how Devadatta, the Buddha’s notorious cousin, tried to cause a schism in the Order.",
+  buss11: "A monk who supports another monk who is trying to cause a schism in the Order is to be suspended.",
+  buss12:
+    "A monk who refuses to be corrected about breaches of the monastic code is to be suspended. The narrative setting features the monk Channa who was particularly proud and difficult to deal with.",
+  buss13:
+    "A monk who causes the lay people in a certain place to lose confidence in the teachings of the Buddha should be banished from that place. If he refuses to accept the banishment, he is to be suspended. The introduction to this rule tells of the corrupt and merciless group of six monks, who were the offenders behind a large number of rules in the monastic code. ",
+  buay: "The rules in this category are known in Pali as aniyata, “undetermined”. There are two such rules for the monks, but none for the nuns. These are procedures to establish a course of action when a monk is accused of behaving in a sexually inappropriate way with a woman.",
+  buay1:
+    "A female lay disciple may see a monk sitting in a secluded place with a woman. If she accuses him of an offense entailing expulsion, suspension, or confession, and he admits to the offense, then he incurs an offense accordingly.",
+  buay2:
+    "A female lay disciple may see a monk sitting in private with a woman. If she accuses him of an offense entailing suspension or confession, and he admits to the offense, then he incurs an offense accordingly.",
+  bunp: "The rules in this category are known in Pali as nissaggiya pācittiya, “entailing relinquishment and confession”. There are thirty such rules for the monks, the same number as for the nuns, although only eighteen are held in common. These rules, together with the remaining rules of the Monastic Code, are classed as light offenses, lahukāpatti. For light offenses there is usually no penalty apart from confession. For the nissaggiya pācittiyas, however, any item involved in the committing of an offense must be relinquished. Once the offense has been confessed, the item is, with a few exceptions, returned to the offender.",
+  bunp1:
+    "A monk who keeps extra robe-cloth for more than ten day must relinquish the robe-cloth and confess the offense.",
+  bunp2:
+    "A monk who stays apart from any of his three robes for more than one day must relinquish the robe and confess the offense.",
+  bunp3:
+    "A monk may keep extra robe-cloth for a month if he is expecting more. A monk who keeps it beyond that must relinquish the robe-cloth and confess the offense.",
+  bunp4: "A monk who makes a nun wash or dye a used robe must relinquish the robe and confess the offense.",
+  bunp5: "A monk who accepts robe-cloth from a nun must relinquish the robe-cloth and confess the offense.",
+  bunp6:
+    "A monk who asks a lay person for robe-cloth, except if his robes are lost or destroyed, must relinquish the robe-cloth and confess the offense.",
+  bunp7:
+    "When a monk’s robes are lost or destroyed, he should show moderation in asking for robe-cloth. If he does not, he must relinquish the robe-cloth and confess the offense.",
+  bunp8:
+    "If a lay person wants to buy a robe for a monk, and the monk asks them for a fine robe, he must relinquish the robe and confess the offense.",
+  bunp9:
+    "If two separate lay people want to buy a robe for a monk, and the monk asks them to put their money together to buy him a fine robe, he must relinquish the robe and confess the offense.",
+  bunp10:
+    "When money to be used for a monk’s robe has been placed with a steward in the proper way, that monk may hint to the steward that he needs a robe. If he does not get a robe in this way, but he does get one by acting inappropriately, he must relinquish the robe and confess the offense. This rule also prescribes the procedure through which a lay follower comes to hold money on behalf of a donor who wishes to support a monk.",
+  bunp11: "A monk who makes a blanket containing silk must relinquish it and confess the offense.",
+  bunp12: "A monk who makes a blanket entirely of black wool must relinquish it and confess the offense.",
+  bunp13:
+    "A monk who makes a blanket that contains more than fifty percent black wool must relinquish it and confess the offense.",
+  bunp14:
+    "A monk who makes a blanket must wait for six years before making another. If he does not, he must relinquish it and confess the offense.",
+  bunp15:
+    "A monk who makes a sitting-mat without including a piece from an old blanket must relinquish it and confess the offense. This rule starts with a narrative that includes several important principles of monastic law.",
+  bunp16: "A monk who carries wool on a long journey must relinquish it and confess the offense.",
+  bunp17: "A monk who makes a nun wash, dye, or comb unspun wool must relinquish it and confess the offense.",
+  bunp18: "A monk who receives money must relinquish it and confess the offense.",
+  bunp19: "A monk who receives money through trading must relinquish it and confess the offense.",
+  bunp20:
+    "A monk who barters, except with fellow monastics, must relinquish the item received and confess the offense.",
+  bunp21: "A monk who keeps an extra bowl for more than ten days must relinquish it and confess the offense.",
+  bunp22:
+    "A monk who asks for a new bowl when his existing bowl is still useable must relinquish it and confess the offense.",
+  bunp23: "A monk who keeps tonics for more than seven days must relinquish them and confess the offense.",
+  bunp24: "A monk who seeks or uses a rainy-season robe inappropriately must relinquish it and confess the offense.",
+  bunp25:
+    "A monk who gives robe-cloth to another monk, but then takes it back in anger, must relinquish it and confess the offense.",
+  bunp26:
+    "A monk who asks for thread and then has robe-cloth woven with it must relinquish the robe-cloth and confess the offense.",
+  bunp27:
+    "If a lay person is having robe-cloth woven for a monk and that monk makes demands of the weavers, then he must relinquish the robe-cloth and confess the offense.",
+  bunp28:
+    "A monk who stores “an urgent robe” beyond the acceptable time limit must relinquish it and confess the offense.",
+  bunp29:
+    "A monk who stores any of his three robes in an inhabited area for more than six days must relinquish the robe and confess the offense.",
+  bunp30:
+    "A monk who diverts to himself an offering intended for the Order must relinquish the item and confess the offense.",
+  bupc: "The rules in this category are known in Pali as pācittiya, “entailing confession”. There are ninety-two such rules for the monks, seventy of which are shared with the nuns. This is the largest class of rules in the Monastic Code. These rules, together with all the other rules apart from those entailing expulsion and suspension, are classed as light offenses, lahukāpatti. For light offenses there is no penalty apart from confession.",
+  bupc1: "A monk who lies must confess the offense.",
+  bupc2:
+    "A monk who verbally abuses another monk must confess the offense. The origin story to this rule includes the Nandivisāla Jātaka tale, found in a slightly different form in the Jātaka collection.",
+  bupc3: "A monk who spreads malicious gossip about another monk must confess the offense.",
+  bupc4: "A monk who teaches an unordained person to learn the word of the Buddha by heart must confess the offense.",
+  bupc5:
+    "A monk who lies down in the same room as an unordained person for more than three nights must confess the offense.",
+  bupc6: "A monk who lies down in the same room as a woman must confess the offense.",
+  bupc7: "A monk who teaches a woman more than six sentences of the word of the Buddha must confess the offense.",
+  bupc8: "A monk who tells an unordained person about his own profound spiritual attainment must confess the offense.",
+  bupc9: "A monk who tells an unordained person about another monk’s serious offence must confess the offense.",
+  bupc10: "A monk who digs the earth must confess the offense.",
+  bupc11: "A monk who intentionally destroys vegetation must confess the offense.",
+  bupc12: "A monk who speaks evasively or remains silent when questioned by the Order must confess the offense.",
+  bupc13: "A monk who criticizes or denounces an official of the Order must confess the offense.",
+  bupc14: "A monk who abandons furniture belonging to the Order outdoors must confess the offense.",
+  bupc15: "A monk who abandons bedding in a dwelling belonging to the Order must confess the offense.",
+  bupc16:
+    "A monk who lies down in a dwelling belonging to the Order, encroaching on another monk and aiming to make him depart, must confess the offense.",
+  bupc17: "A monk who throws another monk out of a dwelling belonging to the Order must confess the offense.",
+  bupc18:
+    "A monk who uses a bed with unfastened legs on an unplanked upper storey of a hut belonging to the Order must confess the offense.",
+  bupc19:
+    "A monk who applies more than three layers of building material when building a large dwelling must confess the offense.",
+  bupc20: "A monk who pours water containing living beings onto the ground must confess the offense.",
+  bupc21: "A monk who teaches the nuns without the Order’s agreement must confess the offense.",
+  bupc22: "A monk who teaches the nuns after sunset must confess the offense.",
+  bupc23: "A monk who teaches the nuns at their dwelling place must confess the offense.",
+  bupc24:
+    "A monk who says that other monks are teaching the nuns for the sake of worldly gain, intending to discredit them, must confess the offense.",
+  bupc25: "A monk who gives robe-cloth to a nun must confess the offense.",
+  bupc26: "A monk who sews a robe for a nun must confess the offense.",
+  bupc27: "A monk who travels on a country road by arrangement with a nun must confess the offense.",
+  bupc28: "A monk who travels on a boat by arrangement with a nun must confess the offense.",
+  bupc29: "A monk who eats almsfood that a nun has had prepared must confess the offense.",
+  bupc30: "A monk who, seeking privacy, sits in private with a nun must confess the offense.",
+  bupc31: "A monk who eats more than one meal at a public alms center must confess the offense.",
+  bupc32: "A monk who eats as part of a specifically invited group of monks must confess the offense.",
+  bupc33: "A monk who eats a meal before an invitational meal must confess the offense.",
+  bupc34: "A monk who accepts more than three bowlfuls of pastries must confess the offense.",
+  bupc35: "A monk who eats after finishing his meal must confess the offense.",
+  bupc36:
+    "A monk who tricks another monk who has finished his meal into eating more, aiming to criticize him, must confess the offense.",
+  bupc37: "A monk who eats between noon and dawn must confess the offense.",
+  bupc38: "A monk who eats food stored overnight must confess the offense.",
+  bupc39: "A monk who asks for special food must confess the offense.",
+  bupc40: "A monk who consumes unoffered food or drink must confess the offense.",
+  bupc41: "A monk who gives food to a non-Buddhist mendicant must confess the offense.",
+  bupc42:
+    "A monk who takes another monk on almsround, but then tells him to leave because he wants to misbehave, must confess the offense.",
+  bupc43: "A monk who sits down intruding on a lustful couple must confess the offense.",
+  bupc44: "A monk who, seeking privacy, sits in a secluded place with a woman must confess the offense.",
+  bupc45: "A monk who, seeking privacy, sits in private with a woman must confess the offense.",
+  bupc46: "A monk who visits other lay people before or after an invitational meal must confess the offense.",
+  bupc47: "A monk who goes beyond the terms of an invitation to ask for requisites must confess the offense.",
+  bupc48: "A monk who goes to see an army in action must confess the offense.",
+  bupc49: "A monk who stays with an army for more than three nights must confess the offense.",
+  bupc50: "If, while staying with an army, a monk goes to see the army in action, he must confess the offense.",
+  bupc51: "A monk who consumes alcohol must confess the offense.",
+  bupc52: "A monk who tickles another monk must confess the offense.",
+  bupc53: "A monk who plays in water must confess the offense.",
+  bupc54:
+    "A monk who is disrespectful when rightly corrected about a breach of the monastic code must confess the offense.",
+  bupc55: "A monk who frightens another monk must confess the offense.",
+  bupc56: "A monk who lights a fire to warm himself must confess the offense.",
+  bupc57:
+    "A monk in the central Ganges plain who bathes more than once a fortnight, except when dirty, must confess the offense.",
+  bupc58: "A monk who wears a new robe without first marking it must confess the offense.",
+  bupc59: "A monk who uses robe-cloth that has been transferred to a fellow monastic must confess the offense.",
+  bupc60: "A monk who hides the requisites of another monk must confess the offense.",
+  bupc61: "A monk who intentionally kills a living being must confess the offense.",
+  bupc62: "A monk who uses water that contains living beings must confess the offense.",
+  bupc63:
+    "A monk who tries to reopen an issue of monastic law that has been properly settled must confess the offense.",
+  bupc64: "A monk who conceals another monk’s serious offence must confess the offense.",
+  bupc65:
+    "A monk who acts as preceptor for anyone under twenty must confess the offense. And the ordination is invalid. ",
+  bupc66: "A monk who travels by arrangement with thieves must confess the offense.",
+  bupc67: "A monk who travels by arrangement with a woman must confess the offense.",
+  bupc68:
+    "A monk who says that things declared as obstructive by the Buddha are not actually obstructive must confess the offense.",
+  bupc69:
+    "A monk who lives with a monk who has been ejected for holding the view that things declared as obstructive by the Buddha are not actually obstructive must confess the offense.",
+  bupc70:
+    "A monk who lives with a novice who has been expelled for holding the view that things declared as obstructive by the Buddha are not actually obstructive must confess the offense.",
+  bupc71: "A monk who uses a ploy as an excuse for not keeping the monastic code must confess the offense.",
+  bupc72: "A monk who criticizes the monastic code must confess the offense.",
+  bupc73: "A monk who deceptively claims that he did not know a rule in the monastic code must confess the offense.",
+  bupc74: "A monk who in anger strikes another monk must confess the offense.",
+  bupc75: "A monk who in anger physically threatens another monk must confess the offense.",
+  bupc76: "A monk who falsely accuses another monk of an offense entailing suspension must confess the offense.",
+  bupc77: "A monk who intentionally makes another monk anxious must confess the offense.",
+  bupc78:
+    "A monk who eavesdrops on other monks who are disputing about the Teaching or the monastic law must confess the offense.",
+  bupc79:
+    "A monk who has given his consent for the Order to perform an official act, but then criticizes the act, must confess the offense.",
+  bupc80:
+    "A monk who departs without giving his consent while the Order is deciding on an issue must confess the offense.",
+  bupc81:
+    "If a monk, acting as part of a complete Order, gives away a robe to an official of the Order, but then criticizes the act, he must confess the offense.",
+  bupc82: "A monk who diverts to an individual an offering intended for the Order must confess the offense.",
+  bupc83: "A monk who enters the bedroom of a king must confess the offense.",
+  bupc84: "A monk who picks up anything considered valuable must confess the offense.",
+  bupc85: "A monk who enters an inhabited area between noon and dawn must confess the offense.",
+  bupc86: "A monk who makes a needle-case of bone, ivory, or horn must destroy it and confess the offense.",
+  bupc87: "A monk who makes a bed with long legs must shorten them and confess the offense.",
+  bupc88: "A monk who makes a bed with luxurious upholstery must remove the upholstery and confess the offense.",
+  bupc89: "A monk who makes a sitting-cloth that is too large must cut it down and confess the offense.",
+  bupc90: "A monk who makes a bandage that is too large must cut it down and confess the offense.",
+  bupc91: "A monk who makes a rainy-season robe that is too large must cut it down and confess the offense.",
+  bupc92: "A monk who makes a robe that is too large must cut it down and confess the offense.",
+  bupd: "The rules in this category are known in Pali as pāṭidesanīya, “entailing acknowledgement”. There are four such rules for the monks, none of which are shared with the nuns. What distinguishes these rules from the pācittiyas is the manner of confession. For these rules the confession is done using a unique formula, with the second rule being the only one in the Monastic Code where all the offenders confess together as a group.",
+  bupd1: "A monk who receives food from a nun must acknowledge the offense.",
+  bupd2:
+    "A monk at an invitational meal who does not tell a nun to stop directing the distribution of food must acknowledge the offense.",
+  bupd3: "A monk who receives food from anyone designated as “in training” must acknowledge the offense.",
+  bupd4: "A monk who receives food in a dangerous wilderness dwelling must acknowledge the offense.",
+  busk: "The rules in this category are known in Pali as sekhiya, “involving training”. There are seventy-five such rules, and they are the same both for the monks and the nuns. The sekhiyas are mostly rules of etiquette. Breaking a sekhiya is only considered to be a transgression if the offender is acting out of disrespect for the rule.",
+  busk69:
+    "The background story includes the Chava Jātaka tale, “the Jātaka on the low-caste man”, found in slightly different form in the Jātaka collection.",
+  buas: "There are seven adhikaraṇasamathadhamma, “principles for the settling of legal issues”, which are the same for the nuns and the monks. These are not rules in the ordinary sense and as such fall outside of the classification into serious and light offenses. Instead, they set out the proper methods for dealing with legal issues. The detailed explanation for these is found in the Samathakkhandhaka. The legal issues to be settled through these principles fall into four categories: disputes, accusations, offenses, and proceedings. “Proceedings” includes monastic procedures such as ordination and the keeping of the observance day (uposatha).",
+  buas1:
+    "A legal issue can only be resolved if all those concerned are present during the process. In addition the procedure must comply with all aspects of monastic law.",
+  buas2:
+    "If a monk is known for his clarity of memory, any accusations against him may be settled through that monk declaring his innocence based on his memory of the relevant events.",
+  buas3:
+    "A monk who is insane is not responsible for his own offenses. Any offenses he may have committed while insane can be cleared through a declaration of past insanity.",
+  buas4:
+    "All offenses, except those entailing expulsion, should be cleared by making amends in the appropriate manner.",
+  buas5: "A dispute that drags on without resolution may be settled through majority vote.",
+  buas6: "A monk who is intractable in regard to the offenses he has committed may be subject to an act of censure.",
+  buas7:
+    "If a dispute involves a number of offenses on both sides, and the Order considers that dealing with all the offenses in the usual manner is likely to lead to harshness or schism, then the Order may decide to do a procedure whereby all the offenses are cleared. Offenses that cannot be cleared in this way are those entailing expulsion and suspension, as well as any offenses that involve lay people.",
+  bipj: "The rules in this category are known in Pali as pārājika. The exact meaning of the Pali word is disputed, but there is no doubt that it refers to expulsion from the monastic Sangha. There are eight such rules for the nuns, four of which are shared with the monks. Anyone who breaches any of these rules immediately loses her status as a nun. She is expelled from the Sangha and ineligible for re-ordination for the rest of her life. The pārājikas, together with the next category of rules, the saṅghādisesas, are collectively known as serious offenses, garukāpatti. These rules are the most fundamental ones for the proper living of the monastic life.",
+  bipj1: "A nun who voluntarily has sexual intercourse is expelled.",
+  bipj2: "A nun who steals anything of value is expelled. ",
+  bipj3: "A nun who kills a human being is expelled.",
+  bipj4: "A nun who falsely claims a profound spiritual attainment is expelled.",
+  bipj5:
+    "A lustful nun who agrees to a lustful man touching her anywhere below the collar bone and above the knees is expelled.",
+  bipj6:
+    "A nun who does not take any action when she knows that another nun has committed an offense entailing expulsion is expelled. This is the first among a large of rules in which the notorious nun Thullanandā was the original offender. Either Thullanandā was an exceptionally bad nun or she is a literary stand-in for the real offenders.",
+  bipj7: "A nun who persistently sides with a monk who has been legitimately ejected is expelled.",
+  bipj8:
+    "A nun who agrees to all of eight kinds of flirtatious behavior is expelled. This is the first among a large number of rules that features the notorious group of six nuns. These nuns were possibly affiliated with the group of six monks, or they are modelled on them.",
+  biss: "The rules in this category are known in Pali as saṅghādisesa. The meaning of the word is disputed, but according to the commentary it means that the Sangha is required at the beginning (ādi) and for the rest (sesa) of the procedure. There are seventeen such rules for the nuns, seven of which are shared with the monks. Offenders must undergo a period of probation before being rehabilitated to their former status in the Sangha.",
+  biss1: "A nun who uses litigation inappropriately is to be suspended.",
+  biss2: "A nun who ordains a female criminal sentenced to death is to be suspended.",
+  biss3: "A nun who walks alone in an uninhabited area or spends the night by herself is to be suspended.",
+  biss4: "A nun who, without permission, reinstates another nun who has been legitimately ejected is to be suspended.",
+  biss5: "A lustful nun who receives food from a lustful man is to be suspended.",
+  biss6: "A nun who encourages another nun to receive food from a lustful man is to be suspended.",
+  biss7: "A nun who acts as a go-between for a relationship between a man and a woman is to be suspended.",
+  biss8: "A nun who in anger falsely accuses another nun of an offense entailing expulsion is to be suspended.",
+  biss9:
+    "A nun who in anger uses a ploy to falsely accuse another nun of an offense entailing expulsion is to be suspended.",
+  biss10: "A nun who persistently says that she will renounce Buddhism and join another religion is to be suspended.",
+  biss11:
+    "A nun who persistently says that the other nuns are biased because a legal issue has not been decided to her liking is to be suspended.",
+  biss12:
+    "Nuns who are persistently notorious for inappropriate socialization, who create difficulties for the Order, and who hide each other offenses are suspended.",
+  biss13:
+    "A nun who persistently encourages other nuns to act in contravention of the previous rule is to be suspended. ",
+  biss14: "A nun who tries to cause a schism in the Order is to be suspended.",
+  biss15: "A nun who supports another nun who is trying to cause a schism in the Order is to be suspended.",
+  biss16: "A nun who refuses to be corrected about breaches of the monastic code is to be suspended.",
+  biss17:
+    "A nun who causes the lay people in a certain place to lose confidence in the teachings of the Buddha should be banished from that place. If she refuses to accept the banishment, she is to be suspended.",
+  binp: "The rules in this category are known in Pali as nissaggiya pācittiya, “entailing relinquishment and confession”. There are thirty such rules for the nuns, the same number as for the monks, although only eighteen are held in common. These rules, together with the remaining rules of the Monastic Code, are classed as light offenses, lahukāpatti. For light offenses there is usually no penalty apart from confession. For the nissaggiya pācittiyas, however, any item involved in the committing of an offense must be relinquished. Once the offense has been confessed, the item is, with a few exceptions, returned to the offender.",
+  binp1: "A nun who has more than one bowl must relinquish the extra bowl and confess the offense.",
+  binp2: "A nun who distributes robe-cloth inappropriately must relinquish the robe-cloth and confess the offense.",
+  binp3:
+    "A nun who takes back a robe given in exchange to another nun must relinquish the robe and confess the offense.",
+  binp4:
+    "A nun who asks for one thing but after receiving it says she wants something else must relinquish the item and confess the offense.",
+  binp5:
+    "A nun who gets one thing from a steward but then exchanges it for something else must relinquish the item and confess the offense.",
+  binp6:
+    "A nun who exchanges away a requisite belonging to the Order that is designated for a specific purpose must relinquish the item and confess the offense.",
+  binp7:
+    "A nun who asks for a requisite belonging to the Order that is designated for a specific purpose and then exchanges it for something else must relinquish the item and confess the offense.",
+  binp8:
+    "A nun who exchanges away a collective requisite designated for a specific purpose must relinquish the item and confess the offense.",
+  binp9:
+    "A nun who asks for a collective requisite designated for a specific purpose and then exchanges it for something else must relinquish the item and confess the offense.",
+  binp10:
+    "A nun who asks for a personal requisite for a specific purpose and then exchanges it for something else must relinquish the item and confess the offense.",
+  binp11: "A nun who asks for an expensive, heavy outer-robe must relinquish it and confess the offense.",
+  binp12: "A nun who asks for an expensive, light outer-robe must relinquish it and confess the offense.",
+  binp13:
+    "A nun who keeps extra robe-cloth for more than ten day must relinquish the robe-cloth and confess the offense.",
+  binp14:
+    "A nun who stays apart from any of her five robes for more than one day must relinquish the robe and confess the offense.",
+  binp15:
+    "A nun may keep extra robe-cloth for a month if she is expecting more. A nun who keeps it beyond that must relinquish the robe-cloth and confess the offense.",
+  binp16:
+    "A nun who asks a lay person for robe-cloth, except if her robes are lost or destroyed, must relinquish the robe-cloth and confess the offense.",
+  binp17:
+    "When a nun’s robes are lost or destroyed, she should show moderation in asking for robe-cloth. If she does not, she must relinquish the robe-cloth and confess the offense.",
+  binp18:
+    "If a lay person wants to buy a robe for a nun, and the nun asks them for a fine robe, she must relinquish the robe and confess the offense.",
+  binp19:
+    "If two separate lay people want to buy a robe for a nun, and the nun asks them to put their money together to buy her a fine robe, she must relinquish the robe and confess the offense.",
+  binp20:
+    "When money to be used for a nun’s robe has been placed with a steward in the proper way, that nun may hint to the steward that she needs a robe. If she does not get a robe in this way, but she does get one by acting inappropriately, she must relinquish the robe and confess the offense. This rule also prescribes the procedure through which a lay follower comes to hold money on behalf of a donor who wishes to support a nun.",
+  binp21: "A nun who receives money must relinquish it and confess the offense.",
+  binp22: "A nun who receives money through trading must relinquish it and confess the offense.",
+  binp23: "A nun who barters, except with fellow monastics, must relinquish the item received and confess the offense.",
+  binp24:
+    "A nun who asks for a new bowl when her existing bowl is still useable must relinquish it and confess the offense.",
+  binp25: "A nun who keeps tonics for more than seven days must relinquish them and confess the offense.",
+  binp26:
+    "A nun who gives robe-cloth to another nun, but then takes it back in anger, must relinquish it and confess the offense.",
+  binp27:
+    "A nun who asks for thread and then has robe-cloth woven with it must relinquish the robe-cloth and confess the offense.",
+  binp28:
+    "If a lay person is having robe-cloth woven for a nun and that nun makes demands of the weavers, then she must relinquish the robe-cloth and confess the offense.",
+  binp29:
+    "A nun who stores “an urgent robe” beyond the acceptable time limit must relinquish it and confess the offense.",
+  binp30:
+    "A nun who diverts to herself an offering intended for the Order must relinquish the item and confess the offense.",
+  bipc: "The rules in this category are known in Pali as pācittiya, “entailing confession”. There are one hundred and sixty-six such rules for the nuns, seventy of which are shared with the monks. This is the largest class of rules in the Monastic Code. These rules, together with all the other rules apart from those entailing expulsion and suspension, are classed as light offenses, lahukāpatti. For light offenses there is no penalty apart from confession.",
+  bipc1:
+    "A nun who eats raw garlic must confess the offense. This rule includes the Suvaṇṇahaṁsa Jātaka tale, “the Golden goose Jātaka,” found in slightly different form in the Jātaka collection.",
+  bipc2: "A nun who removes hair from the armpits or the groin must confess the offense.",
+  bipc3: "A nun who slaps her genitals must confess the offense.",
+  bipc4: "A nun who uses a dildo must confess the offense.",
+  bipc5: "A nun who inserts more than two joints of the fingers into the vagina must confess the offense.",
+  bipc6: "A nun who attends on a monk while he is eating must confess the offense.",
+  bipc7: "A nun who asks for raw grain and then prepares and eats it must confess the offense.",
+  bipc8: "A nun who disposes of feces, urine, or rubbish over a wall must confess the offense.",
+  bipc9: "A nun who disposes of feces, urine, or rubbish on cultivated plants must confess the offense.",
+  bipc10: "A nun who goes to see a show must confess the offense.",
+  bipc11: "A nun who, seeking privacy, stands alone with a man at night must confess the offense.",
+  bipc12: "A nun who, seeking privacy, stands alone with a man in a concealed place must confess the offense.",
+  bipc13: "A nun who, seeking privacy, stands alone with a man out in the open must confess the offense.",
+  bipc14: "A nun who, seeking privacy, stands alone with a man on street must confess the offense.",
+  bipc15: "A nun who leaves a house without informing the owners must confess the offense.",
+  bipc16:
+    "A nun who sits or lies down on a seat in a house without asking the owners for permission must confess the offense.",
+  bipc17:
+    "A nun who spreads out bedding in a house and then sits or lies down without asking the owners for permission must confess the offense.",
+  bipc18: "A nun who criticizes someone without reflection must confess the offense.",
+  bipc19: "A nun who curses herself or another must confess the offense.",
+  bipc20: "A nun who cries and beats herself must confess the offense.",
+  bipc21: "A nun who bathes naked must confess the offense.",
+  bipc22: "A nun who makes a bathing robe that is too large must confess the offense.",
+  bipc23: "A nun who does not sew back together the robe of another nun after unstitching it must confess the offense.",
+  bipc24: "A nun who leaves any of her five robes untouched for five days must confess the offense.",
+  bipc25: "A nun who wears a borrowed robe without the permission of the owner must confess the offense.",
+  bipc26: "A nun who hinders an order of nuns from receiving robe-cloth must confess the offense.",
+  bipc27: "A nun who blocks an appropriate distribution of robe-cloth must confess the offense.",
+  bipc28: "A nun who gives a robe to anyone who is not a Buddhist monastic must confess the offense.",
+  bipc29: "A nun who hinders the distribution of robe-cloth without a proper reason must confess the offense.",
+  bipc30: "A nun who inappropriately blocks the Order from ending the robe-making season must confess the offense.",
+  bipc31: "A nun who lies down on the same bed as another nun must confess the offense.",
+  bipc32: "A nun who shares bedding with another nun must confess the offense.",
+  bipc33: "A nun who intentionally makes another nun ill at ease must confess the offense.",
+  bipc34: "A nun who does not attend on a sick monastic disciple must confess the offense.",
+  bipc35: "A nun who gives a dwelling place to another nun and then throws her out must confess the offense.",
+  bipc36: "A nun who persistently engages in inappropriate socialization with lay people must confess the offense.",
+  bipc37:
+    "A nun who goes wandering without a group of travelers in a dangerous area of her own country must confess the offense.",
+  bipc38: "A nun who goes wandering without a group of travelers in a dangerous area abroad must confess the offense.",
+  bipc39: "A nun who goes wandering during the rainy season must confess the offense.",
+  bipc40: "A nun who does not go wandering after the rainy season must confess the offense.",
+  bipc41: "A nun who goes to see a pleasure house or a pleasure garden must confess the offense.",
+  bipc42: "A nun who uses a large or luxurious seat must confess the offense.",
+  bipc43: "A nun who spins yarn must confess the offense.",
+  bipc44: "A nun who serves a lay person must confess the offense.",
+  bipc45: "A nun who agrees to settle a legal issue but then makes no effort to do so must confess the offense.",
+  bipc46: "A nun who gives food to anyone who is not a Buddhist monastic must confess the offense.",
+  bipc47: "A nun who uses a communal menstruation robe beyond the intended period must confess the offense.",
+  bipc48: "A nun who goes wandering without giving up her lodging must confess the offense.",
+  bipc49: "A nun who studies pointless knowledge must confess the offense.",
+  bipc50: "A nun who teaches pointless knowledge must confess the offense.",
+  bipc51: "A nun who enters a monks’ monastery without permission must confess the offense.",
+  bipc52: "A nun who abuses a monk must confess the offense.",
+  bipc53: "A nun who in anger abuses an order must confess the offense.",
+  bipc54: "A nun who eats after finishing her meal must confess the offense.",
+  bipc55: "A nun who tries to keep her supporters from supporting others must confess the offense.",
+  bipc56: "A nun who spends the rainy season in a monastery without monks must confess the offense.",
+  bipc57: "A nun who does not invite correction from both Orders after the rainy season must confess the offense.",
+  bipc58: "A nun who does not go to the instruction or formal meetings of the Order must confess the offense.",
+  bipc59:
+    "A nun who does not ask the Order of monks every half-month about the observance day and the going for instruction must confess the offense.",
+  bipc60: "A nun who is alone with a man and gets treatment from him on the thigh must confess the offense.",
+  bipc61: "A nun who ordains a pregnant woman must confess the offense.",
+  bipc62: "A nun who ordains a woman who is breastfeeding must confess the offense.",
+  bipc63: "A nun who ordains a trainee nun who has not completed her training must confess the offense.",
+  bipc64: "A nun who ordains a trainee nun without the approval of the Order must confess the offense.",
+  bipc65: "A nun who ordains a married girl less than twelve years old must confess the offense.",
+  bipc66: "A nun who ordains a married girl who has not completed her training must confess the offense.",
+  bipc67: "A nun who ordains a married girl without the approval of the Order must confess the offense.",
+  bipc68: "A nun who ordains a student but does not guide her for two years must confess the offense.",
+  bipc69: "A nun who does not follow her preceptor for two years must confess the offense.",
+  bipc70: "A nun who ordains a student without afterwards taking her away must confess the offense.",
+  bipc71: "A nun who ordains an unmarried girl less than twenty years old must confess the offense.",
+  bipc72: "A nun who ordains an unmarried girl who has not completed her training must confess the offense.",
+  bipc73: "A nun who ordains an unmarried girl without the approval of the Order must confess the offense.",
+  bipc74: "A nun with insufficient seniority who gives ordination must confess the offense.",
+  bipc75: "A nun who gives ordination without the approval of the Order must confess the offense.",
+  bipc76:
+    "A nun who agrees when she is refused permission to give ordination but later criticizes it must confess the offense.",
+  bipc77:
+    "A nun who promises to ordain a trainee nun in return for robe-cloth but then makes no effort to get her ordained must confess the offense.",
+  bipc78:
+    "A nun who promises to ordain a trainee nun in return for being attended on for two years but then makes no effort to get her ordained must confess the offense.",
+  bipc79:
+    "A nun who ordains a trainee nun who socializes inappropriately and is difficult to live with must confess the offense.",
+  bipc80:
+    "A nun who ordains a trainee nun who has not been given permission by her parents and husband must confess the offense.",
+  bipc81: "A nun who ordains a trainee nun after the consent of the Order has expired must confess the offense.",
+  bipc82: "A nun who gives ordination in consecutive years must confess the offense.",
+  bipc83: "A nun who ordains two women in one year must confess the offense.",
+  bipc84: "A nun who uses a sunshade and sandals must confess the offense.",
+  bipc85: "A nun who travels in a vehicle must confess the offense.",
+  bipc86: "A nun who wears a hip ornament must confess the offense.",
+  bipc87: "A nun who wears ornaments must confess the offense.",
+  bipc88: "A nun who bathes with scents and colors must confess the offense.",
+  bipc89: "A nun who bathes with scents and oil-seed flowers must confess the offense.",
+  bipc90: "A nun who makes another nun rub her must confess the offense.",
+  "bipc91-93": "A nun who makes a trainee nun, a novice nun, or a laywoman rub her must confess the offense.",
+  bipc94: "A nun who sits down in front of a monk without asking permission must confess the offense.",
+  bipc95: "A nun who asks a monk a question without obtaining leave must confess the offense.",
+  bipc96: "A nun who enters an inhabited area without a bust cover must confess the offense.",
+  bipc97: "A nun who lies must confess the offense.",
+  bipc98: "A nun who verbally abuses another nun must confess the offense.",
+  bipc99: "A nun who spreads malicious gossip about another nun must confess the offense.",
+  bipc100: "A nun who teaches an unordained person to learn the word of the Buddha by heart must confess the offense.",
+  bipc101:
+    "A nun who lies down in the same room as an unordained person for more than three nights must confess the offense.",
+  bipc102: "A nun who lies down in the same room as a man must confess the offense.",
+  bipc103: "A nun who teaches a man more than six sentences of the word of the Buddha must confess the offense.",
+  bipc104: "A nun who tells an unordained person about her own profound spiritual attainment must confess the offense.",
+  bipc105: "A nun who tells an unordained person about another nun’s serious offense must confess the offense.",
+  bipc106: "A nun who digs the earth must confess the offense.",
+  bipc107: "A nun who intentionally destroys vegetation must confess the offense.",
+  bipc108: "A nun who speaks evasively or remains silent when questioned by the Order must confess the offense.",
+  bipc109: "A nun who criticizes or denounces an official of the Order must confess the offense.",
+  bipc110: "A nun who abandons furniture belonging to the Order outdoors must confess the offense.",
+  bipc111: "A nun who abandons bedding in a dwelling belonging to the Order must confess the offense.",
+  bipc112:
+    "A nun who lies down in a dwelling belonging to the Order, encroaching on another nun and aiming to make her depart, must confess the offense.",
+  bipc113: "A nun who throws another nun out of a dwelling belonging to the Order must confess the offense.",
+  bipc114:
+    "A nun who uses a bed with unfastened legs on an unplanked upper storey of a hut belonging to the Order must confess the offense.",
+  bipc115:
+    "A nun who applies more than three layers of building material when building a large dwelling must confess the offense.",
+  bipc116: "A nun who pours water containing living beings onto the ground must confess the offense.",
+  bipc117: "A nun who eats more than one meal at a public alms center must confess the offense.",
+  bipc118: "A nun who eats as part of a specifically invited group of nuns must confess the offense.",
+  bipc119: "A nun who accepts more than three bowlfuls of pastries must confess the offense.",
+  bipc120: "A nun who eats between noon and dawn must confess the offense.",
+  bipc121: "A nun who eats food stored overnight must confess the offense.",
+  bipc122: "A nun who consumes unoffered food or drink must confess the offense.",
+  bipc123:
+    "A nun who takes another nun on almsround, but then tells her to leave because she wants to misbehave must confess the offense.",
+  bipc124: "A nun who sits down intruding on a lustful couple must confess the offense.",
+  bipc125: "A nun who sits in a secluded place with a man must confess the offense.",
+  bipc126: "A nun who sits in private with a man must confess the offense.",
+  bipc127: "A nun who visits other lay people before or after an invitational meal must confess the offense.",
+  bipc128: "A nun who goes beyond the terms of an invitation to ask for requisites must confess the offense.",
+  bipc129: "A nun who goes to see an army in action must confess the offense.",
+  bipc130: "A nun who stays with an army for more than three nights must confess the offense.",
+  bipc131: "If, while staying with an army, a nun goes to see the army in action, she must confess the offense.",
+  bipc132: "A nun who consumes alcohol must confess the offense.",
+  bipc133: "A nun who tickles another nun must confess the offense.",
+  bipc134: "A nun who plays in water must confess the offense.",
+  bipc135:
+    "A nun who is disrespectful when rightly corrected about a breach of the monastic code must confess the offense.",
+  bipc136: "A nun who frightens another nun must confess the offense.",
+  bipc137: "A nun who lights a fire to warm herself must confess the offense.",
+  bipc138:
+    "A nun in the central Ganges plain who bathes more than once a fortnight, except when dirty, must confess the offense.",
+  bipc139: "A nun who wears a new robe without first marking it must confess the offense.",
+  bipc140: "A nun who uses robe-cloth that has been transferred to a fellow monastic must confess the offense.",
+  bipc141: "A nun who hides the requisites of another nun must confess the offense.",
+  bipc142: "A nun who intentionally kills a living being must confess the offense.",
+  bipc143: "A nun who uses water that contains living beings must confess the offense.",
+  bipc144:
+    "A nun who tries to reopen an issue of monastic law that has been properly settled must confess the offense.",
+  bipc145: "A nun who travels by arrangement with thieves must confess the offense.",
+  bipc146:
+    "A nun who says that things declared as obstructive by the Buddha are not actually obstructive must confess the offense.",
+  bipc147:
+    "A nun who lives with a nun who has been ejected for holding the view that things declared as obstructive by the Buddha are not actually obstructive must confess the offense.",
+  bipc148:
+    "A nun who lives with a novice nun who has been expelled for holding the view that things declared as obstructive by the Buddha are not actually obstructive must confess the offense.",
+  bipc149: "A nun who uses a ploy as an excuse for not keeping the monastic code must confess the offense.",
+  bipc150: "A nun who criticizes the monastic code must confess the offense.",
+  bipc151: "A nun who deceptively claims that she did not know a rule in the monastic code must confess the offense.",
+  bipc152: "A nun who in anger strikes another nun must confess the offense.",
+  bipc153: "A nun who in anger physically threatens another nun must confess the offense.",
+  bipc154: "A nun who falsely accuses another nun of an offense entailing suspension must confess the offense.",
+  bipc155: "A nun who intentionally makes another nun anxious must confess the offense.",
+  bipc156:
+    "A nun who eavesdrops on other nuns who are disputing about the Teaching or the monastic law must confess the offense.",
+  bipc157:
+    "A nun who has given her consent for the Order to perform an official act, but then criticizes the act must confess the offense.",
+  bipc158:
+    "A nun who departs without giving her consent while the Order is deciding on an issue must confess the offense.",
+  bipc159:
+    "If a nun, acting as part of a complete Order, gives away a robe to an official of the Order, but then criticizes the act, she must confess the offense.",
+  bipc160: "A nun who diverts to an individual an offering intended for the Order must confess the offense.",
+  bipc161: "A nun who picks up anything considered valuable must confess the offense.",
+  bipc162: "A nun who makes a needle-case of bone, ivory, or horn must destroy it and confess the offense.",
+  bipc163: "A nun who makes a bed with long legs must shorten them and confess the offense.",
+  bipc164: "A nun who makes a bed with luxurious upholstery must remove the upholstery and confess the offense.",
+  bipc165: "A nun who makes a bandage that is too large must cut it down and confess the offense.",
+  bipc166: "A nun who makes a robe that is too large must cut it down and confess the offense.",
+  bipd: "The rules in this category are known in Pali as pāṭidesanīya, “entailing acknowledgement”. There are eight such rules for the nuns. These eight rules for the nuns are equivalent to a single rule for the monks (bhikkhu-pācittiya 39). In summary, they say that a nun who asks for special food must acknowledge the offense.",
+  bisk: "The rules in this category are known in Pali as sekhiya, “involving training”. There are seventy-five such rules, and they are the same both for the monks and the nuns. The sekhiyas are mostly rules of etiquette. Breaking a sekhiya is only considered to be a transgression if the offender is acting out of disrespect for the rule.",
+  bias: "There are seven adhikaraṇasamathadhamma, “principles for the settling of legal issues”, which are the same for the nuns and the monks. These are not rules in the ordinary sense and as such fall outside of the classification into serious and light offenses. Instead, they set out the proper methods for dealing with legal issues. The detailed explanation for these is found in the Samathakkhandhaka. The legal issues to be settled through these principles fall into four categories: disputes, accusations, offenses, and proceedings. “Proceedings” includes monastic procedures such as ordination and the keeping of the observance day (uposatha).",
+  bias1:
+    "A legal issue can only be resolved if all those concerned are present during the process. In addition the procedure must comply with all aspects of monastic law.",
+  bias2:
+    "If a nun is known for her clarity of memory, any accusations against her may be settled through that nun declaring her innocence based on her memory of the relevant events.",
+  bias3:
+    "A nun who is insane is not responsible for her own offenses. Any offenses she may have committed while insane can be cleared through a declaration of past insanity.",
+  bias4:
+    "All offenses, except those entailing expulsion, should be cleared by making amends in the appropriate manner.",
+  bias5: "A dispute that drags on without resolution may be settled through majority vote.",
+  bias6: "A nun who is intractable in regard to the offenses she has committed may be subject to an act of censure.",
+  bias7:
+    "If a dispute involves a number of offenses on both sides, and the Order considers that dealing with all the offenses in the usual manner is likely to lead to harshness or schism, then the Order may decide to do a procedure whereby all the offenses are cleared. Offenses that cannot be cleared in this way are those entailing expulsion and suspension, as well as any offenses that involve lay people.",
+  kd1: "The Mahākhandhaka, “the Great chapter”, begins by telling the story of the Buddha after his awakening. Three of the Buddha’s first and most well-known discourses—the Setting in motion of the wheel of the Teaching, the Characteristics of non-self, and the Discourse on fire—are given in full. As he starts to accumulate disciples, an ordination procedure gradually evolves. A large number of rules that concern ordination, especially about the eligibility of the candidate, are laid down, as are rules governing the relationship between teacher and student, including rules about novices.",
+  kd2: "The Uposathakkhandhaka, “the Chapter on the observance day”, lays down the rules concerning the twice-monthly observance day, the uposatha, which is kept on the day of the full moon and the new moon. It is on these days that the main rules binding on all monastics, the Monastic Code or the Pātimokkha, is recited. The chapter also gives the rules regarding the boundary, the sīmā, that defines the extent of a single monastic community. Rules on making amends for offenses are also found here.",
+  kd3: "The Vassūpanāyikakkhandhaka, “the Chapter on entering the rainy-season residence”, prohibits monastics from traveling during three months of the rainy season. Instead they should enter the rainy-season residence in a suitable place. It then gives a number of exemptions because of which a monastic may travel for a maximum of seven days to look after urgent business.",
+  kd4: "The Pavāraṇākhandhaka, “the Chapter on the invitation ceremony”, concerns the rules that apply to the ceremony of inviting correction from one’s fellow monastics. This ceremony is held annually at the very end of the rain-season residence, and is compulsory for all monastics.",
+  kd5: "The Cammakkhandhaka, “the Chapter on skins”, contains rules on the use of footwear and skins, as well as vehicles and beds. The chapter includes the inspiring stories of the monk Soṇa Koḷivisa who was the Buddha’s foremost disciple in putting forth energy and the monk Soṇa Kuṭikaṇṇa who became a monk in the distant country of Avantī where Buddhism had barely arrived. It also mentions a number of rules that are relaxed for lands outside of the middle Ganges plain.",
+  kd6: "The Bhesajjakkhandhaka, “the Chapter on medicines”, concerns allowable medicines and medical treatment. The rules laid down here include prohibitions against various kinds of meat and against cooking by monastics. The chapter contains the remarkable story of the monk Pilindavaccha and his supernormal powers. It also features the stories of the courtesan Ambapālī offering her mango grove to the Sangha, the conversion of general Sīha, and the exceptional layman Meṇḍaka, after whom the Meṇḍaka allowance is named. This allowance enables lay supporters to deposit a fund with a steward, who is to be approached by a designated monastic in need of requisites. The chapter concludes with four general standards to help monastics decide what is and what is not allowable.",
+  kd7: "The Kathinakkhandhaka, “the Chapter on the robe-making ceremony”, describes the procedure and rules for the robe-making ceremony that is normally held in the last month of the rainy season, after the rainy-season residence has been completed. Once this ceremony has been performed, the robe-making season lasts until the end of the cold season, unless certain conditions are fulfilled. Most of this chapter consists of a detailed analysis of those conditions.",
+  kd8: "The Cīvarakkhandhaka, “the Chapter on robe-cloth”, gives a number of rules on robes, robe-cloth, and dyeing equipment, as well as rules on inheritance. Here we find the long story of the doctor Jīvaka, the Buddha’s personal physician, and the story of Visākha, the Buddha’s main female lay supporter, who shows her understanding of the connection between generosity and success in meditation. This chapter also contains the inspiring story of the Buddha and Ānanda washing a monk who has dysentery.",
+  kd9: "The Campeyyakkhandhaka, “the Chapter on those from Campā”, contains a technical discussion on the validity of formal monastic procedures, saṅghakamma. The chapter starts with the story of the monk Kassapagotta who is maliciously accused of having committed an offense.",
+  kd10: "The Kosambakakkhandhaka, “the Chapter on those from Kosambī”, discusses how to deal with a split in the Sangha. The chapter begins with the story of “the Kosambī incident”, which led to a serious dispute and spilt in the Sangha. The Buddha tells the story of Dīghāvu, a longer version of the Kosambiya Jātaka of the Jātaka collection, in an attempt at getting the monks to come to their senses. Failing at this, he goes to visit the three friends Anuruddha, Nandiya, and Kimbila, who exemplify the art of living in harmony.",
+  kd11: "The Kammakkhandhaka, “the Chapter on procedures”, describes in technical detail the validity of formal procedures that involve sanctions against an offender. The chapter discusses the enactment of such procedures, the mode of conduct required of the offender to deserve release, and the lifting of the procedure.",
+  kd12: "The Pārivāsikakkhandhaka, “the Chapter on those on probation”, contains a detailed description of the conduct required of a monastic who has committed an offense entailing suspension, a saṅghādisesa, so as to deserve rehabilitation.",
+  kd13: "The Samuccayakkhandhaka, “the Chapter on accumulation”, describes in detail the process of making amends for a monastic who has committed an offense entailing suspension, a saṅghādisesa.",
+  kd14: "The Samathakkhandhaka, “the Chapter on the settling of legal issues”, gives a detailed description of how the principles for the resolution of legal issues (the adhikaraṇasamathadhamma), the last seven “rules” of the Monastic Code, are to be applied in practice. The chapter includes a technical discussion on the nature of the four kinds of legal issues.",
+  kd15: "The Khuddakavatthukkhandhaka, “the Chapter with short topics”, contains a large and diverse number of minor rules, including rules on allowable buildings. A recurrent theme is that luxurious items and sensual indulgence are not allowed. The verses to protect against dangerous insects and snakes, the so-called Khandhaparitta, are found here. The procedure of “overturning the bowl” is described, a procedure used against lay people who act against the interest of Buddhism. This chapter also includes the much-debated instruction for monastics to learn the Teachings using the Buddha’s own way of expression.",
+  kd16: "The Senāsanakkhandhaka, “the Chapter on dwellings”, gives further rules on allowable buildings, including allowable methods for constructing and finishing them, as well as allowable furnishings. A number of minor rules are laid down, as are the procedures for appointing community officials. The chapter tells the story of Anāthapiṇḍika, perhaps the greatest benefactor of Buddhism in the very earliest period. Here we also find the Tittira Jātaka tale, “the Partridge Jātaka”, found in a slightly different form in the Jātaka collection.",
+  kd17: "The Saṅghabhedakakkhandhaka, “the Chapter on schism”, begins by telling the story of the going forth of a number of the Buddha’s relatives, including Anuruddha and Devadatta. The story continues with Devadatta’s ambition to lead the Sangha—including the story of King Ajātasattu murdering his father and Devadatta’s attempts to kill the Buddha—his actions eventually resulting in schism. As part of this the Buddha lays down an “announcement procedure”, pakāsanīyakamma, by which the Sangha can distance itself from the actions of any particular individual. The chapter concludes with a technical discussion on schism.",
+  kd18: "The Vattakkhandhaka, “the Chapter on conduct”, lays down the rules of conduct that apply in a variety of circumstances, such as those between teacher and student; those for visiting, resident, and departing monastics; those for alms-round and forest dwelling; those for dining halls, dwellings, restrooms, and saunas.",
+  kd19: "The Pātimokkhaṭṭhapanakkhandhaka, “the Chapter on the cancellation of the Monastic Code”, allows a monastic to exclude another from the Pātimokkha recitation if they have not confessed their offenses beforehand. This chapter also describes the qualities that should be present in oneself before correcting another.",
+  kd20: "The Bhikkhunikkhandhaka, “the Chapter on nuns”, comprises all the rules outside of the Monastic Code, the Pātimokkha, that are specific to the nuns, including the ordination ceremony and ordination by messenger. The chapter begins with the ordination of Mahāpajāpatī Gotamī, which marks the beginning of the Sangha of nuns.",
+  kd21: "The Pañcasatikakkhandhaka, “the Chapter on the assembly of five hundred”, tells the story of the first communal recitation (saṅgīti) of the discourses of the Buddha at Rājagaha, otherwise known as “the first council”. Ānanda, the Buddha’s personal attendant, recited the discourses, while Upāli recited the Monastic Law.",
+  kd22: "The Sattasatikakkhandhaka, “the Chapter on the assembly of seven hundred”, tells the story of a major disagreement in the Sangha about aspects of the Monastic Law, most importantly about the use of money. After a long process, it is agreed that monastics may not use money. This episode is often referred to as “the second council”.",
 };
