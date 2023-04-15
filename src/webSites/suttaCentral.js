@@ -746,7 +746,7 @@ export let suttaCentral = {
     format: ["sutta"],
     links: {
       card: "pli-tv-kd",
-      all: "pli-tv-kd",
+      all: "/pli-tv-kd",
       main_page: "https://suttacentral.net/pli-tv-kd",
     },
     complete: true,

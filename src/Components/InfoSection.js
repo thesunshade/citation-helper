@@ -5,6 +5,23 @@ import nameLookup from "../images/favicon-name-black.png";
 
 export default function InfoSection() {
   function copyCurrentCitationsList() {
+    const suttaplex = fetch(`https://suttacentral.net/api/suttas/sn7.5`)
+      .then(response => response.json())
+      .then(data => {
+        const translations = data.suttaplex.translations;
+        let otherTranslations = [];
+        console.log(translations);
+        for (let i = 0; i < translations.length; i++) {
+          const translation = translations[i];
+          if (!translation.is_root) {
+            const language = translations[i].lang_name;
+            if (!otherTranslations.includes(language) && language != "English") otherTranslations.push(language);
+            console.log(translations[i].lang_name);
+          }
+        }
+        console.log(otherTranslations.join(", "));
+      });
+
     const currentCitations = document.getElementsByClassName("url-button-link");
     let output = `<ul>\n`;
     for (let i = 0; i < currentCitations.length; i++) {
@@ -15,7 +32,20 @@ export default function InfoSection() {
     }
     output += `</ul>`;
     navigator.clipboard.writeText(output);
+    console.log(output);
   }
+  // function copyCurrentCitationsList() {
+  //   const currentCitations = document.getElementsByClassName("url-button-link");
+  //   let output = `<ul>\n`;
+  //   for (let i = 0; i < currentCitations.length; i++) {
+  //     let prettySiteUrl = makePrettyName(currentCitations[i].attributes.site.value);
+  //     if (prettySiteUrl !== "") {
+  //       output += `<li><a href="${currentCitations[i].href}" rel="noreferrer" target="_blank">${prettySiteUrl} </a></li>\n`;
+  //     }
+  //   }
+  //   output += `</ul>`;
+  //   navigator.clipboard.writeText(output);
+  // }
 
   function copyCurrentCitationsSentence() {
     const currentCitations = document.getElementsByClassName("url-button-link");
