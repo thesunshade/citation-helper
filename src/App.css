@@ -1,14 +1,16 @@
 :root {
-  --suttacentral: #ce8400;
-  --dhammatalks: #b87049;
+  --suttacentral: hsl(38, 100%, 40%);
+  --dhammatalks: hsl(21, 44%, 50%);
   --suttafriends: #b45250;
-  --ancientbuddhist: #7f9861;
+  --ancientbuddhist: hsl(87, 22%, 39%);
   --accesstoinsight: #6d0303;
-  --paliaudio: #ea7101;
+  --digitalpalireader: hsl(47, 91%, 46%);
+  --paliaudio: hsl(29, 99%, 46%);
   --light-gray: gainsboro;
   --gray: rgba(0, 0, 0, 0.274);
-  --med-gray: #858585;
-  --dark-gray: #404040;
+  --med-gray: hsl(0, 0%, 40%);
+  --dark-gray: hsl(0, 0%, 25%);
+  --off-black: hsl(0, 0%, 10%);
 }
 
 .App {
@@ -144,7 +146,6 @@ button:focus {
   font-size: 0.8rem;
   position: absolute;
   top: -0.6rem;
-  /* left: 3rem; */
   background-color: white;
   padding: 0 0.41rem;
   width: 4rem;
@@ -196,7 +197,6 @@ button:focus {
 }
 
 .radiobuttonarea {
-  /* margin-top: 1rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -204,7 +204,6 @@ button:focus {
 }
 
 .radiobuttonarea label {
-  /* padding-right: 0.5rem; */
   padding-bottom: 0.4rem;
 }
 
@@ -289,6 +288,7 @@ a:focus .url-button-class {
   background: var(--suttacentral);
   box-shadow: inset 0px 0px 10px #b67300;
   flex-grow: 1;
+  color: var(--off-black)
 }
 
 .alt-sc-trans {
@@ -334,12 +334,14 @@ a:focus .url-button-class {
   background: var(--dhammatalks);
   box-shadow: inset 0px 0px 10px #a36341;
   width: 350px;
+  color: var(--off-black)
 }
 
 .BMC {
   background: var(--dhammatalks);
   box-shadow: inset 0px 0px 10px #a36341;
   width: 350px;
+  color: var(--off-black)
 }
 
 .ABT {
@@ -349,9 +351,10 @@ a:focus .url-button-class {
 }
 
 .DPR {
-  background: #e0b20b;
+  background: var(--digitalpalireader);
   box-shadow: inset 0px 0px 10px #c09f29;
   width: 350px;
+  color: var(--off-black)
 }
 
 .ATI {
@@ -368,6 +371,7 @@ a:focus .url-button-class {
   background: var(--paliaudio);
   box-shadow: inset 0px 0px 10px #d16501;
   width: 350px;
+  color: var(--off-black)
 }
 
 .SCV {
