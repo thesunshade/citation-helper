@@ -341,9 +341,9 @@ export let accessToInsight = {
         [1, "/tipitaka/kn/ud/ud.4.01.irel.html"],
         [5, "/tipitaka/kn/ud/ud.4.05.irel.html"],
       ],
-      5: [[5, "https://accesstoinsight.org/tipitaka/kn/ud/ud.5.05.irel.html"]],
-      6: [[4, "https://accesstoinsight.org/tipitaka/kn/ud/ud.6.04.irel.html"]],
-      7: [[9, "https://accesstoinsight.org/tipitaka/kn/ud/ud.7.09.irel.html"]],
+      5: [[5, "/tipitaka/kn/ud/ud.5.05.irel.html"]],
+      6: [[4, "/tipitaka/kn/ud/ud.6.04.irel.html"]],
+      7: [[9, "/tipitaka/kn/ud/ud.7.09.irel.html"]],
       8: [
         [1, "/tipitaka/kn/ud/ud.8.01.irel.html"],
         [2, "/tipitaka/kn/ud/ud.8.02.irel.html"],
