@@ -1,8 +1,8 @@
 export let suttaCentralVoice = {
   constants: {
-    rootUrl: "https://voice.suttacentral.net/scv/index.html#/sutta?search=",
+    rootUrl: "https://www.sc-voice.net/?src=sc#/sutta/",
     rootCardUrl: "https://suttacentral.net/pitaka/sutta",
-    suffixUrl: "",
+    suffixUrl: "/en/sujato",
     chapterConnector: ".",
     rangeConnector: "-",
   },
