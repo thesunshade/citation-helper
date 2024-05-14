@@ -13,12 +13,7 @@ import labsIcon from "../images/labs.png";
 export default function OtherToolsIcons() {
   return (
     <div className="icon-links-area">
-      <a
-        href="http://readingfaithfully.org"
-        title="Support for your sutta readng practice"
-        rel="noreferrer"
-        target="_blank"
-      >
+      <a href="http://readingfaithfully.org" title="Support for your sutta reading practice" rel="noreferrer" target="_blank">
         <img width="20px" src={rfIcon} alt="ReadingFaithfully.org icon" />
       </a>
       <a href="http://daily.readingfaithfully.org" title="Daily Suttas" rel="noreferrer" target="_blank">
@@ -30,45 +25,19 @@ export default function OtherToolsIcons() {
       <a href="https://name.readingfaithfully.org" title="Sutta Name Lookup Tool" rel="noreferrer" target="_blank">
         <img width="20px" src={nameLookup} alt="Sutta Name Lookup tool icon" />
       </a>
-      <a
-        href="https://ped.readingfaithfully.org"
-        title="Lightweight interface for the Pali English Dictionary"
-        rel="noreferrer"
-        target="_blank"
-      >
+      <a href="https://ped.readingfaithfully.org" title="Lightweight interface for the Pali English Dictionary" rel="noreferrer" target="_blank">
         <img width="20px" src={pedIcon} alt="Lightweight PED lookup icon" />
       </a>
-      <a
-        href="https://sc.readingfaithfully.org"
-        title="A lightweight interface for SuttaCentral.net"
-        rel="noreferrer"
-        target="_blank"
-      >
+      <a href="https://sc.readingfaithfully.org" title="A lightweight interface for SuttaCentral.net" rel="noreferrer" target="_blank">
         <img width="20px" src={scLight} alt="SuttaCentral.org Lightweight interface icon" />
       </a>
-      <a
-        href="https://dppn.readingfaithfully.org"
-        title="A lightweight interface the Dictionary of Pali Proper Names"
-        rel="noreferrer"
-        target="_blank"
-      >
+      <a href="https://dppn.readingfaithfully.org" title="A lightweight interface the Dictionary of Pali Proper Names" rel="noreferrer" target="_blank">
         <img width="20px" src={dppnIcon} alt="DPPN search icon" />
       </a>
-      <a
-        href="https://readingfaithfully.org/lab/"
-        title="Other tools under development"
-        rel="noreferrer"
-        target="_blank"
-        className="labs"
-      >
+      <a href="https://readingfaithfully.org/lab/" title="Other tools under development" rel="noreferrer" target="_blank" className="labs">
         <img width="17px" src={labsIcon} style={{ position: "relative", top: "2px" }} alt="Labs icon" />
       </a>
-      <a
-        href="https://github.com/thesunshade/citation-helper#readme"
-        title="The source code for this site"
-        rel="noreferrer"
-        target="_blank"
-      >
+      <a href="https://github.com/thesunshade/citation-helper#readme" title="The source code for this site" rel="noreferrer" target="_blank">
         <img width="20px" src={githubIcon} alt="GitHub icon" />
       </a>
     </div>
