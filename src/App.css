@@ -6,6 +6,7 @@
   --accesstoinsight: #6d0303;
   --digitalpalireader: hsl(47, 91%, 46%);
   --paliaudio: hsl(29, 99%, 46%);
+  --tripitakaonline: #9e0000;
   --light-gray: gainsboro;
   --gray: rgba(0, 0, 0, 0.274);
   --med-gray: hsl(0, 0%, 40%);
@@ -363,7 +364,17 @@ a:focus .url-button-class {
   width: 350px;
 }
 
+.TO {
+  background: var(--tripitakaonline);
+  box-shadow: inset 0px 0px 10px #490202;
+  width: 350px;
+}
+
 .ATI:hover {
+  box-shadow: inset 0px 0px 10px rgb(29, 29, 29) !important;
+}
+
+.TO:hover {
   box-shadow: inset 0px 0px 10px rgb(29, 29, 29) !important;
 }
 

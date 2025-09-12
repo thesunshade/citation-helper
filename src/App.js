@@ -45,16 +45,7 @@ function App() {
   let [warningMessage, setWarningMessage] = useState("");
 
   // Settings
-  const checkList = [
-    "SuttaCentral.net",
-    "SuttaFriends.org",
-    "DhammaTalks.org",
-    "Ancient-Buddhist-Texts.net",
-    "AccessToInsight.org",
-    "DigitalPaliReader.online",
-    "PaliAudio.com",
-    "Voice.SuttaCentral.net",
-  ];
+  const checkList = ["SuttaCentral.net", "SuttaFriends.org", "DhammaTalks.org", "Ancient-Buddhist-Texts.net", "AccessToInsight.org", "DigitalPaliReader.online", "PaliAudio.com", "Voice.SuttaCentral.net", "Tripitaka.online"];
   const [checked, setChecked] = useState(localStorage.checked ? JSON.parse(localStorage.checked) : checkList);
   const [translator, setTranslator] = useState(localStorage.translator ? localStorage.translator : "/en/sujato");
   const [layout, setLayout] = useState(localStorage.layout ? localStorage.layout : " ");
@@ -116,16 +107,7 @@ function App() {
       <div id="url-builder">
         <div className="sutta-name-container">
           <div>
-            <Tippy
-              content={suttaBlurb}
-              hideOnClick="true"
-              interactive="true"
-              trigger="mouseenter click"
-              disabled={!suttaBlurb}
-              allowHTML="true"
-              animation="perspective-extreme"
-              delay={[400, null]}
-            >
+            <Tippy content={suttaBlurb} hideOnClick="true" interactive="true" trigger="mouseenter click" disabled={!suttaBlurb} allowHTML="true" animation="perspective-extreme" delay={[400, null]}>
               <span className="sutta-name" tabIndex="0">
                 {suttaName}
                 {suttaBlurb ? <img height="18px" style={{ paddingLeft: 0.3 + "rem" }} src={infoIcon} /> : ""}
@@ -136,17 +118,7 @@ function App() {
         <div id="input-area-link-area">
           <div id="input-field-container">
             <label htmlFor="user-citation">Enter your citation</label>
-            <input
-              id="user-citation"
-              autoFocus
-              type="text"
-              value={userInput}
-              name="address"
-              onChange={event => changeUserInput(event.target.value)}
-              onKeyPress={handleKeyPress}
-              placeholder="for example: mn140"
-              autoComplete="off"
-            />
+            <input id="user-citation" autoFocus type="text" value={userInput} name="address" onChange={event => changeUserInput(event.target.value)} onKeyPress={handleKeyPress} placeholder="for example: mn140" autoComplete="off" />
           </div>
           <div id="message-area">
             <span id="warning-message">{warningMessage}</span>
@@ -203,6 +175,13 @@ function App() {
               })}
             />
             <LinkButton
+              site={"TO"}
+              url={createCustomUrlSitesLink({
+                site: "TO",
+                ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
+              })}
+            />
+            <LinkButton
               site={"DPR"}
               url={createCustomUrlSitesLink({
                 site: "DPR",
@@ -241,8 +220,7 @@ function App() {
               alt="Settings Toggle"
               onClick={() => {
                 document.getElementById("options-area").classList.toggle("hidden");
-              }}
-            ></img>
+              }}></img>
           </div>
           <OtherToolsIcons />
         </div>
@@ -255,13 +233,7 @@ function App() {
                 {checkList.map((item, index) => (
                   <div key={index}>
                     <label disabled={item === "SuttaCentral.net" ? true : false}>
-                      <input
-                        value={item}
-                        type="checkbox"
-                        checked={item === "SuttaCentral.net" || checked.includes(item) ? "checked" : ""}
-                        disabled={item === "SuttaCentral.net" ? true : false}
-                        onChange={event => handleCheck(event)}
-                      />
+                      <input value={item} type="checkbox" checked={item === "SuttaCentral.net" || checked.includes(item) ? "checked" : ""} disabled={item === "SuttaCentral.net" ? true : false} onChange={event => handleCheck(event)} />
                       {item}
                     </label>
                   </div>
@@ -282,50 +254,23 @@ function App() {
                 onChange={e => {
                   setTranslator(e.target.value);
                   localStorage.translator = e.target.value;
-                }}
-              >
+                }}>
                 <div>Translators:</div>
-                <div className="option-descriptions dropdown-description">
-                  This is for the main SuttaCentral link button.
-                </div>
+                <div className="option-descriptions dropdown-description">This is for the main SuttaCentral link button.</div>
                 <label>
-                  <input
-                    type="radio"
-                    value="/"
-                    name="translator"
-                    defaultChecked={translator === "/" ? "checked" : ""}
-                  />{" "}
-                  All Translators
+                  <input type="radio" value="/" name="translator" defaultChecked={translator === "/" ? "checked" : ""} /> All Translators
                   <div className="option-descriptions">A card with all translations, including other languages.</div>
                 </label>
                 <label>
-                  <input
-                    type="radio"
-                    value="/en/sujato"
-                    name="translator"
-                    defaultChecked={translator === "/en/sujato" ? "checked" : ""}
-                  />{" "}
-                  Bhante Sujato
+                  <input type="radio" value="/en/sujato" name="translator" defaultChecked={translator === "/en/sujato" ? "checked" : ""} /> Bhante Sujato
                   <div className="option-descriptions"></div>
                 </label>
                 <label>
-                  <input
-                    type="radio"
-                    value="/en/bodhi"
-                    name="translator"
-                    defaultChecked={translator === "/en/bodhi" ? "checked" : ""}
-                  />{" "}
-                  Bhante Bodhi
+                  <input type="radio" value="/en/bodhi" name="translator" defaultChecked={translator === "/en/bodhi" ? "checked" : ""} /> Bhante Bodhi
                   <div className="option-descriptions">If it’s not available you will get Bhikkhu Sujato’s.</div>
                 </label>
                 <label>
-                  <input
-                    type="radio"
-                    value="/pli/ms"
-                    name="translator"
-                    defaultChecked={translator === "/pli/ms" ? "checked" : ""}
-                  />{" "}
-                  Pāli
+                  <input type="radio" value="/pli/ms" name="translator" defaultChecked={translator === "/pli/ms" ? "checked" : ""} /> Pāli
                   <div className="option-descriptions">Link to only the Pāli.</div>
                 </label>
               </div>
@@ -338,49 +283,20 @@ function App() {
                   onChange={e => {
                     setLayout(e.target.value);
                     localStorage.layout = e.target.value;
-                  }}
-                >
+                  }}>
                   <label disabled={translator !== "/en/sujato"}>
-                    <input
-                      disabled={translator !== "/en/sujato"}
-                      type="radio"
-                      value="?layout=plain"
-                      name="layout"
-                      defaultChecked={layout === "?layout=plain" ? "checked" : ""}
-                    />{" "}
-                    English Only
+                    <input disabled={translator !== "/en/sujato"} type="radio" value="?layout=plain" name="layout" defaultChecked={layout === "?layout=plain" ? "checked" : ""} /> English Only
                   </label>
                   <label disabled={translator !== "/en/sujato"}>
-                    <input
-                      disabled={translator !== "/en/sujato"}
-                      type="radio"
-                      value="?layout=linebyline"
-                      name="layout"
-                      defaultChecked={layout === "?layout=linebyline" ? "checked" : ""}
-                    />{" "}
-                    Line by Line
+                    <input disabled={translator !== "/en/sujato"} type="radio" value="?layout=linebyline" name="layout" defaultChecked={layout === "?layout=linebyline" ? "checked" : ""} /> Line by Line
                     <div className="option-descriptions">Only some translators.</div>
                   </label>
                   <label disabled={translator !== "/en/sujato"}>
-                    <input
-                      disabled={translator !== "/en/sujato"}
-                      type="radio"
-                      value="?layout=sidebyside"
-                      name="layout"
-                      defaultChecked={layout === "?layout=sidebyside" ? "checked" : ""}
-                    />{" "}
-                    Side by Side
+                    <input disabled={translator !== "/en/sujato"} type="radio" value="?layout=sidebyside" name="layout" defaultChecked={layout === "?layout=sidebyside" ? "checked" : ""} /> Side by Side
                     <div className="option-descriptions">Only some translators.</div>
                   </label>
                   <label disabled={translator !== "/en/sujato"}>
-                    <input
-                      disabled={translator !== "/en/sujato"}
-                      type="radio"
-                      value=" "
-                      name="layout"
-                      defaultChecked={layout === " " ? "checked" : ""}
-                    />{" "}
-                    Unspecified
+                    <input disabled={translator !== "/en/sujato"} type="radio" value=" " name="layout" defaultChecked={layout === " " ? "checked" : ""} /> Unspecified
                     <div className="option-descriptions">Browser default.</div>
                   </label>
                 </div>

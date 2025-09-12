@@ -18,6 +18,9 @@ export default function createCustomUrlSitesLink(props) {
     case "ABT":
       website = require("./ancientBuddhistTexts.js").ancientBuddhistTexts;
       break;
+    case "TO":
+      website = require("./tripitakaOnline.js").tripitakaOnline;
+      break;
     case "DPR":
       website = require("./digitalPaliReader.js").digitalPaliReader;
       break;
@@ -100,12 +103,7 @@ export default function createCustomUrlSitesLink(props) {
     // first sutta NUMBER in range, second NUMBER in range, final part of the url
     const available = bookObject.available;
     url = "";
-    if (
-      chapterFlag === true &&
-      chapter_links &&
-      firstNumber <= Object.keys(structure[book].chapters).length &&
-      chapter_links[firstNumber]
-    ) {
+    if (chapterFlag === true && chapter_links && firstNumber <= Object.keys(structure[book].chapters).length && chapter_links[firstNumber]) {
       //chapter flag true
       return chapter_links[firstNumber];
     } else if (bookObject && bookObject.links.main_page && firstNumber === 0) {

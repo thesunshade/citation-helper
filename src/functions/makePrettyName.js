@@ -28,6 +28,9 @@ export default function makePrettyName(id) {
     case "BMC":
       prettySiteUrl = "DhammaTalks.org";
       break;
+    case "TO":
+      prettySiteUrl = "Tripitaka.online";
+      break;
     default:
       prettySiteUrl = "";
   }
