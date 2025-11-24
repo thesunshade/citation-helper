@@ -1,18 +1,17 @@
 // This function returns a single piece of information: the final website URL
-// It is only used for SC, SCV, SF, and DT because they are very regular
+// It is only used for SC, SCV, SCE, SF, and DT because they are very regular
 
 import { structure } from "../structure.js";
 
 export default function createWebsiteLink(props) {
   const { site, book, firstNumber, secondNumber, chapterFlag, error } = props;
-  // const books = Object.keys(structure);
-
-  let url = "";
-  let website;
 
   if (error) {
     return "";
   }
+
+  let url = "";
+  let website;
 
   switch (site) {
     case "SC":
@@ -26,6 +25,9 @@ export default function createWebsiteLink(props) {
       break;
     case "SCV":
       website = require("./suttaCentralVoice.js").suttaCentralVoice;
+      break;
+    case "SCE":
+      website = require("./suttaCentralExpress.js").suttaCentralExpress;
       break;
     case "SCL":
       website = require("./suttaCentralLight.js").suttaCentralLight;
@@ -154,13 +156,7 @@ export default function createWebsiteLink(props) {
     else if (bookObject.links.main_page && firstNumber === 0) {
       // no chapter number given and there is a main page for this book on this website, i.e. direct link to book
       url = bookObject.links.main_page;
-    } else if (
-      bookObject.available &&
-      site === "DT" &&
-      (book === "thag") | (book === "thig") &&
-      secondNumber === 0 &&
-      bookObject.available[firstNumber]?.[0] === 0
-    ) {
+    } else if (bookObject.available && site === "DT" && (book === "thag") | (book === "thig") && secondNumber === 0 && bookObject.available[firstNumber]?.[0] === 0) {
       // this deals with the specific situation where DT has no sutta numbers for Thag/thig suttas with only one sutta in the chapter
       url = rootUrl + bookObject.links.all + firstNumber + suffixUrl;
     } else if (secondNumber === 0) {
@@ -235,15 +231,7 @@ export default function createWebsiteLink(props) {
     chapterWithRangeArray.forEach(range => {
       if (secondNumber >= range[0] && secondNumber <= range[1]) {
         if (rangeConnector) {
-          url =
-            rootUrl +
-            bookObject.links.all +
-            firstNumber +
-            chapterConnector +
-            range[0] +
-            rangeConnector +
-            range[1] +
-            suffixUrl;
+          url = rootUrl + bookObject.links.all + firstNumber + chapterConnector + range[0] + rangeConnector + range[1] + suffixUrl;
         } else {
           url = rootUrl + bookObject.links.all + firstNumber + chapterConnector + range[0] + suffixUrl;
         }

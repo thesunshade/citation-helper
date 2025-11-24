@@ -292,7 +292,8 @@ a:focus .url-button-class {
   color: var(--off-black)
 }
 
-.alt-sc-trans {
+.alt-sc-trans,
+.SCE {
   background: var(--suttacentral);
   box-shadow: inset 0px 0px 10px #b67300;
   min-width: 20px;
@@ -314,14 +315,16 @@ a:focus .url-button-class {
   box-shadow: inset 0px 0px 5px black;
 }
 
-.SCL .image-container {
+.SCL .image-container,
+.SCE .image-container {
   /* float: none; */
   position: relative;
   top: 3px;
   left: 1px;
 }
 
-.SCL .display-url {
+.SCL .display-url,
+.SCE .display-url {
   display: none;
 }
 
