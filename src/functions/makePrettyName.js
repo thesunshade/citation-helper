@@ -19,6 +19,9 @@ export default function makePrettyName(id) {
     case "PA":
       prettySiteUrl = "PaliAudio.com";
       break;
+    case "SCE":
+      prettySiteUrl = "SuttaCentral.express";
+      break;
     case "SCV":
       prettySiteUrl = "Voice.SuttaCentral.net";
       break;

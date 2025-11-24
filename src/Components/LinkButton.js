@@ -1,4 +1,4 @@
-// This creates the link buttons for SC, SF, DT
+// This creates the link buttons for SC, SF, DT, SCE
 // Possible because their links are all very regular
 // takes two parameters:
 // site, in the form of site abbreviation
@@ -22,8 +22,8 @@ export default function LinkButton(props) {
     if (displayUrl.length > 52) {
       displayUrl = displayUrl.replace(/\/.+\//, "/…/").replace(/sutta\?search=/, "…");
     }
-    if (displayUrl.length > 30 && /^suttacentral/.test(displayUrl)) {
-      displayUrl = displayUrl.slice(0, 29) + "…";
+    if (displayUrl.length > 22 && /^suttacentral/.test(displayUrl)) {
+      displayUrl = displayUrl.slice(0, 21) + "…";
     } else {
       if (displayUrl.length > 38) {
         displayUrl = displayUrl.slice(0, 39) + "…";

@@ -45,7 +45,7 @@ function App() {
   let [warningMessage, setWarningMessage] = useState("");
 
   // Settings
-  const checkList = ["SuttaCentral.net", "SuttaFriends.org", "DhammaTalks.org", "Ancient-Buddhist-Texts.net", "AccessToInsight.org", "DigitalPaliReader.online", "PaliAudio.com", "Voice.SuttaCentral.net", "Tripitaka.online"];
+  const checkList = ["SuttaCentral.net", "SuttaCentral.express", "SuttaFriends.org", "DhammaTalks.org", "Ancient-Buddhist-Texts.net", "AccessToInsight.org", "DigitalPaliReader.online", "PaliAudio.com", "Voice.SuttaCentral.net", "Tripitaka.online"];
   const [checked, setChecked] = useState(localStorage.checked ? JSON.parse(localStorage.checked) : checkList);
   const [translator, setTranslator] = useState(localStorage.translator ? localStorage.translator : "/en/sujato");
   const [layout, setLayout] = useState(localStorage.layout ? localStorage.layout : " ");
@@ -129,6 +129,13 @@ function App() {
           <div id="link-button-area">
             <div className="sc-button-area">
               <LinkButton site={"SC"} url={addParamsToSuttaCentralUrl(userInput, translator, layout)} />
+              <LinkButton
+                site={"SCE"}
+                url={createWebsiteLink({
+                  site: "SCE",
+                  ...validateCitation(parseBookName(userInput), parseNumbers(userInput)),
+                })}
+              />
               <AltScTransButton citation={validateCitation(parseBookName(userInput), parseNumbers(userInput))} />
               <LinkButton
                 site={"SCL"}
