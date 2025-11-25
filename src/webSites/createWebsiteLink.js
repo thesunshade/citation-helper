@@ -2,6 +2,7 @@
 // It is only used for SC, SCV, SCE, SF, and DT because they are very regular
 
 import { structure } from "../structure.js";
+import { vinayaBooks } from "../functions/vinayBooks.js";
 
 export default function createWebsiteLink(props) {
   const { site, book, firstNumber, secondNumber, chapterFlag, error } = props;
@@ -262,5 +263,12 @@ export default function createWebsiteLink(props) {
     createChapterLink();
   }
 
+  console.log(vinayaBooks.includes(book));
+  console.log(book);
+  console.log(url);
+  if (vinayaBooks.includes(book)) {
+    url = url.replace("/en/sujato", "/en/brahmali");
+  }
+  console.log(url);
   return url;
 }
