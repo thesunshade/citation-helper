@@ -263,12 +263,9 @@ export default function createWebsiteLink(props) {
     createChapterLink();
   }
 
-  console.log(vinayaBooks.includes(book));
-  console.log(book);
-  console.log(url);
   if (vinayaBooks.includes(book)) {
     url = url.replace("/en/sujato", "/en/brahmali");
   }
-  console.log(url);
+
   return url;
 }
